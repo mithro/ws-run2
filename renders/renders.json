@@ -1,0 +1,883 @@
+{
+ "px_per_mm": 400,
+ "reticle": {
+  "file": "reticle.webp",
+  "width_mm": 30.0,
+  "height_mm": 23.379,
+  "width_px": 3000,
+  "height_px": 2338
+ },
+ "styles": {
+  "full": "All layers",
+  "devices": "Transistors",
+  "routing": "Signal routing",
+  "power": "Power and pads"
+ },
+ "layers": {
+  "nwell": {
+   "label": "Nwell",
+   "colour": "#282c46"
+  },
+  "comp": {
+   "label": "Diffusion",
+   "colour": "#3cbe5a"
+  },
+  "poly": {
+   "label": "Polysilicon",
+   "colour": "#eb4646"
+  },
+  "metal1": {
+   "label": "Metal 1",
+   "colour": "#3c78ff"
+  },
+  "metal2": {
+   "label": "Metal 2",
+   "colour": "#c850e6"
+  },
+  "metal3": {
+   "label": "Metal 3",
+   "colour": "#32d2dc"
+  },
+  "metal4": {
+   "label": "Metal 4",
+   "colour": "#f0c83c"
+  },
+  "metal5": {
+   "label": "Metal 5",
+   "colour": "#f58c32"
+  },
+  "metaltop": {
+   "label": "Top metal",
+   "colour": "#e6e6eb"
+  },
+  "pad": {
+   "label": "Pad openings",
+   "colour": "#ffffff"
+  }
+ },
+ "placements": [
+  {
+   "code": "BTX1",
+   "x_mm": 0.06,
+   "y_mm": 0.06,
+   "width_mm": 3.932,
+   "height_mm": 5.122
+  },
+  {
+   "code": "SCTP",
+   "x_mm": 0.06,
+   "y_mm": 5.242,
+   "width_mm": 3.932,
+   "height_mm": 5.122
+  },
+  {
+   "code": "T26A",
+   "x_mm": 0.06,
+   "y_mm": 10.424,
+   "width_mm": 3.932,
+   "height_mm": 5.122
+  },
+  {
+   "code": "DCO0",
+   "x_mm": 0.06,
+   "y_mm": 15.606,
+   "width_mm": 3.932,
+   "height_mm": 2.531
+  },
+  {
+   "code": "AS16",
+   "x_mm": 0.06,
+   "y_mm": 18.197,
+   "width_mm": 3.932,
+   "height_mm": 2.531
+  },
+  {
+   "code": "TQVC",
+   "x_mm": 0.06,
+   "y_mm": 20.788,
+   "width_mm": 3.932,
+   "height_mm": 2.531
+  },
+  {
+   "code": "CLON",
+   "x_mm": 4.052,
+   "y_mm": 0.06,
+   "width_mm": 3.932,
+   "height_mm": 5.122
+  },
+  {
+   "code": "SCMT",
+   "x_mm": 4.052,
+   "y_mm": 5.242,
+   "width_mm": 3.932,
+   "height_mm": 5.122
+  },
+  {
+   "code": "T26B",
+   "x_mm": 4.052,
+   "y_mm": 10.424,
+   "width_mm": 3.932,
+   "height_mm": 5.122
+  },
+  {
+   "code": "AMM1",
+   "x_mm": 4.052,
+   "y_mm": 15.606,
+   "width_mm": 3.932,
+   "height_mm": 2.531
+  },
+  {
+   "code": "EURO",
+   "x_mm": 4.052,
+   "y_mm": 18.197,
+   "width_mm": 3.932,
+   "height_mm": 2.531
+  },
+  {
+   "code": "NAX1",
+   "x_mm": 4.052,
+   "y_mm": 20.788,
+   "width_mm": 3.932,
+   "height_mm": 2.531
+  },
+  {
+   "code": "KIAN",
+   "x_mm": 8.044,
+   "y_mm": 0.06,
+   "width_mm": 3.932,
+   "height_mm": 5.122
+  },
+  {
+   "code": "SCUP",
+   "x_mm": 8.044,
+   "y_mm": 5.242,
+   "width_mm": 3.932,
+   "height_mm": 5.122
+  },
+  {
+   "code": "AMM1",
+   "x_mm": 8.044,
+   "y_mm": 15.606,
+   "width_mm": 3.932,
+   "height_mm": 2.531
+  },
+  {
+   "code": "OCD3",
+   "x_mm": 8.044,
+   "y_mm": 18.197,
+   "width_mm": 3.932,
+   "height_mm": 2.531
+  },
+  {
+   "code": "CAB1",
+   "x_mm": 8.044,
+   "y_mm": 20.788,
+   "width_mm": 3.932,
+   "height_mm": 2.531
+  },
+  {
+   "code": "T0P3",
+   "x_mm": 12.036,
+   "y_mm": 0.06,
+   "width_mm": 3.932,
+   "height_mm": 5.122
+  },
+  {
+   "code": "SCML",
+   "x_mm": 12.036,
+   "y_mm": 5.242,
+   "width_mm": 3.932,
+   "height_mm": 5.122
+  },
+  {
+   "code": "PSOC",
+   "x_mm": 12.036,
+   "y_mm": 15.606,
+   "width_mm": 3.932,
+   "height_mm": 2.531
+  },
+  {
+   "code": "0000",
+   "x_mm": 12.036,
+   "y_mm": 18.197,
+   "width_mm": 3.932,
+   "height_mm": 2.531
+  },
+  {
+   "code": "MOLE",
+   "x_mm": 16.028,
+   "y_mm": 0.06,
+   "width_mm": 3.932,
+   "height_mm": 5.122
+  },
+  {
+   "code": "MEME",
+   "x_mm": 16.028,
+   "y_mm": 15.606,
+   "width_mm": 3.932,
+   "height_mm": 2.531
+  },
+  {
+   "code": "GD04",
+   "x_mm": 16.028,
+   "y_mm": 18.197,
+   "width_mm": 3.932,
+   "height_mm": 2.531
+  },
+  {
+   "code": "AS04",
+   "x_mm": 20.02,
+   "y_mm": 0.06,
+   "width_mm": 3.932,
+   "height_mm": 5.122
+  },
+  {
+   "code": "WSLG",
+   "x_mm": 20.02,
+   "y_mm": 5.242,
+   "width_mm": 3.932,
+   "height_mm": 5.122
+  },
+  {
+   "code": "MEME",
+   "x_mm": 20.02,
+   "y_mm": 15.606,
+   "width_mm": 3.932,
+   "height_mm": 2.531
+  },
+  {
+   "code": "GD04",
+   "x_mm": 20.02,
+   "y_mm": 18.197,
+   "width_mm": 3.932,
+   "height_mm": 2.531
+  },
+  {
+   "code": "FS03",
+   "x_mm": 24.012,
+   "y_mm": 0.06,
+   "width_mm": 1.936,
+   "height_mm": 5.122
+  },
+  {
+   "code": "HZ80",
+   "x_mm": 24.012,
+   "y_mm": 5.242,
+   "width_mm": 1.936,
+   "height_mm": 5.122
+  },
+  {
+   "code": "DPK1",
+   "x_mm": 24.012,
+   "y_mm": 10.424,
+   "width_mm": 1.936,
+   "height_mm": 5.122
+  },
+  {
+   "code": "FC01",
+   "x_mm": 24.012,
+   "y_mm": 15.606,
+   "width_mm": 1.936,
+   "height_mm": 2.531
+  },
+  {
+   "code": "CAFE",
+   "x_mm": 24.012,
+   "y_mm": 18.197,
+   "width_mm": 1.936,
+   "height_mm": 2.531
+  },
+  {
+   "code": "FS02",
+   "x_mm": 26.008,
+   "y_mm": 0.06,
+   "width_mm": 1.936,
+   "height_mm": 5.122
+  },
+  {
+   "code": "ISHI",
+   "x_mm": 26.008,
+   "y_mm": 10.424,
+   "width_mm": 1.936,
+   "height_mm": 5.122
+  },
+  {
+   "code": "SALU",
+   "x_mm": 26.008,
+   "y_mm": 15.606,
+   "width_mm": 1.936,
+   "height_mm": 2.531
+  },
+  {
+   "code": "DPK2",
+   "x_mm": 26.008,
+   "y_mm": 18.197,
+   "width_mm": 1.936,
+   "height_mm": 2.531
+  },
+  {
+   "code": "TQVA",
+   "x_mm": 26.008,
+   "y_mm": 20.788,
+   "width_mm": 1.936,
+   "height_mm": 2.531
+  },
+  {
+   "code": "FS01",
+   "x_mm": 28.004,
+   "y_mm": 0.06,
+   "width_mm": 1.936,
+   "height_mm": 5.122
+  },
+  {
+   "code": "RLCM",
+   "x_mm": 28.004,
+   "y_mm": 5.242,
+   "width_mm": 1.936,
+   "height_mm": 5.122
+  },
+  {
+   "code": "QZ80",
+   "x_mm": 28.004,
+   "y_mm": 15.606,
+   "width_mm": 1.936,
+   "height_mm": 2.531
+  },
+  {
+   "code": "TQVE",
+   "x_mm": 28.004,
+   "y_mm": 18.197,
+   "width_mm": 1.936,
+   "height_mm": 2.531
+  },
+  {
+   "code": "TQVD",
+   "x_mm": 28.004,
+   "y_mm": 20.788,
+   "width_mm": 1.936,
+   "height_mm": 2.531
+  }
+ ],
+ "designs": {
+  "0000": {
+   "width_px": 1573,
+   "height_px": 1012,
+   "width_mm": 3.932,
+   "height_mm": 2.531,
+   "files": {
+    "full": "0000_full.webp",
+    "thumb": "0000_thumb.webp",
+    "devices": "0000_devices.webp",
+    "routing": "0000_routing.webp",
+    "power": "0000_power.webp"
+   }
+  },
+  "AMM1": {
+   "width_px": 1573,
+   "height_px": 1012,
+   "width_mm": 3.932,
+   "height_mm": 2.531,
+   "files": {
+    "full": "AMM1_full.webp",
+    "thumb": "AMM1_thumb.webp",
+    "devices": "AMM1_devices.webp",
+    "routing": "AMM1_routing.webp",
+    "power": "AMM1_power.webp"
+   }
+  },
+  "AS04": {
+   "width_px": 1573,
+   "height_px": 2049,
+   "width_mm": 3.932,
+   "height_mm": 5.122,
+   "files": {
+    "full": "AS04_full.webp",
+    "thumb": "AS04_thumb.webp",
+    "devices": "AS04_devices.webp",
+    "routing": "AS04_routing.webp",
+    "power": "AS04_power.webp"
+   }
+  },
+  "AS16": {
+   "width_px": 1573,
+   "height_px": 1012,
+   "width_mm": 3.932,
+   "height_mm": 2.531,
+   "files": {
+    "full": "AS16_full.webp",
+    "thumb": "AS16_thumb.webp",
+    "devices": "AS16_devices.webp",
+    "routing": "AS16_routing.webp",
+    "power": "AS16_power.webp"
+   }
+  },
+  "BTX1": {
+   "width_px": 1573,
+   "height_px": 2049,
+   "width_mm": 3.932,
+   "height_mm": 5.122,
+   "files": {
+    "full": "BTX1_full.webp",
+    "thumb": "BTX1_thumb.webp",
+    "devices": "BTX1_devices.webp",
+    "routing": "BTX1_routing.webp",
+    "power": "BTX1_power.webp"
+   }
+  },
+  "CAB1": {
+   "width_px": 1573,
+   "height_px": 1012,
+   "width_mm": 3.932,
+   "height_mm": 2.531,
+   "files": {
+    "full": "CAB1_full.webp",
+    "thumb": "CAB1_thumb.webp",
+    "devices": "CAB1_devices.webp",
+    "routing": "CAB1_routing.webp",
+    "power": "CAB1_power.webp"
+   }
+  },
+  "CAFE": {
+   "width_px": 774,
+   "height_px": 1012,
+   "width_mm": 1.936,
+   "height_mm": 2.531,
+   "files": {
+    "full": "CAFE_full.webp",
+    "thumb": "CAFE_thumb.webp",
+    "devices": "CAFE_devices.webp",
+    "routing": "CAFE_routing.webp",
+    "power": "CAFE_power.webp"
+   }
+  },
+  "CLON": {
+   "width_px": 1573,
+   "height_px": 2049,
+   "width_mm": 3.932,
+   "height_mm": 5.122,
+   "files": {
+    "full": "CLON_full.webp",
+    "thumb": "CLON_thumb.webp",
+    "devices": "CLON_devices.webp",
+    "routing": "CLON_routing.webp",
+    "power": "CLON_power.webp"
+   }
+  },
+  "DCO0": {
+   "width_px": 1573,
+   "height_px": 1012,
+   "width_mm": 3.932,
+   "height_mm": 2.531,
+   "files": {
+    "full": "DCO0_full.webp",
+    "thumb": "DCO0_thumb.webp",
+    "devices": "DCO0_devices.webp",
+    "routing": "DCO0_routing.webp",
+    "power": "DCO0_power.webp"
+   }
+  },
+  "DPK1": {
+   "width_px": 774,
+   "height_px": 2049,
+   "width_mm": 1.936,
+   "height_mm": 5.122,
+   "files": {
+    "full": "DPK1_full.webp",
+    "thumb": "DPK1_thumb.webp",
+    "devices": "DPK1_devices.webp",
+    "routing": "DPK1_routing.webp",
+    "power": "DPK1_power.webp"
+   }
+  },
+  "DPK2": {
+   "width_px": 774,
+   "height_px": 1012,
+   "width_mm": 1.936,
+   "height_mm": 2.531,
+   "files": {
+    "full": "DPK2_full.webp",
+    "thumb": "DPK2_thumb.webp",
+    "devices": "DPK2_devices.webp",
+    "routing": "DPK2_routing.webp",
+    "power": "DPK2_power.webp"
+   }
+  },
+  "EURO": {
+   "width_px": 1573,
+   "height_px": 1012,
+   "width_mm": 3.932,
+   "height_mm": 2.531,
+   "files": {
+    "full": "EURO_full.webp",
+    "thumb": "EURO_thumb.webp",
+    "devices": "EURO_devices.webp",
+    "routing": "EURO_routing.webp",
+    "power": "EURO_power.webp"
+   }
+  },
+  "FC01": {
+   "width_px": 774,
+   "height_px": 1012,
+   "width_mm": 1.936,
+   "height_mm": 2.531,
+   "files": {
+    "full": "FC01_full.webp",
+    "thumb": "FC01_thumb.webp",
+    "devices": "FC01_devices.webp",
+    "routing": "FC01_routing.webp",
+    "power": "FC01_power.webp"
+   }
+  },
+  "FS01": {
+   "width_px": 774,
+   "height_px": 2049,
+   "width_mm": 1.936,
+   "height_mm": 5.122,
+   "files": {
+    "full": "FS01_full.webp",
+    "thumb": "FS01_thumb.webp",
+    "devices": "FS01_devices.webp",
+    "routing": "FS01_routing.webp",
+    "power": "FS01_power.webp"
+   }
+  },
+  "FS02": {
+   "width_px": 774,
+   "height_px": 2049,
+   "width_mm": 1.936,
+   "height_mm": 5.122,
+   "files": {
+    "full": "FS02_full.webp",
+    "thumb": "FS02_thumb.webp",
+    "devices": "FS02_devices.webp",
+    "routing": "FS02_routing.webp",
+    "power": "FS02_power.webp"
+   }
+  },
+  "FS03": {
+   "width_px": 774,
+   "height_px": 2049,
+   "width_mm": 1.936,
+   "height_mm": 5.122,
+   "files": {
+    "full": "FS03_full.webp",
+    "thumb": "FS03_thumb.webp",
+    "devices": "FS03_devices.webp",
+    "routing": "FS03_routing.webp",
+    "power": "FS03_power.webp"
+   }
+  },
+  "GD04": {
+   "width_px": 1573,
+   "height_px": 1012,
+   "width_mm": 3.932,
+   "height_mm": 2.531,
+   "files": {
+    "full": "GD04_full.webp",
+    "thumb": "GD04_thumb.webp",
+    "devices": "GD04_devices.webp",
+    "routing": "GD04_routing.webp",
+    "power": "GD04_power.webp"
+   }
+  },
+  "HZ80": {
+   "width_px": 774,
+   "height_px": 2049,
+   "width_mm": 1.936,
+   "height_mm": 5.122,
+   "files": {
+    "full": "HZ80_full.webp",
+    "thumb": "HZ80_thumb.webp",
+    "devices": "HZ80_devices.webp",
+    "routing": "HZ80_routing.webp",
+    "power": "HZ80_power.webp"
+   }
+  },
+  "ISHI": {
+   "width_px": 774,
+   "height_px": 2049,
+   "width_mm": 1.936,
+   "height_mm": 5.122,
+   "files": {
+    "full": "ISHI_full.webp",
+    "thumb": "ISHI_thumb.webp",
+    "devices": "ISHI_devices.webp",
+    "routing": "ISHI_routing.webp",
+    "power": "ISHI_power.webp"
+   }
+  },
+  "KIAN": {
+   "width_px": 1573,
+   "height_px": 2049,
+   "width_mm": 3.932,
+   "height_mm": 5.122,
+   "files": {
+    "full": "KIAN_full.webp",
+    "thumb": "KIAN_thumb.webp",
+    "devices": "KIAN_devices.webp",
+    "routing": "KIAN_routing.webp",
+    "power": "KIAN_power.webp"
+   }
+  },
+  "MEME": {
+   "width_px": 1573,
+   "height_px": 1012,
+   "width_mm": 3.932,
+   "height_mm": 2.531,
+   "files": {
+    "full": "MEME_full.webp",
+    "thumb": "MEME_thumb.webp",
+    "devices": "MEME_devices.webp",
+    "routing": "MEME_routing.webp",
+    "power": "MEME_power.webp"
+   }
+  },
+  "MOLE": {
+   "width_px": 1573,
+   "height_px": 2049,
+   "width_mm": 3.932,
+   "height_mm": 5.122,
+   "files": {
+    "full": "MOLE_full.webp",
+    "thumb": "MOLE_thumb.webp",
+    "devices": "MOLE_devices.webp",
+    "routing": "MOLE_routing.webp",
+    "power": "MOLE_power.webp"
+   }
+  },
+  "NAX1": {
+   "width_px": 1573,
+   "height_px": 1012,
+   "width_mm": 3.932,
+   "height_mm": 2.531,
+   "files": {
+    "full": "NAX1_full.webp",
+    "thumb": "NAX1_thumb.webp",
+    "devices": "NAX1_devices.webp",
+    "routing": "NAX1_routing.webp",
+    "power": "NAX1_power.webp"
+   }
+  },
+  "OCD3": {
+   "width_px": 1573,
+   "height_px": 1012,
+   "width_mm": 3.932,
+   "height_mm": 2.531,
+   "files": {
+    "full": "OCD3_full.webp",
+    "thumb": "OCD3_thumb.webp",
+    "devices": "OCD3_devices.webp",
+    "routing": "OCD3_routing.webp",
+    "power": "OCD3_power.webp"
+   }
+  },
+  "PSOC": {
+   "width_px": 1573,
+   "height_px": 1012,
+   "width_mm": 3.932,
+   "height_mm": 2.531,
+   "files": {
+    "full": "PSOC_full.webp",
+    "thumb": "PSOC_thumb.webp",
+    "devices": "PSOC_devices.webp",
+    "routing": "PSOC_routing.webp",
+    "power": "PSOC_power.webp"
+   }
+  },
+  "QZ80": {
+   "width_px": 774,
+   "height_px": 1012,
+   "width_mm": 1.936,
+   "height_mm": 2.531,
+   "files": {
+    "full": "QZ80_full.webp",
+    "thumb": "QZ80_thumb.webp",
+    "devices": "QZ80_devices.webp",
+    "routing": "QZ80_routing.webp",
+    "power": "QZ80_power.webp"
+   }
+  },
+  "RLCM": {
+   "width_px": 774,
+   "height_px": 2049,
+   "width_mm": 1.936,
+   "height_mm": 5.122,
+   "files": {
+    "full": "RLCM_full.webp",
+    "thumb": "RLCM_thumb.webp",
+    "devices": "RLCM_devices.webp",
+    "routing": "RLCM_routing.webp",
+    "power": "RLCM_power.webp"
+   }
+  },
+  "SALU": {
+   "width_px": 774,
+   "height_px": 1012,
+   "width_mm": 1.936,
+   "height_mm": 2.531,
+   "files": {
+    "full": "SALU_full.webp",
+    "thumb": "SALU_thumb.webp",
+    "devices": "SALU_devices.webp",
+    "routing": "SALU_routing.webp",
+    "power": "SALU_power.webp"
+   }
+  },
+  "SCML": {
+   "width_px": 1573,
+   "height_px": 2049,
+   "width_mm": 3.932,
+   "height_mm": 5.122,
+   "files": {
+    "full": "SCML_full.webp",
+    "thumb": "SCML_thumb.webp",
+    "devices": "SCML_devices.webp",
+    "routing": "SCML_routing.webp",
+    "power": "SCML_power.webp"
+   }
+  },
+  "SCMT": {
+   "width_px": 1573,
+   "height_px": 2049,
+   "width_mm": 3.932,
+   "height_mm": 5.122,
+   "files": {
+    "full": "SCMT_full.webp",
+    "thumb": "SCMT_thumb.webp",
+    "devices": "SCMT_devices.webp",
+    "routing": "SCMT_routing.webp",
+    "power": "SCMT_power.webp"
+   }
+  },
+  "SCTP": {
+   "width_px": 1573,
+   "height_px": 2049,
+   "width_mm": 3.932,
+   "height_mm": 5.122,
+   "files": {
+    "full": "SCTP_full.webp",
+    "thumb": "SCTP_thumb.webp",
+    "devices": "SCTP_devices.webp",
+    "routing": "SCTP_routing.webp",
+    "power": "SCTP_power.webp"
+   }
+  },
+  "SCUP": {
+   "width_px": 1573,
+   "height_px": 2049,
+   "width_mm": 3.932,
+   "height_mm": 5.122,
+   "files": {
+    "full": "SCUP_full.webp",
+    "thumb": "SCUP_thumb.webp",
+    "devices": "SCUP_devices.webp",
+    "routing": "SCUP_routing.webp",
+    "power": "SCUP_power.webp"
+   }
+  },
+  "T0P3": {
+   "width_px": 1573,
+   "height_px": 2049,
+   "width_mm": 3.932,
+   "height_mm": 5.122,
+   "files": {
+    "full": "T0P3_full.webp",
+    "thumb": "T0P3_thumb.webp",
+    "devices": "T0P3_devices.webp",
+    "routing": "T0P3_routing.webp",
+    "power": "T0P3_power.webp"
+   }
+  },
+  "T26A": {
+   "width_px": 1573,
+   "height_px": 2049,
+   "width_mm": 3.932,
+   "height_mm": 5.122,
+   "files": {
+    "full": "T26A_full.webp",
+    "thumb": "T26A_thumb.webp",
+    "devices": "T26A_devices.webp",
+    "routing": "T26A_routing.webp",
+    "power": "T26A_power.webp"
+   }
+  },
+  "T26B": {
+   "width_px": 1573,
+   "height_px": 2049,
+   "width_mm": 3.932,
+   "height_mm": 5.122,
+   "files": {
+    "full": "T26B_full.webp",
+    "thumb": "T26B_thumb.webp",
+    "devices": "T26B_devices.webp",
+    "routing": "T26B_routing.webp",
+    "power": "T26B_power.webp"
+   }
+  },
+  "TQVA": {
+   "width_px": 774,
+   "height_px": 1012,
+   "width_mm": 1.936,
+   "height_mm": 2.531,
+   "files": {
+    "full": "TQVA_full.webp",
+    "thumb": "TQVA_thumb.webp",
+    "devices": "TQVA_devices.webp",
+    "routing": "TQVA_routing.webp",
+    "power": "TQVA_power.webp"
+   }
+  },
+  "TQVC": {
+   "width_px": 1573,
+   "height_px": 1012,
+   "width_mm": 3.932,
+   "height_mm": 2.531,
+   "files": {
+    "full": "TQVC_full.webp",
+    "thumb": "TQVC_thumb.webp",
+    "devices": "TQVC_devices.webp",
+    "routing": "TQVC_routing.webp",
+    "power": "TQVC_power.webp"
+   }
+  },
+  "TQVD": {
+   "width_px": 774,
+   "height_px": 1012,
+   "width_mm": 1.936,
+   "height_mm": 2.531,
+   "files": {
+    "full": "TQVD_full.webp",
+    "thumb": "TQVD_thumb.webp",
+    "devices": "TQVD_devices.webp",
+    "routing": "TQVD_routing.webp",
+    "power": "TQVD_power.webp"
+   }
+  },
+  "TQVE": {
+   "width_px": 774,
+   "height_px": 1012,
+   "width_mm": 1.936,
+   "height_mm": 2.531,
+   "files": {
+    "full": "TQVE_full.webp",
+    "thumb": "TQVE_thumb.webp",
+    "devices": "TQVE_devices.webp",
+    "routing": "TQVE_routing.webp",
+    "power": "TQVE_power.webp"
+   }
+  },
+  "WSLG": {
+   "width_px": 1573,
+   "height_px": 2049,
+   "width_mm": 3.932,
+   "height_mm": 5.122,
+   "files": {
+    "full": "WSLG_full.webp",
+    "thumb": "WSLG_thumb.webp",
+    "devices": "WSLG_devices.webp",
+    "routing": "WSLG_routing.webp",
+    "power": "WSLG_power.webp"
+   }
+  }
+ }
+}
