@@ -1,0 +1,1281 @@
+[
+ {
+  "run": "ws-run2",
+  "code": "0000",
+  "project": "ICELab Test Chip",
+  "repo_url": "https://github.com/GTIceLab/ASHES-GF180nm",
+  "claimed": "Apache-2.0",
+  "status": "cloned",
+  "head": "8c360e2ad484",
+  "branch": "main",
+  "github_detected_license": null,
+  "license": {
+   "files": [],
+   "claimed": "Apache-2.0",
+   "spdx_headers": [],
+   "verdict": "MISSING"
+  },
+  "readme": {
+   "files": [],
+   "verdict": "MISSING",
+   "note": "no top-level README"
+  },
+  "note": ""
+ },
+ {
+  "run": "ws-run2",
+  "code": "AMM1",
+  "project": "raybox-zero wafer.space run 2 half height",
+  "repo_url": "https://github.com/algofoogle/gf180ws2-raybox-zero",
+  "claimed": "Apache-2.0",
+  "status": "cloned",
+  "head": "f5bbcef7564e",
+  "branch": "main",
+  "github_detected_license": "Apache-2.0",
+  "license": {
+   "files": [
+    {
+     "file": "LICENSE",
+     "spdx": "Apache-2.0"
+    }
+   ],
+   "claimed": "Apache-2.0",
+   "spdx_headers": [],
+   "verdict": "MATCH"
+  },
+  "readme": {
+   "files": [
+    "README.md"
+   ],
+   "file": "README.md",
+   "words": 978,
+   "own_words": 778,
+   "template_similarity": 0.42,
+   "closest_template": "wafer-space/gf180mcu-project-template",
+   "verdict": "OK",
+   "note": "978 words"
+  },
+  "note": ""
+ },
+ {
+  "run": "ws-run2",
+  "code": "AS04",
+  "project": "AS04 Multi-Project die using 3.3V SCL",
+  "repo_url": "https://github.com/AvalonSemiconductors/ws-submission-2026/",
+  "claimed": "Apache-2.0",
+  "status": "cloned",
+  "head": "a8d75525ecc6",
+  "branch": "main",
+  "github_detected_license": "Apache-2.0",
+  "license": {
+   "files": [
+    {
+     "file": "LICENSE",
+     "spdx": "Apache-2.0"
+    }
+   ],
+   "claimed": "Apache-2.0",
+   "spdx_headers": [],
+   "verdict": "MATCH"
+  },
+  "readme": {
+   "files": [
+    "README.md"
+   ],
+   "file": "README.md",
+   "words": 49,
+   "own_words": 49,
+   "template_similarity": 0.0,
+   "closest_template": null,
+   "verdict": "THIN",
+   "note": "original but only 49 words"
+  },
+  "note": ""
+ },
+ {
+  "run": "ws-run2",
+  "code": "AS16",
+  "project": "AS16 CPU",
+  "repo_url": "http://github.com/SUD0NET/as16",
+  "claimed": "Apache-2.0",
+  "status": "cloned",
+  "head": "0cfc5a56b99a",
+  "branch": "main",
+  "github_detected_license": "Apache-2.0",
+  "license": {
+   "files": [
+    {
+     "file": "LICENSE",
+     "spdx": "Apache-2.0"
+    }
+   ],
+   "claimed": "Apache-2.0",
+   "spdx_headers": [],
+   "verdict": "MATCH"
+  },
+  "readme": {
+   "files": [
+    "README.md"
+   ],
+   "file": "README.md",
+   "words": 1168,
+   "own_words": 413,
+   "template_similarity": 0.74,
+   "closest_template": "wafer-space/gf180mcu-project-template",
+   "verdict": "OK",
+   "note": "413 words of own text on top of the template README"
+  },
+  "note": ""
+ },
+ {
+  "run": "ws-run2",
+  "code": "BTX1",
+  "project": "BTX",
+  "repo_url": null,
+  "claimed": "CERN-OHL-S-2.0",
+  "status": "no repository listed",
+  "note": ""
+ },
+ {
+  "run": "ws-run2",
+  "code": "CAB1",
+  "project": "Cabrera CoB",
+  "repo_url": "https://github.com/ZeduloTech/Cabrera",
+  "claimed": "Apache-2.0",
+  "status": "cloned",
+  "head": "2081f9bda695",
+  "branch": "main",
+  "github_detected_license": "Apache-2.0",
+  "license": {
+   "files": [
+    {
+     "file": "LICENSE",
+     "spdx": "Apache-2.0"
+    }
+   ],
+   "claimed": "Apache-2.0",
+   "spdx_headers": [],
+   "verdict": "MATCH"
+  },
+  "readme": {
+   "files": [
+    "README.md"
+   ],
+   "file": "README.md",
+   "words": 691,
+   "own_words": 0,
+   "template_similarity": 1.0,
+   "closest_template": "wafer-space/gf180mcu-project-template",
+   "verdict": "TEMPLATE",
+   "note": "100% identical to the wafer-space/gf180mcu-project-template README; 0 words of own text"
+  },
+  "note": ""
+ },
+ {
+  "run": "ws-run2",
+  "code": "CAFE",
+  "project": "Expresso Ethernet Chip: 100Mbps Ethernet switch + Heat death of the Universe Beacon - 0.5x0.5 version - Preferred version",
+  "repo_url": "https://github.com/Essenceia/Expresso_ASIC_Chip",
+  "claimed": "CERN-OHL-S-2.0",
+  "status": "cloned",
+  "head": "80a20dedd124",
+  "branch": "main",
+  "github_detected_license": "CERN-OHL-S-2.0",
+  "license": {
+   "files": [
+    {
+     "file": "LICENSE",
+     "spdx": "CERN-OHL-S-2.0"
+    }
+   ],
+   "claimed": "CERN-OHL-S-2.0",
+   "spdx_headers": [],
+   "verdict": "MATCH"
+  },
+  "readme": {
+   "files": [
+    "README.md"
+   ],
+   "file": "README.md",
+   "words": 548,
+   "own_words": 560,
+   "template_similarity": 0.0,
+   "closest_template": null,
+   "verdict": "OK",
+   "note": "548 words"
+  },
+  "note": "Three nested submodule declarations have no tree entry."
+ },
+ {
+  "run": "ws-run2",
+  "code": "CLON",
+  "project": "Cloneless2",
+  "repo_url": "https://github.com/ThorbenMoos/Cloneless2",
+  "claimed": "GPL-3.0-only",
+  "status": "cloned",
+  "head": "a63883b6fa7b",
+  "branch": "main",
+  "github_detected_license": "GPL-3.0",
+  "license": {
+   "files": [
+    {
+     "file": "LICENSE",
+     "spdx": "GPL-3.0"
+    }
+   ],
+   "claimed": "GPL-3.0-only",
+   "spdx_headers": [],
+   "verdict": "MATCH"
+  },
+  "readme": {
+   "files": [
+    "README.md"
+   ],
+   "file": "README.md",
+   "words": 1518,
+   "own_words": 1534,
+   "template_similarity": 0.05,
+   "closest_template": "egorxe/gf180mcu-caravel-template",
+   "verdict": "OK",
+   "note": "1518 words"
+  },
+  "note": ""
+ },
+ {
+  "run": "ws-run2",
+  "code": "DCO0",
+  "project": "Standard Cell DCO+TDC",
+  "repo_url": "https://github.com/asinghani/ws-dco-tdc",
+  "claimed": "Apache-2.0",
+  "status": "cloned",
+  "head": "c5b10fc855d7",
+  "branch": "main",
+  "github_detected_license": "Apache-2.0",
+  "license": {
+   "files": [
+    {
+     "file": "LICENSE",
+     "spdx": "Apache-2.0"
+    }
+   ],
+   "claimed": "Apache-2.0",
+   "spdx_headers": [],
+   "verdict": "MATCH"
+  },
+  "readme": {
+   "files": [
+    "README.md"
+   ],
+   "file": "README.md",
+   "words": 19,
+   "own_words": 19,
+   "template_similarity": 0.0,
+   "closest_template": null,
+   "verdict": "STUB",
+   "note": "only 19 words"
+  },
+  "note": ""
+ },
+ {
+  "run": "ws-run2",
+  "code": "DPK1",
+  "project": "bio180",
+  "repo_url": "https://github.com/dpks2003/bio-core",
+  "claimed": "CERN-OHL-P-2.0",
+  "status": "cloned",
+  "head": "0fe3252bd4af",
+  "branch": "bio180",
+  "github_detected_license": "CERN-OHL-W-2.0",
+  "license": {
+   "files": [
+    {
+     "file": "LICENSE",
+     "spdx": "CERN-OHL-W-2.0"
+    }
+   ],
+   "claimed": "CERN-OHL-P-2.0",
+   "spdx_headers": [],
+   "verdict": "MISMATCH"
+  },
+  "readme": {
+   "files": [
+    "README.md"
+   ],
+   "file": "README.md",
+   "words": 630,
+   "own_words": 658,
+   "template_similarity": 0.07,
+   "closest_template": "wafer-space/gf180mcu-project-template",
+   "verdict": "OK",
+   "note": "630 words"
+  },
+  "note": "Licence switched from Apache-2.0 to CERN-OHL-W-2.0 in the last commit."
+ },
+ {
+  "run": "ws-run2",
+  "code": "DPK2",
+  "project": "cordic-romless-x8",
+  "repo_url": "https://github.com/dpks2003/cordic-romless",
+  "claimed": "Apache-2.0",
+  "status": "cloned",
+  "head": "b1fa2b41a1e1",
+  "branch": "ws2-x8",
+  "github_detected_license": "Apache-2.0",
+  "license": {
+   "files": [
+    {
+     "file": "LICENSE",
+     "spdx": "Apache-2.0"
+    }
+   ],
+   "claimed": "Apache-2.0",
+   "spdx_headers": [],
+   "verdict": "MATCH"
+  },
+  "readme": {
+   "files": [
+    "README.md"
+   ],
+   "file": "README.md",
+   "words": 774,
+   "own_words": 802,
+   "template_similarity": 0.09,
+   "closest_template": "egorxe/gf180mcu-caravel-template",
+   "verdict": "OK",
+   "note": "774 words"
+  },
+  "note": ""
+ },
+ {
+  "run": "ws-run2",
+  "code": "EURO",
+  "project": "EuroSynth",
+  "repo_url": "https://github.com/anfroholic/eurosynth",
+  "claimed": "Apache-2.0",
+  "status": "cloned",
+  "head": "606cb4d8cd1e",
+  "branch": "main",
+  "github_detected_license": "Apache-2.0",
+  "license": {
+   "files": [
+    {
+     "file": "LICENSE",
+     "spdx": "Apache-2.0"
+    }
+   ],
+   "claimed": "Apache-2.0",
+   "spdx_headers": [],
+   "verdict": "MATCH"
+  },
+  "readme": {
+   "files": [
+    "README.md"
+   ],
+   "file": "README.md",
+   "words": 641,
+   "own_words": 655,
+   "template_similarity": 0.06,
+   "closest_template": "egorxe/gf180mcu-caravel-template",
+   "verdict": "OK",
+   "note": "641 words"
+  },
+  "note": ""
+ },
+ {
+  "run": "ws-run2",
+  "code": "FC01",
+  "project": "Flip Chip pad test version 1",
+  "repo_url": null,
+  "claimed": "Apache-2.0",
+  "status": "no repository listed",
+  "note": ""
+ },
+ {
+  "run": "ws-run2",
+  "code": "FS01",
+  "project": "Test chip with 3.3V SRAM blocks using regular design rules",
+  "repo_url": "https://gitlab.com/Chips4Makers/arrakeen-sram-testchip",
+  "claimed": "Apache-2.0",
+  "status": "cloned",
+  "head": "2ce18dbe27df",
+  "branch": "main",
+  "github_detected_license": null,
+  "license": {
+   "files": [],
+   "claimed": "Apache-2.0",
+   "spdx_headers": [
+    "Apache-2.0"
+   ],
+   "verdict": "MISSING (SPDX headers in sources: Apache-2.0; agrees with claim)"
+  },
+  "readme": {
+   "files": [
+    "README.md"
+   ],
+   "file": "README.md",
+   "words": 133,
+   "own_words": 133,
+   "template_similarity": 0.0,
+   "closest_template": null,
+   "verdict": "OK",
+   "note": "133 words"
+  },
+  "note": ""
+ },
+ {
+  "run": "ws-run2",
+  "code": "FS02",
+  "project": "Test chip with 3.3V SRAM blocks using SRAM design rules",
+  "repo_url": "https://gitlab.com/Chips4Makers/arrakeen-sram-testchip",
+  "claimed": "Apache-2.0",
+  "status": "cloned",
+  "head": "2ce18dbe27df",
+  "branch": "main",
+  "github_detected_license": null,
+  "license": {
+   "files": [],
+   "claimed": "Apache-2.0",
+   "spdx_headers": [
+    "Apache-2.0"
+   ],
+   "verdict": "MISSING (SPDX headers in sources: Apache-2.0; agrees with claim)"
+  },
+  "readme": {
+   "files": [
+    "README.md"
+   ],
+   "file": "README.md",
+   "words": 133,
+   "own_words": 133,
+   "template_similarity": 0.0,
+   "closest_template": null,
+   "verdict": "OK",
+   "note": "133 words"
+  },
+  "note": ""
+ },
+ {
+  "run": "ws-run2",
+  "code": "FS03",
+  "project": "Test chip with 5V SRAM blocks",
+  "repo_url": "https://gitlab.com/Chips4Makers/arrakeen-sram-testchip",
+  "claimed": "Apache-2.0",
+  "status": "cloned",
+  "head": "2ce18dbe27df",
+  "branch": "main",
+  "github_detected_license": null,
+  "license": {
+   "files": [],
+   "claimed": "Apache-2.0",
+   "spdx_headers": [
+    "Apache-2.0"
+   ],
+   "verdict": "MISSING (SPDX headers in sources: Apache-2.0; agrees with claim)"
+  },
+  "readme": {
+   "files": [
+    "README.md"
+   ],
+   "file": "README.md",
+   "words": 133,
+   "own_words": 133,
+   "template_similarity": 0.0,
+   "closest_template": null,
+   "verdict": "OK",
+   "note": "133 words"
+  },
+  "note": ""
+ },
+ {
+  "run": "ws-run2",
+  "code": "GD04",
+  "project": "Racquet Wide 1x0.5",
+  "repo_url": "https://github.com/gregdavill/gf180mcu-racquet-1x0.5",
+  "claimed": "BSD-3-Clause",
+  "status": "cloned",
+  "head": "a64a899dabd2",
+  "branch": "develop",
+  "github_detected_license": "Apache-2.0",
+  "license": {
+   "files": [
+    {
+     "file": "LICENSE",
+     "spdx": "Apache-2.0"
+    }
+   ],
+   "claimed": "BSD-3-Clause",
+   "spdx_headers": [],
+   "verdict": "MISMATCH"
+  },
+  "readme": {
+   "files": [
+    "README.md"
+   ],
+   "file": "README.md",
+   "words": 731,
+   "own_words": 0,
+   "template_similarity": 1.0,
+   "closest_template": "wafer-space/gf180mcu-project-template",
+   "verdict": "TEMPLATE",
+   "note": "100% identical to the wafer-space/gf180mcu-project-template README; 0 words of own text"
+  },
+  "note": ""
+ },
+ {
+  "run": "ws-run2",
+  "code": "HZ80",
+  "project": "FOSSi open-source replacement for Z80 classic 8-bit CPU (0.5 x 1 slot)",
+  "repo_url": "https://github.com/rejunity/ws0-z80-open-silicon-gf180mcu",
+  "claimed": "Apache-2.0",
+  "status": "cloned",
+  "head": "56308db64709",
+  "branch": "main",
+  "github_detected_license": "Apache-2.0",
+  "license": {
+   "files": [
+    {
+     "file": "LICENSE",
+     "spdx": "Apache-2.0"
+    }
+   ],
+   "claimed": "Apache-2.0",
+   "spdx_headers": [],
+   "verdict": "MATCH"
+  },
+  "readme": {
+   "files": [
+    "README.md"
+   ],
+   "file": "README.md",
+   "words": 520,
+   "own_words": 57,
+   "template_similarity": 0.9,
+   "closest_template": "wafer-space/gf180mcu-project-template",
+   "verdict": "TEMPLATE+NOTE",
+   "note": "90% identical to the wafer-space/gf180mcu-project-template README plus 57 words of own text"
+  },
+  "note": "Slot variant is on branch `halfv_slot_mcu9tv50` (inferred)."
+ },
+ {
+  "run": "ws-run2",
+  "code": "ISHI",
+  "project": "ISHI-KAI_Multiple_Projects_WaferSapce-GF180-2",
+  "repo_url": "https://github.com/ishi-kai/ISHI-KAI_Multiple_Projects_WaferSapce-GF180-2",
+  "claimed": "Apache-2.0",
+  "status": "cloned",
+  "head": "1a0be37edb4b",
+  "branch": "main",
+  "github_detected_license": "Apache-2.0",
+  "license": {
+   "files": [
+    {
+     "file": "LICENSE",
+     "spdx": "Apache-2.0"
+    }
+   ],
+   "claimed": "Apache-2.0",
+   "spdx_headers": [],
+   "verdict": "MATCH"
+  },
+  "readme": {
+   "files": [
+    "README.md"
+   ],
+   "file": "README.md",
+   "words": 1668,
+   "own_words": 2049,
+   "template_similarity": 0.0,
+   "closest_template": null,
+   "verdict": "OK",
+   "note": "1668 words"
+  },
+  "note": ""
+ },
+ {
+  "run": "ws-run2",
+  "code": "KIAN",
+  "project": "KianV: A 32-bit RISC-V Linux SoC taped out on GF180MCU Run 2",
+  "repo_url": "https://github.com/splinedrive/gf180mcu-kianv-rv32ima-sv32-ws02/",
+  "claimed": "MIT",
+  "status": "cloned",
+  "head": "0b383ba46257",
+  "branch": "main",
+  "github_detected_license": "Apache-2.0",
+  "license": {
+   "files": [
+    {
+     "file": "LICENSE",
+     "spdx": "Apache-2.0"
+    }
+   ],
+   "claimed": "MIT",
+   "spdx_headers": [],
+   "verdict": "MISMATCH"
+  },
+  "readme": {
+   "files": [
+    "README.md"
+   ],
+   "file": "README.md",
+   "words": 61,
+   "own_words": 61,
+   "template_similarity": 0.0,
+   "closest_template": null,
+   "verdict": "THIN",
+   "note": "original but only 61 words"
+  },
+  "note": ""
+ },
+ {
+  "run": "ws-run2",
+  "code": "MEME",
+  "project": "Artwork Meme Chip",
+  "repo_url": "https://github.com/anfroholic/meme_chip",
+  "claimed": "MIT",
+  "status": "cloned",
+  "head": "c11dda5b87b4",
+  "branch": "main",
+  "github_detected_license": "MIT",
+  "license": {
+   "files": [
+    {
+     "file": "LICENSE",
+     "spdx": "MIT"
+    }
+   ],
+   "claimed": "MIT",
+   "spdx_headers": [],
+   "verdict": "MATCH"
+  },
+  "readme": {
+   "files": [
+    "README.md"
+   ],
+   "file": "README.md",
+   "words": 251,
+   "own_words": 257,
+   "template_similarity": 0.03,
+   "closest_template": "egorxe/gf180mcu-caravel-template",
+   "verdict": "OK",
+   "note": "251 words"
+  },
+  "note": ""
+ },
+ {
+  "run": "ws-run2",
+  "code": "MOLE",
+  "project": "FABulous FPGA",
+  "repo_url": "https://github.com/mole99/wsrun2-fabulous-fpga",
+  "claimed": "Apache-2.0",
+  "status": "cloned",
+  "head": "282dda832c62",
+  "branch": "main",
+  "github_detected_license": "Apache-2.0",
+  "license": {
+   "files": [
+    {
+     "file": "LICENSE",
+     "spdx": "Apache-2.0"
+    }
+   ],
+   "claimed": "Apache-2.0",
+   "spdx_headers": [],
+   "verdict": "MATCH"
+  },
+  "readme": {
+   "files": [
+    "README.md"
+   ],
+   "file": "README.md",
+   "words": 917,
+   "own_words": 162,
+   "template_similarity": 0.91,
+   "closest_template": "wafer-space/gf180mcu-project-template",
+   "verdict": "TEMPLATE+NOTE",
+   "note": "91% identical to the wafer-space/gf180mcu-project-template README plus 162 words of own text"
+  },
+  "note": "README is mostly the template; final views are only in the release."
+ },
+ {
+  "run": "ws-run2",
+  "code": "NAX1",
+  "project": "Naxos CoB",
+  "repo_url": "https://github.com/ZeduloTech/Naxos",
+  "claimed": "Apache-2.0",
+  "status": "cloned",
+  "head": "17da59e0f961",
+  "branch": "main",
+  "github_detected_license": "Apache-2.0",
+  "license": {
+   "files": [
+    {
+     "file": "LICENSE",
+     "spdx": "Apache-2.0"
+    }
+   ],
+   "claimed": "Apache-2.0",
+   "spdx_headers": [],
+   "verdict": "MATCH"
+  },
+  "readme": {
+   "files": [
+    "README.md"
+   ],
+   "file": "README.md",
+   "words": 777,
+   "own_words": 0,
+   "template_similarity": 1.0,
+   "closest_template": "wafer-space/gf180mcu-project-template",
+   "verdict": "TEMPLATE",
+   "note": "100% identical to the wafer-space/gf180mcu-project-template README; 0 words of own text"
+  },
+  "note": ""
+ },
+ {
+  "run": "ws-run2",
+  "code": "OCD3",
+  "project": "3.3V SRAM test 2",
+  "repo_url": "https://github.com/RTimothyEdwards/gf180mcu_ocd_sram_test",
+  "claimed": "Apache-2.0",
+  "status": "cloned",
+  "head": "6d4f6099546c",
+  "branch": "main",
+  "github_detected_license": null,
+  "license": {
+   "files": [],
+   "claimed": "Apache-2.0",
+   "spdx_headers": [
+    "Apache-2.0"
+   ],
+   "verdict": "MISSING (SPDX headers in sources: Apache-2.0; agrees with claim)"
+  },
+  "readme": {
+   "files": [],
+   "verdict": "MISSING",
+   "note": "no top-level README"
+  },
+  "note": "Documentation is in `doc/README`."
+ },
+ {
+  "run": "ws-run2",
+  "code": "PSOC",
+  "project": "Simplest possible PicoSoC implementation using wafer.space flow",
+  "repo_url": "https://github.com/d-burnett/picosoc-on-waferspace",
+  "claimed": "Apache-2.0",
+  "status": "cloned",
+  "head": "a5283bc607b0",
+  "branch": "main",
+  "github_detected_license": "Apache-2.0",
+  "license": {
+   "files": [
+    {
+     "file": "LICENSE",
+     "spdx": "Apache-2.0"
+    }
+   ],
+   "claimed": "Apache-2.0",
+   "spdx_headers": [],
+   "verdict": "MATCH"
+  },
+  "readme": {
+   "files": [
+    "README.md"
+   ],
+   "file": "README.md",
+   "words": 98,
+   "own_words": 98,
+   "template_similarity": 0.0,
+   "closest_template": null,
+   "verdict": "THIN",
+   "note": "original but only 98 words"
+  },
+  "note": "Listed as d-burnett/picosoc-on-waferspace; the repo now lives at burnettlab/picosoc-on-waferspace (GitHub redirects)."
+ },
+ {
+  "run": "ws-run2",
+  "code": "QZ80",
+  "project": "FOSSi open-source replacement for Z80 classic 8-bit CPU (0.5 x 0.5 slot)",
+  "repo_url": "https://github.com/rejunity/ws0-z80-open-silicon-gf180mcu",
+  "claimed": "Apache-2.0",
+  "status": "cloned",
+  "head": "56308db64709",
+  "branch": "main",
+  "github_detected_license": "Apache-2.0",
+  "license": {
+   "files": [
+    {
+     "file": "LICENSE",
+     "spdx": "Apache-2.0"
+    }
+   ],
+   "claimed": "Apache-2.0",
+   "spdx_headers": [],
+   "verdict": "MATCH"
+  },
+  "readme": {
+   "files": [
+    "README.md"
+   ],
+   "file": "README.md",
+   "words": 520,
+   "own_words": 57,
+   "template_similarity": 0.9,
+   "closest_template": "wafer-space/gf180mcu-project-template",
+   "verdict": "TEMPLATE+NOTE",
+   "note": "90% identical to the wafer-space/gf180mcu-project-template README plus 57 words of own text"
+  },
+  "note": "Slot variant is on branch `quarter_slot_mcu9t5v0` (inferred)."
+ },
+ {
+  "run": "ws-run2",
+  "code": "RLCM",
+  "project": "RLCM: Test Passives For GF180MCUD",
+  "repo_url": "https://github.com/EngGhaith/RLCM-Test-Passives-For-GF180MCUD",
+  "claimed": "CERN-OHL-P-2.0",
+  "status": "cloned",
+  "head": "d1bc20b4f854",
+  "branch": "main",
+  "github_detected_license": null,
+  "license": {
+   "files": [],
+   "claimed": "CERN-OHL-P-2.0",
+   "spdx_headers": [],
+   "verdict": "MISSING"
+  },
+  "readme": {
+   "files": [],
+   "verdict": "MISSING",
+   "note": "no top-level README"
+  },
+  "note": ""
+ },
+ {
+  "run": "ws-run2",
+  "code": "SALU",
+  "project": "Simple ALU",
+  "repo_url": "https://github.com/StackDoubleFlow/alu_silicon",
+  "claimed": "MIT",
+  "status": "cloned",
+  "head": "15ae8bf01675",
+  "branch": "main",
+  "github_detected_license": "MIT",
+  "license": {
+   "files": [
+    {
+     "file": "LICENSE",
+     "spdx": "MIT"
+    }
+   ],
+   "claimed": "MIT",
+   "spdx_headers": [],
+   "verdict": "MATCH"
+  },
+  "readme": {
+   "files": [
+    "README.md"
+   ],
+   "file": "README.md",
+   "words": 777,
+   "own_words": 0,
+   "template_similarity": 1.0,
+   "closest_template": "wafer-space/gf180mcu-project-template",
+   "verdict": "TEMPLATE",
+   "note": "100% identical to the wafer-space/gf180mcu-project-template README; 0 words of own text"
+  },
+  "note": ""
+ },
+ {
+  "run": "ws-run2",
+  "code": "SCML",
+  "project": "ML-Audio SC",
+  "repo_url": "https://github.com/kjconway5/ML-Audio",
+  "claimed": "proprietary",
+  "status": "cloned",
+  "head": "94e7733b0add",
+  "branch": "main",
+  "github_detected_license": "Apache-2.0",
+  "license": {
+   "files": [
+    {
+     "file": "LICENSE",
+     "spdx": "Apache-2.0"
+    }
+   ],
+   "claimed": "proprietary",
+   "spdx_headers": [],
+   "verdict": "MISMATCH (claimed proprietary, repo has an open licence)"
+  },
+  "readme": {
+   "files": [
+    "README.md"
+   ],
+   "file": "README.md",
+   "words": 1630,
+   "own_words": 1332,
+   "template_similarity": 0.29,
+   "closest_template": "wafer-space/gf180mcu-project-template",
+   "verdict": "OK",
+   "note": "1630 words"
+  },
+  "note": ""
+ },
+ {
+  "run": "ws-run2",
+  "code": "SCMT",
+  "project": "microTheia",
+  "repo_url": "https://github.com/dhgaddy/microTheia",
+  "claimed": "Apache-2.0",
+  "status": "cloned",
+  "head": "ef69ed4d92c4",
+  "branch": "main",
+  "github_detected_license": "Apache-2.0",
+  "license": {
+   "files": [
+    {
+     "file": "LICENSE",
+     "spdx": "Apache-2.0"
+    }
+   ],
+   "claimed": "Apache-2.0",
+   "spdx_headers": [],
+   "verdict": "MATCH"
+  },
+  "readme": {
+   "files": [
+    "README.md"
+   ],
+   "file": "README.md",
+   "words": 1086,
+   "own_words": 1120,
+   "template_similarity": 0.19,
+   "closest_template": "wafer-space/gf180mcu-project-template",
+   "verdict": "OK",
+   "note": "1086 words"
+  },
+  "note": ""
+ },
+ {
+  "run": "ws-run2",
+  "code": "SCTP",
+  "project": "SlugTPU",
+  "repo_url": "https://github.com/SlugTPU/gf180mcu-slugtpu",
+  "claimed": "Apache-2.0",
+  "status": "cloned",
+  "head": "e906c153f878",
+  "branch": "main",
+  "github_detected_license": "Apache-2.0",
+  "license": {
+   "files": [
+    {
+     "file": "LICENSE",
+     "spdx": "Apache-2.0"
+    }
+   ],
+   "claimed": "Apache-2.0",
+   "spdx_headers": [],
+   "verdict": "MATCH"
+  },
+  "readme": {
+   "files": [
+    "README.md"
+   ],
+   "file": "README.md",
+   "words": 1753,
+   "own_words": 1061,
+   "template_similarity": 0.63,
+   "closest_template": "wafer-space/gf180mcu-project-template",
+   "verdict": "OK",
+   "note": "1061 words of own text on top of the template README"
+  },
+  "note": "Stale `.gitmodules` entries (two submodules removed from the tree)."
+ },
+ {
+  "run": "ws-run2",
+  "code": "SCUP",
+  "project": "GF180MCU Peripherals",
+  "repo_url": "https://github.com/sifferman/gf180mcu-peripherals",
+  "claimed": "GPL-3.0-or-later",
+  "status": "cloned",
+  "head": "bee7cb698112",
+  "branch": "main",
+  "github_detected_license": "GPL-3.0",
+  "license": {
+   "files": [
+    {
+     "file": "LICENSE",
+     "spdx": "GPL-3.0"
+    }
+   ],
+   "claimed": "GPL-3.0-or-later",
+   "spdx_headers": [],
+   "verdict": "MATCH"
+  },
+  "readme": {
+   "files": [
+    "README.md"
+   ],
+   "file": "README.md",
+   "words": 777,
+   "own_words": 0,
+   "template_similarity": 1.0,
+   "closest_template": "wafer-space/gf180mcu-project-template",
+   "verdict": "TEMPLATE",
+   "note": "100% identical to the wafer-space/gf180mcu-project-template README; 0 words of own text"
+  },
+  "note": "Default branch is the unmodified template. The design is on branch `dev`, which has a real README (about 440 words) and the same GPL-3.0 LICENSE."
+ },
+ {
+  "run": "ws-run2",
+  "code": "T0P3",
+  "project": "Tiny Tapeout GF 0p3",
+  "repo_url": "https://github.com/TinyTapeout/tinytapeout-gf-0p3",
+  "claimed": "Apache-2.0",
+  "status": "cloned",
+  "head": "16c30128215e",
+  "branch": "main",
+  "github_detected_license": "Apache-2.0",
+  "license": {
+   "files": [
+    {
+     "file": "LICENSE",
+     "spdx": "Apache-2.0"
+    }
+   ],
+   "claimed": "Apache-2.0",
+   "spdx_headers": [],
+   "verdict": "MATCH"
+  },
+  "readme": {
+   "files": [
+    "README.md"
+   ],
+   "file": "README.md",
+   "words": 74,
+   "own_words": 102,
+   "template_similarity": 0.0,
+   "closest_template": null,
+   "verdict": "THIN",
+   "note": "original but only 74 words"
+  },
+  "note": ""
+ },
+ {
+  "run": "ws-run2",
+  "code": "T26A",
+  "project": "Tiny Tapeout GF 26a",
+  "repo_url": "https://github.com/TinyTapeout/tinytapeout-gf-26a",
+  "claimed": "Apache-2.0",
+  "status": "cloned",
+  "head": "35e70261e686",
+  "branch": "main",
+  "github_detected_license": "Apache-2.0",
+  "license": {
+   "files": [
+    {
+     "file": "LICENSE",
+     "spdx": "Apache-2.0"
+    }
+   ],
+   "claimed": "Apache-2.0",
+   "spdx_headers": [],
+   "verdict": "MATCH"
+  },
+  "readme": {
+   "files": [
+    "README.md"
+   ],
+   "file": "README.md",
+   "words": 74,
+   "own_words": 102,
+   "template_similarity": 0.0,
+   "closest_template": null,
+   "verdict": "THIN",
+   "note": "original but only 74 words"
+  },
+  "note": ""
+ },
+ {
+  "run": "ws-run2",
+  "code": "T26B",
+  "project": "Tiny Tapeout GF 26b",
+  "repo_url": "https://github.com/TinyTapeout/tinytapeout-gf-26b",
+  "claimed": "Apache-2.0",
+  "status": "cloned",
+  "head": "8c92b24e237f",
+  "branch": "main",
+  "github_detected_license": "Apache-2.0",
+  "license": {
+   "files": [
+    {
+     "file": "LICENSE",
+     "spdx": "Apache-2.0"
+    }
+   ],
+   "claimed": "Apache-2.0",
+   "spdx_headers": [],
+   "verdict": "MATCH"
+  },
+  "readme": {
+   "files": [
+    "README.md"
+   ],
+   "file": "README.md",
+   "words": 74,
+   "own_words": 102,
+   "template_similarity": 0.0,
+   "closest_template": null,
+   "verdict": "THIN",
+   "note": "original but only 74 words"
+  },
+  "note": ""
+ },
+ {
+  "run": "ws-run2",
+  "code": "TQVA",
+  "project": "TinyQV - Crowdsourced Risc-V SoC",
+  "repo_url": "https://github.com/MichaelBell/ws01-tinyQV",
+  "claimed": "Apache-2.0",
+  "status": "cloned",
+  "head": "2c8630bce07f",
+  "branch": "main",
+  "github_detected_license": "Apache-2.0",
+  "license": {
+   "files": [
+    {
+     "file": "LICENSE",
+     "spdx": "Apache-2.0"
+    }
+   ],
+   "claimed": "Apache-2.0",
+   "spdx_headers": [],
+   "verdict": "MATCH"
+  },
+  "readme": {
+   "files": [
+    "README.md"
+   ],
+   "file": "README.md",
+   "words": 1633,
+   "own_words": 916,
+   "template_similarity": 0.58,
+   "closest_template": "wafer-space/gf180mcu-project-template",
+   "verdict": "OK",
+   "note": "1633 words"
+  },
+  "note": ""
+ },
+ {
+  "run": "ws-run2",
+  "code": "TQVC",
+  "project": "TinyQV - Crowdsourced Risc-V SoC (1x0.5)",
+  "repo_url": "https://github.com/MichaelBell/ws01-tinyQV",
+  "claimed": "Apache-2.0",
+  "status": "cloned",
+  "head": "2c8630bce07f",
+  "branch": "main",
+  "github_detected_license": "Apache-2.0",
+  "license": {
+   "files": [
+    {
+     "file": "LICENSE",
+     "spdx": "Apache-2.0"
+    }
+   ],
+   "claimed": "Apache-2.0",
+   "spdx_headers": [],
+   "verdict": "MATCH"
+  },
+  "readme": {
+   "files": [
+    "README.md"
+   ],
+   "file": "README.md",
+   "words": 1633,
+   "own_words": 916,
+   "template_similarity": 0.58,
+   "closest_template": "wafer-space/gf180mcu-project-template",
+   "verdict": "OK",
+   "note": "1633 words"
+  },
+  "note": ""
+ },
+ {
+  "run": "ws-run2",
+  "code": "TQVD",
+  "project": "TinyQV - RISC-V SoC with HDMI output",
+  "repo_url": "https://github.com/MichaelBell/ws02-tinyQV",
+  "claimed": "Apache-2.0",
+  "status": "cloned",
+  "head": "1ac951fb0fd3",
+  "branch": "main",
+  "github_detected_license": "Apache-2.0",
+  "license": {
+   "files": [
+    {
+     "file": "LICENSE",
+     "spdx": "Apache-2.0"
+    }
+   ],
+   "claimed": "Apache-2.0",
+   "spdx_headers": [],
+   "verdict": "MATCH"
+  },
+  "readme": {
+   "files": [
+    "README.md"
+   ],
+   "file": "README.md",
+   "words": 1693,
+   "own_words": 932,
+   "template_similarity": 0.6,
+   "closest_template": "wafer-space/gf180mcu-project-template",
+   "verdict": "OK",
+   "note": "932 words of own text on top of the template README"
+  },
+  "note": ""
+ },
+ {
+  "run": "ws-run2",
+  "code": "TQVE",
+  "project": "TinyQV - RISC-V SoC with experimental pad setup",
+  "repo_url": null,
+  "claimed": "Apache-2.0",
+  "status": "no repository listed",
+  "note": "Sibling design TQVD is MichaelBell/ws02-tinyQV; no branch or release there corresponds to this variant."
+ },
+ {
+  "run": "ws-run2",
+  "code": "WSLG",
+  "project": "Wafer.Space Logo",
+  "repo_url": "https://github.com/89Mods/ws-logo-die",
+  "claimed": "Apache-2.0",
+  "status": "cloned",
+  "head": "02d2ff4e3768",
+  "branch": "main",
+  "github_detected_license": "Apache-2.0",
+  "license": {
+   "files": [
+    {
+     "file": "LICENSE",
+     "spdx": "Apache-2.0"
+    }
+   ],
+   "claimed": "Apache-2.0",
+   "spdx_headers": [],
+   "verdict": "MATCH"
+  },
+  "readme": {
+   "files": [
+    "README.md"
+   ],
+   "file": "README.md",
+   "words": 731,
+   "own_words": 0,
+   "template_similarity": 1.0,
+   "closest_template": "wafer-space/gf180mcu-project-template",
+   "verdict": "TEMPLATE",
+   "note": "100% identical to the wafer-space/gf180mcu-project-template README; 0 words of own text"
+  },
+  "note": ""
+ }
+]

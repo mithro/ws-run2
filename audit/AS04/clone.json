@@ -1,0 +1,14 @@
+{
+ "run": "ws-run2",
+ "code": "AS04",
+ "errors": [],
+ "submodules": [],
+ "releases": [],
+ "url": "https://github.com/AvalonSemiconductors/ws-submission-2026.git",
+ "head": "a8d75525ecc64722cd742b8102e04c90022afb23",
+ "branch": "main",
+ "head_date": "2026-08-16T00:45:52+02:00",
+ "remote_branches": 2,
+ "tags": 0,
+ "lfs": false
+}

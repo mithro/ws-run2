@@ -1,0 +1,112 @@
+{
+ "run": "ws-run2",
+ "code": "T26B",
+ "errors": [],
+ "submodules": [
+  {
+   "path": "tt-multiplexer",
+   "url": "https://github.com/TinyTapeout/tt-multiplexer/",
+   "ok": true,
+   "seeded_from_mirror": false,
+   "head": "b6bed695c781cd293e38a0ac13641924ebdb24c2"
+  },
+  {
+   "path": "tt",
+   "url": "https://github.com/TinyTapeout/tt-support-tools",
+   "ok": true,
+   "seeded_from_mirror": false,
+   "head": "d4626aaed78b63f7b4f0b1ed2c021de655f5d912"
+  },
+  {
+   "path": "gf180mcu",
+   "url": "https://github.com/wafer-space/gf180mcu",
+   "ok": true,
+   "seeded_from_mirror": true,
+   "head": "cae6f0919a9c27ce0ef9ec05e5b71c6f2cd0efba"
+  },
+  {
+   "path": "librelane",
+   "url": "https://github.com/librelane/librelane",
+   "ok": true,
+   "seeded_from_mirror": true,
+   "head": "e2f0b0e71f0394dc8e3e9b3376a3ceea41837d06"
+  },
+  {
+   "path": "librelane/test/designs",
+   "url": "https://github.com/librelane/librelane-ci-designs.git",
+   "ok": true,
+   "seeded_from_mirror": true,
+   "head": "1ae1cc40c26015a58129be1e2cdcc21de6b5b41e"
+  },
+  {
+   "path": "librelane/test/designs/caravel_user_project_example_full/src",
+   "url": "https://github.com/efabless/caravel_user_project/",
+   "ok": true,
+   "seeded_from_mirror": true,
+   "head": "d9ddc78b65db1d5f8c2871925cdec26bf95b5d53"
+  },
+  {
+   "path": "librelane/test/steps/all",
+   "url": "https://github.com/librelane/librelane-step-unit-tests.git",
+   "ok": true,
+   "seeded_from_mirror": true,
+   "head": "24d88017e62327c1e251fd9c64412ae8b7201cfc"
+  }
+ ],
+ "releases": [
+  {
+   "tag": "tapeout-ws2607",
+   "name": "Wafer Space 2607 (G802) Tapeout",
+   "published": "2026-07-04T10:11:19Z",
+   "assets": [
+    {
+     "name": "foundry_submission.zip",
+     "size": 107032138
+    },
+    {
+     "name": "GDS.zip",
+     "size": 711408272
+    },
+    {
+     "name": "gl_test_vcd.zip",
+     "size": 953041
+    },
+    {
+     "name": "macros.zip",
+     "size": 90735517
+    },
+    {
+     "name": "shuttle_index.zip",
+     "size": 6044
+    },
+    {
+     "name": "tt_gf_wrapper.oas",
+     "size": 15087993
+    },
+    {
+     "name": "tt_gf_wrapper.oas.tt_gf_wrapper.precheck.20260704_101234.log",
+     "size": 5188586
+    },
+    {
+     "name": "tt_gf_wrapper.oas.tt_gf_wrapper.precheck.20260704_101234.output.gds",
+     "size": 472553222
+    },
+    {
+     "name": "tt_gf_wrapper.oas.tt_gf_wrapper.precheck.20260704_101234.output.oas",
+     "size": 15090122
+    },
+    {
+     "name": "tt_gf_wrapper.oas.tt_gf_wrapper.precheck.20260704_101234.runs.tar",
+     "size": 308349349
+    }
+   ]
+  }
+ ],
+ "url": "https://github.com/TinyTapeout/tinytapeout-gf-26b.git",
+ "head": "8c92b24e237fd724e4f4af38bcd777ad012159f4",
+ "branch": "main",
+ "head_date": "2026-09-16T10:36:05+02:00",
+ "remote_branches": 129,
+ "tags": 1,
+ "lfs": false
+}

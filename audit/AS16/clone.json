@@ -1,0 +1,14 @@
+{
+ "run": "ws-run2",
+ "code": "AS16",
+ "errors": [],
+ "submodules": [],
+ "releases": [],
+ "url": "https://github.com/SUD0NET/as16.git",
+ "head": "0cfc5a56b99a41416854f8a0f1d25e4e51ceccf0",
+ "branch": "main",
+ "head_date": "2026-07-17T11:19:01+10:00",
+ "remote_branches": 2,
+ "tags": 0,
+ "lfs": false
+}

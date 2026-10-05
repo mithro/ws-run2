@@ -1,0 +1,17 @@
+{
+ "run": "ws-run2",
+ "code": "WSLG",
+ "project": "Wafer.Space Logo",
+ "slot_size": "1x1",
+ "visibility": "Public",
+ "details": "Die with a big wafer.space logo on it!",
+ "top": "chip_top",
+ "sha256": "d437837bf44854c2b59aa8c0891d8a8fcb710d3f382ec9fe8da9130604590a8d",
+ "layout": "WSLG/chip_top.oas",
+ "repo": {
+  "host": "github.com",
+  "path": "89Mods/ws-logo-die",
+  "branch": null,
+  "url_as_listed": "https://github.com/89Mods/ws-logo-die"
+ }
+}

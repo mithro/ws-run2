@@ -1,0 +1,38 @@
+{
+ "run": "ws-run2",
+ "code": "DPK1",
+ "errors": [],
+ "submodules": [],
+ "releases": [
+  {
+   "tag": "B_1.0",
+   "name": "ws_run2_submission",
+   "published": "2026-07-14T01:02:36Z",
+   "assets": [
+    {
+     "name": "bio180.gds.gz",
+     "size": 20077456
+    },
+    {
+     "name": "bio180.tar.gz",
+     "size": 241626415
+    },
+    {
+     "name": "bio180ws2.tar.gz",
+     "size": 241626415
+    },
+    {
+     "name": "key.log",
+     "size": 163
+    }
+   ]
+  }
+ ],
+ "url": "https://github.com/dpks2003/bio-core.git",
+ "head": "0fe3252bd4afc8a3a808351db772f7e318060e25",
+ "branch": "bio180",
+ "head_date": "2026-07-20T10:56:45+05:30",
+ "remote_branches": 6,
+ "tags": 1,
+ "lfs": false
+}

@@ -1,0 +1,17 @@
+{
+ "run": "ws-run2",
+ "code": "SCTP",
+ "project": "SlugTPU",
+ "slot_size": "1x1",
+ "visibility": "Public",
+ "details": "",
+ "top": "chip_top",
+ "sha256": "8577fe86c530b3ee5cf116278ff60e4333b2bfc3fa4aac713479b54f567b3ca0",
+ "layout": "SCTP/chip_top.oas",
+ "repo": {
+  "host": "github.com",
+  "path": "SlugTPU/gf180mcu-slugtpu",
+  "branch": null,
+  "url_as_listed": "https://github.com/SlugTPU/gf180mcu-slugtpu"
+ }
+}

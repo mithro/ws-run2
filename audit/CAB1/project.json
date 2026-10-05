@@ -1,0 +1,17 @@
+{
+ "run": "ws-run2",
+ "code": "CAB1",
+ "project": "Cabrera CoB",
+ "slot_size": "1x0p5",
+ "visibility": "Public",
+ "details": "",
+ "top": "chip_top",
+ "sha256": "460b282397547267aa506faf6412606701b345035b3da17b319bb20dd03dcd3f",
+ "layout": "CAB1/chip_top.oas",
+ "repo": {
+  "host": "github.com",
+  "path": "ZeduloTech/Cabrera",
+  "branch": null,
+  "url_as_listed": "https://github.com/ZeduloTech/Cabrera"
+ }
+}

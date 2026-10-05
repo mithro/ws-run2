@@ -1,0 +1,17 @@
+{
+ "run": "ws-run2",
+ "code": "SCMT",
+ "project": "microTheia",
+ "slot_size": "1x1",
+ "visibility": "Public",
+ "details": "Programmable event-based machine-vision system. Compatible with EVT2 encoded event stream delivered via SPI type-0 dedicated pins.",
+ "top": "chip_top",
+ "sha256": "d4739ad663893efa43ddf57b7c2a53d4bbbf8fd6be475fd81254444335273aa3",
+ "layout": "SCMT/chip_top.oas",
+ "repo": {
+  "host": "github.com",
+  "path": "dhgaddy/microTheia",
+  "branch": null,
+  "url_as_listed": "https://github.com/dhgaddy/microTheia"
+ }
+}

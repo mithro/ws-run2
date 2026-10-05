@@ -1,0 +1,61 @@
+{
+ "run": "ws-run2",
+ "code": "CAFE",
+ "errors": [
+  "submodule src/coffeepot/src/bf16 (https://github.com/Essenceia/BFloat16): error: pathspec 'src/bf16' did not match any file(s) known to git",
+  "submodule src/coffeepot/src/sram (git@github.com:RTimothyEdwards/gf180mcu_ocd_ip_sram.git): error: pathspec 'src/sram' did not match any file(s) known to git",
+  "submodule src/coldbrew/src/bf16 (https://github.com/Essenceia/BFloat16): error: pathspec 'src/bf16' did not match any file(s) known to git"
+ ],
+ "submodules": [
+  {
+   "path": "src/coffeepot",
+   "url": "git@github.com:Essenceia/ethernet_switch_asic.git",
+   "ok": true,
+   "seeded_from_mirror": true,
+   "head": "fcf8ef55b75f07cfdd2b3be7089b79a727cc68d1"
+  },
+  {
+   "path": "src/coffeepot/src/bf16",
+   "url": "https://github.com/Essenceia/BFloat16",
+   "ok": false,
+   "seeded_from_mirror": true,
+   "head": ""
+  },
+  {
+   "path": "src/coffeepot/src/sram",
+   "url": "git@github.com:RTimothyEdwards/gf180mcu_ocd_ip_sram.git",
+   "ok": false,
+   "seeded_from_mirror": true,
+   "head": ""
+  },
+  {
+   "path": "src/coldbrew",
+   "url": "git@github.com:Essenceia/Until_Heat_Death_Do_Us_Part.git",
+   "ok": true,
+   "seeded_from_mirror": true,
+   "head": "909dfd2e723e08127a72116e40638b7338ffe1dd"
+  },
+  {
+   "path": "src/coldbrew/src/bf16",
+   "url": "https://github.com/Essenceia/BFloat16",
+   "ok": false,
+   "seeded_from_mirror": true,
+   "head": ""
+  }
+ ],
+ "releases": [
+  {
+   "tag": "ws_run2",
+   "name": "Wafer.Space run2 - Tapeout Global Foundary 180nm",
+   "published": "2026-07-15T23:38:45Z",
+   "assets": []
+  }
+ ],
+ "url": "https://github.com/Essenceia/Expresso_ASIC_Chip.git",
+ "head": "80a20dedd124f60ce82740634c688290b85fbe36",
+ "branch": "main",
+ "head_date": "2026-07-22T14:41:05-05:00",
+ "remote_branches": 9,
+ "tags": 2,
+ "lfs": false
+}

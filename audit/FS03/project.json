@@ -1,0 +1,17 @@
+{
+ "run": "ws-run2",
+ "code": "FS03",
+ "project": "Test chip with 5V SRAM blocks",
+ "slot_size": "0p5x1",
+ "visibility": "Public",
+ "details": "",
+ "top": "chip_top",
+ "sha256": "a7c6de35936dc60a4421b19d24b6c6f15274b03d7f30508ea9e19683d64b6d9d",
+ "layout": "FS03/chip_top.oas",
+ "repo": {
+  "host": "gitlab.com",
+  "path": "Chips4Makers/arrakeen-sram-testchip",
+  "branch": null,
+  "url_as_listed": "https://gitlab.com/Chips4Makers/arrakeen-sram-testchip"
+ }
+}

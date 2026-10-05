@@ -1,0 +1,14 @@
+{
+ "run": "ws-run2",
+ "code": "OCD3",
+ "errors": [],
+ "submodules": [],
+ "releases": [],
+ "url": "https://github.com/RTimothyEdwards/gf180mcu_ocd_sram_test.git",
+ "head": "6d4f6099546c0540911007e7eebde9e61f1fcf8b",
+ "branch": "main",
+ "head_date": "2026-07-04T19:22:34-04:00",
+ "remote_branches": 2,
+ "tags": 0,
+ "lfs": false
+}

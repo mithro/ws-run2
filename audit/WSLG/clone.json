@@ -1,0 +1,29 @@
+{
+ "run": "ws-run2",
+ "code": "WSLG",
+ "errors": [],
+ "submodules": [
+  {
+   "path": "gf180mcu_as_ex_mcu7t5v0",
+   "url": "https://github.com/AvalonSemiconductors/gf180mcu_as_ex_mcu7t5v0",
+   "ok": true,
+   "seeded_from_mirror": true,
+   "head": "6b7ac1f60a8cfbfed99c1129c96caff898816010"
+  },
+  {
+   "path": "vga_screensaver/tt-waferspace-vga-screensaver",
+   "url": "https://github.com/TinyTapeout/tt-waferspace-vga-screensaver",
+   "ok": true,
+   "seeded_from_mirror": false,
+   "head": "ef9a2f006336c53c4f857ffde2e27db73368d254"
+  }
+ ],
+ "releases": [],
+ "url": "https://github.com/89Mods/ws-logo-die.git",
+ "head": "02d2ff4e376898efc23d423d72823f29d5b09357",
+ "branch": "main",
+ "head_date": "2025-12-11T22:03:50+01:00",
+ "remote_branches": 2,
+ "tags": 0,
+ "lfs": false
+}

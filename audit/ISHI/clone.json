@@ -1,0 +1,14 @@
+{
+ "run": "ws-run2",
+ "code": "ISHI",
+ "errors": [],
+ "submodules": [],
+ "releases": [],
+ "url": "https://github.com/ishi-kai/ISHI-KAI_Multiple_Projects_WaferSapce-GF180-2.git",
+ "head": "1a0be37edb4bc61b284135d3fd1d93bf9fba23bf",
+ "branch": "main",
+ "head_date": "2026-07-14T16:52:16+09:00",
+ "remote_branches": 2,
+ "tags": 0,
+ "lfs": false
+}

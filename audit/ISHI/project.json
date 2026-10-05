@@ -1,0 +1,17 @@
+{
+ "run": "ws-run2",
+ "code": "ISHI",
+ "project": "ISHI-KAI_Multiple_Projects_WaferSapce-GF180-2",
+ "slot_size": "0p5x1",
+ "visibility": "Public",
+ "details": "ISHI-KAI's Multiple Projects Wafer for Wafer.Sapce GF180 Run 2.",
+ "top": "ISHI-KAI_WS_RUN2",
+ "sha256": "fe636badbff6d2b0bb0063b8925a81f8f4eac965b1cba9d4452a1dc32389f933",
+ "layout": "ISHI/ISHI-KAI_WS_RUN2.oas",
+ "repo": {
+  "host": "github.com",
+  "path": "ishi-kai/ISHI-KAI_Multiple_Projects_WaferSapce-GF180-2",
+  "branch": null,
+  "url_as_listed": "https://github.com/ishi-kai/ISHI-KAI_Multiple_Projects_WaferSapce-GF180-2"
+ }
+}

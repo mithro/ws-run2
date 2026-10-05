@@ -1,0 +1,17 @@
+{
+ "run": "ws-run2",
+ "code": "MEME",
+ "project": "Artwork Meme Chip",
+ "slot_size": "1x0p5",
+ "visibility": "Public",
+ "details": "Meme chip for marketing and swag",
+ "top": "chip_top",
+ "sha256": "01cef474958a4d1ad2987dbaf673d2d128b48d406808ea8b2aaeb04cf80ac5af",
+ "layout": "MEME/chip_top.oas",
+ "repo": {
+  "host": "github.com",
+  "path": "anfroholic/meme_chip",
+  "branch": null,
+  "url_as_listed": "https://github.com/anfroholic/meme_chip"
+ }
+}

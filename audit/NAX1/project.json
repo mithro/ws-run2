@@ -1,0 +1,17 @@
+{
+ "run": "ws-run2",
+ "code": "NAX1",
+ "project": "Naxos CoB",
+ "slot_size": "1x0p5",
+ "visibility": "Public",
+ "details": "",
+ "top": "chip_top",
+ "sha256": "87cbe92fe0c04989ca61483353f0acb86ae440e4f37ae9867e36ff453440de4e",
+ "layout": "NAX1/chip_top.oas",
+ "repo": {
+  "host": "github.com",
+  "path": "ZeduloTech/Naxos",
+  "branch": null,
+  "url_as_listed": "https://github.com/ZeduloTech/Naxos"
+ }
+}

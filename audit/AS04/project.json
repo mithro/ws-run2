@@ -1,0 +1,17 @@
+{
+ "run": "ws-run2",
+ "code": "AS04",
+ "project": "AS04 Multi-Project die using 3.3V SCL",
+ "slot_size": "1x1",
+ "visibility": "Public",
+ "details": "Contains:\n- 6502/6510/PLA replicas\n- SID replicas\n- rv32ima_zicsr_smnmi core\n- Retro DRAM controller\n- GPIO chip\n- NTSC Test signal generator\n- FM Synth\n- Digital-to-Analog converters\n- Two layouts generated using [FeatherLane](https://codeberg.org/TholinVali/FeatherLane)",
+ "top": "chip_top",
+ "sha256": "3601f75953aab1b4d93dd772bf08884288c2d5a4be77bb4c48d4bf1fdc12e29e",
+ "layout": "AS04/chip_top.oas",
+ "repo": {
+  "host": "github.com",
+  "path": "AvalonSemiconductors/ws-submission-2026",
+  "branch": null,
+  "url_as_listed": "https://github.com/AvalonSemiconductors/ws-submission-2026/"
+ }
+}

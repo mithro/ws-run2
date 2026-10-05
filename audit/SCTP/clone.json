@@ -1,0 +1,32 @@
+{
+ "run": "ws-run2",
+ "code": "SCTP",
+ "errors": [
+  "submodule ip/gf180mcu_ocd_ip_sram (https://github.com/RTimothyEdwards/gf180mcu_ocd_ip_sram.git): error: pathspec 'ip/gf180mcu_ocd_ip_sram' did not match any file(s) known to git",
+  "submodule ip/gf180mcu_as_sc_mcu7t3v3 (https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3): error: pathspec 'ip/gf180mcu_as_sc_mcu7t3v3' did not match any file(s) known to git"
+ ],
+ "submodules": [
+  {
+   "path": "ip/gf180mcu_ocd_ip_sram",
+   "url": "https://github.com/RTimothyEdwards/gf180mcu_ocd_ip_sram.git",
+   "ok": false,
+   "seeded_from_mirror": true,
+   "head": ""
+  },
+  {
+   "path": "ip/gf180mcu_as_sc_mcu7t3v3",
+   "url": "https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3",
+   "ok": false,
+   "seeded_from_mirror": true,
+   "head": ""
+  }
+ ],
+ "releases": [],
+ "url": "https://github.com/SlugTPU/gf180mcu-slugtpu.git",
+ "head": "e906c153f87894fcb4923e7594ff3a4b0960dd7b",
+ "branch": "main",
+ "head_date": "2026-07-13T03:04:42-07:00",
+ "remote_branches": 10,
+ "tags": 1,
+ "lfs": false
+}

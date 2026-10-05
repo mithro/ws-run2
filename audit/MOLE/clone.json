@@ -1,0 +1,46 @@
+{
+ "run": "ws-run2",
+ "code": "MOLE",
+ "errors": [],
+ "submodules": [
+  {
+   "path": "ip/fabulous-tiles",
+   "url": "https://github.com/mole99/fabulous-tiles",
+   "ok": true,
+   "seeded_from_mirror": true,
+   "head": "276f289449c04f72755f4cf3b01f556deb0a2a7c"
+  }
+ ],
+ "releases": [
+  {
+   "tag": "1.0.0",
+   "name": "Tapeout",
+   "published": "2026-09-16T16:40:21Z",
+   "assets": [
+    {
+     "name": "chip_top.oas",
+     "size": 2444158
+    },
+    {
+     "name": "chip_top.png",
+     "size": 2060399
+    },
+    {
+     "name": "classic_fabric_wsrun2.zip",
+     "size": 16445412
+    },
+    {
+     "name": "final.zip",
+     "size": 97327143
+    }
+   ]
+  }
+ ],
+ "url": "https://github.com/mole99/wsrun2-fabulous-fpga.git",
+ "head": "282dda832c62c9c7f3ea19ebe66999ea475ce793",
+ "branch": "main",
+ "head_date": "2026-09-16T11:35:46+02:00",
+ "remote_branches": 2,
+ "tags": 1,
+ "lfs": false
+}

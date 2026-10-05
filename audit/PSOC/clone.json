@@ -1,0 +1,14 @@
+{
+ "run": "ws-run2",
+ "code": "PSOC",
+ "errors": [],
+ "submodules": [],
+ "releases": [],
+ "url": "https://github.com/burnettlab/picosoc-on-waferspace.git",
+ "head": "a5283bc607b02491bb697262a23675171a329699",
+ "branch": "main",
+ "head_date": "2026-07-13T11:02:00-04:00",
+ "remote_branches": 2,
+ "tags": 0,
+ "lfs": false
+}

@@ -1,0 +1,17 @@
+{
+ "run": "ws-run2",
+ "code": "T26B",
+ "project": "Tiny Tapeout GF 26b",
+ "slot_size": "1x1",
+ "visibility": "Public",
+ "details": "",
+ "top": "tt_gf_wrapper",
+ "sha256": "8e74d7f09232998da14468dbadb1608be1dcd44f160ac8d42f847d772f120883",
+ "layout": "T26B/tt_gf_wrapper.oas",
+ "repo": {
+  "host": "github.com",
+  "path": "TinyTapeout/tinytapeout-gf-26b",
+  "branch": null,
+  "url_as_listed": "https://github.com/TinyTapeout/tinytapeout-gf-26b"
+ }
+}

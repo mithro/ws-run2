@@ -1,0 +1,17 @@
+{
+ "run": "ws-run2",
+ "code": "CAFE",
+ "project": "Expresso Ethernet Chip: 100Mbps Ethernet switch + Heat death of the Universe Beacon - 0.5x0.5 version - Preferred version",
+ "slot_size": "0p5x0p5",
+ "visibility": "Public",
+ "details": "This chip is an open source Ethernet focused ASIC featuring both an 4 port, 100Mbps capable cut-through, unmanaged, Ethernet switch and an Ethernet connected beacon, broadcasting an ethernet frame every second with an uptime count until the heat death of the universe. \n\n\nBoth designs have been validated on an FPGA. \n\nThis is the default 0.5x0.5 slot size for this project and is also the version that has been the most worked on.",
+ "top": "chip_top",
+ "sha256": "ad79e563dbae4aa31f51885d41fd0500bd2a635538c428eb3529aa88416b4d86",
+ "layout": "CAFE/chip_top.oas",
+ "repo": {
+  "host": "github.com",
+  "path": "Essenceia/Expresso_ASIC_Chip",
+  "branch": null,
+  "url_as_listed": "https://github.com/Essenceia/Expresso_ASIC_Chip"
+ }
+}

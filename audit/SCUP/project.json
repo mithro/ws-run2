@@ -1,0 +1,17 @@
+{
+ "run": "ws-run2",
+ "code": "SCUP",
+ "project": "GF180MCU Peripherals",
+ "slot_size": "1x1",
+ "visibility": "Public",
+ "details": "This open-source chip demonstrates an RMII Ethernet MAC, an SDcard reader, an SDRAM controller, and several different configurations of PLLs.",
+ "top": "chip_top",
+ "sha256": "5d7c4c3e5b7af46319e09411faa69757efdcea7b52653e0d8e102a7489d35d03",
+ "layout": "SCUP/chip_top.oas",
+ "repo": {
+  "host": "github.com",
+  "path": "sifferman/gf180mcu-peripherals",
+  "branch": null,
+  "url_as_listed": "https://github.com/sifferman/gf180mcu-peripherals"
+ }
+}

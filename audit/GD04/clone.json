@@ -1,0 +1,45 @@
+{
+ "run": "ws-run2",
+ "code": "GD04",
+ "errors": [],
+ "submodules": [
+  {
+   "path": "ip/subservient",
+   "url": "https://github.com/olofk/subservient.git",
+   "ok": true,
+   "seeded_from_mirror": true,
+   "head": "0989597f7a229bd4ae0f7400f7bf6ab483c66205"
+  },
+  {
+   "path": "ip/serv",
+   "url": "https://github.com/olofk/serv.git",
+   "ok": true,
+   "seeded_from_mirror": true,
+   "head": "61ef8eaef9f795e2e5425f620e96c6f732a5609b"
+  }
+ ],
+ "releases": [
+  {
+   "tag": "release-r1p0",
+   "name": "Release r1p0",
+   "published": "2025-12-11T08:19:23Z",
+   "assets": [
+    {
+     "name": "gf180mcu-racquet-1x0.5-r1.0.gds.gz",
+     "size": 22140152
+    },
+    {
+     "name": "gf180mcu-racquet-1x0.5-r1.0.tar.gz",
+     "size": 221842753
+    }
+   ]
+  }
+ ],
+ "url": "https://github.com/gregdavill/gf180mcu-racquet-1x0.5.git",
+ "head": "a64a899dabd2b2e2fb1ea71fc35ffe5fb59aff04",
+ "branch": "develop",
+ "head_date": "2026-04-05T18:47:56+09:30",
+ "remote_branches": 2,
+ "tags": 1,
+ "lfs": false
+}

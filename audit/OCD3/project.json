@@ -1,0 +1,17 @@
+{
+ "run": "ws-run2",
+ "code": "OCD3",
+ "project": "3.3V SRAM test 2",
+ "slot_size": "1x0p5",
+ "visibility": "Public",
+ "details": "A variant of the 3.3V SRAM test chip submitted for the first shuttle run.\nThis one has the new 64 byte SRAM block on it, which was designed to (maybe) fit in a single Tiny Tapeout tile.\nIt also has a new design of a 3.3V power-on-reset (PoR) block.",
+ "top": "gf180mcu_ocd_sram2_top",
+ "sha256": "ade917d96d21487183fe9ab5bac473eb5b4fb32b1c6238f773b9d9714d46a360",
+ "layout": "OCD3/gf180mcu_ocd_sram2_top.oas",
+ "repo": {
+  "host": "github.com",
+  "path": "RTimothyEdwards/gf180mcu_ocd_sram_test",
+  "branch": null,
+  "url_as_listed": "https://github.com/RTimothyEdwards/gf180mcu_ocd_sram_test"
+ }
+}

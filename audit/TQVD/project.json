@@ -1,0 +1,17 @@
+{
+ "run": "ws-run2",
+ "code": "TQVD",
+ "project": "TinyQV - RISC-V SoC with HDMI output",
+ "slot_size": "0p5x0p5",
+ "visibility": "Public",
+ "details": "This version of TinyQV uses the new 3v3 standard cell library, 3v3 SRAM macros and the split voltage pads.  Apart from that it is similar to the Run 1 TinyQV, but with additional scratch RAM, new HDMI/VGA text mode output support and a single 8-bit DAC.",
+ "top": "chip_top",
+ "sha256": "f4ab93b2b79917afe4ad833e81918b9659b0d11873c9f3e682e26fa4e656e0df",
+ "layout": "TQVD/chip_top.oas",
+ "repo": {
+  "host": "github.com",
+  "path": "MichaelBell/ws02-tinyQV",
+  "branch": null,
+  "url_as_listed": "https://github.com/MichaelBell/ws02-tinyQV"
+ }
+}

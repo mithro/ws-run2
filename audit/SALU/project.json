@@ -1,0 +1,17 @@
+{
+ "run": "ws-run2",
+ "code": "SALU",
+ "project": "Simple ALU",
+ "slot_size": "0p5x0p5",
+ "visibility": "Public",
+ "details": "A simple ALU design written in Scala through Chisel",
+ "top": "chip_top",
+ "sha256": "95774f2b7586e446b69d0146fb0d01664894462d9c04e75be54e31e63973f477",
+ "layout": "SALU/chip_top.oas",
+ "repo": {
+  "host": "github.com",
+  "path": "StackDoubleFlow/alu_silicon",
+  "branch": null,
+  "url_as_listed": "https://github.com/StackDoubleFlow/alu_silicon"
+ }
+}

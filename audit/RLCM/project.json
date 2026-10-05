@@ -1,0 +1,17 @@
+{
+ "run": "ws-run2",
+ "code": "RLCM",
+ "project": "RLCM: Test Passives For GF180MCUD",
+ "slot_size": "0p5x1",
+ "visibility": "Public",
+ "details": "This TO aims to have a kind of test passives to verify the automated openEMS flow used to simulate passives on GF180MCUD.",
+ "top": "RLCMV4_filled",
+ "sha256": "aec9076cbcd44f78f9e4d5ecbbfff4dcdd5f5e95a395db350faa8ee287ded6f2",
+ "layout": "RLCM/RLCMV4_filled.oas",
+ "repo": {
+  "host": "github.com",
+  "path": "EngGhaith/RLCM-Test-Passives-For-GF180MCUD",
+  "branch": null,
+  "url_as_listed": "https://github.com/EngGhaith/RLCM-Test-Passives-For-GF180MCUD"
+ }
+}

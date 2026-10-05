@@ -1,0 +1,17 @@
+{
+ "run": "ws-run2",
+ "code": "EURO",
+ "project": "EuroSynth",
+ "slot_size": "1x0p5",
+ "visibility": "Public",
+ "details": "A kitchen-sink synthesizer voice in custom silicon \u2014 a fully digital eurorack synth voice taped out on the open-source GlobalFoundries 180 nm (GF180MCU) PDK with the LibreLane RTL-to-GDSII flow.",
+ "top": "chip_top",
+ "sha256": "2e0ca16366580a2513c158cb5e7c41d12c16734575deef3f73d085b5b52e0b7c",
+ "layout": "EURO/chip_top.oas",
+ "repo": {
+  "host": "github.com",
+  "path": "anfroholic/eurosynth",
+  "branch": null,
+  "url_as_listed": "https://github.com/anfroholic/eurosynth"
+ }
+}

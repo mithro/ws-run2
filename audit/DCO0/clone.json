@@ -1,0 +1,14 @@
+{
+ "run": "ws-run2",
+ "code": "DCO0",
+ "errors": [],
+ "submodules": [],
+ "releases": [],
+ "url": "https://github.com/asinghani/ws-dco-tdc.git",
+ "head": "c5b10fc855d7484742d61f6dc2be33f0efcba10d",
+ "branch": "main",
+ "head_date": "2026-07-14T12:38:48Z",
+ "remote_branches": 2,
+ "tags": 0,
+ "lfs": false
+}

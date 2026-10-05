@@ -1,0 +1,14 @@
+{
+ "run": "ws-run2",
+ "code": "CAB1",
+ "errors": [],
+ "submodules": [],
+ "releases": [],
+ "url": "https://github.com/ZeduloTech/Cabrera.git",
+ "head": "2081f9bda695c546efd156bfabded1ded4d947e1",
+ "branch": "main",
+ "head_date": "2026-07-15T09:28:46+05:00",
+ "remote_branches": 2,
+ "tags": 0,
+ "lfs": false
+}

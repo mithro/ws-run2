@@ -1,0 +1,17 @@
+{
+ "run": "ws-run2",
+ "code": "AMM1",
+ "project": "raybox-zero wafer.space run 2 half height",
+ "slot_size": "1x0p5",
+ "visibility": "Public",
+ "details": "LibreLane digital project implementing Anton Maurovic's (algofoogle's) raybox-zero \"3D\" ray caster demo with SPI interface for \"game like\" control by a host PC or MCU, optional texture-map QSPI ROM interface, and Tiny VGA compatible digital RGB222 VGA output.",
+ "top": "chip_top",
+ "sha256": "9fd12a480a5a546316cd773c73d38bf3dab0793bb342bcfeea1900322d284390",
+ "layout": "AMM1/chip_top.oas",
+ "repo": {
+  "host": "github.com",
+  "path": "algofoogle/gf180ws2-raybox-zero",
+  "branch": null,
+  "url_as_listed": "https://github.com/algofoogle/gf180ws2-raybox-zero"
+ }
+}

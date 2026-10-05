@@ -1,0 +1,17 @@
+{
+ "run": "ws-run2",
+ "code": "T0P3",
+ "project": "Tiny Tapeout GF 0p3",
+ "slot_size": "1x1",
+ "visibility": "Public",
+ "details": "Experimental Tiny Tapeout shuttle with Analog design support",
+ "top": "tt_gf_wrapper",
+ "sha256": "da186a238bbedbba3d1471c54dd6bbfc7d8b2862d2dce9fd0d0cc9704579e399",
+ "layout": "T0P3/tt_gf_wrapper.oas",
+ "repo": {
+  "host": "github.com",
+  "path": "TinyTapeout/tinytapeout-gf-0p3",
+  "branch": null,
+  "url_as_listed": "https://github.com/TinyTapeout/tinytapeout-gf-0p3"
+ }
+}

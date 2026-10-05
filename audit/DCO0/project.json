@@ -1,0 +1,17 @@
+{
+ "run": "ws-run2",
+ "code": "DCO0",
+ "project": "Standard Cell DCO+TDC",
+ "slot_size": "1x0p5",
+ "visibility": "Public",
+ "details": "A tiny Digital Controlled Oscillator + Time-to-Digital Converter comprised entirely in gf180 standard cells",
+ "top": "chip_top",
+ "sha256": "1e4c9dc80cc2654fb05401c688a7705944aa0ab0614b1f8ea93ff101a5f83be8",
+ "layout": "DCO0/chip_top.oas",
+ "repo": {
+  "host": "github.com",
+  "path": "asinghani/ws-dco-tdc",
+  "branch": null,
+  "url_as_listed": "https://github.com/asinghani/ws-dco-tdc"
+ }
+}

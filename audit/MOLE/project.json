@@ -1,0 +1,17 @@
+{
+ "run": "ws-run2",
+ "code": "MOLE",
+ "project": "FABulous FPGA",
+ "slot_size": "1x1",
+ "visibility": "Public",
+ "details": "This is an improved version of my FABulous FPGA on wafer.space run 1. Notably, it uses 3.3V standard cells and SRAM macros, as well as 3.3V/5V compatible I/O cells.",
+ "top": "chip_top",
+ "sha256": "f1845bac051520d0a34f5835012ff03d3b484a30d7c741a7a77b42298424c7b1",
+ "layout": "MOLE/chip_top.oas",
+ "repo": {
+  "host": "github.com",
+  "path": "mole99/wsrun2-fabulous-fpga",
+  "branch": null,
+  "url_as_listed": "https://github.com/mole99/wsrun2-fabulous-fpga"
+ }
+}

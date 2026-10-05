@@ -1,0 +1,12 @@
+{
+ "run": "ws-run2",
+ "code": "TQVE",
+ "project": "TinyQV - RISC-V SoC with experimental pad setup",
+ "slot_size": "0p5x0p5",
+ "visibility": "Public",
+ "details": "This version of TinyQV uses the new 3v3 standard cell library, 3v3 SRAM macros and a single line of pads to allow more area with fewer pins.  The extra space is used for 9.5kB of scratch RAM.  It also has a USB CDC peripheral which should allow serial comms without an external UART.",
+ "top": "chip_top",
+ "sha256": "67b553d085bad20db1898fc5458e8875a7f82d59a7b519e3bcb8e71c247302e5",
+ "layout": "TQVE/chip_top.oas",
+ "repo": null
+}

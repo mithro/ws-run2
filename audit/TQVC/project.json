@@ -1,0 +1,17 @@
+{
+ "run": "ws-run2",
+ "code": "TQVC",
+ "project": "TinyQV - Crowdsourced Risc-V SoC (1x0.5)",
+ "slot_size": "1x0p5",
+ "visibility": "Public",
+ "details": "A Risc-V RV32EC SoC with peripherals from the Tiny Tapeout Risc-V competition. This version uses a half height slot (but is otherwise identical to the quarter size version)",
+ "top": "chip_top",
+ "sha256": "91e1d0ca36b092672c864f8257369fad88b417ec2060dcf3c26cbff10bd4f0e7",
+ "layout": "TQVC/chip_top.oas",
+ "repo": {
+  "host": "github.com",
+  "path": "MichaelBell/ws01-tinyQV",
+  "branch": null,
+  "url_as_listed": "https://github.com/MichaelBell/ws01-tinyQV"
+ }
+}

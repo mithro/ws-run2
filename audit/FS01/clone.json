@@ -1,0 +1,25 @@
+{
+ "run": "ws-run2",
+ "code": "FS01",
+ "errors": [],
+ "submodules": [],
+ "releases": [
+  {
+   "tag": "v0.3",
+   "name": "Release v0.3",
+   "published": "2026-07-21T08:23:10.535Z",
+   "assets": [
+    {
+     "name": "gds files"
+    }
+   ]
+  }
+ ],
+ "url": "https://gitlab.com/Chips4Makers/arrakeen-sram-testchip.git",
+ "head": "2ce18dbe27df529a08bd67099f419e75fd43b69c",
+ "branch": "main",
+ "head_date": "2026-07-21T09:39:17+02:00",
+ "remote_branches": 3,
+ "tags": 3,
+ "lfs": false
+}

@@ -1,0 +1,17 @@
+{
+ "run": "ws-run2",
+ "code": "GD04",
+ "project": "Racquet Wide 1x0.5",
+ "slot_size": "1x0p5",
+ "visibility": "Public",
+ "details": "A Configuration of racquet, a multicore Serv based SoC\n - 9t 5v0 standard cells\n - Difetto to incorporate DFT scan chain into design\n - 6 cores",
+ "top": "chip_top",
+ "sha256": "3fa8774ab2004a50c5778f76bfc98010231bee17ec938de6f81c6006bcab28c6",
+ "layout": "GD04/chip_top.oas",
+ "repo": {
+  "host": "github.com",
+  "path": "gregdavill/gf180mcu-racquet-1x0.5",
+  "branch": null,
+  "url_as_listed": "https://github.com/gregdavill/gf180mcu-racquet-1x0.5"
+ }
+}

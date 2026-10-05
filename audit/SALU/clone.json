@@ -1,0 +1,26 @@
+{
+ "run": "ws-run2",
+ "code": "SALU",
+ "errors": [],
+ "submodules": [],
+ "releases": [
+  {
+   "tag": "v1.0",
+   "name": "Initial Design Files",
+   "published": "2026-07-15T01:45:05Z",
+   "assets": [
+    {
+     "name": "design.gds.gz",
+     "size": 9722521
+    }
+   ]
+  }
+ ],
+ "url": "https://github.com/StackDoubleFlow/alu_silicon.git",
+ "head": "15ae8bf01675b4dc2581c38acf53a924be9c39d9",
+ "branch": "main",
+ "head_date": "2026-07-14T20:44:53-05:00",
+ "remote_branches": 2,
+ "tags": 1,
+ "lfs": false
+}

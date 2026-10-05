@@ -1,0 +1,12 @@
+{
+ "run": "ws-run2",
+ "code": "BTX1",
+ "project": "BTX",
+ "slot_size": "1x1",
+ "visibility": "Public",
+ "details": "Path-tracing accelerator chip",
+ "top": "chip_top",
+ "sha256": "3e931e0d0dd561d9f03c93f55e4569af7c24a2ef58ad529d0a9bad68b6d6e4e0",
+ "layout": "BTX1/chip_top.oas",
+ "repo": null
+}

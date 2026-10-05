@@ -1,0 +1,42 @@
+{
+ "run": "ws-run2",
+ "code": "TQVC",
+ "errors": [],
+ "submodules": [
+  {
+   "path": "src/tinyQV",
+   "url": "https://github.com/MichaelBell/tinyQV.git",
+   "ok": true,
+   "seeded_from_mirror": true,
+   "head": "880b4f476a98e674f9b4ed692cc8d8548c60f7fa"
+  }
+ ],
+ "releases": [
+  {
+   "tag": "ws-run1",
+   "name": "Wafer Space Run1 artifacts",
+   "published": "2026-05-20T18:40:52Z",
+   "assets": [
+    {
+     "name": "tinyqv_hheight.gds.gz",
+     "size": 21498494
+    },
+    {
+     "name": "tinyqv_hwidth.gds.gz",
+     "size": 21358738
+    },
+    {
+     "name": "tinyqv_quarter.gds.gz",
+     "size": 15293209
+    }
+   ]
+  }
+ ],
+ "url": "https://github.com/MichaelBell/ws01-tinyQV.git",
+ "head": "2c8630bce07f661ff378f700b0e54146c78f4c4a",
+ "branch": "main",
+ "head_date": "2026-08-14T22:44:07+01:00",
+ "remote_branches": 2,
+ "tags": 1,
+ "lfs": false
+}

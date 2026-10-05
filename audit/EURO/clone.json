@@ -1,0 +1,14 @@
+{
+ "run": "ws-run2",
+ "code": "EURO",
+ "errors": [],
+ "submodules": [],
+ "releases": [],
+ "url": "https://github.com/anfroholic/eurosynth.git",
+ "head": "606cb4d8cd1e81213fdee766e7515eb51a65cb57",
+ "branch": "main",
+ "head_date": "2026-07-05T15:42:51-05:00",
+ "remote_branches": 7,
+ "tags": 0,
+ "lfs": false
+}

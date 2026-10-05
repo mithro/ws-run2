@@ -1,0 +1,17 @@
+{
+ "run": "ws-run2",
+ "code": "DPK1",
+ "project": "bio180",
+ "slot_size": "0p5x1",
+ "visibility": "Public",
+ "details": "Dual Core BIO: The Bao I/O Co-processor from baochip-1x with 4Kb of SRAM on gf180 with SPI host.",
+ "top": "chip_top",
+ "sha256": "c72c96af396a8b064d44aac847653ed1db127b163275ab539d66e591b8b09c2d",
+ "layout": "DPK1/chip_top.oas",
+ "repo": {
+  "host": "github.com",
+  "path": "dpks2003/bio-core",
+  "branch": null,
+  "url_as_listed": "https://github.com/dpks2003/bio-core"
+ }
+}

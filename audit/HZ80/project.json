@@ -1,0 +1,17 @@
+{
+ "run": "ws-run2",
+ "code": "HZ80",
+ "project": "FOSSi open-source replacement for Z80 classic 8-bit CPU (0.5 x 1 slot)",
+ "slot_size": "0p5x1",
+ "visibility": "Public",
+ "details": "Silicon proven, pin compatible, open-source replacement for Zilog Z80 a classic 8-bit CPU.\nhttps://github.com/rejunity/z80-open-silicon",
+ "top": "chip_top",
+ "sha256": "95ae5a1998b7e18c28819513726907e2d0e339ca14aad72050f87b343f49cdca",
+ "layout": "HZ80/chip_top.oas",
+ "repo": {
+  "host": "github.com",
+  "path": "rejunity/ws0-z80-open-silicon-gf180mcu",
+  "branch": null,
+  "url_as_listed": "https://github.com/rejunity/ws0-z80-open-silicon-gf180mcu"
+ }
+}

@@ -1,0 +1,17 @@
+{
+ "run": "ws-run2",
+ "code": "DPK2",
+ "project": "cordic-romless-x8",
+ "slot_size": "0p5x0p5",
+ "visibility": "Public",
+ "details": "8 ROM-less CORDIC engines , each with its owe SPI-slave interface.  Each core implements a  CORDIC which work on a 16-bit signed fixed-point input Q3.16 (1 sign bit, 3 integer bits, and 12 fraction bits). This engine utilizes SPI-slave interface to receive four 16-bit signed fixed-point inputs (atan\u2080, alpha, x, y) and returns three 16-bit signed fixed-point outputs (alpha, cos\u03b8, sin\u03b8).  With the arctan micro-rotation angles generated on the fly by Taylor-series approximation , no coefficient ROM required.\n\nAFASIK :  Its the only ROM-Less Implementation for CORDIC Algorithm",
+ "top": "chip_top",
+ "sha256": "cb0ae7f6006b7527866a82eb317ce5ff258bfbb24b3e5a7e11e1a2d8690b7817",
+ "layout": "DPK2/chip_top.oas",
+ "repo": {
+  "host": "github.com",
+  "path": "dpks2003/cordic-romless",
+  "branch": null,
+  "url_as_listed": "https://github.com/dpks2003/cordic-romless"
+ }
+}

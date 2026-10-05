@@ -1,0 +1,26 @@
+{
+ "run": "ws-run2",
+ "code": "SCML",
+ "errors": [],
+ "submodules": [],
+ "releases": [
+  {
+   "tag": "final-gds",
+   "name": "final-gds",
+   "published": "2026-07-15T09:49:53Z",
+   "assets": [
+    {
+     "name": "chip_top.gds",
+     "size": 213579098
+    }
+   ]
+  }
+ ],
+ "url": "https://github.com/kjconway5/ML-Audio.git",
+ "head": "94e7733b0add291e400552de6164f1f77c4a051b",
+ "branch": "main",
+ "head_date": "2026-08-07T20:50:18+01:00",
+ "remote_branches": 12,
+ "tags": 3,
+ "lfs": false
+}

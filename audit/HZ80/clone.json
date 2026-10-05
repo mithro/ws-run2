@@ -1,0 +1,14 @@
+{
+ "run": "ws-run2",
+ "code": "HZ80",
+ "errors": [],
+ "submodules": [],
+ "releases": [],
+ "url": "https://github.com/rejunity/ws0-z80-open-silicon-gf180mcu.git",
+ "head": "56308db64709afd465d114e75826bc6fc4a59711",
+ "branch": "main",
+ "head_date": "2025-12-19T22:57:10+01:00",
+ "remote_branches": 10,
+ "tags": 0,
+ "lfs": false
+}

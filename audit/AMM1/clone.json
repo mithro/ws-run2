@@ -1,0 +1,22 @@
+{
+ "run": "ws-run2",
+ "code": "AMM1",
+ "errors": [],
+ "submodules": [
+  {
+   "path": "src/raybox-zero",
+   "url": "https://github.com/algofoogle/raybox-zero",
+   "ok": true,
+   "seeded_from_mirror": true,
+   "head": "8d827a03db484eb946052467719db8c760b787bc"
+  }
+ ],
+ "releases": [],
+ "url": "https://github.com/algofoogle/gf180ws2-raybox-zero.git",
+ "head": "f5bbcef7564e779d1411a5593c4e2da3161077a7",
+ "branch": "main",
+ "head_date": "2026-07-15T19:51:28+09:30",
+ "remote_branches": 2,
+ "tags": 0,
+ "lfs": false
+}

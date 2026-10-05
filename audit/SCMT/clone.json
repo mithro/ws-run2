@@ -1,0 +1,47 @@
+{
+ "run": "ws-run2",
+ "code": "SCMT",
+ "errors": [],
+ "submodules": [
+  {
+   "path": "third_party/verilog_spi",
+   "url": "https://github.com/jasonwaseq/verilog_spi",
+   "ok": true,
+   "seeded_from_mirror": true,
+   "head": "d2698c00d2bf1717afb713929c2590b0e72df449"
+  }
+ ],
+ "releases": [
+  {
+   "tag": "v1.1",
+   "name": "microTheia wafer.space .gds submission",
+   "published": "2026-07-15T01:00:08Z",
+   "assets": [
+    {
+     "name": "chip_top.gds",
+     "size": 174801830
+    }
+   ]
+  },
+  {
+   "tag": "v1.0",
+   "name": "wafer.space .gds submission",
+   "published": "2026-07-04T04:27:48Z",
+   "assets": [
+    {
+     "name": "chip_top.gds",
+     "size": 174500468
+    }
+   ]
+  }
+ ],
+ "url": "https://github.com/dhgaddy/microTheia.git",
+ "head": "ef69ed4d92c470520b9429afe9e06d77f87bef28",
+ "branch": "main",
+ "head_date": "2026-07-30T12:38:46-07:00",
+ "remote_branches": 4,
+ "tags": 2,
+ "lfs": true,
+ "lfs_files": 55,
+ "lfs_missing": 0
+}

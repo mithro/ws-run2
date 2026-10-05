@@ -1,0 +1,14 @@
+{
+ "run": "ws-run2",
+ "code": "NAX1",
+ "errors": [],
+ "submodules": [],
+ "releases": [],
+ "url": "https://github.com/ZeduloTech/Naxos.git",
+ "head": "17da59e0f961d5d2e3da1d7cce48f91ffac355ce",
+ "branch": "main",
+ "head_date": "2026-07-15T04:54:07Z",
+ "remote_branches": 2,
+ "tags": 0,
+ "lfs": false
+}

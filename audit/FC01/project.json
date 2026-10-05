@@ -1,0 +1,12 @@
+{
+ "run": "ws-run2",
+ "code": "FC01",
+ "project": "Flip Chip pad test version 1",
+ "slot_size": "0p5x0p5",
+ "visibility": "Public",
+ "details": "Just some test pads for flip chip bonding trials",
+ "top": "TOP",
+ "sha256": "c86059407e89f9fcb4137a675fea252d3a97a222b6d438960018e57723909cfb",
+ "layout": "FC01/TOP.oas",
+ "repo": null
+}

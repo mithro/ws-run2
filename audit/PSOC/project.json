@@ -1,0 +1,17 @@
+{
+ "run": "ws-run2",
+ "code": "PSOC",
+ "project": "Simplest possible PicoSoC implementation using wafer.space flow",
+ "slot_size": "1x0p5",
+ "visibility": "Public",
+ "details": "Established as a FOSS flow proof of concept for SoC design. Eventually we hope to add wishbone bus and peripherals, open-drain IO for I2C and I2C controller, bandgap reference and voltage regulators, etc.",
+ "top": "chip_top",
+ "sha256": "8ef2d8455ba79b5c042ccedbf5eadb8ab18b3d8261b7b811a988088a7fdb010b",
+ "layout": "PSOC/chip_top.oas",
+ "repo": {
+  "host": "github.com",
+  "path": "d-burnett/picosoc-on-waferspace",
+  "branch": null,
+  "url_as_listed": "https://github.com/d-burnett/picosoc-on-waferspace"
+ }
+}

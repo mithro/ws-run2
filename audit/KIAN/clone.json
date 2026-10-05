@@ -1,0 +1,14 @@
+{
+ "run": "ws-run2",
+ "code": "KIAN",
+ "errors": [],
+ "submodules": [],
+ "releases": [],
+ "url": "https://github.com/splinedrive/gf180mcu-kianv-rv32ima-sv32-ws02.git",
+ "head": "0b383ba4625795323542680286d35cd6c9093bd3",
+ "branch": "main",
+ "head_date": "2026-07-14T22:28:55+02:00",
+ "remote_branches": 2,
+ "tags": 0,
+ "lfs": false
+}

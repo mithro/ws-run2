@@ -1,0 +1,17 @@
+{
+ "run": "ws-run2",
+ "code": "AS16",
+ "project": "AS16 CPU",
+ "slot_size": "1x0p5",
+ "visibility": "Public",
+ "details": "A 16-bit RISC CPU designed by a Y10 student in Sydney Technical High School. (\"my first ever tapeout\")",
+ "top": "chip_top",
+ "sha256": "33a51ba1b2b71d98cd2cbce75cd175785286e4ce0b6dc879cdee6097f04dc87c",
+ "layout": "AS16/chip_top.oas",
+ "repo": {
+  "host": "github.com",
+  "path": "SUD0NET/as16",
+  "branch": null,
+  "url_as_listed": "http://github.com/SUD0NET/as16"
+ }
+}

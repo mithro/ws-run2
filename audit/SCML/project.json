@@ -1,0 +1,17 @@
+{
+ "run": "ws-run2",
+ "code": "SCML",
+ "project": "ML-Audio SC",
+ "slot_size": "1x1",
+ "visibility": "Public",
+ "details": "Always on, low-power, general-purpose, keyword-spotting ASIC",
+ "top": "chip_top",
+ "sha256": "148896f2a79728e5be6a49e0173966e98860c15f30c5c93a8b861a465c96b08f",
+ "layout": "SCML/chip_top.oas",
+ "repo": {
+  "host": "github.com",
+  "path": "kjconway5/ML-Audio",
+  "branch": null,
+  "url_as_listed": "https://github.com/kjconway5/ML-Audio"
+ }
+}

@@ -1,0 +1,17 @@
+{
+ "run": "ws-run2",
+ "code": "CLON",
+ "project": "Cloneless2",
+ "slot_size": "1x1",
+ "visibility": "Public",
+ "details": "Cloneless2 is the second tapeout in the Cloneless series of tamper-resistant open-source ASICs.",
+ "top": "chip_top",
+ "sha256": "2da360b642e4d12e66b8192ebf8c352b862adbf15e5d9f07b0c767337637b9e3",
+ "layout": "CLON/chip_top.oas",
+ "repo": {
+  "host": "github.com",
+  "path": "ThorbenMoos/Cloneless2",
+  "branch": null,
+  "url_as_listed": "https://github.com/ThorbenMoos/Cloneless2"
+ }
+}

@@ -1,0 +1,17 @@
+{
+ "run": "ws-run2",
+ "code": "0000",
+ "project": "ICELab Test Chip",
+ "slot_size": "1x0p5",
+ "visibility": "Public",
+ "details": "In this project, we include various floating-gate and non-floating gate standard cells for characterization. \nThese include: \n3 Various charge pumps,\n4x2 array of indirectly programmed floating gates,\n2 transconductance amplifiers,\n1 floating gate characterization cell,\nNFET & PFET characterization cells",
+ "top": "chip_top",
+ "sha256": "f52343dd6e84186e533604ab47f826f42947ab033246037d7341224896830878",
+ "layout": "0000/chip_top.oas",
+ "repo": {
+  "host": "github.com",
+  "path": "GTIceLab/ASHES-GF180nm",
+  "branch": null,
+  "url_as_listed": "https://github.com/GTIceLab/ASHES-GF180nm"
+ }
+}

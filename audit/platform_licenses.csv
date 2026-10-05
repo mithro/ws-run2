@@ -1,0 +1,41 @@
+CODE,LICENSE,OTHER_SPDX,PROJECT_NAME,REPOSITORY_URL
+0000,Apache-2.0,Apache-2.0,ICELab Test Chip,https://github.com/GTIceLab/ASHES-GF180nm
+AMM1,Apache-2.0,,raybox-zero wafer.space run 2 half height,https://github.com/algofoogle/gf180ws2-raybox-zero
+AS04,Apache-2.0,,AS04 Multi-Project die using 3.3V SCL,https://github.com/AvalonSemiconductors/ws-submission-2026/
+AS16,Apache-2.0,,AS16 CPU,http://github.com/SUD0NET/as16
+BTX1,CERN-OHL-S-2.0,CERN-OHL-S-2.0,BTX,
+CAB1,Apache-2.0,,Cabrera CoB,https://github.com/ZeduloTech/Cabrera
+CAFE,CERN-OHL-S-2.0,CERN-OHL-S-2.0,Expresso Ethernet Chip: 100Mbps Ethernet switch + Heat death of the Universe Beacon - 0.5x0.5 version - Preferred version,https://github.com/Essenceia/Expresso_ASIC_Chip
+CLON,GPL-3.0-only,GPL-3.0-only,Cloneless2,https://github.com/ThorbenMoos/Cloneless2
+DCO0,Apache-2.0,,Standard Cell DCO+TDC,https://github.com/asinghani/ws-dco-tdc
+DPK1,CERN-OHL-P-2.0,,bio180,https://github.com/dpks2003/bio-core
+DPK2,Apache-2.0,,cordic-romless-x8,https://github.com/dpks2003/cordic-romless
+EURO,Apache-2.0,,EuroSynth,https://github.com/anfroholic/eurosynth
+FC01,Apache-2.0,,Flip Chip pad test version 1,
+FS01,Apache-2.0,,Test chip with 3.3V SRAM blocks using regular design rules,https://gitlab.com/Chips4Makers/arrakeen-sram-testchip
+FS02,Apache-2.0,,Test chip with 3.3V SRAM blocks using SRAM design rules,https://gitlab.com/Chips4Makers/arrakeen-sram-testchip
+FS03,Apache-2.0,,Test chip with 5V SRAM blocks,https://gitlab.com/Chips4Makers/arrakeen-sram-testchip
+GD04,BSD-3-Clause,,Racquet Wide 1x0.5,https://github.com/gregdavill/gf180mcu-racquet-1x0.5
+HZ80,Apache-2.0,,FOSSi open-source replacement for Z80 classic 8-bit CPU (0.5 x 1 slot),https://github.com/rejunity/ws0-z80-open-silicon-gf180mcu
+ISHI,Apache-2.0,,ISHI-KAI_Multiple_Projects_WaferSapce-GF180-2,https://github.com/ishi-kai/ISHI-KAI_Multiple_Projects_WaferSapce-GF180-2
+KIAN,MIT,,KianV: A 32-bit RISC-V Linux SoC taped out on GF180MCU Run 2,https://github.com/splinedrive/gf180mcu-kianv-rv32ima-sv32-ws02/
+MEME,MIT,,Artwork Meme Chip,https://github.com/anfroholic/meme_chip
+MOLE,Apache-2.0,,FABulous FPGA,https://github.com/mole99/wsrun2-fabulous-fpga
+NAX1,Apache-2.0,,Naxos CoB,https://github.com/ZeduloTech/Naxos
+OCD3,Apache-2.0,,3.3V SRAM test 2,https://github.com/RTimothyEdwards/gf180mcu_ocd_sram_test
+PSOC,Apache-2.0,,Simplest possible PicoSoC implementation using wafer.space flow,https://github.com/d-burnett/picosoc-on-waferspace
+QZ80,Apache-2.0,,FOSSi open-source replacement for Z80 classic 8-bit CPU (0.5 x 0.5 slot),https://github.com/rejunity/ws0-z80-open-silicon-gf180mcu
+RLCM,CERN-OHL-P-2.0,,RLCM: Test Passives For GF180MCUD,https://github.com/EngGhaith/RLCM-Test-Passives-For-GF180MCUD
+SALU,MIT,,Simple ALU,https://github.com/StackDoubleFlow/alu_silicon
+SCML,proprietary,,ML-Audio SC,https://github.com/kjconway5/ML-Audio
+SCMT,Apache-2.0,,microTheia,https://github.com/dhgaddy/microTheia
+SCTP,Apache-2.0,,SlugTPU,https://github.com/SlugTPU/gf180mcu-slugtpu
+SCUP,GPL-3.0-or-later,GPL-3.0-or-later,GF180MCU Peripherals,https://github.com/sifferman/gf180mcu-peripherals
+T0P3,Apache-2.0,,Tiny Tapeout GF 0p3,https://github.com/TinyTapeout/tinytapeout-gf-0p3
+T26A,Apache-2.0,,Tiny Tapeout GF 26a,https://github.com/TinyTapeout/tinytapeout-gf-26a
+T26B,Apache-2.0,,Tiny Tapeout GF 26b,https://github.com/TinyTapeout/tinytapeout-gf-26b
+TQVA,Apache-2.0,,TinyQV - Crowdsourced Risc-V SoC,https://github.com/MichaelBell/ws01-tinyQV
+TQVC,Apache-2.0,,TinyQV - Crowdsourced Risc-V SoC (1x0.5),https://github.com/MichaelBell/ws01-tinyQV
+TQVD,Apache-2.0,,TinyQV - RISC-V SoC with HDMI output,https://github.com/MichaelBell/ws02-tinyQV
+TQVE,Apache-2.0,,TinyQV - RISC-V SoC with experimental pad setup,
+WSLG,Apache-2.0,,Wafer.Space Logo,https://github.com/89Mods/ws-logo-die

@@ -1,0 +1,21 @@
+{
+ "run": "ws-run2",
+ "code": "CLON",
+ "errors": [],
+ "submodules": [],
+ "releases": [
+  {
+   "tag": "v1",
+   "name": "Cloneless2 v1",
+   "published": "2026-07-27T11:13:01Z",
+   "assets": []
+  }
+ ],
+ "url": "https://github.com/ThorbenMoos/Cloneless2.git",
+ "head": "a63883b6fa7b45eed023ea4757fcd68414109787",
+ "branch": "main",
+ "head_date": "2026-07-30T14:54:41+02:00",
+ "remote_branches": 2,
+ "tags": 1,
+ "lfs": false
+}
