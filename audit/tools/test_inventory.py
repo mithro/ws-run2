@@ -246,8 +246,12 @@ def scan(run, code, ref, template_texts, std_libs):
                     continue
                 ntests = len(re.findall(r"@cocotb\.test", t))
                 nassert = len(re.findall(r"\bassert\b", t))
-                best = max((difflib.SequenceMatcher(None, t, tt).quick_ratio() for tt in template_texts), default=0)
-                if best >= 0.95:
+                # quick_ratio() is only an upper bound (character counts), so it is a pre-filter; ratio() decides.
+                best = max((sm.ratio() for sm in (difflib.SequenceMatcher(None, t, tt) for tt in template_texts)
+                            if sm.quick_ratio() >= 0.75), default=0)
+                if ntests == 0:
+                    kind = "cocotb helper (no tests)"
+                elif best >= 0.95:
                     kind = "template stub (unchanged)"
                 elif best >= 0.75:
                     kind = "template stub (lightly edited)"
@@ -284,6 +288,8 @@ def scan(run, code, ref, template_texts, std_libs):
                 ncells = len(re.findall(r"^\s*cell\s*\(", t, re.M))
                 if VENDORED.search(path) or re.search(r"gf180mcu_(fd|as|ocd)_(sc|ip|io)", libname + " " + low):
                     lkind = "library liberty (vendored)"
+                elif libname.startswith("gf180mcu_ws_ip__"):
+                    lkind = "wafer.space template IP (logo/ID) stub"
                 elif ncells <= 1:
                     lkind = "macro timing model (flow output)"
                 else:
