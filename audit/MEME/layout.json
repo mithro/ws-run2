@@ -1,0 +1,1995 @@
+{
+ "run": "ws-run2",
+ "code": "MEME",
+ "reticle_cell": "MEME_chip_top_8_6",
+ "size_um": [
+  3932.0,
+  2531.0
+ ],
+ "origin_um": [
+  0.0,
+  0.0
+ ],
+ "dbu_um": 0.001,
+ "placements_on_reticle": [
+  {
+   "x_mm": 16.028,
+   "y_mm": 15.606,
+   "rotation": "r0"
+  },
+  {
+   "x_mm": 20.02,
+   "y_mm": 15.606,
+   "rotation": "r0"
+  }
+ ],
+ "distinct_cells": 1014,
+ "standard_cells": [
+  {
+   "library": "mcu7t5v0",
+   "kind": "fill",
+   "placements": 15682
+  },
+  {
+   "library": "mcu7t5v0",
+   "kind": "logic",
+   "placements": 226
+  }
+ ],
+ "standard_cell_types_top40": [
+  {
+   "library": "mcu7t5v0",
+   "type": "buf_1",
+   "placements": 89
+  },
+  {
+   "library": "mcu7t5v0",
+   "type": "dffq_1",
+   "placements": 26
+  },
+  {
+   "library": "mcu7t5v0",
+   "type": "aoi21_1",
+   "placements": 14
+  },
+  {
+   "library": "mcu7t5v0",
+   "type": "nor2_1",
+   "placements": 11
+  },
+  {
+   "library": "mcu7t5v0",
+   "type": "oai21_1",
+   "placements": 10
+  },
+  {
+   "library": "mcu7t5v0",
+   "type": "clkbuf_1",
+   "placements": 9
+  },
+  {
+   "library": "mcu7t5v0",
+   "type": "nor3_1",
+   "placements": 8
+  },
+  {
+   "library": "mcu7t5v0",
+   "type": "clkinv_1",
+   "placements": 8
+  },
+  {
+   "library": "mcu7t5v0",
+   "type": "buf_2",
+   "placements": 7
+  },
+  {
+   "library": "mcu7t5v0",
+   "type": "clkbuf_2",
+   "placements": 7
+  },
+  {
+   "library": "mcu7t5v0",
+   "type": "and2_1",
+   "placements": 6
+  },
+  {
+   "library": "mcu7t5v0",
+   "type": "and3_1",
+   "placements": 4
+  },
+  {
+   "library": "mcu7t5v0",
+   "type": "nand3_1",
+   "placements": 4
+  },
+  {
+   "library": "mcu7t5v0",
+   "type": "aoi211_1",
+   "placements": 4
+  },
+  {
+   "library": "mcu7t5v0",
+   "type": "buf_4",
+   "placements": 4
+  },
+  {
+   "library": "mcu7t5v0",
+   "type": "nand4_1",
+   "placements": 3
+  },
+  {
+   "library": "mcu7t5v0",
+   "type": "nand2_1",
+   "placements": 3
+  },
+  {
+   "library": "mcu7t5v0",
+   "type": "xnor2_1",
+   "placements": 2
+  },
+  {
+   "library": "mcu7t5v0",
+   "type": "and4_1",
+   "placements": 1
+  },
+  {
+   "library": "mcu7t5v0",
+   "type": "nor4_1",
+   "placements": 1
+  },
+  {
+   "library": "mcu7t5v0",
+   "type": "buf_3",
+   "placements": 1
+  },
+  {
+   "library": "mcu7t5v0",
+   "type": "or2_1",
+   "placements": 1
+  },
+  {
+   "library": "mcu7t5v0",
+   "type": "clkbuf_16",
+   "placements": 1
+  },
+  {
+   "library": "mcu7t5v0",
+   "type": "xor2_1",
+   "placements": 1
+  },
+  {
+   "library": "mcu7t5v0",
+   "type": "nor4_2",
+   "placements": 1
+  }
+ ],
+ "sram_macros": [],
+ "io_cells": [
+  {
+   "cell": "gf180mcu_fd_io__asig_5p0",
+   "placements": 50
+  },
+  {
+   "cell": "gf180mcu_fd_io__bi_24t",
+   "placements": 4
+  },
+  {
+   "cell": "gf180mcu_fd_io__cor",
+   "placements": 4
+  },
+  {
+   "cell": "gf180mcu_fd_io__dvdd",
+   "placements": 8
+  },
+  {
+   "cell": "gf180mcu_fd_io__dvss",
+   "placements": 8
+  },
+  {
+   "cell": "gf180mcu_fd_io__fill1",
+   "placements": 226
+  },
+  {
+   "cell": "gf180mcu_fd_io__fill10",
+   "placements": 414
+  },
+  {
+   "cell": "gf180mcu_fd_io__fill5",
+   "placements": 22
+  },
+  {
+   "cell": "gf180mcu_fd_io__fillnc",
+   "placements": 20
+  },
+  {
+   "cell": "gf180mcu_fd_io__in_c",
+   "placements": 1
+  },
+  {
+   "cell": "gf180mcu_fd_io__in_s",
+   "placements": 1
+  }
+ ],
+ "fill_and_sealring_placements": 572863,
+ "other_cells_by_placements_top80": [
+  {
+   "cell": "M4_M3_CDNS_406619531453$15",
+   "placements": 7038,
+   "size_um": [
+    9.06,
+    5.96
+   ]
+  },
+  {
+   "cell": "M5_M4_CDNS_406619531450$15",
+   "placements": 7038,
+   "size_um": [
+    9.12,
+    6.02
+   ]
+  },
+  {
+   "cell": "POLY_SUB_FILL_1$22",
+   "placements": 6624,
+   "size_um": [
+    9.75,
+    18.06
+   ]
+  },
+  {
+   "cell": "M3_M2_CDNS_406619531459$16",
+   "placements": 5712,
+   "size_um": [
+    0.38,
+    5.66
+   ]
+  },
+  {
+   "cell": "M4_M3_CDNS_40661953145598$15",
+   "placements": 5432,
+   "size_um": [
+    20.18,
+    0.38
+   ]
+  },
+  {
+   "cell": "M5_M4_CDNS_40661953145496$15",
+   "placements": 5432,
+   "size_um": [
+    20.24,
+    0.44
+   ]
+  },
+  {
+   "cell": "M2_M1_CDNS_40661953145393$10",
+   "placements": 5400,
+   "size_um": [
+    2.24,
+    2.86
+   ]
+  },
+  {
+   "cell": "M3_M2_CDNS_4066195314596$17",
+   "placements": 4596,
+   "size_um": [
+    2.24,
+    6.58
+   ]
+  },
+  {
+   "cell": "M5_M4_CDNS_40661953145443$15",
+   "placements": 4244,
+   "size_um": [
+    9.02,
+    0.44
+   ]
+  },
+  {
+   "cell": "M4_M3_CDNS_40661953145578$15",
+   "placements": 4244,
+   "size_um": [
+    8.96,
+    0.38
+   ]
+  },
+  {
+   "cell": "M3_M2_CDNS_4066195314510$16",
+   "placements": 3924,
+   "size_um": [
+    0.38,
+    12.92
+   ]
+  },
+  {
+   "cell": "M4_M3_CDNS_406619531452$15",
+   "placements": 3726,
+   "size_um": [
+    9.06,
+    13.4
+   ]
+  },
+  {
+   "cell": "M5_M4_CDNS_406619531451$15",
+   "placements": 3726,
+   "size_um": [
+    9.12,
+    13.46
+   ]
+  },
+  {
+   "cell": "M3_M2_CDNS_4066195314598$17",
+   "placements": 3672,
+   "size_um": [
+    2.24,
+    14.64
+   ]
+  },
+  {
+   "cell": "M4_M3_CDNS_4066195314522$15",
+   "placements": 3616,
+   "size_um": [
+    0.38,
+    6.54
+   ]
+  },
+  {
+   "cell": "M5_M4_CDNS_4066195314519$15",
+   "placements": 3616,
+   "size_um": [
+    0.44,
+    6.6
+   ]
+  },
+  {
+   "cell": "M2_M1_CDNS_4066195314518$15",
+   "placements": 3080,
+   "size_um": [
+    0.38,
+    0.38
+   ]
+  },
+  {
+   "cell": "M2_M1_CDNS_40661953145140$16",
+   "placements": 2848,
+   "size_um": [
+    10.1,
+    0.38
+   ]
+  },
+  {
+   "cell": "M2_M1_CDNS_4066195314586$16",
+   "placements": 2688,
+   "size_um": [
+    0.92,
+    0.38
+   ]
+  },
+  {
+   "cell": "M2_M1_CDNS_4066195314574$17",
+   "placements": 2556,
+   "size_um": [
+    2.54,
+    1.46
+   ]
+  },
+  {
+   "cell": "M5_M4_CDNS_4066195314556$17",
+   "placements": 2088,
+   "size_um": [
+    59.37,
+    1.15
+   ]
+  },
+  {
+   "cell": "M4_M3_CDNS_4066195314551$17",
+   "placements": 2088,
+   "size_um": [
+    59.31,
+    1.09
+   ]
+  },
+  {
+   "cell": "M3_M2_CDNS_4066195314552$17",
+   "placements": 2088,
+   "size_um": [
+    59.31,
+    1.09
+   ]
+  },
+  {
+   "cell": "M4_M3_CDNS_4066195314524$15",
+   "placements": 2034,
+   "size_um": [
+    0.38,
+    13.82
+   ]
+  },
+  {
+   "cell": "M5_M4_CDNS_4066195314520$15",
+   "placements": 2034,
+   "size_um": [
+    0.44,
+    13.88
+   ]
+  },
+  {
+   "cell": "nmoscap_6p0_CDNS_406619531450$17",
+   "placements": 1864,
+   "size_um": [
+    17.8,
+    18.11
+   ]
+  },
+  {
+   "cell": "M2_M1_CDNS_40661953145141$17",
+   "placements": 1860,
+   "size_um": [
+    2.54,
+    0.92
+   ]
+  },
+  {
+   "cell": "M2_M1_CDNS_40661953145392$10",
+   "placements": 1800,
+   "size_um": [
+    0.38,
+    15.5
+   ]
+  },
+  {
+   "cell": "M4_M3_CDNS_4066195314557$16",
+   "placements": 1728,
+   "size_um": [
+    73.51,
+    6.77
+   ]
+  },
+  {
+   "cell": "M3_M2_CDNS_406619531456$16",
+   "placements": 1688,
+   "size_um": [
+    1.0,
+    5.96
+   ]
+  },
+  {
+   "cell": "M2_M1_CDNS_406619531454$15",
+   "placements": 1656,
+   "size_um": [
+    1.0,
+    5.96
+   ]
+  },
+  {
+   "cell": "M2_M1_CDNS_40661953145158$16",
+   "placements": 1440,
+   "size_um": [
+    9.02,
+    0.38
+   ]
+  },
+  {
+   "cell": "M5_M4_CDNS_4066195314559$16",
+   "placements": 1152,
+   "size_um": [
+    73.57,
+    6.83
+   ]
+  },
+  {
+   "cell": "M1_PSUB_CDNS_406619531455$17",
+   "placements": 1016,
+   "size_um": [
+    0.77,
+    284.27
+   ]
+  },
+  {
+   "cell": "M2_M1_CDNS_40661953145413$10",
+   "placements": 1000,
+   "size_um": [
+    2.24,
+    2.24
+   ]
+  },
+  {
+   "cell": "M2_M1_CDNS_40661953145151$17",
+   "placements": 964,
+   "size_um": [
+    0.38,
+    14.96
+   ]
+  },
+  {
+   "cell": "M1_PSUB_CDNS_40661953145674$15",
+   "placements": 960,
+   "size_um": [
+    0.77,
+    0.77
+   ]
+  },
+  {
+   "cell": "M4_M3_CDNS_4066195314558$16",
+   "placements": 936,
+   "size_um": [
+    73.51,
+    14.58
+   ]
+  },
+  {
+   "cell": "M2_M1_CDNS_40661953145164$15",
+   "placements": 887,
+   "size_um": [
+    0.38,
+    0.9
+   ]
+  },
+  {
+   "cell": "M3_M2_CDNS_4066195314594$17",
+   "placements": 884,
+   "size_um": [
+    1.0,
+    6.58
+   ]
+  },
+  {
+   "cell": "M3_M2_CDNS_406619531457$15",
+   "placements": 828,
+   "size_um": [
+    1.04,
+    6.32
+   ]
+  },
+  {
+   "cell": "M1_PSUB_CDNS_406619531458$15",
+   "placements": 828,
+   "size_um": [
+    8.77,
+    1.27
+   ]
+  },
+  {
+   "cell": "M2_M1_CDNS_40661953145359$16",
+   "placements": 804,
+   "size_um": [
+    1.62,
+    2.86
+   ]
+  },
+  {
+   "cell": "M2_M1_CDNS_40661953145386$10",
+   "placements": 800,
+   "size_um": [
+    2.0,
+    1.46
+   ]
+  },
+  {
+   "cell": "M2_M1_CDNS_40661953145394$10",
+   "placements": 800,
+   "size_um": [
+    1.46,
+    2.54
+   ]
+  },
+  {
+   "cell": "POLY_SUB_FILL$22",
+   "placements": 770,
+   "size_um": [
+    4.23,
+    8.46
+   ]
+  },
+  {
+   "cell": "M4_M3_CDNS_4066195314512$15",
+   "placements": 748,
+   "size_um": [
+    4.1,
+    5.96
+   ]
+  },
+  {
+   "cell": "M2_M1_CDNS_40661953145117$15",
+   "placements": 733,
+   "size_um": [
+    0.9,
+    0.38
+   ]
+  },
+  {
+   "cell": "M2_M1_CDNS_40661953145391$10",
+   "placements": 700,
+   "size_um": [
+    1.62,
+    15.88
+   ]
+  },
+  {
+   "cell": "M2_M1_CDNS_40661953145787$15",
+   "placements": 672,
+   "size_um": [
+    5.24,
+    0.38
+   ]
+  },
+  {
+   "cell": "M2_M1_CDNS_4066195314585$16",
+   "placements": 664,
+   "size_um": [
+    2.54,
+    0.38
+   ]
+  },
+  {
+   "cell": "M5_M4_CDNS_4066195314560$16",
+   "placements": 648,
+   "size_um": [
+    73.57,
+    14.64
+   ]
+  },
+  {
+   "cell": "M1_POLY2_CDNS_40661953145222$15",
+   "placements": 570,
+   "size_um": [
+    0.42,
+    0.89
+   ]
+  },
+  {
+   "cell": "M1_PSUB_CDNS_4066195314566$16",
+   "placements": 552,
+   "size_um": [
+    0.77,
+    3.59
+   ]
+  },
+  {
+   "cell": "M1_PSUB_CDNS_4066195314565$17",
+   "placements": 532,
+   "size_um": [
+    70.33,
+    0.77
+   ]
+  },
+  {
+   "cell": "M1_PSUB_CDNS_4066195314567$17",
+   "placements": 528,
+   "size_um": [
+    41.19,
+    0.77
+   ]
+  },
+  {
+   "cell": "M3_M2_CDNS_4066195314592$16",
+   "placements": 512,
+   "size_um": [
+    9.68,
+    6.58
+   ]
+  },
+  {
+   "cell": "M3_M2_CDNS_40661953145387$10",
+   "placements": 500,
+   "size_um": [
+    1.62,
+    6.58
+   ]
+  },
+  {
+   "cell": "M1_POLY2_CDNS_40661953145106$15",
+   "placements": 498,
+   "size_um": [
+    0.89,
+    0.42
+   ]
+  },
+  {
+   "cell": "nmoscap_6p0_CDNS_406619531454$16",
+   "placements": 472,
+   "size_um": [
+    12.8,
+    28.11
+   ]
+  },
+  {
+   "cell": "GF_NI_FILL10_0$22",
+   "placements": 414,
+   "size_um": [
+    10.32,
+    350.0
+   ]
+  },
+  {
+   "cell": "GF_NI_FILL10_1$22",
+   "placements": 414,
+   "size_um": [
+    10.32,
+    350.0
+   ]
+  },
+  {
+   "cell": "M3_M2_CDNS_4066195314595$17",
+   "placements": 408,
+   "size_um": [
+    2.24,
+    5.96
+   ]
+  },
+  {
+   "cell": "M1_NWELL_CDNS_40661953145217$17",
+   "placements": 408,
+   "size_um": [
+    1.28,
+    6.45
+   ]
+  },
+  {
+   "cell": "M1_NWELL_CDNS_40661953145399$10",
+   "placements": 400,
+   "size_um": [
+    52.04,
+    1.28
+   ]
+  },
+  {
+   "cell": "M1_PSUB_CDNS_40661953145403$10",
+   "placements": 400,
+   "size_um": [
+    51.53,
+    0.77
+   ]
+  },
+  {
+   "cell": "M1_PSUB_CDNS_40661953145404$10",
+   "placements": 400,
+   "size_um": [
+    0.77,
+    5.94
+   ]
+  },
+  {
+   "cell": "M2_M1_CDNS_40661953145385$10",
+   "placements": 400,
+   "size_um": [
+    2.0,
+    0.92
+   ]
+  },
+  {
+   "cell": "M3_M2_CDNS_40661953145388$10",
+   "placements": 400,
+   "size_um": [
+    1.62,
+    14.64
+   ]
+  },
+  {
+   "cell": "M4_M3_CDNS_4066195314514$15",
+   "placements": 396,
+   "size_um": [
+    4.1,
+    14.02
+   ]
+  },
+  {
+   "cell": "M5_M4_CDNS_4066195314511$15",
+   "placements": 374,
+   "size_um": [
+    4.16,
+    6.02
+   ]
+  },
+  {
+   "cell": "M2_M1_CDNS_4066195314588$17",
+   "placements": 360,
+   "size_um": [
+    0.38,
+    6.86
+   ]
+  },
+  {
+   "cell": "M3_M2_CDNS_4066195314587$17",
+   "placements": 360,
+   "size_um": [
+    0.38,
+    6.86
+   ]
+  },
+  {
+   "cell": "M3_M2_CDNS_4066195314590$16",
+   "placements": 316,
+   "size_um": [
+    9.06,
+    6.58
+   ]
+  },
+  {
+   "cell": "M3_M2_CDNS_40661953145784$15",
+   "placements": 304,
+   "size_um": [
+    0.38,
+    8.44
+   ]
+  },
+  {
+   "cell": "ppolyf_u_CDNS_406619531453$16",
+   "placements": 288,
+   "size_um": [
+    65.47,
+    1.4
+   ]
+  },
+  {
+   "cell": "M3_M2_CDNS_4066195314597$16",
+   "placements": 288,
+   "size_um": [
+    1.0,
+    14.64
+   ]
+  },
+  {
+   "cell": "M3_M2_CDNS_4066195314593$16",
+   "placements": 288,
+   "size_um": [
+    9.68,
+    14.64
+   ]
+  },
+  {
+   "cell": "np_6p0_CDNS_406619531451$17",
+   "placements": 264,
+   "size_um": [
+    40.48,
+    1.48
+   ]
+  },
+  {
+   "cell": "M2_M1_CDNS_40661953145740$15",
+   "placements": 244,
+   "size_um": [
+    18.62,
+    0.38
+   ]
+  }
+ ],
+ "layers": [
+  {
+   "layer": "0/0",
+   "name": "PR_bndry",
+   "shapes": 18245
+  },
+  {
+   "layer": "21/0",
+   "name": "Nwell",
+   "shapes": 19666
+  },
+  {
+   "layer": "21/10",
+   "name": "",
+   "shapes": 10070
+  },
+  {
+   "layer": "22/0",
+   "name": "COMP",
+   "shapes": 221185
+  },
+  {
+   "layer": "23/5",
+   "name": "ISOSUB",
+   "shapes": 342
+  },
+  {
+   "layer": "24/5",
+   "name": "ESD_MK",
+   "shapes": 12
+  },
+  {
+   "layer": "30/0",
+   "name": "Poly2",
+   "shapes": 194072
+  },
+  {
+   "layer": "31/0",
+   "name": "Pplus",
+   "shapes": 34128
+  },
+  {
+   "layer": "32/0",
+   "name": "Nplus",
+   "shapes": 37380
+  },
+  {
+   "layer": "33/0",
+   "name": "Contact",
+   "shapes": 4544234
+  },
+  {
+   "layer": "34/0",
+   "name": "Metal1",
+   "shapes": 632355
+  },
+  {
+   "layer": "34/10",
+   "name": "Metal1_Label",
+   "shapes": 33542
+  },
+  {
+   "layer": "35/0",
+   "name": "Via1",
+   "shapes": 951899
+  },
+  {
+   "layer": "36/0",
+   "name": "Metal2",
+   "shapes": 383350
+  },
+  {
+   "layer": "36/10",
+   "name": "Metal2_Label",
+   "shapes": 730
+  },
+  {
+   "layer": "37/0",
+   "name": "Pad",
+   "shapes": 80
+  },
+  {
+   "layer": "38/0",
+   "name": "Via2",
+   "shapes": 1926154
+  },
+  {
+   "layer": "40/0",
+   "name": "Via3",
+   "shapes": 7640335
+  },
+  {
+   "layer": "41/0",
+   "name": "Via4",
+   "shapes": 6288842
+  },
+  {
+   "layer": "42/0",
+   "name": "Metal3",
+   "shapes": 308367
+  },
+  {
+   "layer": "42/10",
+   "name": "Metal3_Label",
+   "shapes": 58052
+  },
+  {
+   "layer": "46/0",
+   "name": "Metal4",
+   "shapes": 295982
+  },
+  {
+   "layer": "46/10",
+   "name": "Metal4_Label",
+   "shapes": 39416
+  },
+  {
+   "layer": "49/0",
+   "name": "SAB",
+   "shapes": 732
+  },
+  {
+   "layer": "55/0",
+   "name": "Dualgate",
+   "shapes": 35638
+  },
+  {
+   "layer": "58/0",
+   "name": "",
+   "shapes": 2562
+  },
+  {
+   "layer": "63/63",
+   "name": "VTEXT",
+   "shapes": 66664
+  },
+  {
+   "layer": "81/0",
+   "name": "Metal5",
+   "shapes": 236572
+  },
+  {
+   "layer": "81/10",
+   "name": "Metal5_Label",
+   "shapes": 22004
+  },
+  {
+   "layer": "100/8",
+   "name": "LVS_Source",
+   "shapes": 120
+  },
+  {
+   "layer": "110/5",
+   "name": "RES_MK",
+   "shapes": 564
+  },
+  {
+   "layer": "111/5",
+   "name": "NDMY",
+   "shapes": 2
+  },
+  {
+   "layer": "112/1",
+   "name": "V5_XTOR",
+   "shapes": 15908
+  },
+  {
+   "layer": "115/5",
+   "name": "DIODE_MK",
+   "shapes": 760
+  },
+  {
+   "layer": "119/5",
+   "name": "LVS_IO",
+   "shapes": 12
+  },
+  {
+   "layer": "137/5",
+   "name": "Latchup_MK",
+   "shapes": 412
+  },
+  {
+   "layer": "152/5",
+   "name": "PMNDMY",
+   "shapes": 4
+  },
+  {
+   "layer": "166/5",
+   "name": "MOS_CAP_MK",
+   "shapes": 17196
+  },
+  {
+   "layer": "167/5",
+   "name": "GUARD_RING_MK",
+   "shapes": 1
+  },
+  {
+   "layer": "204/0",
+   "name": "LVPWELL",
+   "shapes": 39728
+  },
+  {
+   "layer": "204/10",
+   "name": "",
+   "shapes": 10070
+  }
+ ],
+ "blocks": [
+  {
+   "cell": "puf_routes",
+   "parent": "MEME_chip_top_8_6",
+   "depth": 1,
+   "count_in_parent": 1,
+   "size_um": [
+    3846.0,
+    2445.0
+   ],
+   "first_placement_box_um": [
+    43.0,
+    43.0,
+    3889.0,
+    2488.0
+   ],
+   "kind": "block",
+   "child_cells": 0
+  },
+  {
+   "cell": "meme",
+   "parent": "MEME_chip_top_8_6",
+   "depth": 1,
+   "count_in_parent": 1,
+   "size_um": [
+    2790.0,
+    1500.0
+   ],
+   "first_placement_box_um": [
+    571.0,
+    532.0,
+    3361.0,
+    2032.0
+   ],
+   "kind": "block",
+   "child_cells": 0
+  },
+  {
+   "cell": "gf180mcu_fd_io__cor$16",
+   "parent": "MEME_chip_top_8_6",
+   "depth": 1,
+   "count_in_parent": 4,
+   "size_um": [
+    355.16,
+    355.16
+   ],
+   "first_placement_box_um": [
+    3550.84,
+    2149.84,
+    3906.0,
+    2505.0
+   ],
+   "kind": "io",
+   "child_cells": 2
+  },
+  {
+   "cell": "gf180mcu_ws_ip__marker$19",
+   "parent": "MEME_chip_top_8_6",
+   "depth": 1,
+   "count_in_parent": 1,
+   "size_um": [
+    245.0,
+    245.0
+   ],
+   "first_placement_box_um": [
+    3651.0,
+    2250.0,
+    3896.0,
+    2495.0
+   ],
+   "kind": "block",
+   "child_cells": 0
+  },
+  {
+   "cell": "gf180mcu_fd_io__dvdd$16",
+   "parent": "MEME_chip_top_8_6",
+   "depth": 1,
+   "count_in_parent": 8,
+   "size_um": [
+    75.32,
+    350.0
+   ],
+   "first_placement_box_um": [
+    2895.84,
+    2155.0,
+    2971.16,
+    2505.0
+   ],
+   "kind": "io",
+   "child_cells": 2
+  },
+  {
+   "cell": "gf180mcu_fd_io__dvss$16",
+   "parent": "MEME_chip_top_8_6",
+   "depth": 1,
+   "count_in_parent": 8,
+   "size_um": [
+    75.32,
+    350.0
+   ],
+   "first_placement_box_um": [
+    3556.0,
+    1862.34,
+    3906.0,
+    1937.66
+   ],
+   "kind": "io",
+   "child_cells": 2
+  },
+  {
+   "cell": "gf180mcu_fd_io__asig_5p0$10",
+   "parent": "MEME_chip_top_8_6",
+   "depth": 1,
+   "count_in_parent": 50,
+   "size_um": [
+    75.32,
+    350.0
+   ],
+   "first_placement_box_um": [
+    3024.84,
+    2155.0,
+    3100.16,
+    2505.0
+   ],
+   "kind": "io",
+   "child_cells": 2
+  },
+  {
+   "cell": "gf180mcu_fd_io__in_s$15",
+   "parent": "MEME_chip_top_8_6",
+   "depth": 1,
+   "count_in_parent": 1,
+   "size_um": [
+    75.32,
+    350.0
+   ],
+   "first_placement_box_um": [
+    444.84,
+    26.0,
+    520.16,
+    376.0
+   ],
+   "kind": "io",
+   "child_cells": 2
+  },
+  {
+   "cell": "gf180mcu_fd_io__in_c$16",
+   "parent": "MEME_chip_top_8_6",
+   "depth": 1,
+   "count_in_parent": 1,
+   "size_um": [
+    75.32,
+    350.0
+   ],
+   "first_placement_box_um": [
+    573.84,
+    26.0,
+    649.16,
+    376.0
+   ],
+   "kind": "io",
+   "child_cells": 2
+  },
+  {
+   "cell": "gf180mcu_fd_io__bi_24t$16",
+   "parent": "MEME_chip_top_8_6",
+   "depth": 1,
+   "count_in_parent": 4,
+   "size_um": [
+    75.32,
+    350.0
+   ],
+   "first_placement_box_um": [
+    702.84,
+    26.0,
+    778.16,
+    376.0
+   ],
+   "kind": "io",
+   "child_cells": 2
+  },
+  {
+   "cell": "gf180mcu_ws_ip__qrcode_id$20",
+   "parent": "MEME_chip_top_8_6",
+   "depth": 1,
+   "count_in_parent": 1,
+   "size_um": [
+    142.8,
+    142.8
+   ],
+   "first_placement_box_um": [
+    26.0,
+    26.0,
+    168.8,
+    168.8
+   ],
+   "kind": "block",
+   "child_cells": 0
+  },
+  {
+   "cell": "gf180mcu_ws_ip__shuttle_id$20",
+   "parent": "MEME_chip_top_8_6",
+   "depth": 1,
+   "count_in_parent": 1,
+   "size_um": [
+    195.5,
+    59.5
+   ],
+   "first_placement_box_um": [
+    26.0,
+    175.6,
+    85.5,
+    371.1
+   ],
+   "kind": "block",
+   "child_cells": 0
+  },
+  {
+   "cell": "gf180mcu_ws_ip__project_id$20",
+   "parent": "MEME_chip_top_8_6",
+   "depth": 1,
+   "count_in_parent": 1,
+   "size_um": [
+    195.5,
+    59.5
+   ],
+   "first_placement_box_um": [
+    175.6,
+    26.0,
+    371.1,
+    85.5
+   ],
+   "kind": "block",
+   "child_cells": 0
+  },
+  {
+   "cell": "puf_blocker",
+   "parent": "MEME_chip_top_8_6",
+   "depth": 1,
+   "count_in_parent": 6,
+   "size_um": [
+    129.0,
+    48.0
+   ],
+   "first_placement_box_um": [
+    3361.0,
+    1489.0,
+    3490.0,
+    1537.0
+   ],
+   "kind": "block",
+   "child_cells": 0
+  },
+  {
+   "cell": "meme_puf_cluster_e",
+   "parent": "MEME_chip_top_8_6",
+   "depth": 1,
+   "count_in_parent": 4,
+   "size_um": [
+    80.6,
+    44.9
+   ],
+   "first_placement_box_um": [
+    3099.7,
+    1841.95,
+    3180.3,
+    1886.85
+   ],
+   "kind": "block",
+   "child_cells": 0
+  },
+  {
+   "cell": "meme_puf_cluster",
+   "parent": "MEME_chip_top_8_6",
+   "depth": 1,
+   "count_in_parent": 2,
+   "size_um": [
+    80.6,
+    44.9
+   ],
+   "first_placement_box_um": [
+    759.7,
+    1594.05,
+    840.3,
+    1638.95
+   ],
+   "kind": "block",
+   "child_cells": 1
+  },
+  {
+   "cell": "gf180mcu_fd_io__fill10$16",
+   "parent": "MEME_chip_top_8_6",
+   "depth": 1,
+   "count_in_parent": 414,
+   "size_um": [
+    10.32,
+    350.0
+   ],
+   "first_placement_box_um": [
+    1958.84,
+    2155.0,
+    1969.16,
+    2505.0
+   ],
+   "kind": "io",
+   "child_cells": 3
+  },
+  {
+   "cell": "gf180mcu_fd_io__fill5$16",
+   "parent": "MEME_chip_top_8_6",
+   "depth": 1,
+   "count_in_parent": 22,
+   "size_um": [
+    5.32,
+    350.0
+   ],
+   "first_placement_box_um": [
+    3556.0,
+    1997.34,
+    3906.0,
+    2002.66
+   ],
+   "kind": "io",
+   "child_cells": 5
+  },
+  {
+   "cell": "gf180mcu_fd_io__fill1$16",
+   "parent": "MEME_chip_top_8_6",
+   "depth": 1,
+   "count_in_parent": 226,
+   "size_um": [
+    1.32,
+    350.0
+   ],
+   "first_placement_box_um": [
+    3020.84,
+    2155.0,
+    3022.16,
+    2505.0
+   ],
+   "kind": "io",
+   "child_cells": 4
+  },
+  {
+   "cell": "gf180mcu_fd_io__fillnc$16",
+   "parent": "MEME_chip_top_8_6",
+   "depth": 1,
+   "count_in_parent": 20,
+   "size_um": [
+    0.42,
+    350.0
+   ],
+   "first_placement_box_um": [
+    3556.0,
+    2149.44,
+    3906.0,
+    2149.86
+   ],
+   "kind": "io",
+   "child_cells": 1
+  },
+  {
+   "cell": "meme_puf_bank2",
+   "parent": "meme_puf_cluster",
+   "depth": 2,
+   "count_in_parent": 8,
+   "size_um": [
+    12.3,
+    8.7
+   ],
+   "first_placement_box_um": [
+    766.05,
+    1600.4,
+    778.35,
+    1609.1
+   ],
+   "kind": "block",
+   "child_cells": 0
+  }
+ ],
+ "labels": [
+  {
+   "text": "HI",
+   "layer": "34/10",
+   "layer_name": "Metal1_Label",
+   "xy_um": [
+    3116.28,
+    1851.55
+   ]
+  },
+  {
+   "text": "LO",
+   "layer": "34/10",
+   "layer_name": "Metal1_Label",
+   "xy_um": [
+    3116.28,
+    1853.75
+   ]
+  },
+  {
+   "text": "t1",
+   "layer": "34/10",
+   "layer_name": "Metal1_Label",
+   "xy_um": [
+    3107.42,
+    1852.65
+   ]
+  },
+  {
+   "text": "analog_PAD[14]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    2288.5,
+    58.0
+   ]
+  },
+  {
+   "text": "analog_PAD[20]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    3320.5,
+    58.0
+   ]
+  },
+  {
+   "text": "analog_PAD[7]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    58.0,
+    1759.0
+   ]
+  },
+  {
+   "text": "analog_PAD[15]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    2417.5,
+    58.0
+   ]
+  },
+  {
+   "text": "analog_PAD[41]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    2159.5,
+    2473.0
+   ]
+  },
+  {
+   "text": "VDD",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    1127.5,
+    58.0
+   ]
+  },
+  {
+   "text": "analog_PAD[1]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    58.0,
+    913.0
+   ]
+  },
+  {
+   "text": "analog_PAD[47]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    3191.5,
+    2473.0
+   ]
+  },
+  {
+   "text": "analog_PAD[25]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    3874.0,
+    1195.0
+   ]
+  },
+  {
+   "text": "analog_PAD[21]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    3449.5,
+    58.0
+   ]
+  },
+  {
+   "text": "analog_PAD[28]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    3874.0,
+    1618.0
+   ]
+  },
+  {
+   "text": "analog_PAD[10]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    1772.5,
+    58.0
+   ]
+  },
+  {
+   "text": "analog_PAD[23]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    3874.0,
+    913.0
+   ]
+  },
+  {
+   "text": "analog_PAD[12]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    2030.5,
+    58.0
+   ]
+  },
+  {
+   "text": "analog_PAD[27]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    3874.0,
+    1477.0
+   ]
+  },
+  {
+   "text": "analog_PAD[26]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    3874.0,
+    1336.0
+   ]
+  },
+  {
+   "text": "analog_PAD[33]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    869.5,
+    2473.0
+   ]
+  },
+  {
+   "text": "analog_PAD[19]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    3191.5,
+    58.0
+   ]
+  },
+  {
+   "text": "analog_PAD[3]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    58.0,
+    1195.0
+   ]
+  },
+  {
+   "text": "analog_PAD[2]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    58.0,
+    1054.0
+   ]
+  },
+  {
+   "text": "analog_PAD[22]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    3874.0,
+    772.0
+   ]
+  },
+  {
+   "text": "analog_PAD[32]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    740.5,
+    2473.0
+   ]
+  },
+  {
+   "text": "analog_PAD[30]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    482.5,
+    2473.0
+   ]
+  },
+  {
+   "text": "analog_PAD[24]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    3874.0,
+    1054.0
+   ]
+  },
+  {
+   "text": "analog_PAD[18]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    3062.5,
+    58.0
+   ]
+  },
+  {
+   "text": "analog_PAD[34]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    1256.5,
+    2473.0
+   ]
+  },
+  {
+   "text": "bidir_PAD[2]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    1256.5,
+    58.0
+   ]
+  },
+  {
+   "text": "analog_PAD[31]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    611.5,
+    2473.0
+   ]
+  },
+  {
+   "text": "analog_PAD[29]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    3874.0,
+    1759.0
+   ]
+  },
+  {
+   "text": "analog_PAD[48]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    3320.5,
+    2473.0
+   ]
+  },
+  {
+   "text": "analog_PAD[44]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    2546.5,
+    2473.0
+   ]
+  },
+  {
+   "text": "analog_PAD[13]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    2159.5,
+    58.0
+   ]
+  },
+  {
+   "text": "analog_PAD[37]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    1643.5,
+    2473.0
+   ]
+  },
+  {
+   "text": "analog_PAD[0]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    58.0,
+    772.0
+   ]
+  },
+  {
+   "text": "analog_PAD[38]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    1772.5,
+    2473.0
+   ]
+  },
+  {
+   "text": "analog_PAD[8]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    1514.5,
+    58.0
+   ]
+  },
+  {
+   "text": "analog_PAD[6]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    58.0,
+    1618.0
+   ]
+  },
+  {
+   "text": "analog_PAD[39]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    1901.5,
+    2473.0
+   ]
+  },
+  {
+   "text": "analog_PAD[36]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    1514.5,
+    2473.0
+   ]
+  },
+  {
+   "text": "analog_PAD[11]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    1901.5,
+    58.0
+   ]
+  },
+  {
+   "text": "analog_PAD[16]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    2546.5,
+    58.0
+   ]
+  },
+  {
+   "text": "analog_PAD[35]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    1385.5,
+    2473.0
+   ]
+  },
+  {
+   "text": "VSS",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    998.5,
+    58.0
+   ]
+  },
+  {
+   "text": "analog_PAD[49]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    3449.5,
+    2473.0
+   ]
+  },
+  {
+   "text": "analog_PAD[17]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    2675.5,
+    58.0
+   ]
+  },
+  {
+   "text": "analog_PAD[4]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    58.0,
+    1336.0
+   ]
+  },
+  {
+   "text": "analog_PAD[42]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    2288.5,
+    2473.0
+   ]
+  },
+  {
+   "text": "analog_PAD[40]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    2030.5,
+    2473.0
+   ]
+  },
+  {
+   "text": "rst_n_PAD",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    611.5,
+    58.0
+   ]
+  },
+  {
+   "text": "analog_PAD[9]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    1643.5,
+    58.0
+   ]
+  },
+  {
+   "text": "clk_PAD",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    482.5,
+    58.0
+   ]
+  },
+  {
+   "text": "analog_PAD[46]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    3062.5,
+    2473.0
+   ]
+  },
+  {
+   "text": "bidir_PAD[3]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    1385.5,
+    58.0
+   ]
+  },
+  {
+   "text": "bidir_PAD[0]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    740.5,
+    58.0
+   ]
+  },
+  {
+   "text": "analog_PAD[5]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    58.0,
+    1477.0
+   ]
+  },
+  {
+   "text": "analog_PAD[45]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    2675.5,
+    2473.0
+   ]
+  },
+  {
+   "text": "analog_PAD[43]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    2417.5,
+    2473.0
+   ]
+  },
+  {
+   "text": "bidir_PAD[1]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    869.5,
+    58.0
+   ]
+  }
+ ],
+ "labels_truncated": false
+}

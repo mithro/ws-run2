@@ -1,0 +1,113 @@
+{
+ "run": "ws-run2",
+ "code": "FC01",
+ "reticle_cell": "FC01_TOP_12_6",
+ "size_um": [
+  1936.0,
+  2531.0
+ ],
+ "origin_um": [
+  0.0,
+  0.0
+ ],
+ "dbu_um": 0.001,
+ "placements_on_reticle": [
+  {
+   "x_mm": 24.012,
+   "y_mm": 15.606,
+   "rotation": "r0"
+  }
+ ],
+ "distinct_cells": 16,
+ "standard_cells": [],
+ "standard_cell_types_top40": [],
+ "sram_macros": [],
+ "io_cells": [],
+ "fill_and_sealring_placements": 2275049,
+ "other_cells_by_placements_top80": [],
+ "layers": [
+  {
+   "layer": "22/0",
+   "name": "COMP",
+   "shapes": 73966
+  },
+  {
+   "layer": "30/0",
+   "name": "Poly2",
+   "shapes": 73958
+  },
+  {
+   "layer": "31/0",
+   "name": "Pplus",
+   "shapes": 8
+  },
+  {
+   "layer": "33/0",
+   "name": "Contact",
+   "shapes": 47846
+  },
+  {
+   "layer": "34/0",
+   "name": "Metal1",
+   "shapes": 486233
+  },
+  {
+   "layer": "35/0",
+   "name": "Via1",
+   "shapes": 45848
+  },
+  {
+   "layer": "36/0",
+   "name": "Metal2",
+   "shapes": 486150
+  },
+  {
+   "layer": "37/0",
+   "name": "Pad",
+   "shapes": 12
+  },
+  {
+   "layer": "38/0",
+   "name": "Via2",
+   "shapes": 45848
+  },
+  {
+   "layer": "40/0",
+   "name": "Via3",
+   "shapes": 45848
+  },
+  {
+   "layer": "41/0",
+   "name": "Via4",
+   "shapes": 45848
+  },
+  {
+   "layer": "42/0",
+   "name": "Metal3",
+   "shapes": 486117
+  },
+  {
+   "layer": "46/0",
+   "name": "Metal4",
+   "shapes": 410790
+  },
+  {
+   "layer": "81/0",
+   "name": "Metal5",
+   "shapes": 257895
+  },
+  {
+   "layer": "81/3",
+   "name": "Metal5_Slot",
+   "shapes": 33
+  },
+  {
+   "layer": "167/5",
+   "name": "GUARD_RING_MK",
+   "shapes": 1
+  }
+ ],
+ "blocks": [],
+ "labels": [],
+ "labels_truncated": false
+}

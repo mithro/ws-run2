@@ -1,0 +1,5766 @@
+{
+ "run": "ws-run2",
+ "code": "WSLG",
+ "reticle_cell": "WSLG_chip_top_10_2",
+ "size_um": [
+  3932.0,
+  5122.0
+ ],
+ "origin_um": [
+  0.0,
+  0.0
+ ],
+ "dbu_um": 0.001,
+ "placements_on_reticle": [
+  {
+   "x_mm": 20.02,
+   "y_mm": 5.242,
+   "rotation": "r0"
+  }
+ ],
+ "distinct_cells": 1196,
+ "standard_cells": [
+  {
+   "library": "mcu7t5v0",
+   "kind": "fill",
+   "placements": 145520
+  },
+  {
+   "library": "mcu7t5v0",
+   "kind": "logic",
+   "placements": 14290
+  }
+ ],
+ "standard_cell_types_top40": [
+  {
+   "library": "mcu7t5v0",
+   "type": "mux2_2",
+   "placements": 2439
+  },
+  {
+   "library": "mcu7t5v0",
+   "type": "buf_2",
+   "placements": 1605
+  },
+  {
+   "library": "mcu7t5v0",
+   "type": "dfxtp_2",
+   "placements": 1600
+  },
+  {
+   "library": "mcu7t5v0",
+   "type": "and2_2",
+   "placements": 1120
+  },
+  {
+   "library": "mcu7t5v0",
+   "type": "nand2_2",
+   "placements": 638
+  },
+  {
+   "library": "mcu7t5v0",
+   "type": "buf_8",
+   "placements": 578
+  },
+  {
+   "library": "mcu7t5v0",
+   "type": "aoi21_2",
+   "placements": 447
+  },
+  {
+   "library": "mcu7t5v0",
+   "type": "aoi22_2",
+   "placements": 433
+  },
+  {
+   "library": "mcu7t5v0",
+   "type": "clkinv_2",
+   "placements": 334
+  },
+  {
+   "library": "mcu7t5v0",
+   "type": "and3_2",
+   "placements": 320
+  },
+  {
+   "library": "mcu7t5v0",
+   "type": "clkbuf_8",
+   "placements": 287
+  },
+  {
+   "library": "mcu7t5v0",
+   "type": "nor2_2",
+   "placements": 269
+  },
+  {
+   "library": "mcu7t5v0",
+   "type": "or2_2",
+   "placements": 249
+  },
+  {
+   "library": "mcu7t5v0",
+   "type": "oai21_2",
+   "placements": 247
+  },
+  {
+   "library": "mcu7t5v0",
+   "type": "xnor2_2",
+   "placements": 237
+  },
+  {
+   "library": "mcu7t5v0",
+   "type": "dlyd_2",
+   "placements": 188
+  },
+  {
+   "library": "mcu7t5v0",
+   "type": "or3_2",
+   "placements": 186
+  },
+  {
+   "library": "mcu7t5v0",
+   "type": "aoi211_2",
+   "placements": 185
+  },
+  {
+   "library": "mcu7t5v0",
+   "type": "buf_4",
+   "placements": 184
+  },
+  {
+   "library": "mcu7t5v0",
+   "type": "buf_12",
+   "placements": 182
+  },
+  {
+   "library": "mcu7t5v0",
+   "type": "clkbuf_2",
+   "placements": 176
+  },
+  {
+   "library": "mcu7t5v0",
+   "type": "and4_2",
+   "placements": 175
+  },
+  {
+   "library": "mcu7t5v0",
+   "type": "oai31_2",
+   "placements": 158
+  },
+  {
+   "library": "mcu7t5v0",
+   "type": "oai211_2",
+   "placements": 153
+  },
+  {
+   "library": "mcu7t5v0",
+   "type": "nand3_2",
+   "placements": 120
+  },
+  {
+   "library": "mcu7t5v0",
+   "type": "aoi221_2",
+   "placements": 109
+  },
+  {
+   "library": "mcu7t5v0",
+   "type": "inv_1",
+   "placements": 108
+  },
+  {
+   "library": "mcu7t5v0",
+   "type": "oai22_2",
+   "placements": 106
+  },
+  {
+   "library": "mcu7t5v0",
+   "type": "or4_2",
+   "placements": 100
+  },
+  {
+   "library": "mcu7t5v0",
+   "type": "dy_dfxtp_2",
+   "placements": 92
+  },
+  {
+   "library": "mcu7t5v0",
+   "type": "nand2_4",
+   "placements": 83
+  },
+  {
+   "library": "mcu7t5v0",
+   "type": "inv_2",
+   "placements": 79
+  },
+  {
+   "library": "mcu7t5v0",
+   "type": "oai221_2",
+   "placements": 76
+  },
+  {
+   "library": "mcu7t5v0",
+   "type": "mux4_2",
+   "placements": 72
+  },
+  {
+   "library": "mcu7t5v0",
+   "type": "xor2_1",
+   "placements": 60
+  },
+  {
+   "library": "mcu7t5v0",
+   "type": "clkbuf_4",
+   "placements": 57
+  },
+  {
+   "library": "mcu7t5v0",
+   "type": "nor3_2",
+   "placements": 55
+  },
+  {
+   "library": "mcu7t5v0",
+   "type": "buf_3",
+   "placements": 53
+  },
+  {
+   "library": "mcu7t5v0",
+   "type": "nand4_2",
+   "placements": 53
+  },
+  {
+   "library": "mcu7t5v0",
+   "type": "oai222_2",
+   "placements": 52
+  }
+ ],
+ "sram_macros": [],
+ "io_cells": [
+  {
+   "cell": "gf180mcu_fd_io__asig_5p0",
+   "placements": 2
+  },
+  {
+   "cell": "gf180mcu_fd_io__bi_24t",
+   "placements": 40
+  },
+  {
+   "cell": "gf180mcu_fd_io__cor",
+   "placements": 4
+  },
+  {
+   "cell": "gf180mcu_fd_io__fill1",
+   "placements": 58
+  },
+  {
+   "cell": "gf180mcu_fd_io__fill10",
+   "placements": 906
+  },
+  {
+   "cell": "gf180mcu_fd_io__fill5",
+   "placements": 78
+  },
+  {
+   "cell": "gf180mcu_fd_io__fillnc",
+   "placements": 20
+  },
+  {
+   "cell": "gf180mcu_fd_io__in_c",
+   "placements": 13
+  },
+  {
+   "cell": "gf180mcu_fd_io__in_s",
+   "placements": 1
+  },
+  {
+   "cell": "gf180mcu_ws_io__dvdd",
+   "placements": 8
+  },
+  {
+   "cell": "gf180mcu_ws_io__dvss",
+   "placements": 10
+  }
+ ],
+ "fill_and_sealring_placements": 1982019,
+ "other_cells_by_placements_top80": [
+  {
+   "cell": "M4_M3_CDNS_406619531453$8",
+   "placements": 15402,
+   "size_um": [
+    9.06,
+    5.96
+   ]
+  },
+  {
+   "cell": "M5_M4_CDNS_406619531450$8",
+   "placements": 15402,
+   "size_um": [
+    9.12,
+    6.02
+   ]
+  },
+  {
+   "cell": "POLY_SUB_FILL_1$13",
+   "placements": 14496,
+   "size_um": [
+    9.75,
+    18.06
+   ]
+  },
+  {
+   "cell": "M3_M2_CDNS_406619531459$8",
+   "placements": 12948,
+   "size_um": [
+    0.38,
+    5.66
+   ]
+  },
+  {
+   "cell": "M2_M1_CDNS_4066195314518$8",
+   "placements": 10920,
+   "size_um": [
+    0.38,
+    0.38
+   ]
+  },
+  {
+   "cell": "M3_M2_CDNS_4066195314510$8",
+   "placements": 8856,
+   "size_um": [
+    0.38,
+    12.92
+   ]
+  },
+  {
+   "cell": "M4_M3_CDNS_406619531452$8",
+   "placements": 8154,
+   "size_um": [
+    9.06,
+    13.4
+   ]
+  },
+  {
+   "cell": "M5_M4_CDNS_406619531451$8",
+   "placements": 8154,
+   "size_um": [
+    9.12,
+    13.46
+   ]
+  },
+  {
+   "cell": "M2_M1_CDNS_40661953145164$8",
+   "placements": 7979,
+   "size_um": [
+    0.38,
+    0.9
+   ]
+  },
+  {
+   "cell": "M2_M1_CDNS_40661953145117$8",
+   "placements": 5949,
+   "size_um": [
+    0.9,
+    0.38
+   ]
+  },
+  {
+   "cell": "M5_M4_CDNS_40661953145496$8",
+   "placements": 5432,
+   "size_um": [
+    20.24,
+    0.44
+   ]
+  },
+  {
+   "cell": "M4_M3_CDNS_40661953145598$8",
+   "placements": 5432,
+   "size_um": [
+    20.18,
+    0.38
+   ]
+  },
+  {
+   "cell": "M1_POLY2_CDNS_40661953145222$8",
+   "placements": 5130,
+   "size_um": [
+    0.42,
+    0.89
+   ]
+  },
+  {
+   "cell": "M1_POLY2_CDNS_40661953145106$8",
+   "placements": 4292,
+   "size_um": [
+    0.89,
+    0.42
+   ]
+  },
+  {
+   "cell": "M4_M3_CDNS_40661953145578$8",
+   "placements": 4244,
+   "size_um": [
+    8.96,
+    0.38
+   ]
+  },
+  {
+   "cell": "M5_M4_CDNS_40661953145443$8",
+   "placements": 4244,
+   "size_um": [
+    9.02,
+    0.44
+   ]
+  },
+  {
+   "cell": "Metal4_Slot$7",
+   "placements": 3809,
+   "size_um": [
+    2.0,
+    10.0
+   ]
+  },
+  {
+   "cell": "Metal3_Slot$4",
+   "placements": 3809,
+   "size_um": [
+    2.0,
+    10.0
+   ]
+  },
+  {
+   "cell": "Metal5_Slot$7",
+   "placements": 3809,
+   "size_um": [
+    2.0,
+    10.0
+   ]
+  },
+  {
+   "cell": "Metal2_Slot$4",
+   "placements": 3809,
+   "size_um": [
+    2.0,
+    10.0
+   ]
+  },
+  {
+   "cell": "Metal1_Slot$4",
+   "placements": 3809,
+   "size_um": [
+    2.0,
+    10.0
+   ]
+  },
+  {
+   "cell": "M3_M2_CDNS_406619531456$8",
+   "placements": 3656,
+   "size_um": [
+    1.0,
+    5.96
+   ]
+  },
+  {
+   "cell": "M2_M1_CDNS_406619531454$8",
+   "placements": 3624,
+   "size_um": [
+    1.0,
+    5.96
+   ]
+  },
+  {
+   "cell": "M2_M1_CDNS_40661953145140$8",
+   "placements": 3208,
+   "size_um": [
+    10.1,
+    0.38
+   ]
+  },
+  {
+   "cell": "M2_M1_CDNS_4066195314586$8",
+   "placements": 3032,
+   "size_um": [
+    0.92,
+    0.38
+   ]
+  },
+  {
+   "cell": "POLY_SUB_FILL$13",
+   "placements": 2730,
+   "size_um": [
+    4.23,
+    8.46
+   ]
+  },
+  {
+   "cell": "M4_M3_CDNS_4066195314512$8",
+   "placements": 2652,
+   "size_um": [
+    4.1,
+    5.96
+   ]
+  },
+  {
+   "cell": "M1_PSUB_CDNS_406619531455$9",
+   "placements": 2116,
+   "size_um": [
+    0.77,
+    284.27
+   ]
+  },
+  {
+   "cell": "M1_PSUB_CDNS_406619531458$8",
+   "placements": 1812,
+   "size_um": [
+    8.77,
+    1.27
+   ]
+  },
+  {
+   "cell": "M3_M2_CDNS_406619531457$8",
+   "placements": 1812,
+   "size_um": [
+    1.04,
+    6.32
+   ]
+  },
+  {
+   "cell": "M4_M3_CDNS_4066195314557$9",
+   "placements": 1776,
+   "size_um": [
+    73.51,
+    6.77
+   ]
+  },
+  {
+   "cell": "M3_M2_CDNS_40661953145170$8",
+   "placements": 1656,
+   "size_um": [
+    0.38,
+    3.93
+   ]
+  },
+  {
+   "cell": "M1_PSUB_CDNS_40661953145226$8",
+   "placements": 1620,
+   "size_um": [
+    0.77,
+    5.47
+   ]
+  },
+  {
+   "cell": "M4_M3_CDNS_4066195314551$9",
+   "placements": 1554,
+   "size_um": [
+    59.31,
+    1.09
+   ]
+  },
+  {
+   "cell": "M3_M2_CDNS_4066195314552$9",
+   "placements": 1554,
+   "size_um": [
+    59.31,
+    1.09
+   ]
+  },
+  {
+   "cell": "M5_M4_CDNS_4066195314556$9",
+   "placements": 1554,
+   "size_um": [
+    59.37,
+    1.15
+   ]
+  },
+  {
+   "cell": "M3_M2_CDNS_40661953145208$8",
+   "placements": 1468,
+   "size_um": [
+    1.09,
+    14.58
+   ]
+  },
+  {
+   "cell": "M2_M1_CDNS_40661953145158$8",
+   "placements": 1464,
+   "size_um": [
+    9.02,
+    0.38
+   ]
+  },
+  {
+   "cell": "M1_NWELL_CDNS_40661953145315$8",
+   "placements": 1458,
+   "size_um": [
+    1.28,
+    5.98
+   ]
+  },
+  {
+   "cell": "M2_M1_CDNS_40661953145247$8",
+   "placements": 1404,
+   "size_um": [
+    1.94,
+    0.9
+   ]
+  },
+  {
+   "cell": "M4_M3_CDNS_4066195314514$8",
+   "placements": 1404,
+   "size_um": [
+    4.1,
+    14.02
+   ]
+  },
+  {
+   "cell": "M5_M4_CDNS_4066195314511$8",
+   "placements": 1326,
+   "size_um": [
+    4.16,
+    6.02
+   ]
+  },
+  {
+   "cell": "pmos_6p0_CDNS_4066195314512$8",
+   "placements": 1188,
+   "size_um": [
+    2.78,
+    4.24
+   ]
+  },
+  {
+   "cell": "M5_M4_CDNS_4066195314559$9",
+   "placements": 1184,
+   "size_um": [
+    73.57,
+    6.83
+   ]
+  },
+  {
+   "cell": "M2_M1_CDNS_40661953145115$8",
+   "placements": 1144,
+   "size_um": [
+    0.9,
+    0.9
+   ]
+  },
+  {
+   "cell": "nmos_6p0_CDNS_4066195314511$8",
+   "placements": 1080,
+   "size_um": [
+    2.06,
+    4.24
+   ]
+  },
+  {
+   "cell": "M1_NWELL_CDNS_40661953145223$8",
+   "placements": 1080,
+   "size_um": [
+    1.28,
+    8.33
+   ]
+  },
+  {
+   "cell": "M2_M1_CDNS_40661953145169$8",
+   "placements": 1066,
+   "size_um": [
+    0.38,
+    4.02
+   ]
+  },
+  {
+   "cell": "M2_M1_CDNS_40661953145173$8",
+   "placements": 984,
+   "size_um": [
+    0.38,
+    2.98
+   ]
+  },
+  {
+   "cell": "M1_PSUB_CDNS_40661953145228$8",
+   "placements": 972,
+   "size_um": [
+    0.77,
+    5.0
+   ]
+  },
+  {
+   "cell": "M2_M1_CDNS_40661953145216$8",
+   "placements": 972,
+   "size_um": [
+    0.38,
+    1.94
+   ]
+  },
+  {
+   "cell": "M2_M1_CDNS_40661953145176$8",
+   "placements": 970,
+   "size_um": [
+    0.38,
+    5.06
+   ]
+  },
+  {
+   "cell": "M4_M3_CDNS_4066195314558$9",
+   "placements": 962,
+   "size_um": [
+    73.51,
+    14.58
+   ]
+  },
+  {
+   "cell": "M1_PSUB_CDNS_40661953145674$8",
+   "placements": 960,
+   "size_um": [
+    0.77,
+    0.77
+   ]
+  },
+  {
+   "cell": "M4_M3_CDNS_4066195314522$8",
+   "placements": 928,
+   "size_um": [
+    0.38,
+    6.54
+   ]
+  },
+  {
+   "cell": "M5_M4_CDNS_4066195314519$8",
+   "placements": 928,
+   "size_um": [
+    0.44,
+    6.6
+   ]
+  },
+  {
+   "cell": "GF_NI_FILL10_0$13",
+   "placements": 906,
+   "size_um": [
+    10.32,
+    350.0
+   ]
+  },
+  {
+   "cell": "GF_NI_FILL10_1$13",
+   "placements": 906,
+   "size_um": [
+    10.32,
+    350.0
+   ]
+  },
+  {
+   "cell": "M3_M2_CDNS_40661953145180$8",
+   "placements": 770,
+   "size_um": [
+    1.8,
+    6.77
+   ]
+  },
+  {
+   "cell": "M2_M1_CDNS_4066195314585$8",
+   "placements": 748,
+   "size_um": [
+    2.54,
+    0.38
+   ]
+  },
+  {
+   "cell": "M5_M4_CDNS_4066195314513$8",
+   "placements": 702,
+   "size_um": [
+    4.16,
+    14.08
+   ]
+  },
+  {
+   "cell": "M2_M1_CDNS_40661953145787$8",
+   "placements": 672,
+   "size_um": [
+    5.24,
+    0.38
+   ]
+  },
+  {
+   "cell": "M5_M4_CDNS_4066195314560$9",
+   "placements": 666,
+   "size_um": [
+    73.57,
+    14.64
+   ]
+  },
+  {
+   "cell": "pmos_6p0_CDNS_4066195314515$8",
+   "placements": 648,
+   "size_um": [
+    2.78,
+    13.24
+   ]
+  },
+  {
+   "cell": "nmos_6p0_CDNS_4066195314519$8",
+   "placements": 648,
+   "size_um": [
+    2.06,
+    7.24
+   ]
+  },
+  {
+   "cell": "pmos_6p0_CDNS_4066195314516$8",
+   "placements": 648,
+   "size_um": [
+    4.0,
+    13.24
+   ]
+  },
+  {
+   "cell": "M1_POLY2_CDNS_40661953145229$8",
+   "placements": 648,
+   "size_um": [
+    1.36,
+    0.42
+   ]
+  },
+  {
+   "cell": "M3_M2_CDNS_40661953145204$8",
+   "placements": 648,
+   "size_um": [
+    0.38,
+    8.19
+   ]
+  },
+  {
+   "cell": "nmos_6p0_CDNS_4066195314530$8",
+   "placements": 594,
+   "size_um": [
+    2.06,
+    2.74
+   ]
+  },
+  {
+   "cell": "M3_M2_CDNS_4066195314592$8",
+   "placements": 568,
+   "size_um": [
+    9.68,
+    6.58
+   ]
+  },
+  {
+   "cell": "M2_M1_CDNS_40661953145201$8",
+   "placements": 540,
+   "size_um": [
+    0.38,
+    11.3
+   ]
+  },
+  {
+   "cell": "M1_PSUB_CDNS_40661953145237$8",
+   "placements": 540,
+   "size_um": [
+    2.65,
+    0.77
+   ]
+  },
+  {
+   "cell": "nmos_6p0_CDNS_4066195314531$8",
+   "placements": 540,
+   "size_um": [
+    3.28,
+    2.74
+   ]
+  },
+  {
+   "cell": "pmos_6p0_CDNS_4066195314529$8",
+   "placements": 540,
+   "size_um": [
+    4.0,
+    4.24
+   ]
+  },
+  {
+   "cell": "M4_M3_CDNS_4066195314524$8",
+   "placements": 522,
+   "size_um": [
+    0.38,
+    13.82
+   ]
+  },
+  {
+   "cell": "M5_M4_CDNS_4066195314520$8",
+   "placements": 522,
+   "size_um": [
+    0.44,
+    13.88
+   ]
+  },
+  {
+   "cell": "M3_M2_CDNS_40661953145202$8",
+   "placements": 512,
+   "size_um": [
+    0.38,
+    11.03
+   ]
+  },
+  {
+   "cell": "M2_M1_CDNS_40661953145182$8",
+   "placements": 500,
+   "size_um": [
+    1.94,
+    1.42
+   ]
+  },
+  {
+   "cell": "nmoscap_6p0_CDNS_406619531454$8",
+   "placements": 488,
+   "size_um": [
+    12.8,
+    28.11
+   ]
+  },
+  {
+   "cell": "M2_M1_CDNS_40661953145181$8",
+   "placements": 486,
+   "size_um": [
+    1.94,
+    0.38
+   ]
+  }
+ ],
+ "layers": [
+  {
+   "layer": "0/0",
+   "name": "PR_bndry",
+   "shapes": 163249
+  },
+  {
+   "layer": "21/0",
+   "name": "Nwell",
+   "shapes": 173952
+  },
+  {
+   "layer": "21/10",
+   "name": "",
+   "shapes": 116986
+  },
+  {
+   "layer": "22/0",
+   "name": "COMP",
+   "shapes": 1604058
+  },
+  {
+   "layer": "23/5",
+   "name": "ISOSUB",
+   "shapes": 1352
+  },
+  {
+   "layer": "24/5",
+   "name": "ESD_MK",
+   "shapes": 108
+  },
+  {
+   "layer": "30/0",
+   "name": "Poly2",
+   "shapes": 1611436
+  },
+  {
+   "layer": "31/0",
+   "name": "Pplus",
+   "shapes": 252280
+  },
+  {
+   "layer": "32/0",
+   "name": "Nplus",
+   "shapes": 211666
+  },
+  {
+   "layer": "33/0",
+   "name": "Contact",
+   "shapes": 12276447
+  },
+  {
+   "layer": "34/0",
+   "name": "Metal1",
+   "shapes": 2649773
+  },
+  {
+   "layer": "34/3",
+   "name": "Metal1_Slot",
+   "shapes": 3909
+  },
+  {
+   "layer": "34/10",
+   "name": "Metal1_Label",
+   "shapes": 383088
+  },
+  {
+   "layer": "35/0",
+   "name": "Via1",
+   "shapes": 1713441
+  },
+  {
+   "layer": "36/0",
+   "name": "Metal2",
+   "shapes": 1089913
+  },
+  {
+   "layer": "36/3",
+   "name": "Metal2_Slot",
+   "shapes": 3909
+  },
+  {
+   "layer": "36/10",
+   "name": "Metal2_Label",
+   "shapes": 2422
+  },
+  {
+   "layer": "37/0",
+   "name": "Pad",
+   "shapes": 82
+  },
+  {
+   "layer": "38/0",
+   "name": "Via2",
+   "shapes": 2102200
+  },
+  {
+   "layer": "40/0",
+   "name": "Via3",
+   "shapes": 10832295
+  },
+  {
+   "layer": "41/0",
+   "name": "Via4",
+   "shapes": 9323165
+  },
+  {
+   "layer": "42/0",
+   "name": "Metal3",
+   "shapes": 839749
+  },
+  {
+   "layer": "42/3",
+   "name": "Metal3_Slot",
+   "shapes": 3909
+  },
+  {
+   "layer": "42/10",
+   "name": "Metal3_Label",
+   "shapes": 88098
+  },
+  {
+   "layer": "46/0",
+   "name": "Metal4",
+   "shapes": 729485
+  },
+  {
+   "layer": "46/3",
+   "name": "Metal4_Slot",
+   "shapes": 3909
+  },
+  {
+   "layer": "46/10",
+   "name": "Metal4_Label",
+   "shapes": 59296
+  },
+  {
+   "layer": "49/0",
+   "name": "SAB",
+   "shapes": 2390
+  },
+  {
+   "layer": "55/0",
+   "name": "Dualgate",
+   "shapes": 240500
+  },
+  {
+   "layer": "58/0",
+   "name": "",
+   "shapes": 954
+  },
+  {
+   "layer": "63/63",
+   "name": "VTEXT",
+   "shapes": 637032
+  },
+  {
+   "layer": "81/0",
+   "name": "Metal5",
+   "shapes": 544860
+  },
+  {
+   "layer": "81/3",
+   "name": "Metal5_Slot",
+   "shapes": 3909
+  },
+  {
+   "layer": "81/10",
+   "name": "Metal5_Label",
+   "shapes": 33902
+  },
+  {
+   "layer": "100/8",
+   "name": "LVS_Source",
+   "shapes": 1080
+  },
+  {
+   "layer": "110/5",
+   "name": "RES_MK",
+   "shapes": 1068
+  },
+  {
+   "layer": "112/1",
+   "name": "V5_XTOR",
+   "shapes": 159810
+  },
+  {
+   "layer": "115/5",
+   "name": "DIODE_MK",
+   "shapes": 987
+  },
+  {
+   "layer": "119/5",
+   "name": "LVS_IO",
+   "shapes": 108
+  },
+  {
+   "layer": "137/5",
+   "name": "Latchup_MK",
+   "shapes": 124
+  },
+  {
+   "layer": "152/5",
+   "name": "PMNDMY",
+   "shapes": 3
+  },
+  {
+   "layer": "166/5",
+   "name": "MOS_CAP_MK",
+   "shapes": 35732
+  },
+  {
+   "layer": "167/5",
+   "name": "GUARD_RING_MK",
+   "shapes": 1
+  },
+  {
+   "layer": "204/0",
+   "name": "LVPWELL",
+   "shapes": 210038
+  },
+  {
+   "layer": "204/10",
+   "name": "",
+   "shapes": 116986
+  }
+ ],
+ "blocks": [
+  {
+   "cell": "big_logo",
+   "parent": "WSLG_chip_top_10_2",
+   "depth": 1,
+   "count_in_parent": 1,
+   "size_um": [
+    2550.0,
+    2550.0
+   ],
+   "first_placement_box_um": [
+    700.0,
+    1305.0,
+    3250.0,
+    3855.0
+   ],
+   "kind": "block",
+   "child_cells": 0
+  },
+  {
+   "cell": "SLOTS$2",
+   "parent": "WSLG_chip_top_10_2",
+   "depth": 1,
+   "count_in_parent": 1,
+   "size_um": [
+    2420.0,
+    2045.0
+   ],
+   "first_placement_box_um": [
+    796.0,
+    1585.0,
+    3216.0,
+    3630.0
+   ],
+   "kind": "block",
+   "child_cells": 40
+  },
+  {
+   "cell": "wrapped_vga",
+   "parent": "WSLG_chip_top_10_2",
+   "depth": 1,
+   "count_in_parent": 1,
+   "size_um": [
+    500.0,
+    500.0
+   ],
+   "first_placement_box_um": [
+    800.0,
+    605.0,
+    1300.0,
+    1105.0
+   ],
+   "kind": "block",
+   "child_cells": 81
+  },
+  {
+   "cell": "gf180mcu_fd_io__cor$8",
+   "parent": "WSLG_chip_top_10_2",
+   "depth": 1,
+   "count_in_parent": 4,
+   "size_um": [
+    355.16,
+    355.16
+   ],
+   "first_placement_box_um": [
+    3550.84,
+    4740.84,
+    3906.0,
+    5096.0
+   ],
+   "kind": "io",
+   "child_cells": 2
+  },
+  {
+   "cell": "gf180mcu_ws_io__dvss",
+   "parent": "WSLG_chip_top_10_2",
+   "depth": 1,
+   "count_in_parent": 10,
+   "size_um": [
+    75.32,
+    357.0
+   ],
+   "first_placement_box_um": [
+    1928.34,
+    26.0,
+    2003.66,
+    383.0
+   ],
+   "kind": "io",
+   "child_cells": 1
+  },
+  {
+   "cell": "gf180mcu_ws_io__dvdd",
+   "parent": "WSLG_chip_top_10_2",
+   "depth": 1,
+   "count_in_parent": 8,
+   "size_um": [
+    75.32,
+    357.0
+   ],
+   "first_placement_box_um": [
+    3549.0,
+    4527.84,
+    3906.0,
+    4603.16
+   ],
+   "kind": "io",
+   "child_cells": 1
+  },
+  {
+   "cell": "gf180mcu_fd_io__bi_24t$8",
+   "parent": "WSLG_chip_top_10_2",
+   "depth": 1,
+   "count_in_parent": 40,
+   "size_um": [
+    75.32,
+    350.0
+   ],
+   "first_placement_box_um": [
+    3368.34,
+    4746.0,
+    3443.66,
+    5096.0
+   ],
+   "kind": "io",
+   "child_cells": 2
+  },
+  {
+   "cell": "gf180mcu_fd_io__asig_5p0$3",
+   "parent": "WSLG_chip_top_10_2",
+   "depth": 1,
+   "count_in_parent": 2,
+   "size_um": [
+    75.32,
+    350.0
+   ],
+   "first_placement_box_um": [
+    488.34,
+    4746.0,
+    563.66,
+    5096.0
+   ],
+   "kind": "io",
+   "child_cells": 2
+  },
+  {
+   "cell": "gf180mcu_fd_io__in_c$8",
+   "parent": "WSLG_chip_top_10_2",
+   "depth": 1,
+   "count_in_parent": 13,
+   "size_um": [
+    75.32,
+    350.0
+   ],
+   "first_placement_box_um": [
+    26.0,
+    4527.84,
+    376.0,
+    4603.16
+   ],
+   "kind": "io",
+   "child_cells": 2
+  },
+  {
+   "cell": "gf180mcu_fd_io__in_s$8",
+   "parent": "WSLG_chip_top_10_2",
+   "depth": 1,
+   "count_in_parent": 1,
+   "size_um": [
+    75.32,
+    350.0
+   ],
+   "first_placement_box_um": [
+    488.34,
+    26.0,
+    563.66,
+    376.0
+   ],
+   "kind": "io",
+   "child_cells": 2
+  },
+  {
+   "cell": "gf180mcu_ws_ip__logo$13",
+   "parent": "WSLG_chip_top_10_2",
+   "depth": 1,
+   "count_in_parent": 1,
+   "size_um": [
+    143.25,
+    143.25
+   ],
+   "first_placement_box_um": [
+    3762.75,
+    4952.75,
+    3906.0,
+    5096.0
+   ],
+   "kind": "block",
+   "child_cells": 0
+  },
+  {
+   "cell": "gf180mcu_ws_ip__id",
+   "parent": "WSLG_chip_top_10_2",
+   "depth": 1,
+   "count_in_parent": 1,
+   "size_um": [
+    142.8,
+    142.8
+   ],
+   "first_placement_box_um": [
+    26.0,
+    26.0,
+    168.8,
+    168.8
+   ],
+   "kind": "block",
+   "child_cells": 0
+  },
+  {
+   "cell": "gf180mcu_fd_io__fill10$8",
+   "parent": "WSLG_chip_top_10_2",
+   "depth": 1,
+   "count_in_parent": 906,
+   "size_um": [
+    10.32,
+    350.0
+   ],
+   "first_placement_box_um": [
+    26.0,
+    2552.84,
+    376.0,
+    2563.16
+   ],
+   "kind": "io",
+   "child_cells": 3
+  },
+  {
+   "cell": "gf180mcu_fd_io__fill5$8",
+   "parent": "WSLG_chip_top_10_2",
+   "depth": 1,
+   "count_in_parent": 78,
+   "size_um": [
+    5.32,
+    350.0
+   ],
+   "first_placement_box_um": [
+    3543.34,
+    4746.0,
+    3548.66,
+    5096.0
+   ],
+   "kind": "io",
+   "child_cells": 5
+  },
+  {
+   "cell": "gf180mcu_fd_io__fill1$8",
+   "parent": "WSLG_chip_top_10_2",
+   "depth": 1,
+   "count_in_parent": 58,
+   "size_um": [
+    1.32,
+    350.0
+   ],
+   "first_placement_box_um": [
+    3548.34,
+    4746.0,
+    3549.66,
+    5096.0
+   ],
+   "kind": "io",
+   "child_cells": 4
+  },
+  {
+   "cell": "gf180mcu_fd_io__fillnc$8",
+   "parent": "WSLG_chip_top_10_2",
+   "depth": 1,
+   "count_in_parent": 20,
+   "size_um": [
+    0.42,
+    350.0
+   ],
+   "first_placement_box_um": [
+    3550.64,
+    4746.0,
+    3551.06,
+    5096.0
+   ],
+   "kind": "io",
+   "child_cells": 1
+  },
+  {
+   "cell": "Metal4_Slot$7",
+   "parent": "SLOTS$2",
+   "depth": 2,
+   "count_in_parent": 3809,
+   "size_um": [
+    2.0,
+    10.0
+   ],
+   "first_placement_box_um": [
+    1618.0,
+    2600.0,
+    1620.0,
+    2610.0
+   ],
+   "kind": "block",
+   "child_cells": 0
+  },
+  {
+   "cell": "Metal3_Slot$4",
+   "parent": "SLOTS$2",
+   "depth": 2,
+   "count_in_parent": 3809,
+   "size_um": [
+    2.0,
+    10.0
+   ],
+   "first_placement_box_um": [
+    994.0,
+    2540.0,
+    996.0,
+    2550.0
+   ],
+   "kind": "block",
+   "child_cells": 0
+  },
+  {
+   "cell": "Metal5_Slot$7",
+   "parent": "SLOTS$2",
+   "depth": 2,
+   "count_in_parent": 3809,
+   "size_um": [
+    2.0,
+    10.0
+   ],
+   "first_placement_box_um": [
+    994.0,
+    2540.0,
+    996.0,
+    2550.0
+   ],
+   "kind": "block",
+   "child_cells": 0
+  },
+  {
+   "cell": "Metal2_Slot$4",
+   "parent": "SLOTS$2",
+   "depth": 2,
+   "count_in_parent": 3809,
+   "size_um": [
+    2.0,
+    10.0
+   ],
+   "first_placement_box_um": [
+    1006.0,
+    2405.0,
+    1008.0,
+    2415.0
+   ],
+   "kind": "block",
+   "child_cells": 0
+  },
+  {
+   "cell": "Metal1_Slot$4",
+   "parent": "SLOTS$2",
+   "depth": 2,
+   "count_in_parent": 3809,
+   "size_um": [
+    2.0,
+    10.0
+   ],
+   "first_placement_box_um": [
+    1786.0,
+    1610.0,
+    1788.0,
+    1620.0
+   ],
+   "kind": "block",
+   "child_cells": 0
+  },
+  {
+   "cell": "Metal3_Slot$6",
+   "parent": "SLOTS$2",
+   "depth": 2,
+   "count_in_parent": 6,
+   "size_um": [
+    2.0,
+    10.0
+   ],
+   "first_placement_box_um": [
+    2308.0,
+    2837.0,
+    2310.0,
+    2847.0
+   ],
+   "kind": "block",
+   "child_cells": 0
+  },
+  {
+   "cell": "Metal1_Slot$6",
+   "parent": "SLOTS$2",
+   "depth": 2,
+   "count_in_parent": 6,
+   "size_um": [
+    2.0,
+    10.0
+   ],
+   "first_placement_box_um": [
+    2308.0,
+    2837.0,
+    2310.0,
+    2847.0
+   ],
+   "kind": "block",
+   "child_cells": 0
+  },
+  {
+   "cell": "Metal4_Slot$6$1",
+   "parent": "SLOTS$2",
+   "depth": 2,
+   "count_in_parent": 6,
+   "size_um": [
+    2.0,
+    10.0
+   ],
+   "first_placement_box_um": [
+    2308.0,
+    2837.0,
+    2310.0,
+    2847.0
+   ],
+   "kind": "block",
+   "child_cells": 0
+  },
+  {
+   "cell": "Metal2_Slot$6",
+   "parent": "SLOTS$2",
+   "depth": 2,
+   "count_in_parent": 6,
+   "size_um": [
+    2.0,
+    10.0
+   ],
+   "first_placement_box_um": [
+    2308.0,
+    2837.0,
+    2310.0,
+    2847.0
+   ],
+   "kind": "block",
+   "child_cells": 0
+  },
+  {
+   "cell": "Metal5_Slot$6$1",
+   "parent": "SLOTS$2",
+   "depth": 2,
+   "count_in_parent": 6,
+   "size_um": [
+    2.0,
+    10.0
+   ],
+   "first_placement_box_um": [
+    2308.0,
+    2837.0,
+    2310.0,
+    2847.0
+   ],
+   "kind": "block",
+   "child_cells": 0
+  },
+  {
+   "cell": "Metal4_Slot$5$1",
+   "parent": "SLOTS$2",
+   "depth": 2,
+   "count_in_parent": 7,
+   "size_um": [
+    2.0,
+    10.0
+   ],
+   "first_placement_box_um": [
+    2091.0,
+    2945.0,
+    2093.0,
+    2955.0
+   ],
+   "kind": "block",
+   "child_cells": 0
+  },
+  {
+   "cell": "Metal3_Slot$5",
+   "parent": "SLOTS$2",
+   "depth": 2,
+   "count_in_parent": 7,
+   "size_um": [
+    2.0,
+    10.0
+   ],
+   "first_placement_box_um": [
+    2091.0,
+    2945.0,
+    2093.0,
+    2955.0
+   ],
+   "kind": "block",
+   "child_cells": 0
+  },
+  {
+   "cell": "Metal1_Slot$5",
+   "parent": "SLOTS$2",
+   "depth": 2,
+   "count_in_parent": 7,
+   "size_um": [
+    2.0,
+    10.0
+   ],
+   "first_placement_box_um": [
+    2091.0,
+    2945.0,
+    2093.0,
+    2955.0
+   ],
+   "kind": "block",
+   "child_cells": 0
+  },
+  {
+   "cell": "Metal5_Slot$5$1",
+   "parent": "SLOTS$2",
+   "depth": 2,
+   "count_in_parent": 7,
+   "size_um": [
+    2.0,
+    10.0
+   ],
+   "first_placement_box_um": [
+    2091.0,
+    2945.0,
+    2093.0,
+    2955.0
+   ],
+   "kind": "block",
+   "child_cells": 0
+  },
+  {
+   "cell": "Metal2_Slot$5",
+   "parent": "SLOTS$2",
+   "depth": 2,
+   "count_in_parent": 7,
+   "size_um": [
+    2.0,
+    10.0
+   ],
+   "first_placement_box_um": [
+    2091.0,
+    2945.0,
+    2093.0,
+    2955.0
+   ],
+   "kind": "block",
+   "child_cells": 0
+  },
+  {
+   "cell": "Metal2_Slot$3$1",
+   "parent": "SLOTS$2",
+   "depth": 2,
+   "count_in_parent": 22,
+   "size_um": [
+    2.0,
+    10.0
+   ],
+   "first_placement_box_um": [
+    2053.0,
+    2786.0,
+    2055.0,
+    2796.0
+   ],
+   "kind": "block",
+   "child_cells": 0
+  },
+  {
+   "cell": "Metal4_Slot$3$2",
+   "parent": "SLOTS$2",
+   "depth": 2,
+   "count_in_parent": 22,
+   "size_um": [
+    2.0,
+    10.0
+   ],
+   "first_placement_box_um": [
+    2053.0,
+    2786.0,
+    2055.0,
+    2796.0
+   ],
+   "kind": "block",
+   "child_cells": 0
+  },
+  {
+   "cell": "Metal3_Slot$1$1",
+   "parent": "SLOTS$2",
+   "depth": 2,
+   "count_in_parent": 22,
+   "size_um": [
+    2.0,
+    10.0
+   ],
+   "first_placement_box_um": [
+    2027.0,
+    2812.0,
+    2029.0,
+    2822.0
+   ],
+   "kind": "block",
+   "child_cells": 0
+  },
+  {
+   "cell": "Metal1_Slot$1$1",
+   "parent": "SLOTS$2",
+   "depth": 2,
+   "count_in_parent": 22,
+   "size_um": [
+    2.0,
+    10.0
+   ],
+   "first_placement_box_um": [
+    2027.0,
+    2812.0,
+    2029.0,
+    2822.0
+   ],
+   "kind": "block",
+   "child_cells": 0
+  },
+  {
+   "cell": "Metal5_Slot$1$2",
+   "parent": "SLOTS$2",
+   "depth": 2,
+   "count_in_parent": 22,
+   "size_um": [
+    2.0,
+    10.0
+   ],
+   "first_placement_box_um": [
+    2027.0,
+    2812.0,
+    2029.0,
+    2822.0
+   ],
+   "kind": "block",
+   "child_cells": 0
+  },
+  {
+   "cell": "Metal3_Slot$2$1",
+   "parent": "SLOTS$2",
+   "depth": 2,
+   "count_in_parent": 27,
+   "size_um": [
+    2.0,
+    10.0
+   ],
+   "first_placement_box_um": [
+    2040.0,
+    2799.0,
+    2042.0,
+    2809.0
+   ],
+   "kind": "block",
+   "child_cells": 0
+  },
+  {
+   "cell": "Metal1_Slot$2$1",
+   "parent": "SLOTS$2",
+   "depth": 2,
+   "count_in_parent": 27,
+   "size_um": [
+    2.0,
+    10.0
+   ],
+   "first_placement_box_um": [
+    2040.0,
+    2799.0,
+    2042.0,
+    2809.0
+   ],
+   "kind": "block",
+   "child_cells": 0
+  },
+  {
+   "cell": "Metal3_Slot$3$1",
+   "parent": "SLOTS$2",
+   "depth": 2,
+   "count_in_parent": 22,
+   "size_um": [
+    2.0,
+    10.0
+   ],
+   "first_placement_box_um": [
+    2053.0,
+    2786.0,
+    2055.0,
+    2796.0
+   ],
+   "kind": "block",
+   "child_cells": 0
+  },
+  {
+   "cell": "Metal5_Slot$2$2",
+   "parent": "SLOTS$2",
+   "depth": 2,
+   "count_in_parent": 27,
+   "size_um": [
+    2.0,
+    10.0
+   ],
+   "first_placement_box_um": [
+    2040.0,
+    2799.0,
+    2042.0,
+    2809.0
+   ],
+   "kind": "block",
+   "child_cells": 0
+  },
+  {
+   "cell": "Metal5_Slot$3$2",
+   "parent": "SLOTS$2",
+   "depth": 2,
+   "count_in_parent": 22,
+   "size_um": [
+    2.0,
+    10.0
+   ],
+   "first_placement_box_um": [
+    2053.0,
+    2786.0,
+    2055.0,
+    2796.0
+   ],
+   "kind": "block",
+   "child_cells": 0
+  },
+  {
+   "cell": "Metal1_Slot$3$1",
+   "parent": "SLOTS$2",
+   "depth": 2,
+   "count_in_parent": 22,
+   "size_um": [
+    2.0,
+    10.0
+   ],
+   "first_placement_box_um": [
+    2053.0,
+    2786.0,
+    2055.0,
+    2796.0
+   ],
+   "kind": "block",
+   "child_cells": 0
+  },
+  {
+   "cell": "Metal4_Slot$1$2",
+   "parent": "SLOTS$2",
+   "depth": 2,
+   "count_in_parent": 22,
+   "size_um": [
+    2.0,
+    10.0
+   ],
+   "first_placement_box_um": [
+    2027.0,
+    2812.0,
+    2029.0,
+    2822.0
+   ],
+   "kind": "block",
+   "child_cells": 0
+  },
+  {
+   "cell": "Metal2_Slot$1$1",
+   "parent": "SLOTS$2",
+   "depth": 2,
+   "count_in_parent": 22,
+   "size_um": [
+    2.0,
+    10.0
+   ],
+   "first_placement_box_um": [
+    2027.0,
+    2812.0,
+    2029.0,
+    2822.0
+   ],
+   "kind": "block",
+   "child_cells": 0
+  },
+  {
+   "cell": "Metal4_Slot$2$2",
+   "parent": "SLOTS$2",
+   "depth": 2,
+   "count_in_parent": 27,
+   "size_um": [
+    2.0,
+    10.0
+   ],
+   "first_placement_box_um": [
+    2040.0,
+    2799.0,
+    2042.0,
+    2809.0
+   ],
+   "kind": "block",
+   "child_cells": 0
+  },
+  {
+   "cell": "Metal2_Slot$2$1",
+   "parent": "SLOTS$2",
+   "depth": 2,
+   "count_in_parent": 27,
+   "size_um": [
+    2.0,
+    10.0
+   ],
+   "first_placement_box_um": [
+    2040.0,
+    2799.0,
+    2042.0,
+    2809.0
+   ],
+   "kind": "block",
+   "child_cells": 0
+  },
+  {
+   "cell": "Metal5_Slot$4$1",
+   "parent": "SLOTS$2",
+   "depth": 2,
+   "count_in_parent": 14,
+   "size_um": [
+    2.0,
+    10.0
+   ],
+   "first_placement_box_um": [
+    1370.0,
+    2883.0,
+    1372.0,
+    2893.0
+   ],
+   "kind": "block",
+   "child_cells": 0
+  },
+  {
+   "cell": "Metal1_Slot$4$1",
+   "parent": "SLOTS$2",
+   "depth": 2,
+   "count_in_parent": 14,
+   "size_um": [
+    2.0,
+    10.0
+   ],
+   "first_placement_box_um": [
+    1370.0,
+    2883.0,
+    1372.0,
+    2893.0
+   ],
+   "kind": "block",
+   "child_cells": 0
+  },
+  {
+   "cell": "Metal2_Slot$4$1",
+   "parent": "SLOTS$2",
+   "depth": 2,
+   "count_in_parent": 14,
+   "size_um": [
+    2.0,
+    10.0
+   ],
+   "first_placement_box_um": [
+    1370.0,
+    2883.0,
+    1372.0,
+    2893.0
+   ],
+   "kind": "block",
+   "child_cells": 0
+  },
+  {
+   "cell": "Metal4_Slot$4$1",
+   "parent": "SLOTS$2",
+   "depth": 2,
+   "count_in_parent": 14,
+   "size_um": [
+    2.0,
+    10.0
+   ],
+   "first_placement_box_um": [
+    1370.0,
+    2883.0,
+    1372.0,
+    2893.0
+   ],
+   "kind": "block",
+   "child_cells": 0
+  },
+  {
+   "cell": "Metal3_Slot$4$1",
+   "parent": "SLOTS$2",
+   "depth": 2,
+   "count_in_parent": 14,
+   "size_um": [
+    2.0,
+    10.0
+   ],
+   "first_placement_box_um": [
+    1370.0,
+    2883.0,
+    1372.0,
+    2893.0
+   ],
+   "kind": "block",
+   "child_cells": 0
+  },
+  {
+   "cell": "Metal5_Slot$7$1",
+   "parent": "SLOTS$2",
+   "depth": 2,
+   "count_in_parent": 2,
+   "size_um": [
+    2.0,
+    10.0
+   ],
+   "first_placement_box_um": [
+    2129.0,
+    2365.0,
+    2131.0,
+    2375.0
+   ],
+   "kind": "block",
+   "child_cells": 0
+  },
+  {
+   "cell": "Metal3_Slot$7",
+   "parent": "SLOTS$2",
+   "depth": 2,
+   "count_in_parent": 2,
+   "size_um": [
+    2.0,
+    10.0
+   ],
+   "first_placement_box_um": [
+    2129.0,
+    2365.0,
+    2131.0,
+    2375.0
+   ],
+   "kind": "block",
+   "child_cells": 0
+  },
+  {
+   "cell": "Metal2_Slot$7",
+   "parent": "SLOTS$2",
+   "depth": 2,
+   "count_in_parent": 2,
+   "size_um": [
+    2.0,
+    10.0
+   ],
+   "first_placement_box_um": [
+    2129.0,
+    2365.0,
+    2131.0,
+    2375.0
+   ],
+   "kind": "block",
+   "child_cells": 0
+  },
+  {
+   "cell": "Metal4_Slot$7$1",
+   "parent": "SLOTS$2",
+   "depth": 2,
+   "count_in_parent": 2,
+   "size_um": [
+    2.0,
+    10.0
+   ],
+   "first_placement_box_um": [
+    2129.0,
+    2365.0,
+    2131.0,
+    2375.0
+   ],
+   "kind": "block",
+   "child_cells": 0
+  },
+  {
+   "cell": "Metal1_Slot$7",
+   "parent": "SLOTS$2",
+   "depth": 2,
+   "count_in_parent": 2,
+   "size_um": [
+    2.0,
+    10.0
+   ],
+   "first_placement_box_um": [
+    2129.0,
+    2365.0,
+    2131.0,
+    2375.0
+   ],
+   "kind": "block",
+   "child_cells": 0
+  }
+ ],
+ "labels": [
+  {
+   "text": "VDD",
+   "layer": "34/0",
+   "layer_name": "Metal1",
+   "xy_um": [
+    1049.76,
+    1087.16
+   ]
+  },
+  {
+   "text": "VSS",
+   "layer": "34/0",
+   "layer_name": "Metal1",
+   "xy_um": [
+    1049.76,
+    1083.24
+   ]
+  },
+  {
+   "text": "_2238_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1241.28,
+    1053.84
+   ]
+  },
+  {
+   "text": "_1596_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1288.6,
+    1046.56
+   ]
+  },
+  {
+   "text": "net13",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1276.28,
+    1058.04
+   ]
+  },
+  {
+   "text": "_1586_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1285.24,
+    1043.48
+   ]
+  },
+  {
+   "text": "_1199_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1240.44,
+    1049.64
+   ]
+  },
+  {
+   "text": "_0068_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1264.38,
+    1034.24
+   ]
+  },
+  {
+   "text": "_1216_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1246.6,
+    1044.6
+   ]
+  },
+  {
+   "text": "_0796_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1234.84,
+    1043.62
+   ]
+  },
+  {
+   "text": "_1197_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1243.52,
+    1053.28
+   ]
+  },
+  {
+   "text": "vga.color_index\\[2\\]",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1275.16,
+    1035.64
+   ]
+  },
+  {
+   "text": "_1635_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1279.64,
+    1045.16
+   ]
+  },
+  {
+   "text": "net24",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1244.92,
+    1049.64
+   ]
+  },
+  {
+   "text": "_2185_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1235.96,
+    1034.8
+   ]
+  },
+  {
+   "text": "_0066_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1267.04,
+    1045.58
+   ]
+  },
+  {
+   "text": "vga.color_index\\[0\\]",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1276.84,
+    1047.4
+   ]
+  },
+  {
+   "text": "_1194_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1238.2,
+    1052.44
+   ]
+  },
+  {
+   "text": "_1112_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1230.92,
+    1063.08
+   ]
+  },
+  {
+   "text": "_1576_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1273.48,
+    1042.36
+   ]
+  },
+  {
+   "text": "_1196_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1249.4,
+    1067.56
+   ]
+  },
+  {
+   "text": "_1556_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1282.72,
+    1034.24
+   ]
+  },
+  {
+   "text": "outputs[7]",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1290.28,
+    1083.24
+   ]
+  },
+  {
+   "text": "_1547_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1278.52,
+    1043.76
+   ]
+  },
+  {
+   "text": "net27",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1188.36,
+    1049.36
+   ]
+  },
+  {
+   "text": "_0262_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1178.28,
+    1064.2
+   ]
+  },
+  {
+   "text": "_0789_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1181.64,
+    1066.72
+   ]
+  },
+  {
+   "text": "_1978_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1174.36,
+    1073.16
+   ]
+  },
+  {
+   "text": "_2187_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1211.88,
+    1033.96
+   ]
+  },
+  {
+   "text": "_0915_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1179.4,
+    1075.54
+   ]
+  },
+  {
+   "text": "_2146_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1211.04,
+    1055.52
+   ]
+  },
+  {
+   "text": "_2190_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1207.4,
+    1036.76
+   ]
+  },
+  {
+   "text": "_0787_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1188.92,
+    1069.8
+   ]
+  },
+  {
+   "text": "_0146_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1208.52,
+    1053.84
+   ]
+  },
+  {
+   "text": "_0788_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1172.68,
+    1069.52
+   ]
+  },
+  {
+   "text": "_0141_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1183.88,
+    1064.06
+   ]
+  },
+  {
+   "text": "net263",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1187.24,
+    1061.12
+   ]
+  },
+  {
+   "text": "_0147_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1209.08,
+    1056.36
+   ]
+  },
+  {
+   "text": "_0459_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1210.76,
+    1064.06
+   ]
+  },
+  {
+   "text": "_0270_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1179.96,
+    1040.68
+   ]
+  },
+  {
+   "text": "net118",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1181.08,
+    1063.78
+   ]
+  },
+  {
+   "text": "_2320_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1185.0,
+    1044.32
+   ]
+  },
+  {
+   "text": "_0155_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1194.52,
+    1073.72
+   ]
+  },
+  {
+   "text": "net72",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1186.68,
+    1037.6
+   ]
+  },
+  {
+   "text": "_2180_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1206.28,
+    1035.92
+   ]
+  },
+  {
+   "text": "_0461_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1209.08,
+    1070.92
+   ]
+  },
+  {
+   "text": "_1113_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1229.8,
+    1068.12
+   ]
+  },
+  {
+   "text": "_0265_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1230.36,
+    1038.72
+   ]
+  },
+  {
+   "text": "_0266_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1229.24,
+    1039.28
+   ]
+  },
+  {
+   "text": "net117",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1200.12,
+    1069.52
+   ]
+  },
+  {
+   "text": "_1111_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1229.24,
+    1063.08
+   ]
+  },
+  {
+   "text": "_0563_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1174.36,
+    1047.12
+   ]
+  },
+  {
+   "text": "net232",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1198.44,
+    1073.72
+   ]
+  },
+  {
+   "text": "net197",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1214.68,
+    1062.1
+   ]
+  },
+  {
+   "text": "_1407_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1171.56,
+    1063.5
+   ]
+  },
+  {
+   "text": "net122",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1181.08,
+    1039.28
+   ]
+  },
+  {
+   "text": "_0460_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1213.0,
+    1068.68
+   ]
+  },
+  {
+   "text": "net115",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1184.44,
+    1046.56
+   ]
+  },
+  {
+   "text": "_0150_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1203.76,
+    1066.72
+   ]
+  },
+  {
+   "text": "_2232_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1186.68,
+    1044.04
+   ]
+  },
+  {
+   "text": "_1083_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1196.2,
+    988.6
+   ]
+  },
+  {
+   "text": "net44",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1206.84,
+    1005.12
+   ]
+  },
+  {
+   "text": "_0649_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1171.56,
+    1028.08
+   ]
+  },
+  {
+   "text": "_1099_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1207.96,
+    980.48
+   ]
+  },
+  {
+   "text": "_2173_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1204.04,
+    997.28
+   ]
+  },
+  {
+   "text": "_1289_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1214.12,
+    1007.36
+   ]
+  },
+  {
+   "text": "_2149_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1206.28,
+    1024.16
+   ]
+  },
+  {
+   "text": "_0288_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1188.36,
+    1006.24
+   ]
+  },
+  {
+   "text": "_1097_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1214.68,
+    983.0
+   ]
+  },
+  {
+   "text": "_2150_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1202.36,
+    1022.2
+   ]
+  },
+  {
+   "text": "_2162_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1194.52,
+    1012.12
+   ]
+  },
+  {
+   "text": "_0289_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1190.04,
+    988.6
+   ]
+  },
+  {
+   "text": "_1098_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1207.96,
+    984.68
+   ]
+  },
+  {
+   "text": "_2178_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1204.6,
+    1010.72
+   ]
+  },
+  {
+   "text": "_0292_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1186.12,
+    973.76
+   ]
+  },
+  {
+   "text": "_0285_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1184.44,
+    979.36
+   ]
+  },
+  {
+   "text": "_2175_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1200.68,
+    1000.36
+   ]
+  },
+  {
+   "text": "_1293_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1245.48,
+    1012.96
+   ]
+  },
+  {
+   "text": "net49",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1243.8,
+    995.04
+   ]
+  },
+  {
+   "text": "net12",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1276.28,
+    1026.68
+   ]
+  },
+  {
+   "text": "net15",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1273.48,
+    973.34
+   ]
+  },
+  {
+   "text": "_1615_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1272.92,
+    1020.8
+   ]
+  },
+  {
+   "text": "_0016_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1273.9,
+    991.12
+   ]
+  },
+  {
+   "text": "_0017_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1273.48,
+    1005.4
+   ]
+  },
+  {
+   "text": "_0981_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1255.0,
+    973.76
+   ]
+  },
+  {
+   "text": "_1218_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1248.28,
+    988.88
+   ]
+  },
+  {
+   "text": "_0002_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1265.36,
+    995.46
+   ]
+  },
+  {
+   "text": "net18",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1234.28,
+    982.16
+   ]
+  },
+  {
+   "text": "outputs[4]",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1290.28,
+    1000.08
+   ]
+  },
+  {
+   "text": "_1290_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1243.8,
+    1010.44
+   ]
+  },
+  {
+   "text": "_1093_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1232.04,
+    1001.76
+   ]
+  },
+  {
+   "text": "_1696_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1270.12,
+    1010.16
+   ]
+  },
+  {
+   "text": "_1295_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1241.28,
+    1022.48
+   ]
+  },
+  {
+   "text": "_1296_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1245.2,
+    1019.12
+   ]
+  },
+  {
+   "text": "_0000_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1273.34,
+    1014.64
+   ]
+  },
+  {
+   "text": "_0264_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1236.24,
+    983.84
+   ]
+  },
+  {
+   "text": "_1292_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1244.92,
+    1007.64
+   ]
+  },
+  {
+   "text": "vga.palette_inst.rrggbb\\[4\\]",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1283.56,
+    981.04
+   ]
+  },
+  {
+   "text": "_1094_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1232.6,
+    994.2
+   ]
+  },
+  {
+   "text": "vga.palette_inst.rrggbb\\[0\\]",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1288.04,
+    971.8
+   ]
+  },
+  {
+   "text": "_1092_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1230.92,
+    1002.32
+   ]
+  },
+  {
+   "text": "_0669_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1235.4,
+    1008.76
+   ]
+  },
+  {
+   "text": "_0983_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1247.16,
+    984.96
+   ]
+  },
+  {
+   "text": "_1670_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1263.96,
+    1008.48
+   ]
+  },
+  {
+   "text": "_0670_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1237.64,
+    1000.92
+   ]
+  },
+  {
+   "text": "vga.palette_inst.rrggbb\\[2\\]",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1281.32,
+    990.84
+   ]
+  },
+  {
+   "text": "_1693_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1269.0,
+    1012.12
+   ]
+  },
+  {
+   "text": "net11",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1289.16,
+    1002.04
+   ]
+  },
+  {
+   "text": "_0984_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1252.76,
+    979.92
+   ]
+  },
+  {
+   "text": "_0362_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1137.4,
+    1045.44
+   ]
+  },
+  {
+   "text": "_0647_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1163.16,
+    1034.24
+   ]
+  },
+  {
+   "text": "_0468_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1141.88,
+    1070.08
+   ]
+  },
+  {
+   "text": "_1401_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1165.96,
+    1059.44
+   ]
+  },
+  {
+   "text": "_0165_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1166.52,
+    1045.72
+   ]
+  },
+  {
+   "text": "_0361_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1137.96,
+    1045.72
+   ]
+  },
+  {
+   "text": "net139",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1110.52,
+    1045.44
+   ]
+  },
+  {
+   "text": "_0470_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1132.92,
+    1072.32
+   ]
+  },
+  {
+   "text": "_0277_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1135.72,
+    1031.72
+   ]
+  },
+  {
+   "text": "_0466_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1109.4,
+    1069.52
+   ]
+  },
+  {
+   "text": "_0370_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1112.2,
+    1046.84
+   ]
+  },
+  {
+   "text": "_0706_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1121.16,
+    1042.64
+   ]
+  },
+  {
+   "text": "_0559_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1110.52,
+    1065.74
+   ]
+  },
+  {
+   "text": "_0707_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1146.36,
+    1051.32
+   ]
+  },
+  {
+   "text": "_1406_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1168.2,
+    1068.12
+   ]
+  },
+  {
+   "text": "_0646_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1164.84,
+    1036.76
+   ]
+  },
+  {
+   "text": "_1402_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1094.84,
+    1063.78
+   ]
+  },
+  {
+   "text": "_1171_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1051.72,
+    1045.44
+   ]
+  },
+  {
+   "text": "_1269_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1085.88,
+    1062.1
+   ]
+  },
+  {
+   "text": "_0556_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1059.56,
+    1078.2
+   ]
+  },
+  {
+   "text": "net238",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1064.6,
+    1047.96
+   ]
+  },
+  {
+   "text": "_0506_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1076.92,
+    1065.04
+   ]
+  },
+  {
+   "text": "_0352_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1105.48,
+    1055.52
+   ]
+  },
+  {
+   "text": "_1352_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1051.72,
+    1057.76
+   ]
+  },
+  {
+   "text": "_2100_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1075.8,
+    1069.8
+   ]
+  },
+  {
+   "text": "_1353_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1051.16,
+    1063.08
+   ]
+  },
+  {
+   "text": "_1258_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1086.44,
+    1071.48
+   ]
+  },
+  {
+   "text": "_1172_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1062.92,
+    1038.16
+   ]
+  },
+  {
+   "text": "_2246_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1053.4,
+    1077.36
+   ]
+  },
+  {
+   "text": "_0344_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1049.76,
+    1053.84
+   ]
+  },
+  {
+   "text": "net179",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1060.12,
+    1043.48
+   ]
+  },
+  {
+   "text": "_0644_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1093.72,
+    1033.54
+   ]
+  },
+  {
+   "text": "net77",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1071.32,
+    1061.12
+   ]
+  },
+  {
+   "text": "_1262_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1084.76,
+    1067.28
+   ]
+  },
+  {
+   "text": "net173",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1074.68,
+    1040.12
+   ]
+  },
+  {
+   "text": "net236",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1057.32,
+    1061.96
+   ]
+  },
+  {
+   "text": "_2065_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1074.12,
+    1062.1
+   ]
+  },
+  {
+   "text": "net61",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1101.84,
+    1034.8
+   ]
+  },
+  {
+   "text": "_1255_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1072.44,
+    1063.92
+   ]
+  },
+  {
+   "text": "_2151_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1075.24,
+    1046.0
+   ]
+  },
+  {
+   "text": "net208",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1106.6,
+    1057.2
+   ]
+  },
+  {
+   "text": "net228",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1076.36,
+    1056.08
+   ]
+  },
+  {
+   "text": "_1257_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1077.48,
+    1072.04
+   ]
+  },
+  {
+   "text": "_0366_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1106.6,
+    1049.64
+   ]
+  },
+  {
+   "text": "_1120_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1079.16,
+    1041.8
+   ]
+  },
+  {
+   "text": "net23",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1071.32,
+    1052.16
+   ]
+  },
+  {
+   "text": "_1270_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1088.12,
+    1071.48
+   ]
+  },
+  {
+   "text": "net245",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1091.48,
+    1037.04
+   ]
+  },
+  {
+   "text": "_0368_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1078.6,
+    1046.0
+   ]
+  },
+  {
+   "text": "_2308_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1053.68,
+    1049.92
+   ]
+  },
+  {
+   "text": "net71",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1050.32,
+    1038.72
+   ]
+  },
+  {
+   "text": "net196",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1108.84,
+    1035.08
+   ]
+  },
+  {
+   "text": "_1175_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1052.84,
+    1043.2
+   ]
+  },
+  {
+   "text": "_0259_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1061.24,
+    1045.44
+   ]
+  },
+  {
+   "text": "_1260_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1080.28,
+    1059.44
+   ]
+  },
+  {
+   "text": "net190",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1076.92,
+    1071.76
+   ]
+  },
+  {
+   "text": "_1405_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1097.64,
+    1074.56
+   ]
+  },
+  {
+   "text": "net78",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1071.04,
+    1062.8
+   ]
+  },
+  {
+   "text": "_0365_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1107.72,
+    1048.52
+   ]
+  },
+  {
+   "text": "_1263_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1084.76,
+    1009.88
+   ]
+  },
+  {
+   "text": "_0674_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1056.2,
+    1005.4
+   ]
+  },
+  {
+   "text": "_1169_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1049.2,
+    1027.52
+   ]
+  },
+  {
+   "text": "_0660_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1103.8,
+    1005.12
+   ]
+  },
+  {
+   "text": "_0675_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1062.92,
+    1009.04
+   ]
+  },
+  {
+   "text": "_0987_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1074.68,
+    972.08
+   ]
+  },
+  {
+   "text": "_0661_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1106.6,
+    994.48
+   ]
+  },
+  {
+   "text": "_0663_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1102.12,
+    993.64
+   ]
+  },
+  {
+   "text": "_0659_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1107.16,
+    999.52
+   ]
+  },
+  {
+   "text": "_0309_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1055.08,
+    976.84
+   ]
+  },
+  {
+   "text": "_0308_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1053.96,
+    978.52
+   ]
+  },
+  {
+   "text": "_1121_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1080.28,
+    1026.4
+   ]
+  },
+  {
+   "text": "_0544_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1106.04,
+    979.64
+   ]
+  },
+  {
+   "text": "_0990_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1072.44,
+    976.0
+   ]
+  },
+  {
+   "text": "_0545_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1097.08,
+    981.88
+   ]
+  },
+  {
+   "text": "_0549_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1090.36,
+    986.36
+   ]
+  },
+  {
+   "text": "_1122_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1071.32,
+    1012.4
+   ]
+  },
+  {
+   "text": "_0547_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1087.56,
+    989.72
+   ]
+  },
+  {
+   "text": "_0312_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1169.88,
+    988.88
+   ]
+  },
+  {
+   "text": "_0653_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1153.64,
+    1020.8
+   ]
+  },
+  {
+   "text": "_0519_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1143.0,
+    998.4
+   ]
+  },
+  {
+   "text": "_0650_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1169.32,
+    1027.8
+   ]
+  },
+  {
+   "text": "_0523_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1146.92,
+    993.64
+   ]
+  },
+  {
+   "text": "_0651_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1147.48,
+    1023.6
+   ]
+  },
+  {
+   "text": "_0652_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1146.36,
+    1020.8
+   ]
+  },
+  {
+   "text": "_0275_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1136.28,
+    1026.12
+   ]
+  },
+  {
+   "text": "net129",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1152.52,
+    1021.36
+   ]
+  },
+  {
+   "text": "_0656_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1158.68,
+    1024.72
+   ]
+  },
+  {
+   "text": "_0472_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1149.44,
+    990.0
+   ]
+  },
+  {
+   "text": "_0273_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1139.08,
+    1027.8
+   ]
+  },
+  {
+   "text": "_0567_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1112.2,
+    1011.28
+   ]
+  },
+  {
+   "text": "_0655_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1150.84,
+    1016.6
+   ]
+  },
+  {
+   "text": "_0615_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1163.72,
+    993.36
+   ]
+  },
+  {
+   "text": "_0566_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1114.44,
+    1022.76
+   ]
+  },
+  {
+   "text": "_0643_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1159.24,
+    1002.6
+   ]
+  },
+  {
+   "text": "net26",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1152.52,
+    971.8
+   ]
+  },
+  {
+   "text": "_0667_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1126.76,
+    980.76
+   ]
+  },
+  {
+   "text": "_0676_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1113.32,
+    1001.2
+   ]
+  },
+  {
+   "text": "_2129_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1167.64,
+    1022.76
+   ]
+  },
+  {
+   "text": "_1951_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1123.96,
+    988.88
+   ]
+  },
+  {
+   "text": "_0654_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1154.76,
+    1021.92
+   ]
+  },
+  {
+   "text": "_0657_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1164.28,
+    1026.12
+   ]
+  },
+  {
+   "text": "_0520_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1148.6,
+    997.56
+   ]
+  },
+  {
+   "text": "_0664_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1123.4,
+    1001.2
+   ]
+  },
+  {
+   "text": "_0614_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1167.92,
+    1010.16
+   ]
+  },
+  {
+   "text": "_0666_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1124.8,
+    984.4
+   ]
+  },
+  {
+   "text": "_0668_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1127.88,
+    990.28
+   ]
+  },
+  {
+   "text": "_2168_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1164.84,
+    995.88
+   ]
+  },
+  {
+   "text": "_2007_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1128.44,
+    986.92
+   ]
+  },
+  {
+   "text": "_0565_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1116.96,
+    1026.96
+   ]
+  },
+  {
+   "text": "_0672_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1115.56,
+    1000.64
+   ]
+  },
+  {
+   "text": "_0641_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1115.0,
+    1011.28
+   ]
+  },
+  {
+   "text": "_0616_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1155.32,
+    973.48
+   ]
+  },
+  {
+   "text": "_0525_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1152.24,
+    979.36
+   ]
+  },
+  {
+   "text": "_0613_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1166.52,
+    1012.12
+   ]
+  },
+  {
+   "text": "_2276_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1128.44,
+    959.48
+   ]
+  },
+  {
+   "text": "net137",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1125.08,
+    955.56
+   ]
+  },
+  {
+   "text": "_0241_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1141.32,
+    960.04
+   ]
+  },
+  {
+   "text": "_0326_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1116.68,
+    942.68
+   ]
+  },
+  {
+   "text": "_0609_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1153.64,
+    936.8
+   ]
+  },
+  {
+   "text": "_0709_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1126.2,
+    936.8
+   ]
+  },
+  {
+   "text": "_0371_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1115.28,
+    946.32
+   ]
+  },
+  {
+   "text": "_0617_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1146.92,
+    966.2
+   ]
+  },
+  {
+   "text": "_0325_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1125.08,
+    941.28
+   ]
+  },
+  {
+   "text": "net103",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1111.36,
+    953.04
+   ]
+  },
+  {
+   "text": "net180",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1130.12,
+    959.48
+   ]
+  },
+  {
+   "text": "_2264_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1139.08,
+    961.44
+   ]
+  },
+  {
+   "text": "net84",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1131.24,
+    947.72
+   ]
+  },
+  {
+   "text": "_0331_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1115.56,
+    936.8
+   ]
+  },
+  {
+   "text": "_0677_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1112.76,
+    969.42
+   ]
+  },
+  {
+   "text": "net20",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1134.04,
+    913.56
+   ]
+  },
+  {
+   "text": "_2321_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1131.8,
+    950.24
+   ]
+  },
+  {
+   "text": "_0618_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1153.64,
+    969.0
+   ]
+  },
+  {
+   "text": "_1047_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1146.92,
+    937.36
+   ]
+  },
+  {
+   "text": "_0418_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1157.56,
+    958.36
+   ]
+  },
+  {
+   "text": "net277",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1144.12,
+    958.92
+   ]
+  },
+  {
+   "text": "_2326_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1135.16,
+    958.08
+   ]
+  },
+  {
+   "text": "_1049_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1146.36,
+    923.64
+   ]
+  },
+  {
+   "text": "_0387_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1115.0,
+    914.4
+   ]
+  },
+  {
+   "text": "_0118_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1140.2,
+    955.28
+   ]
+  },
+  {
+   "text": "_0543_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1117.24,
+    935.96
+   ]
+  },
+  {
+   "text": "_2260_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1137.4,
+    956.12
+   ]
+  },
+  {
+   "text": "_0741_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1168.2,
+    958.08
+   ]
+  },
+  {
+   "text": "net83",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1167.08,
+    949.68
+   ]
+  },
+  {
+   "text": "net45",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1145.24,
+    934.7
+   ]
+  },
+  {
+   "text": "_1044_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1109.96,
+    921.12
+   ]
+  },
+  {
+   "text": "_1046_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1149.16,
+    937.92
+   ]
+  },
+  {
+   "text": "_2274_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1116.68,
+    970.12
+   ]
+  },
+  {
+   "text": "_2327_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1136.84,
+    956.68
+   ]
+  },
+  {
+   "text": "_1105_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1164.84,
+    914.12
+   ]
+  },
+  {
+   "text": "_0522_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1149.44,
+    935.12
+   ]
+  },
+  {
+   "text": "_2277_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1132.64,
+    959.76
+   ]
+  },
+  {
+   "text": "_1108_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1165.4,
+    931.76
+   ]
+  },
+  {
+   "text": "_0612_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1159.24,
+    958.78
+   ]
+  },
+  {
+   "text": "net166",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1137.96,
+    949.12
+   ]
+  },
+  {
+   "text": "net32",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1145.8,
+    919.44
+   ]
+  },
+  {
+   "text": "_2302_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1132.36,
+    941.84
+   ]
+  },
+  {
+   "text": "_0190_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1136.28,
+    952.48
+   ]
+  },
+  {
+   "text": "net255",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1144.68,
+    942.68
+   ]
+  },
+  {
+   "text": "_0324_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1126.76,
+    945.76
+   ]
+  },
+  {
+   "text": "_2125_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1136.28,
+    962.0
+   ]
+  },
+  {
+   "text": "_0678_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1113.88,
+    958.64
+   ]
+  },
+  {
+   "text": "net225",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1167.08,
+    918.88
+   ]
+  },
+  {
+   "text": "_2325_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1137.4,
+    951.64
+   ]
+  },
+  {
+   "text": "_0620_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1157.84,
+    945.76
+   ]
+  },
+  {
+   "text": "_1055_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1146.92,
+    914.96
+   ]
+  },
+  {
+   "text": "_1039_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1111.08,
+    919.44
+   ]
+  },
+  {
+   "text": "_0608_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1151.68,
+    929.52
+   ]
+  },
+  {
+   "text": "_0621_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1159.8,
+    964.24
+   ]
+  },
+  {
+   "text": "_1103_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1150.84,
+    918.04
+   ]
+  },
+  {
+   "text": "_0238_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1144.12,
+    956.96
+   ]
+  },
+  {
+   "text": "_0330_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1117.24,
+    926.72
+   ]
+  },
+  {
+   "text": "net37",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1164.28,
+    931.76
+   ]
+  },
+  {
+   "text": "_0742_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1161.48,
+    960.04
+   ]
+  },
+  {
+   "text": "_2156_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1168.76,
+    951.08
+   ]
+  },
+  {
+   "text": "_0157_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1141.04,
+    957.52
+   ]
+  },
+  {
+   "text": "_2278_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1133.76,
+    963.68
+   ]
+  },
+  {
+   "text": "_0323_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1122.28,
+    938.76
+   ]
+  },
+  {
+   "text": "_0322_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1118.92,
+    937.92
+   ]
+  },
+  {
+   "text": "_1267_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1082.24,
+    952.48
+   ]
+  },
+  {
+   "text": "_1041_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1097.36,
+    912.72
+   ]
+  },
+  {
+   "text": "_2288_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1097.64,
+    933.44
+   ]
+  },
+  {
+   "text": "net33",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1079.72,
+    940.44
+   ]
+  },
+  {
+   "text": "_0548_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1086.44,
+    954.86
+   ]
+  },
+  {
+   "text": "_0114_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1050.04,
+    955.56
+   ]
+  },
+  {
+   "text": "_2310_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1101.0,
+    951.08
+   ]
+  },
+  {
+   "text": "_0986_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1071.88,
+    969.84
+   ]
+  },
+  {
+   "text": "_0320_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1057.88,
+    940.72
+   ]
+  },
+  {
+   "text": "_0306_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1061.8,
+    936.8
+   ]
+  },
+  {
+   "text": "_0606_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1086.44,
+    930.92
+   ]
+  },
+  {
+   "text": "_2275_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1103.8,
+    956.4
+   ]
+  },
+  {
+   "text": "_0116_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1085.32,
+    959.48
+   ]
+  },
+  {
+   "text": "_1088_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1059.0,
+    929.24
+   ]
+  },
+  {
+   "text": "_0108_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1072.44,
+    963.96
+   ]
+  },
+  {
+   "text": "_0310_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1055.08,
+    957.38
+   ]
+  },
+  {
+   "text": "_0385_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1076.36,
+    907.4
+   ]
+  },
+  {
+   "text": "_2013_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1089.8,
+    904.88
+   ]
+  },
+  {
+   "text": "_1343_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1090.08,
+    869.6
+   ]
+  },
+  {
+   "text": "_0383_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1073.56,
+    902.92
+   ]
+  },
+  {
+   "text": "_0425_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1103.24,
+    858.12
+   ]
+  },
+  {
+   "text": "_1265_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1080.0,
+    878.56
+   ]
+  },
+  {
+   "text": "_1264_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1082.52,
+    878.0
+   ]
+  },
+  {
+   "text": "_0435_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1107.44,
+    860.64
+   ]
+  },
+  {
+   "text": "_2369_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1106.04,
+    899.56
+   ]
+  },
+  {
+   "text": "_2379_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1099.88,
+    895.08
+   ]
+  },
+  {
+   "text": "_0384_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1074.68,
+    904.88
+   ]
+  },
+  {
+   "text": "_0716_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1107.72,
+    867.08
+   ]
+  },
+  {
+   "text": "_1051_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1049.48,
+    906.56
+   ]
+  },
+  {
+   "text": "_1054_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1048.92,
+    904.6
+   ]
+  },
+  {
+   "text": "_0427_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1070.2,
+    875.2
+   ]
+  },
+  {
+   "text": "_0094_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1071.88,
+    855.6
+   ]
+  },
+  {
+   "text": "_1811_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1050.04,
+    858.12
+   ]
+  },
+  {
+   "text": "_1266_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1079.16,
+    875.2
+   ]
+  },
+  {
+   "text": "_1040_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1096.52,
+    910.76
+   ]
+  },
+  {
+   "text": "_0710_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1120.6,
+    880.8
+   ]
+  },
+  {
+   "text": "_0442_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1157.56,
+    879.12
+   ]
+  },
+  {
+   "text": "_2236_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1136.84,
+    908.52
+   ]
+  },
+  {
+   "text": "_0711_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1125.64,
+    876.04
+   ]
+  },
+  {
+   "text": "_0437_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1169.32,
+    881.36
+   ]
+  },
+  {
+   "text": "_0375_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1122.0,
+    889.2
+   ]
+  },
+  {
+   "text": "_1344_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1129.0,
+    860.64
+   ]
+  },
+  {
+   "text": "_0441_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1155.32,
+    871.56
+   ]
+  },
+  {
+   "text": "_0374_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1124.52,
+    887.24
+   ]
+  },
+  {
+   "text": "_2234_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1146.36,
+    895.64
+   ]
+  },
+  {
+   "text": "_0436_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1166.52,
+    866.8
+   ]
+  },
+  {
+   "text": "_0373_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1113.88,
+    892.0
+   ]
+  },
+  {
+   "text": "_0731_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1167.08,
+    867.36
+   ]
+  },
+  {
+   "text": "_0794_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1165.4,
+    909.64
+   ]
+  },
+  {
+   "text": "_0717_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1127.32,
+    867.08
+   ]
+  },
+  {
+   "text": "net240",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1129.56,
+    888.08
+   ]
+  },
+  {
+   "text": "_0714_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1130.12,
+    871.28
+   ]
+  },
+  {
+   "text": "net46",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1146.36,
+    908.8
+   ]
+  },
+  {
+   "text": "_2227_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1149.16,
+    902.36
+   ]
+  },
+  {
+   "text": "_0386_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1109.96,
+    912.16
+   ]
+  },
+  {
+   "text": "net21",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1123.96,
+    904.04
+   ]
+  },
+  {
+   "text": "_0443_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1165.96,
+    891.44
+   ]
+  },
+  {
+   "text": "_2244_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1137.96,
+    906.56
+   ]
+  },
+  {
+   "text": "_2177_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1149.72,
+    909.36
+   ]
+  },
+  {
+   "text": "_0723_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1131.24,
+    865.68
+   ]
+  },
+  {
+   "text": "_2259_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1139.36,
+    904.32
+   ]
+  },
+  {
+   "text": "_0715_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1129.56,
+    869.6
+   ]
+  },
+  {
+   "text": "_0376_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1116.12,
+    890.6
+   ]
+  },
+  {
+   "text": "_0377_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1118.36,
+    896.48
+   ]
+  },
+  {
+   "text": "_0449_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1169.88,
+    898.44
+   ]
+  },
+  {
+   "text": "_0738_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1168.76,
+    862.04
+   ]
+  },
+  {
+   "text": "_0718_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1116.12,
+    864.0
+   ]
+  },
+  {
+   "text": "net198",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1126.2,
+    881.08
+   ]
+  },
+  {
+   "text": "_2192_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1126.76,
+    910.48
+   ]
+  },
+  {
+   "text": "_2258_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1131.8,
+    905.44
+   ]
+  },
+  {
+   "text": "_2233_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1156.44,
+    901.24
+   ]
+  },
+  {
+   "text": "_1342_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1131.52,
+    854.48
+   ]
+  },
+  {
+   "text": "_1396_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1232.6,
+    932.88
+   ]
+  },
+  {
+   "text": "clknet_3_6__leaf_clk_i",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1289.16,
+    968.44
+   ]
+  },
+  {
+   "text": "_2196_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1233.16,
+    935.12
+   ]
+  },
+  {
+   "text": "_1330_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1245.48,
+    943.52
+   ]
+  },
+  {
+   "text": "_1504_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1285.24,
+    957.52
+   ]
+  },
+  {
+   "text": "_1298_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1251.36,
+    929.52
+   ]
+  },
+  {
+   "text": "vga.palette_inst.rrggbb\\[3\\]",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1281.32,
+    943.8
+   ]
+  },
+  {
+   "text": "_1274_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1266.2,
+    934.56
+   ]
+  },
+  {
+   "text": "_1805_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1237.08,
+    935.68
+   ]
+  },
+  {
+   "text": "_1348_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1253.88,
+    926.72
+   ]
+  },
+  {
+   "text": "_1413_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1239.88,
+    927.28
+   ]
+  },
+  {
+   "text": "_0770_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1283.56,
+    964.52
+   ]
+  },
+  {
+   "text": "_1461_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1282.16,
+    912.72
+   ]
+  },
+  {
+   "text": "_1417_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1243.24,
+    932.6
+   ]
+  },
+  {
+   "text": "_1276_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1252.76,
+    941.84
+   ]
+  },
+  {
+   "text": "_1334_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1250.52,
+    914.4
+   ]
+  },
+  {
+   "text": "_1287_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1249.96,
+    932.32
+   ]
+  },
+  {
+   "text": "_1418_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1265.64,
+    931.48
+   ]
+  },
+  {
+   "text": "_0065_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1270.68,
+    937.36
+   ]
+  },
+  {
+   "text": "outputs[2]",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1291.4,
+    941.84
+   ]
+  },
+  {
+   "text": "net214",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1241.28,
+    928.4
+   ]
+  },
+  {
+   "text": "clknet_3_7__leaf_clk_i",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1270.68,
+    962.0
+   ]
+  },
+  {
+   "text": "net8",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1275.44,
+    920.0
+   ]
+  },
+  {
+   "text": "_1503_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1289.72,
+    963.4
+   ]
+  },
+  {
+   "text": "_0064_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1262.0,
+    968.16
+   ]
+  },
+  {
+   "text": "net43",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1254.44,
+    959.76
+   ]
+  },
+  {
+   "text": "outputs[1]",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1290.84,
+    914.68
+   ]
+  },
+  {
+   "text": "_2164_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1238.2,
+    953.32
+   ]
+  },
+  {
+   "text": "vga.palette_inst.rrggbb\\[1\\]",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1283.56,
+    933.72
+   ]
+  },
+  {
+   "text": "_1126_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1252.2,
+    920.84
+   ]
+  },
+  {
+   "text": "_1325_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1254.44,
+    931.2
+   ]
+  },
+  {
+   "text": "_1128_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1241.56,
+    957.24
+   ]
+  },
+  {
+   "text": "net34",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1256.68,
+    922.52
+   ]
+  },
+  {
+   "text": "_1273_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1248.84,
+    956.12
+   ]
+  },
+  {
+   "text": "net9",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1275.44,
+    943.52
+   ]
+  },
+  {
+   "text": "_1114_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1232.88,
+    965.36
+   ]
+  },
+  {
+   "text": "_0814_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1230.92,
+    925.88
+   ]
+  },
+  {
+   "text": "_1275_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1253.88,
+    949.4
+   ]
+  },
+  {
+   "text": "_1414_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1241.56,
+    933.72
+   ]
+  },
+  {
+   "text": "net17",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1264.52,
+    965.36
+   ]
+  },
+  {
+   "text": "_1104_",
+   "layer": "36/0",
+   "layer_name": "Metal2",
+   "xy_um": [
+    1264.52,
+    931.76
+   ]
+  }
+ ],
+ "labels_truncated": true
+}

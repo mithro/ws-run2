@@ -1,0 +1,2007 @@
+{
+ "run": "ws-run2",
+ "code": "BTX1",
+ "reticle_cell": "BTX1_chip_top_0_0",
+ "size_um": [
+  3932.0,
+  5122.0
+ ],
+ "origin_um": [
+  0.0,
+  0.0
+ ],
+ "dbu_um": 0.001,
+ "placements_on_reticle": [
+  {
+   "x_mm": 0.06,
+   "y_mm": 0.06,
+   "rotation": "r0"
+  }
+ ],
+ "distinct_cells": 2272,
+ "standard_cells": [
+  {
+   "library": "mcu7t3v3",
+   "kind": "fill",
+   "placements": 505451
+  },
+  {
+   "library": "mcu7t3v3",
+   "kind": "logic",
+   "placements": 252619
+  }
+ ],
+ "standard_cell_types_top40": [
+  {
+   "library": "mcu7t3v3",
+   "type": "nand2_2",
+   "placements": 24679
+  },
+  {
+   "library": "mcu7t3v3",
+   "type": "buff_2",
+   "placements": 23530
+  },
+  {
+   "library": "mcu7t3v3",
+   "type": "xnor2_2",
+   "placements": 22907
+  },
+  {
+   "library": "mcu7t3v3",
+   "type": "oai21_2",
+   "placements": 17858
+  },
+  {
+   "library": "mcu7t3v3",
+   "type": "ao22_2",
+   "placements": 14584
+  },
+  {
+   "library": "mcu7t3v3",
+   "type": "aoi21_2",
+   "placements": 13437
+  },
+  {
+   "library": "mcu7t3v3",
+   "type": "nand3_2",
+   "placements": 11727
+  },
+  {
+   "library": "mcu7t3v3",
+   "type": "and2_2",
+   "placements": 11261
+  },
+  {
+   "library": "mcu7t3v3",
+   "type": "xor2_2",
+   "placements": 10008
+  },
+  {
+   "library": "mcu7t3v3",
+   "type": "dfxtp_2",
+   "placements": 9378
+  },
+  {
+   "library": "mcu7t3v3",
+   "type": "nor2_2",
+   "placements": 8800
+  },
+  {
+   "library": "mcu7t3v3",
+   "type": "mux2_2",
+   "placements": 7564
+  },
+  {
+   "library": "mcu7t3v3",
+   "type": "inv_2",
+   "placements": 7476
+  },
+  {
+   "library": "mcu7t3v3",
+   "type": "ao21_2",
+   "placements": 6676
+  },
+  {
+   "library": "mcu7t3v3",
+   "type": "aoi22_2",
+   "placements": 6150
+  },
+  {
+   "library": "mcu7t3v3",
+   "type": "oai211_2",
+   "placements": 6039
+  },
+  {
+   "library": "mcu7t3v3",
+   "type": "ao31_2",
+   "placements": 5825
+  },
+  {
+   "library": "mcu7t3v3",
+   "type": "nand4_2",
+   "placements": 5705
+  },
+  {
+   "library": "mcu7t3v3",
+   "type": "or2_2",
+   "placements": 4912
+  },
+  {
+   "library": "mcu7t3v3",
+   "type": "maj3_2",
+   "placements": 4651
+  },
+  {
+   "library": "mcu7t3v3",
+   "type": "ao211_2",
+   "placements": 4218
+  },
+  {
+   "library": "mcu7t3v3",
+   "type": "nand2b_2",
+   "placements": 4048
+  },
+  {
+   "library": "mcu7t3v3",
+   "type": "aoi21b_2",
+   "placements": 3194
+  },
+  {
+   "library": "mcu7t3v3",
+   "type": "aoi31_2",
+   "placements": 2895
+  },
+  {
+   "library": "mcu7t3v3",
+   "type": "nor2b_2",
+   "placements": 2889
+  },
+  {
+   "library": "mcu7t3v3",
+   "type": "aoi211_2",
+   "placements": 2826
+  },
+  {
+   "library": "mcu7t3v3",
+   "type": "clkbuff_8",
+   "placements": 2622
+  },
+  {
+   "library": "mcu7t3v3",
+   "type": "nor3_2",
+   "placements": 1606
+  },
+  {
+   "library": "mcu7t3v3",
+   "type": "dlybuff_2",
+   "placements": 1198
+  },
+  {
+   "library": "mcu7t3v3",
+   "type": "buff_8",
+   "placements": 1111
+  },
+  {
+   "library": "mcu7t3v3",
+   "type": "ao21b_2",
+   "placements": 1090
+  },
+  {
+   "library": "mcu7t3v3",
+   "type": "clkbuff_12",
+   "placements": 912
+  },
+  {
+   "library": "mcu7t3v3",
+   "type": "mux4_2",
+   "placements": 194
+  },
+  {
+   "library": "mcu7t3v3",
+   "type": "inv_6",
+   "placements": 141
+  },
+  {
+   "library": "mcu7t3v3",
+   "type": "clkbuff_4",
+   "placements": 124
+  },
+  {
+   "library": "mcu7t3v3",
+   "type": "inv_4",
+   "placements": 82
+  },
+  {
+   "library": "mcu7t3v3",
+   "type": "aoi21_4",
+   "placements": 54
+  },
+  {
+   "library": "mcu7t3v3",
+   "type": "dyn_dfxtp_2",
+   "placements": 45
+  },
+  {
+   "library": "mcu7t3v3",
+   "type": "oai21_4",
+   "placements": 40
+  },
+  {
+   "library": "mcu7t3v3",
+   "type": "buff_4",
+   "placements": 31
+  }
+ ],
+ "sram_macros": [
+  {
+   "macro": "gf180mcu_ocd_ip_sram__sram256x8m8wm1",
+   "placements": 3
+  },
+  {
+   "macro": "gf180mcu_ocd_ip_sram__sram512x8m8wm1",
+   "placements": 16
+  }
+ ],
+ "io_cells": [
+  {
+   "cell": "gf180mcu_fd_io__bi_24t",
+   "placements": 40
+  },
+  {
+   "cell": "gf180mcu_fd_io__cor",
+   "placements": 4
+  },
+  {
+   "cell": "gf180mcu_fd_io__dvdd",
+   "placements": 8
+  },
+  {
+   "cell": "gf180mcu_fd_io__dvss",
+   "placements": 10
+  },
+  {
+   "cell": "gf180mcu_fd_io__fill1",
+   "placements": 58
+  },
+  {
+   "cell": "gf180mcu_fd_io__fill10",
+   "placements": 906
+  },
+  {
+   "cell": "gf180mcu_fd_io__fill5",
+   "placements": 78
+  },
+  {
+   "cell": "gf180mcu_fd_io__fillnc",
+   "placements": 20
+  },
+  {
+   "cell": "gf180mcu_fd_io__in_c",
+   "placements": 15
+  },
+  {
+   "cell": "gf180mcu_fd_io__in_s",
+   "placements": 1
+  }
+ ],
+ "fill_and_sealring_placements": 668085,
+ "other_cells_by_placements_top80": [
+  {
+   "cell": "018SRAM_cell1_3v512x8m81",
+   "placements": 66624,
+   "size_um": [
+    2.76,
+    3.67
+   ]
+  },
+  {
+   "cell": "018SRAM_cell1_2x_3v512x8m81",
+   "placements": 33280,
+   "size_um": [
+    2.76,
+    6.72
+   ]
+  },
+  {
+   "cell": "via1_x2_R90_3v512x8m81",
+   "placements": 18176,
+   "size_um": [
+    0.4,
+    1.07
+   ]
+  },
+  {
+   "cell": "via2_x2_R90_3v512x8m81",
+   "placements": 16128,
+   "size_um": [
+    0.41,
+    1.07
+   ]
+  },
+  {
+   "cell": "via1_2_x2_3v512x8m81",
+   "placements": 15488,
+   "size_um": [
+    0.41,
+    1.07
+   ]
+  },
+  {
+   "cell": "M4_M3_CDNS_406619531453",
+   "placements": 15402,
+   "size_um": [
+    9.06,
+    5.96
+   ]
+  },
+  {
+   "cell": "M5_M4_CDNS_406619531450",
+   "placements": 15402,
+   "size_um": [
+    9.12,
+    6.02
+   ]
+  },
+  {
+   "cell": "POLY_SUB_FILL_1",
+   "placements": 14496,
+   "size_um": [
+    9.75,
+    18.06
+   ]
+  },
+  {
+   "cell": "M2_M14310591302020_3v512x8m81",
+   "placements": 13232,
+   "size_um": [
+    0.35,
+    0.56
+   ]
+  },
+  {
+   "cell": "M3_M2_CDNS_406619531459",
+   "placements": 12948,
+   "size_um": [
+    0.38,
+    5.66
+   ]
+  },
+  {
+   "cell": "M2_M1$$204403756_3v512x8m81",
+   "placements": 12288,
+   "size_um": [
+    1.07,
+    0.46
+   ]
+  },
+  {
+   "cell": "M1_POLY24310591302031_3v512x8m81",
+   "placements": 11520,
+   "size_um": [
+    0.36,
+    0.36
+   ]
+  },
+  {
+   "cell": "M2_M1_CDNS_4066195314518",
+   "placements": 10920,
+   "size_um": [
+    0.38,
+    0.38
+   ]
+  },
+  {
+   "cell": "M3_M2_CDNS_4066195314510",
+   "placements": 8856,
+   "size_um": [
+    0.38,
+    12.92
+   ]
+  },
+  {
+   "cell": "M2_M1_CDNS_40661953145164",
+   "placements": 8279,
+   "size_um": [
+    0.38,
+    0.9
+   ]
+  },
+  {
+   "cell": "M4_M3_CDNS_406619531452",
+   "placements": 8154,
+   "size_um": [
+    9.06,
+    13.4
+   ]
+  },
+  {
+   "cell": "M5_M4_CDNS_406619531451",
+   "placements": 8154,
+   "size_um": [
+    9.12,
+    13.46
+   ]
+  },
+  {
+   "cell": "M2_M1431059130208_3v512x8m81",
+   "placements": 7568,
+   "size_um": [
+    0.34,
+    0.63
+   ]
+  },
+  {
+   "cell": "018SRAM_strap1_3v512x8m81",
+   "placements": 7456,
+   "size_um": [
+    3.68,
+    5.18
+   ]
+  },
+  {
+   "cell": "M3_M24310591302021_3v512x8m81",
+   "placements": 7456,
+   "size_um": [
+    0.35,
+    0.35
+   ]
+  },
+  {
+   "cell": "M3_M2$$204400684_3v512x8m81",
+   "placements": 7168,
+   "size_um": [
+    1.08,
+    0.46
+   ]
+  },
+  {
+   "cell": "M1_POLY24310591302019_3v512x8m81",
+   "placements": 6992,
+   "size_um": [
+    0.36,
+    0.79
+   ]
+  },
+  {
+   "cell": "018SRAM_cell1_3v256x8m81",
+   "placements": 6252,
+   "size_um": [
+    2.76,
+    3.67
+   ]
+  },
+  {
+   "cell": "M2_M1_CDNS_40661953145117",
+   "placements": 6169,
+   "size_um": [
+    0.9,
+    0.38
+   ]
+  },
+  {
+   "cell": "via1_R90_3v512x8m81",
+   "placements": 5504,
+   "size_um": [
+    0.33,
+    0.45
+   ]
+  },
+  {
+   "cell": "M5_M4_CDNS_40661953145496",
+   "placements": 5432,
+   "size_um": [
+    20.24,
+    0.44
+   ]
+  },
+  {
+   "cell": "M4_M3_CDNS_40661953145598",
+   "placements": 5432,
+   "size_um": [
+    20.18,
+    0.38
+   ]
+  },
+  {
+   "cell": "M3_M2$$201252908_3v512x8m81",
+   "placements": 5408,
+   "size_um": [
+    0.45,
+    1.23
+   ]
+  },
+  {
+   "cell": "M1_POLY2_CDNS_40661953145222",
+   "placements": 5320,
+   "size_um": [
+    0.42,
+    0.89
+   ]
+  },
+  {
+   "cell": "M1_POLY24310591302033_3v512x8m81",
+   "placements": 5200,
+   "size_um": [
+    0.62,
+    0.36
+   ]
+  },
+  {
+   "cell": "M2_M1$$202394668_3v512x8m81",
+   "placements": 5120,
+   "size_um": [
+    0.44,
+    0.46
+   ]
+  },
+  {
+   "cell": "M2_M1$$202406956_3v512x8m81",
+   "placements": 4736,
+   "size_um": [
+    0.45,
+    1.23
+   ]
+  },
+  {
+   "cell": "M1_POLY2_CDNS_40661953145106",
+   "placements": 4450,
+   "size_um": [
+    0.89,
+    0.42
+   ]
+  },
+  {
+   "cell": "M5_M4_CDNS_40661953145443",
+   "placements": 4244,
+   "size_um": [
+    9.02,
+    0.44
+   ]
+  },
+  {
+   "cell": "M4_M3_CDNS_40661953145578",
+   "placements": 4244,
+   "size_um": [
+    8.96,
+    0.38
+   ]
+  },
+  {
+   "cell": "M2_M1$$204407852_3v512x8m81",
+   "placements": 4096,
+   "size_um": [
+    3.4,
+    0.46
+   ]
+  },
+  {
+   "cell": "M2_M1$$204402732_3v512x8m81",
+   "placements": 4096,
+   "size_um": [
+    7.09,
+    0.46
+   ]
+  },
+  {
+   "cell": "via1_x2_3v512x8m81",
+   "placements": 4096,
+   "size_um": [
+    0.4,
+    1.11
+   ]
+  },
+  {
+   "cell": "M3_M2_CDNS_406619531456",
+   "placements": 3656,
+   "size_um": [
+    1.0,
+    5.96
+   ]
+  },
+  {
+   "cell": "M2_M1_CDNS_406619531454",
+   "placements": 3624,
+   "size_um": [
+    1.0,
+    5.96
+   ]
+  },
+  {
+   "cell": "018SRAM_strap1_2x_3v512x8m81",
+   "placements": 3584,
+   "size_um": [
+    3.68,
+    8.42
+   ]
+  },
+  {
+   "cell": "pmos_5p0431059130201_3v512x8m81",
+   "placements": 3504,
+   "size_um": [
+    2.02,
+    4.04
+   ]
+  },
+  {
+   "cell": "via1_x2_R90_3v256x8m81",
+   "placements": 3408,
+   "size_um": [
+    0.4,
+    1.07
+   ]
+  },
+  {
+   "cell": "M2_M1_CDNS_40661953145140",
+   "placements": 3208,
+   "size_um": [
+    10.1,
+    0.38
+   ]
+  },
+  {
+   "cell": "018SRAM_cell1_2x_3v256x8m81",
+   "placements": 3120,
+   "size_um": [
+    2.76,
+    6.72
+   ]
+  },
+  {
+   "cell": "018SRAM_strap1_bndry_3v512x8m81",
+   "placements": 3104,
+   "size_um": [
+    3.68,
+    5.18
+   ]
+  },
+  {
+   "cell": "M3_M2$$201251884_3v512x8m81",
+   "placements": 3088,
+   "size_um": [
+    2.66,
+    0.46
+   ]
+  },
+  {
+   "cell": "M2_M1$$204408876_3v512x8m81",
+   "placements": 3072,
+   "size_um": [
+    1.93,
+    0.46
+   ]
+  },
+  {
+   "cell": "M2_M1$$204404780_3v512x8m81",
+   "placements": 3072,
+   "size_um": [
+    2.66,
+    0.46
+   ]
+  },
+  {
+   "cell": "pmos_5p043105913020105_3v512x8m81",
+   "placements": 3072,
+   "size_um": [
+    2.02,
+    2.08
+   ]
+  },
+  {
+   "cell": "M3_M2$$204398636_3v512x8m81",
+   "placements": 3072,
+   "size_um": [
+    0.45,
+    0.46
+   ]
+  },
+  {
+   "cell": "via2_R90_3v512x8m81",
+   "placements": 3072,
+   "size_um": [
+    0.33,
+    0.45
+   ]
+  },
+  {
+   "cell": "M2_M1_CDNS_4066195314586",
+   "placements": 3032,
+   "size_um": [
+    0.92,
+    0.38
+   ]
+  },
+  {
+   "cell": "via2_x2_R90_3v256x8m81",
+   "placements": 3024,
+   "size_um": [
+    0.41,
+    1.07
+   ]
+  },
+  {
+   "cell": "via1_2_x2_3v256x8m81",
+   "placements": 2904,
+   "size_um": [
+    0.41,
+    1.07
+   ]
+  },
+  {
+   "cell": "POLY_SUB_FILL",
+   "placements": 2730,
+   "size_um": [
+    4.23,
+    8.46
+   ]
+  },
+  {
+   "cell": "M2_M1$$43375660_3v512x8m81",
+   "placements": 2704,
+   "size_um": [
+    0.43,
+    1.22
+   ]
+  },
+  {
+   "cell": "M4_M3_CDNS_4066195314512",
+   "placements": 2652,
+   "size_um": [
+    4.1,
+    5.96
+   ]
+  },
+  {
+   "cell": "M1_POLY2$$44753964_3v512x8m81",
+   "placements": 2576,
+   "size_um": [
+    0.67,
+    0.47
+   ]
+  },
+  {
+   "cell": "M1_PSUB$$45111340_3v512x8m81",
+   "placements": 2304,
+   "size_um": [
+    0.6,
+    0.62
+   ]
+  },
+  {
+   "cell": "M4_M3_CDNS_4066195314551",
+   "placements": 2146,
+   "size_um": [
+    59.31,
+    1.09
+   ]
+  },
+  {
+   "cell": "M5_M4_CDNS_4066195314556",
+   "placements": 2146,
+   "size_um": [
+    59.37,
+    1.15
+   ]
+  },
+  {
+   "cell": "M3_M2_CDNS_4066195314552",
+   "placements": 2146,
+   "size_um": [
+    59.31,
+    1.09
+   ]
+  },
+  {
+   "cell": "M2_M14310591302087_3v512x8m81",
+   "placements": 2144,
+   "size_um": [
+    1.13,
+    2.43
+   ]
+  },
+  {
+   "cell": "M3_M24310591302090_3v512x8m81",
+   "placements": 2144,
+   "size_um": [
+    1.13,
+    2.43
+   ]
+  },
+  {
+   "cell": "M1_PSUB_CDNS_406619531455",
+   "placements": 2116,
+   "size_um": [
+    0.77,
+    284.27
+   ]
+  },
+  {
+   "cell": "nmos_5p0431059130200_3v512x8m81",
+   "placements": 2080,
+   "size_um": [
+    1.48,
+    3.64
+   ]
+  },
+  {
+   "cell": "M3_M2$$204147756_3v512x8m81",
+   "placements": 2064,
+   "size_um": [
+    1.93,
+    0.46
+   ]
+  },
+  {
+   "cell": "nmos_5p0431059130208_3v512x8m81",
+   "placements": 2064,
+   "size_um": [
+    1.48,
+    0.91
+   ]
+  },
+  {
+   "cell": "M3_M2$$204401708_3v512x8m81",
+   "placements": 2048,
+   "size_um": [
+    4.14,
+    0.46
+   ]
+  },
+  {
+   "cell": "M1_POLY243105913020105_3v512x8m81",
+   "placements": 2048,
+   "size_um": [
+    0.36,
+    1.61
+   ]
+  },
+  {
+   "cell": "pmos_5p043105913020103_3v512x8m81",
+   "placements": 2048,
+   "size_um": [
+    3.62,
+    5.52
+   ]
+  },
+  {
+   "cell": "nmos_5p043105913020107_3v512x8m81",
+   "placements": 2048,
+   "size_um": [
+    2.28,
+    2.79
+   ]
+  },
+  {
+   "cell": "pmos_1p2_01_R270_3v512x8m81",
+   "placements": 2048,
+   "size_um": [
+    3.37,
+    3.5
+   ]
+  },
+  {
+   "cell": "pmos_5p043105913020108_3v512x8m81",
+   "placements": 2048,
+   "size_um": [
+    2.82,
+    3.43
+   ]
+  },
+  {
+   "cell": "M3_M2$$204399660_3v512x8m81",
+   "placements": 2048,
+   "size_um": [
+    7.09,
+    0.46
+   ]
+  },
+  {
+   "cell": "M2_M1$$204406828_3v512x8m81",
+   "placements": 2048,
+   "size_um": [
+    4.14,
+    0.46
+   ]
+  },
+  {
+   "cell": "nmos_1p2$$47119404_3v512x8m81",
+   "placements": 2048,
+   "size_um": [
+    1.48,
+    3.64
+   ]
+  },
+  {
+   "cell": "018SRAM_cell1_dummy_3v512x8m81",
+   "placements": 2048,
+   "size_um": [
+    2.38,
+    3.67
+   ]
+  },
+  {
+   "cell": "via2_x2_3v512x8m81",
+   "placements": 2000,
+   "size_um": [
+    0.41,
+    1.11
+   ]
+  }
+ ],
+ "layers": [
+  {
+   "layer": "0/0",
+   "name": "PR_bndry",
+   "shapes": 850850
+  },
+  {
+   "layer": "21/0",
+   "name": "Nwell",
+   "shapes": 949165
+  },
+  {
+   "layer": "21/10",
+   "name": "",
+   "shapes": 1362976
+  },
+  {
+   "layer": "22/0",
+   "name": "COMP",
+   "shapes": 2312613
+  },
+  {
+   "layer": "23/5",
+   "name": "ISOSUB",
+   "shapes": 1394
+  },
+  {
+   "layer": "24/5",
+   "name": "ESD_MK",
+   "shapes": 112
+  },
+  {
+   "layer": "30/0",
+   "name": "Poly2",
+   "shapes": 5956144
+  },
+  {
+   "layer": "31/0",
+   "name": "Pplus",
+   "shapes": 1190855
+  },
+  {
+   "layer": "32/0",
+   "name": "Nplus",
+   "shapes": 1196970
+  },
+  {
+   "layer": "33/0",
+   "name": "Contact",
+   "shapes": 15271693
+  },
+  {
+   "layer": "34/0",
+   "name": "Metal1",
+   "shapes": 12505195
+  },
+  {
+   "layer": "34/10",
+   "name": "Metal1_Label",
+   "shapes": 4850412
+  },
+  {
+   "layer": "35/0",
+   "name": "Via1",
+   "shapes": 3584069
+  },
+  {
+   "layer": "36/0",
+   "name": "Metal2",
+   "shapes": 4896475
+  },
+  {
+   "layer": "36/10",
+   "name": "Metal2_Label",
+   "shapes": 20080
+  },
+  {
+   "layer": "37/0",
+   "name": "Pad",
+   "shapes": 82
+  },
+  {
+   "layer": "38/0",
+   "name": "Via2",
+   "shapes": 3431882
+  },
+  {
+   "layer": "40/0",
+   "name": "Via3",
+   "shapes": 11255248
+  },
+  {
+   "layer": "41/0",
+   "name": "Via4",
+   "shapes": 9546879
+  },
+  {
+   "layer": "42/0",
+   "name": "Metal3",
+   "shapes": 2293434
+  },
+  {
+   "layer": "42/10",
+   "name": "Metal3_Label",
+   "shapes": 128296
+  },
+  {
+   "layer": "46/0",
+   "name": "Metal4",
+   "shapes": 570864
+  },
+  {
+   "layer": "46/10",
+   "name": "Metal4_Label",
+   "shapes": 59280
+  },
+  {
+   "layer": "49/0",
+   "name": "SAB",
+   "shapes": 2466
+  },
+  {
+   "layer": "55/0",
+   "name": "Dualgate",
+   "shapes": 50108
+  },
+  {
+   "layer": "58/0",
+   "name": "",
+   "shapes": 888
+  },
+  {
+   "layer": "63/63",
+   "name": "VTEXT",
+   "shapes": 4560
+  },
+  {
+   "layer": "81/0",
+   "name": "Metal5",
+   "shapes": 246537
+  },
+  {
+   "layer": "81/10",
+   "name": "Metal5_Label",
+   "shapes": 31994
+  },
+  {
+   "layer": "100/8",
+   "name": "LVS_Source",
+   "shapes": 1120
+  },
+  {
+   "layer": "108/5",
+   "name": "SramCore",
+   "shapes": 89166
+  },
+  {
+   "layer": "110/5",
+   "name": "RES_MK",
+   "shapes": 1096
+  },
+  {
+   "layer": "111/5",
+   "name": "NDMY",
+   "shapes": 2
+  },
+  {
+   "layer": "115/5",
+   "name": "DIODE_MK",
+   "shapes": 2838
+  },
+  {
+   "layer": "119/5",
+   "name": "LVS_IO",
+   "shapes": 112
+  },
+  {
+   "layer": "137/5",
+   "name": "Latchup_MK",
+   "shapes": 112
+  },
+  {
+   "layer": "152/5",
+   "name": "PMNDMY",
+   "shapes": 6
+  },
+  {
+   "layer": "166/5",
+   "name": "MOS_CAP_MK",
+   "shapes": 35684
+  },
+  {
+   "layer": "167/5",
+   "name": "GUARD_RING_MK",
+   "shapes": 1
+  },
+  {
+   "layer": "204/0",
+   "name": "LVPWELL",
+   "shapes": 897416
+  },
+  {
+   "layer": "204/10",
+   "name": "",
+   "shapes": 1362976
+  }
+ ],
+ "blocks": [
+  {
+   "cell": "gf180mcu_fd_io__cor",
+   "parent": "BTX1_chip_top_0_0",
+   "depth": 1,
+   "count_in_parent": 4,
+   "size_um": [
+    355.16,
+    355.16
+   ],
+   "first_placement_box_um": [
+    3550.84,
+    4740.84,
+    3906.0,
+    5096.0
+   ],
+   "kind": "io",
+   "child_cells": 2
+  },
+  {
+   "cell": "gf180mcu_ocd_ip_sram__sram512x8m8wm1",
+   "parent": "BTX1_chip_top_0_0",
+   "depth": 1,
+   "count_in_parent": 16,
+   "size_um": [
+    301.3,
+    321.89
+   ],
+   "first_placement_box_um": [
+    472.73,
+    2382.41,
+    774.03,
+    2704.3
+   ],
+   "kind": "sram",
+   "child_cells": 45
+  },
+  {
+   "cell": "gf180mcu_bt_ip__logo",
+   "parent": "BTX1_chip_top_0_0",
+   "depth": 1,
+   "count_in_parent": 1,
+   "size_um": [
+    423.75,
+    226.5
+   ],
+   "first_placement_box_um": [
+    450.0,
+    4450.0,
+    873.75,
+    4676.5
+   ],
+   "kind": "block",
+   "child_cells": 0
+  },
+  {
+   "cell": "gf180mcu_ocd_ip_sram__sram256x8m8wm1",
+   "parent": "BTX1_chip_top_0_0",
+   "depth": 1,
+   "count_in_parent": 3,
+   "size_um": [
+    301.3,
+    224.93
+   ],
+   "first_placement_box_um": [
+    472.73,
+    3813.01,
+    774.03,
+    4037.94
+   ],
+   "kind": "sram",
+   "child_cells": 46
+  },
+  {
+   "cell": "gf180mcu_ws_ip__marker",
+   "parent": "BTX1_chip_top_0_0",
+   "depth": 1,
+   "count_in_parent": 1,
+   "size_um": [
+    245.0,
+    245.0
+   ],
+   "first_placement_box_um": [
+    3651.0,
+    4841.0,
+    3896.0,
+    5086.0
+   ],
+   "kind": "block",
+   "child_cells": 0
+  },
+  {
+   "cell": "gf180mcu_fd_io__dvss",
+   "parent": "BTX1_chip_top_0_0",
+   "depth": 1,
+   "count_in_parent": 10,
+   "size_um": [
+    75.32,
+    350.0
+   ],
+   "first_placement_box_um": [
+    1928.34,
+    26.0,
+    2003.66,
+    376.0
+   ],
+   "kind": "io",
+   "child_cells": 2
+  },
+  {
+   "cell": "gf180mcu_fd_io__bi_24t",
+   "parent": "BTX1_chip_top_0_0",
+   "depth": 1,
+   "count_in_parent": 40,
+   "size_um": [
+    75.32,
+    350.0
+   ],
+   "first_placement_box_um": [
+    3368.34,
+    4746.0,
+    3443.66,
+    5096.0
+   ],
+   "kind": "io",
+   "child_cells": 2
+  },
+  {
+   "cell": "gf180mcu_fd_io__dvdd",
+   "parent": "BTX1_chip_top_0_0",
+   "depth": 1,
+   "count_in_parent": 8,
+   "size_um": [
+    75.32,
+    350.0
+   ],
+   "first_placement_box_um": [
+    3556.0,
+    4527.84,
+    3906.0,
+    4603.16
+   ],
+   "kind": "io",
+   "child_cells": 2
+  },
+  {
+   "cell": "gf180mcu_fd_io__in_c",
+   "parent": "BTX1_chip_top_0_0",
+   "depth": 1,
+   "count_in_parent": 15,
+   "size_um": [
+    75.32,
+    350.0
+   ],
+   "first_placement_box_um": [
+    488.34,
+    4746.0,
+    563.66,
+    5096.0
+   ],
+   "kind": "io",
+   "child_cells": 2
+  },
+  {
+   "cell": "gf180mcu_fd_io__in_s",
+   "parent": "BTX1_chip_top_0_0",
+   "depth": 1,
+   "count_in_parent": 1,
+   "size_um": [
+    75.32,
+    350.0
+   ],
+   "first_placement_box_um": [
+    488.34,
+    26.0,
+    563.66,
+    376.0
+   ],
+   "kind": "io",
+   "child_cells": 2
+  },
+  {
+   "cell": "gf180mcu_ws_ip__logo",
+   "parent": "BTX1_chip_top_0_0",
+   "depth": 1,
+   "count_in_parent": 1,
+   "size_um": [
+    143.25,
+    143.25
+   ],
+   "first_placement_box_um": [
+    26.0,
+    4952.75,
+    169.25,
+    5096.0
+   ],
+   "kind": "block",
+   "child_cells": 0
+  },
+  {
+   "cell": "gf180mcu_ws_ip__qrcode_id",
+   "parent": "BTX1_chip_top_0_0",
+   "depth": 1,
+   "count_in_parent": 1,
+   "size_um": [
+    142.8,
+    142.8
+   ],
+   "first_placement_box_um": [
+    26.0,
+    26.0,
+    168.8,
+    168.8
+   ],
+   "kind": "block",
+   "child_cells": 0
+  },
+  {
+   "cell": "gf180mcu_bt_ip__tap",
+   "parent": "BTX1_chip_top_0_0",
+   "depth": 1,
+   "count_in_parent": 1,
+   "size_um": [
+    147.0,
+    80.25
+   ],
+   "first_placement_box_um": [
+    3714.5,
+    50.0,
+    3861.5,
+    130.25
+   ],
+   "kind": "block",
+   "child_cells": 0
+  },
+  {
+   "cell": "gf180mcu_ws_ip__project_id",
+   "parent": "BTX1_chip_top_0_0",
+   "depth": 1,
+   "count_in_parent": 1,
+   "size_um": [
+    195.5,
+    59.5
+   ],
+   "first_placement_box_um": [
+    175.6,
+    26.0,
+    371.1,
+    85.5
+   ],
+   "kind": "block",
+   "child_cells": 0
+  },
+  {
+   "cell": "gf180mcu_ws_ip__shuttle_id",
+   "parent": "BTX1_chip_top_0_0",
+   "depth": 1,
+   "count_in_parent": 1,
+   "size_um": [
+    195.5,
+    59.5
+   ],
+   "first_placement_box_um": [
+    26.0,
+    175.6,
+    85.5,
+    371.1
+   ],
+   "kind": "block",
+   "child_cells": 0
+  },
+  {
+   "cell": "gf180mcu_fd_io__fill10",
+   "parent": "BTX1_chip_top_0_0",
+   "depth": 1,
+   "count_in_parent": 906,
+   "size_um": [
+    10.32,
+    350.0
+   ],
+   "first_placement_box_um": [
+    3556.0,
+    2552.84,
+    3906.0,
+    2563.16
+   ],
+   "kind": "io",
+   "child_cells": 3
+  },
+  {
+   "cell": "gf180mcu_fd_io__fill5",
+   "parent": "BTX1_chip_top_0_0",
+   "depth": 1,
+   "count_in_parent": 78,
+   "size_um": [
+    5.32,
+    350.0
+   ],
+   "first_placement_box_um": [
+    3543.34,
+    4746.0,
+    3548.66,
+    5096.0
+   ],
+   "kind": "io",
+   "child_cells": 5
+  },
+  {
+   "cell": "gf180mcu_fd_io__fill1",
+   "parent": "BTX1_chip_top_0_0",
+   "depth": 1,
+   "count_in_parent": 58,
+   "size_um": [
+    1.32,
+    350.0
+   ],
+   "first_placement_box_um": [
+    3548.34,
+    4746.0,
+    3549.66,
+    5096.0
+   ],
+   "kind": "io",
+   "child_cells": 4
+  },
+  {
+   "cell": "gf180mcu_fd_io__fillnc",
+   "parent": "BTX1_chip_top_0_0",
+   "depth": 1,
+   "count_in_parent": 20,
+   "size_um": [
+    0.42,
+    350.0
+   ],
+   "first_placement_box_um": [
+    3550.34,
+    4746.0,
+    3550.76,
+    5096.0
+   ],
+   "kind": "io",
+   "child_cells": 1
+  }
+ ],
+ "labels": [
+  {
+   "text": "bidir_PAD[3]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    1426.0,
+    58.0
+   ]
+  },
+  {
+   "text": "bidir_PAD[0]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    886.0,
+    58.0
+   ]
+  },
+  {
+   "text": "input_PAD[6]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    58.0,
+    2455.5
+   ]
+  },
+  {
+   "text": "analog_PAD[1]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    526.0,
+    5064.0
+   ]
+  },
+  {
+   "text": "VDD",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    58.0,
+    556.5
+   ]
+  },
+  {
+   "text": "bidir_PAD[11]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    3046.0,
+    58.0
+   ]
+  },
+  {
+   "text": "bidir_PAD[22]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    3874.0,
+    3088.5
+   ]
+  },
+  {
+   "text": "clk_PAD",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    526.0,
+    58.0
+   ]
+  },
+  {
+   "text": "bidir_PAD[6]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    2146.0,
+    58.0
+   ]
+  },
+  {
+   "text": "bidir_PAD[15]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    3874.0,
+    1189.5
+   ]
+  },
+  {
+   "text": "bidir_PAD[28]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    3046.0,
+    5064.0
+   ]
+  },
+  {
+   "text": "input_PAD[3]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    58.0,
+    3510.5
+   ]
+  },
+  {
+   "text": "bidir_PAD[21]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    3874.0,
+    2877.5
+   ]
+  },
+  {
+   "text": "bidir_PAD[1]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    1066.0,
+    58.0
+   ]
+  },
+  {
+   "text": "bidir_PAD[20]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    3874.0,
+    2666.5
+   ]
+  },
+  {
+   "text": "bidir_PAD[30]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    2686.0,
+    5064.0
+   ]
+  },
+  {
+   "text": "bidir_PAD[37]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    1246.0,
+    5064.0
+   ]
+  },
+  {
+   "text": "bidir_PAD[29]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    2866.0,
+    5064.0
+   ]
+  },
+  {
+   "text": "bidir_PAD[27]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    3226.0,
+    5064.0
+   ]
+  },
+  {
+   "text": "bidir_PAD[36]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    1426.0,
+    5064.0
+   ]
+  },
+  {
+   "text": "bidir_PAD[26]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    3406.0,
+    5064.0
+   ]
+  },
+  {
+   "text": "input_PAD[5]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    58.0,
+    3088.5
+   ]
+  },
+  {
+   "text": "bidir_PAD[5]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    1786.0,
+    58.0
+   ]
+  },
+  {
+   "text": "input_PAD[0]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    58.0,
+    4565.5
+   ]
+  },
+  {
+   "text": "bidir_PAD[38]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    1066.0,
+    5064.0
+   ]
+  },
+  {
+   "text": "bidir_PAD[23]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    3874.0,
+    3299.5
+   ]
+  },
+  {
+   "text": "bidir_PAD[24]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    3874.0,
+    3510.5
+   ]
+  },
+  {
+   "text": "bidir_PAD[25]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    3874.0,
+    3721.5
+   ]
+  },
+  {
+   "text": "bidir_PAD[17]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    3874.0,
+    1611.5
+   ]
+  },
+  {
+   "text": "bidir_PAD[34]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    1786.0,
+    5064.0
+   ]
+  },
+  {
+   "text": "bidir_PAD[18]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    3874.0,
+    1822.5
+   ]
+  },
+  {
+   "text": "input_PAD[2]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    58.0,
+    3721.5
+   ]
+  },
+  {
+   "text": "bidir_PAD[35]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    1606.0,
+    5064.0
+   ]
+  },
+  {
+   "text": "bidir_PAD[32]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    2326.0,
+    5064.0
+   ]
+  },
+  {
+   "text": "bidir_PAD[33]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    2146.0,
+    5064.0
+   ]
+  },
+  {
+   "text": "input_PAD[1]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    58.0,
+    4354.5
+   ]
+  },
+  {
+   "text": "bidir_PAD[31]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    2506.0,
+    5064.0
+   ]
+  },
+  {
+   "text": "bidir_PAD[19]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    3874.0,
+    2033.5
+   ]
+  },
+  {
+   "text": "bidir_PAD[12]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    3226.0,
+    58.0
+   ]
+  },
+  {
+   "text": "input_PAD[9]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    58.0,
+    1822.5
+   ]
+  },
+  {
+   "text": "VSS",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    1966.0,
+    58.0
+   ]
+  },
+  {
+   "text": "bidir_PAD[14]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    3874.0,
+    978.5
+   ]
+  },
+  {
+   "text": "bidir_PAD[10]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    2866.0,
+    58.0
+   ]
+  },
+  {
+   "text": "bidir_PAD[13]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    3406.0,
+    58.0
+   ]
+  },
+  {
+   "text": "analog_PAD[0]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    706.0,
+    5064.0
+   ]
+  },
+  {
+   "text": "bidir_PAD[2]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    1246.0,
+    58.0
+   ]
+  },
+  {
+   "text": "input_PAD[7]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    58.0,
+    2244.5
+   ]
+  },
+  {
+   "text": "bidir_PAD[4]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    1606.0,
+    58.0
+   ]
+  },
+  {
+   "text": "bidir_PAD[9]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    2686.0,
+    58.0
+   ]
+  },
+  {
+   "text": "input_PAD[8]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    58.0,
+    2033.5
+   ]
+  },
+  {
+   "text": "input_PAD[11]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    58.0,
+    1400.5
+   ]
+  },
+  {
+   "text": "bidir_PAD[16]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    3874.0,
+    1400.5
+   ]
+  },
+  {
+   "text": "input_PAD[4]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    58.0,
+    3299.5
+   ]
+  },
+  {
+   "text": "bidir_PAD[8]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    2506.0,
+    58.0
+   ]
+  },
+  {
+   "text": "bidir_PAD[39]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    886.0,
+    5064.0
+   ]
+  },
+  {
+   "text": "input_PAD[10]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    58.0,
+    1611.5
+   ]
+  },
+  {
+   "text": "rst_n_PAD",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    706.0,
+    58.0
+   ]
+  },
+  {
+   "text": "bidir_PAD[7]",
+   "layer": "81/10",
+   "layer_name": "Metal5_Label",
+   "xy_um": [
+    2326.0,
+    58.0
+   ]
+  }
+ ],
+ "labels_truncated": false
+}
