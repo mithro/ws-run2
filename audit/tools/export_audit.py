@@ -15,6 +15,11 @@ repository's `audit` branch gets only that run's reports:
     audit/<CODE>/images/       renders of the taped-out layout (if made)
     audit/tools/               the scripts that produced all of this
 
+A summary whose layout check is unfinished (it has a "## Taped-out layout"
+section or an images/ directory, but no line in digests_layout.tsv) is not
+exported: the checkout keeps its previous summary.md and images/, and a warning
+is printed. One-off scratch scripts in tools/ (UNPUBLISHED_TOOLS) are not copied.
+
 Usage: export_audit.py <run> <checkout of the run repository>
 """
 import csv
@@ -24,9 +29,13 @@ import shutil
 import sys
 from pathlib import Path
 
+from digests import load_digests
+
 RUNS = Path(__file__).resolve().parents[1]
 ORDER = {"High": 0, "Medium": 1, "Low": 2, "None": 3, "Unknown": 4}
 TITLES = {"ws-run1": "wafer.space GF180MCU run 1 (G801)", "ws-run2": "wafer.space GF180MCU run 2 (G802)"}
+# Progress monitor and probe written for one session of the layout pass; not part of the method.
+UNPUBLISHED_TOOLS = ("analysis_progress.sh", "layout_probe.py")
 
 
 def audit_section(run):
@@ -37,22 +46,39 @@ def audit_section(run):
     return [line for line in lines[start:end]]
 
 
-def write_index(run, projects, audit, out_dir):
-    dig = {}
-    for row in csv.reader((RUNS / "digests.tsv").open(), delimiter="\t", quoting=csv.QUOTE_NONE):
-        dig[row[0]] = dict(zip(("verdict", "what", "authors", "char", "pdk", "flags"), row[1:]))
+def unfinished_layout_check(run, code, layout_checked):
+    """True when a layout check of the project was started (layout section or renders) but not recorded."""
+    if "%s/%s" % (run, code) in layout_checked:
+        return False
+    src = RUNS / run / code
+    started = re.search(r"^## Taped-out layout", (src / "summary.md").read_text(), re.M) is not None
+    return started or (src / "images").is_dir()
+
+
+def write_index(run, projects, audit, out_dir, dig, layout_checked):
     rows = []
     for p in projects:
         key = "%s/%s" % (run, p["code"])
-        text = (RUNS / key / "summary.md").read_text()
+        # The summary that is actually exported: the checkout's copy when the new one is held back.
+        src = out_dir / p["code"] if unfinished_layout_check(run, p["code"], layout_checked) else RUNS / key
+        text = (src / "summary.md").read_text()
         verdict = re.search(r"^### Verdict: (\w+)", text, re.M).group(1)
-        rows.append((p, verdict, dig.get(key), audit[p["code"]]))
+        d = dig.get(key)
+        if d:
+            assert d["verdict"] == verdict, (key, d["verdict"], verdict)
+        rows.append((p, verdict, d, audit[p["code"]]))
 
+    checked = sum(1 for p in projects if "%s/%s" % (run, p["code"]) in layout_checked)
     out = ["# %s: project audit" % TITLES[run], "",
            "One directory per public project on this run. Each has an analysis (`summary.md`) of the",
-           "project's repository and of the layout that was actually taped out, the manifest row",
-           "(`project.json`), the commit that was analysed (`clone.json`) and, where a layout was",
-           "extracted from the reticle, measurements (`layout.json`) and renders (`images/`).", "",
+           "project's repository, the manifest row (`project.json`), the commit that was analysed",
+           "(`clone.json`) and measurements of the layout extracted from the reticle (`layout.json`).",
+           "%d of the %d summaries have also been checked against that taped-out layout and carry" % (
+               checked, len(projects)),
+           "renders of it (`images/`); they are marked in the \"Layout checked\" column.", "",
+           "`tools/` documents how all of this was made. The scripts run in the original workspace,",
+           "which also holds the project clones, the reticle layouts and the digest files; they do",
+           "not run from this checkout.", "",
            "The licence and README audit is in [AUDIT.md](AUDIT.md).", "",
            "Verdict = value for GF180MCU characterisation and PDK development, as judged in each",
            "`summary.md`.", ""]
@@ -73,18 +99,18 @@ def write_index(run, projects, audit, out_dir):
     out.append("")
 
     out += ["## All projects", "",
-            "| Code | Project | Slot | Verdict | What it contains | Authors | LICENSE | README | Summary |",
-            "|---|---|---|---|---|---|---|---|---|"]
+            "| Code | Project | Slot | Verdict | What it contains | Authors | LICENSE | README | Layout checked | Summary |",
+            "|---|---|---|---|---|---|---|---|---|---|"]
     for p, verdict, d, a in rows:
         if a["status"] == "cloned":
             lic = ", ".join(sorted({x["spdx"] for x in a["license"]["files"]})) or "none"
             readme = a["readme"]["verdict"]
         else:
             lic = readme = "n/a"
-        out.append("| %s | %s | %s | %s | %s | %s | %s | %s | [summary](%s/summary.md) |" % (
+        out.append("| %s | %s | %s | %s | %s | %s | %s | %s | %s | [summary](%s/summary.md) |" % (
             p["code"], p["project"].replace("|", "/"), p["slot_size"], verdict,
             d["what"] if d else "No repository listed", d["authors"] if d else "not stated",
-            lic, readme, p["code"]))
+            lic, readme, "yes" if "%s/%s" % (run, p["code"]) in layout_checked else "no", p["code"]))
     out.append("")
     (out_dir / "README.md").write_text("\n".join(out))
     return counts
@@ -98,7 +124,8 @@ def main():
     audit_rows = [a for a in json.load((RUNS / "audit.json").open()) if a["run"] == run]
     audit = {a["code"]: a for a in audit_rows}
 
-    counts = write_index(run, projects, audit, out_dir)
+    dig, layout_checked = load_digests()
+    counts = write_index(run, projects, audit, out_dir, dig, layout_checked)
     (out_dir / "AUDIT.md").write_text("\n".join(
         ["# %s: repository audit" % TITLES[run], "",
          "Checks, for every public project with a repository, whether the repository has a LICENSE",
@@ -120,7 +147,11 @@ def main():
     for p in projects:
         src, dst = RUNS / run / p["code"], out_dir / p["code"]
         dst.mkdir(exist_ok=True)
-        for name in ("summary.md", "project.json", "layout.json"):
+        hold_back = unfinished_layout_check(run, p["code"], layout_checked)
+        if hold_back:
+            print("WARNING: %s/%s layout check unfinished; keeping the checkout's summary.md and images/"
+                  % (run, p["code"]), file=sys.stderr)
+        for name in ("project.json", "layout.json") if hold_back else ("summary.md", "project.json", "layout.json"):
             if (src / name).exists():
                 shutil.copy2(src / name, dst / name)
                 copied += 1
@@ -129,15 +160,17 @@ def main():
             for key in ("mirror", "seconds"):  # local paths and timings mean nothing elsewhere
                 status.pop(key, None)
             (dst / "clone.json").write_text(json.dumps(status, indent=1) + "\n")
-        if (src / "images").is_dir():
-            if (dst / "images").exists():
+        if not hold_back:
+            if (dst / "images").exists():  # replace, or remove renders whose source is gone
                 shutil.rmtree(dst / "images")
-            shutil.copytree(src / "images", dst / "images")
+            if (src / "images").is_dir():
+                shutil.copytree(src / "images", dst / "images")
 
     tools = out_dir / "tools"
     if tools.exists():
         shutil.rmtree(tools)
-    shutil.copytree(RUNS / "tools", tools, ignore=shutil.ignore_patterns("__pycache__", ".venv", "*.pyc"))
+    shutil.copytree(RUNS / "tools", tools,
+                    ignore=shutil.ignore_patterns("__pycache__", ".venv", "*.pyc", *UNPUBLISHED_TOOLS))
     print(run, "projects", len(projects), "files", copied, counts)
 
 

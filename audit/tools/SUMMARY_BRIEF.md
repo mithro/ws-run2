@@ -10,7 +10,7 @@ upstreamed into the PDK as a new feature.
 
 ## Where things are
 
-Each project lives in `/home/tim/github/wafer-space/runs/<run>/<CODE>/`:
+Each project lives in `runs/<run>/<CODE>/` (`runs/` is the parent of this `tools/` directory):
 
 - `project.json`: what the submitter declared on the platform (name, slot size,
   description, repository URL, top cell, layout hash).
@@ -18,11 +18,11 @@ Each project lives in `/home/tim/github/wafer-space/runs/<run>/<CODE>/`:
   modify, build, or run anything inside it.
 - `releases/`, `releases.json`: GitHub/GitLab release assets, if any.
 - `clone_status.json`: HEAD commit, branch, submodules.
-- `/home/tim/github/wafer-space/runs/audit.json` has the LICENSE/README audit
+- `runs/audit.json` has the LICENSE/README audit
   record for each project (match on `run` + `code`).
 
 Write exactly one file per project you are assigned:
-`/home/tim/github/wafer-space/runs/<run>/<CODE>/summary.md`. Write nothing else.
+`runs/<run>/<CODE>/summary.md`. Write nothing else.
 
 ## How to investigate
 

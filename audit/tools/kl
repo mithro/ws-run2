@@ -1,0 +1,17 @@
+#!/bin/bash
+# Run the layout tools' Python (KLayout module) inside a memory-limited cgroup so
+# that a runaway layout operation is killed instead of exhausting the machine.
+#
+#   tools/kl tools/layout_query.py <oas> tree
+#   tools/kl my_script.py
+#   KL_MEM=48G tools/kl tools/layout_extract.py ws-run1     # raise the per-process limit
+#
+# Each invocation gets its own scope limited to $KL_MEM (default 16G, no swap).
+# All scopes live in ws-layout.slice, which is capped at $KL_TOTAL_MEM (default
+# 128G) in total. A process that goes over is killed (exit code 137).
+set -e
+here="$(cd "$(dirname "$0")" && pwd)"
+systemctl --user set-property --runtime ws-layout.slice "MemoryMax=${KL_TOTAL_MEM:-128G}" MemorySwapMax=0
+exec systemd-run --user --scope --quiet --collect --slice=ws-layout.slice \
+    -p "MemoryMax=${KL_MEM:-16G}" -p MemorySwapMax=0 \
+    -- "$here/../.venv/bin/python" "$@"
