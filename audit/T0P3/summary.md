@@ -7,10 +7,11 @@
 | Top cell | tt_gf_wrapper |
 | Licence in repo | Apache-2.0 (`LICENSE`; no licence claim on the platform) |
 | README | Thin: 74 words, links out to tinytapeout.com and the multiplexer docs; says nothing about analog support |
+| Taped-out layout | T0P3_tt_gf_wrapper_6_0, 3932 x 5122 um, 1 placement on the G802 reticle |
 
 ## What the repo actually contains
 
-Tiny Tapeout GF 0p3 is a multi-project die for the wafer.space G802 run (die id G802T0P3, 3932 x 5122 um): 32 user designs behind the Tiny Tapeout multiplexer, 16 of them analog or mixed-signal custom layouts. It is the first Tiny Tapeout shuttle on GF180MCU with analog pads, analog switches, a separate analog supply and per-project power gating on both supplies. The platform description ("experimental shuttle with analog design support") is accurate.
+Tiny Tapeout GF 0p3 is a multi-project die for the wafer.space G802 run (die id G802T0P3, 3932 x 5122 um): 32 user designs behind the Tiny Tapeout multiplexer, 16 of them with analog pins (15 declared `analog` custom layouts or mixed-signal projects plus TinyQV with a DAC output; confirmed by 16 tiles having `tt_asw_5v0` switches in the layout). It is the first Tiny Tapeout shuttle on GF180MCU with analog pads, analog switches, a separate analog supply and per-project power gating on both supplies. The platform description ("experimental shuttle with analog design support") is accurate.
 
 Like the GF 0.2 repo (TTP2/TTPG on run 1), this is the integration repo, not the design sources:
 
@@ -92,14 +93,14 @@ Device content of the analog macros below was read from the cell names and layer
 **Analog and custom-layout projects**
 
 - **`tt_um_analog_factory_test`** (addr 7, Sylvain Munaut). Purpose-built infrastructure test: two large current-mirror loads (`mirror_load` x2, 5 V devices, with an `lv2hv` shifter) that multiply a reference current on `ua[0]` by about 50 and draw it from VDPWR or VAPWR (`ui[0]`, `ui[1]`), with Kelvin sense lines for VGND, VDPWR and VAPWR on `ua[1..3]` and a pad-to-pad loopback on `ua[4]`/`ua[5]`. Measures the IR drop of the power distribution and of the 3.3 V and 5 V power gates under a known load, and (through the loopback) two analog switches in series.
-- **`tt_um_htfab_momcap`** (addr 39, htfab). Interdigitated metal-oxide-metal capacitor filling a 1x2 tile, terminals on `ua[0]`/`ua[1]`, two dummy terminals on `ua[2]`/`ua[3]` for de-embedding. GDS contains only metal and via layers, almost all of it Metal4 (62 Metal4 shapes against 2 each on Metal1 to Metal3), so this is mainly a Metal4 lateral capacitor (inferred from shape counts). Docs: magic extraction estimates about 85 pF. The upstream repo is said to contain a generator script.
-- **`tt_um_rahulbhagwat_gf180_bandgap_reference`** (addr 260, Rahul Bhagwat). Bandgap reference: `npn_05p00x05p00` x2, `pfet_03v3` x10, `nfet_03v3` x5, `ppolyf_u_1k` x3, error amplifier and over-voltage clamp sub-cells; uses a deep N-well and the BJT marker layers. Output VBGR on `ua[0]`, supplied from VAPWR through the 5 V gate at 3.3 V. Docs: 1.674 V to 1.697 V from -40 C to 125 C in typical-corner simulation, no trimming.
+- **`tt_um_htfab_momcap`** (addr 39, htfab). Interdigitated metal-oxide-metal capacitor filling a 1x2 tile, terminals on `ua[0]`/`ua[1]`, two dummy terminals on `ua[2]`/`ua[3]` for de-embedding. The placed layout contains only Metal1 to Metal4 and Via1 to Via3 (no devices): Metal1, Metal2 and Metal3 each merge into 2 polygons of 54 115 um2 and Metal4 (53 polygons, 54 664 um2 including labels) matches them, with 171 995 vias per via layer, so this is an interdigitated capacitor stacked over four metal layers, not a Metal4-only lateral one (the earlier shape-count inference was wrong; shape counts are not areas). Docs: magic extraction estimates about 85 pF. The upstream repo is said to contain a generator script.
+- **`tt_um_rahulbhagwat_gf180_bandgap_reference`** (addr 260, Rahul Bhagwat). Bandgap reference: the layout shows nine BJT marker shapes (a row of eight identical cells plus one separate cell, each in its own DNWELL, i.e. a 1:8 ratio; the cell-name count of `npn_05p00x05p00` x2 does not reflect that, so check the netlist for the unit count), `pfet_03v3` x10, `nfet_03v3` x5, `ppolyf_u_1k` x3, error amplifier and over-voltage clamp sub-cells; uses a deep N-well and the BJT marker layers. Output VBGR on `ua[0]`, supplied from VAPWR through the 5 V gate at 3.3 V. Docs: 1.674 V to 1.697 V from -40 C to 125 C in typical-corner simulation, no trimming.
 - **`tt_um_tnt_gf_vco`** (addr 262, Sylvain Munaut). 4-stage differential delay-cell VCO (`vco_dly` x4, current mirror, control cell, two output comparators), 3.3 V devices. Nominal 240 MHz, expected tuning range about 120 MHz to 500 MHz. Phases 0 and 270 on digital `uo[0]`, `uo[1]`; phases 180 and 90 on `ua[0]`, `ua[1]`; control voltage on `ua[2]`.
 - **`tt_um_mcml_vco`** (addr 454, Namibj). MOS current-mode-logic VCO: `nfet` x6, `vco_core_segment` x4, `ppolyf_u_high_Rs_resistor` x2, no PMOS (no Nwell in the GDS). Two tail-bias inputs on `ua[0]`, `ua[1]`, two differential clock outputs on `ua[2..5]`. The docs are the unfilled template.
 - **`tt_um_oscillating_bones`** (addr 294, Uri Shaked). 21-stage ring oscillator of hand-drawn skull-shaped 3.3 V MOSFET inverters ported from an IHP sg13g2 design by 1.45x scaling, one more as an output buffer on `ua[0]`, and an 8-stage `dffrnq` divider on `uo[0..7]`. Docs: about 120 MHz in post-layout simulation (magic extraction, gf180mcuD ngspice models), unchanged for 0 to 10 pF on `ua[0]`. Non-standard transistor geometry, so a test of how well the models and extraction hold for unusual layouts.
 - **`tt_um_algofoogle_gf_analog`** (addr 37, Anton Maurovic). 5-stage current-starved ring-oscillator VCO (`csringosc`, `csrostage`, `nfet_03v3`, custom `inv_P15_N4p5` inverters), control on `ua[0]`, output on `ua[1]`, expected 2 MHz to 400 MHz for 0.55 V to 3.3 V. A second copy driven by an on-chip R-2R DAC (`r2r_dac_R24_P15_N4p5`, `ppolyf_u_1k`) with its control node and output on `ua[2]`, `ua[3]`. Divided outputs on `uio[0..5]`. Also contains artwork cells (`lily_pics`, `m4screen`) and a synthesised controller.
 - **`tt_um_tnt_gf_555`** (addr 103, Sylvain Munaut). CMOS 555 re-creation: two OTAs (N and P input), a reference (`ref_nmos_vth`, `ref_res`, `ref_nmos_drv`), resistor divider, `ppolyf_u_1k`, `nmoscap_3p3`, Schmitt inverters, NMOS/PMOS output drivers; Dualgate (5 V) devices on part of the layout; on VAPWR through the 5 V gate. Threshold, trigger, reset, control, out and discharge on `ua[0..5]`; an on-chip oscillator configuration on `uo[0]`/`uio[0]`.
-- **`tt_um_cw_testbuffer`** (addr 101, Christoph Weiser). Op-amp voltage buffer built from `nfet_06v0` and `pfet_06v0` devices with a `ppolyf_u_1k_6p0` resistor and a compensation capacitor cell. Input `ua[0]`, 5 uA bias `ua[1]`, output `ua[2]`. The docs carry a full simulated specification table across PVT (supply current 47.9 / 50.6 / 57.5 uA, open-loop gain 85.9 dB typ, UGBW 2.6 MHz typ, offset 10.2 mV 3-sigma, noise densities, PSRR, slew rate). This is the best-documented simulation target on the die.
+- **`tt_um_cw_testbuffer`** (addr 101, Christoph Weiser). Op-amp voltage buffer built from `nfet_06v0` and `pfet_06v0` devices (in the layout the thick-oxide `Dualgate` is present, 5 polygons, but there is no `V5_XTOR` marker in this tile, unlike the 5 V devices in the 555, factory-test and polywave tiles; worth knowing when comparing 6 V device models) with a `ppolyf_u_1k_6p0` resistor and a compensation capacitor cell. Input `ua[0]`, 5 uA bias `ua[1]`, output `ua[2]`. The docs carry a full simulated specification table across PVT (supply current 47.9 / 50.6 / 57.5 uA, open-loop gain 85.9 dB typ, UGBW 2.6 MHz typ, offset 10.2 mV 3-sigma, noise densities, PSRR, slew rate). This is the best-documented simulation target on the die.
 - **`tt_um_LPCAS_TTGF0P3_TP1`** (addr 292, Pranay Arvind Patil and Nithin Purushothama). Folded-cascode OTA, 3.3 V devices, about 15 uA, UGB about 100 kHz, output swing 0.5 V to 3.0 V. VINN, VINP, VBIAS, VOUT on `ua[0..3]`. The `info.yaml` description says NMOS input pair; the body of `docs/info.md` describes a PMOS input pair. The GDS is flattened (1 cell), so this could not be settled from the layout.
 - **`tt_um_gf_r2r_dac`** (addr 35, Matt Venn). 8-bit R-2R DAC with poly resistors and a synthesised sine generator / external-data mux; output `ua[0]`. The same `r2r` macro (`ppolyf_u_1k`) is instantiated inside `tt_um_MichaelBell_tinyQV` (addr 199) as a memory-mapped peripheral, output on that project's `ua[0]`.
 - **`tt_um_odgrip_polywave`** (addr 452, Riccardo Pellegrini). Four 16-bit R-2R ladders (16 `r2r_unit` references in the GDS) driven by a synthesised waveform engine; direct-write mode lets any 16-bit code be loaded. Outputs `ua[0..3]`. Usable for resistor-matching and DAC linearity measurements.
@@ -116,6 +117,89 @@ Device content of the analog macros below was read from the cell names and layer
 - **`tt_um_factory_test`** (addr 1). IO mirror and counter; reference for the digital pad path.
 
 The remaining projects (chip ROM, TinyQV, KianV, 2048 x2, Nyan Cat, Simon, USB CDC, screensaver, flag demo, `tt_um_coldbrew`) are ordinary synthesised logic on the 7-track cells.
+
+## Taped-out layout
+
+| Item | Measured from `layout/T0P3.oas` |
+|---|---|
+| Reticle cell, size, placements | `T0P3_tt_gf_wrapper_6_0` (top `tt_gf_wrapper`), 3932 x 5122 um, 1 placement on the G802 reticle |
+| Pad ring | 74 `gf180mcu_ocd_io` cells: 29 `asig_5p0`, 16 `bi_24t`, 10 `in_c`, 3 `in_s`, 4 `dvdd`, 8 `dvss`, 2 `vdd`, 2 `vss`, plus 4 `cor`; 350 um deep, 75.32 um wide |
+| Standard cells | `gf180mcu_fd_sc_mcu7t5v0`: 93 727 logic placements; `gf180mcu_as_sc_mcu7t3v3`: 25 184 logic placements (all in `tt_um_fabulous_gf_0p3_3v3`) |
+| SRAM | 1 x `gf180mcu_ocd_ip_sram__sram256x8m8wm1` (301.3 x 224.9 um) in `tt_um_essen` |
+| User tiles | 32 `tt_um_*` cells, 16 with analog switches (below) |
+| Infrastructure macros | 13 `tt_mux` rows (1454.88 x 78.4 um), 1 `tt_ctrl` (112 x 160.72 um at 1909.6,2477.4), `tt_pg_3v3_hp_1/_2/_4` x 3/26/3, `tt_pg_5v0_2` x 6, `tt_asw_5v0` x 60, `tt_ckt_ana` x 22 |
+| Thick oxide / 5 V | `Dualgate` (55/0) 356 143 shapes, `V5_XTOR` (112/1) 279 793 shapes |
+| Deep N-well | 9 `DNWELL` shapes, all in the bandgap tile (also 9 BJT marker shapes) |
+| MIM, eFuse | none: no MIM markers, no `FuseTop`, no `EFUSE_MK` anywhere on the die (matches `mim False` in `designs.csv`) |
+| Poly resistors | `Resistor` (62/0) 425 shapes, `RES_MK` 1250, `SAB` 1166; no `FHRES` (227/0) shape anywhere |
+| Nmos-cap marker | `MOS_CAP_MK` (166/5) 36 392 shapes (nearly all in synthesised cells); `nmoscap_3p3` in the 555 tile |
+
+### Does it match the repository?
+
+Yes, for everything that can be compared.
+
+- The reticle cell and the release `tt_gf_wrapper.oas` in `releases/tapeout-ws2607` have the same bounding box (3932 x 5122 um) and identical placement counts for all 69 distinct direct children of the top cell (tiles, pads, `tt_mux`, `tt_pg_*`, `tt_asw_5v0`, `tt_ckt_ana`, logos). `Dualgate` is identical in the middle of the die (box 440,1150 to 3500,3560 um, XOR area 0). Metal1, Metal4 and Metal5 differ there (XOR 0.9 mm2, 0.28 mm2, 0.24 mm2); that is the dummy fill wafer.space adds, not separately checked cell by cell.
+- Counts agree with the release netlist read for the repo section: 74 pads (16 `bi_24t`, 10 `in_c`, 3 `in_s`, 29 `asig_5p0`, 4 `dvdd`, 8 `dvss`, 2 `vdd`, 2 `vss`), 13 `tt_mux`, 1 `tt_ctrl`, 3/26/3 `tt_pg_3v3_hp_*`, 6 `tt_pg_5v0_2`, 60 `tt_asw_5v0`, 22 `tt_ckt_ana`, 1 SRAM, 32 projects. The six `tt_pg_5v0_2` sit exactly beside the six tiles that asked for `pg_vaa`: 555, test buffer, analog factory test, OTA, bandgap, PolyWave.
+- The 14 custom analog tiles whose `.oas` is in `repo/projects/` were compared against the placed tile cells: `tt_um_htfab_momcap`, `_74hct00`, `_tnt_gf_vco`, `_mcml_vco`, `_kiterai_current_dac`, `_cw_testbuffer`, `_rahulbhagwat_gf180_bandgap_reference`, `_tnt_gf_555`, `_analog_factory_test`, `_oscillating_bones`, `_LPCAS_TTGF0P3_TP1`, `_odgrip_polywave`, `_gf_r2r_dac`, `_algofoogle_gf_analog`. Tile size is identical, cell counts agree (cell names gain a two-letter prefix such as `PS_`, `FN_`, `P3_`, which is wafer.space's renaming, not a difference), and a full-tile XOR over COMP, Poly2, Contact, Metal1 to Metal5, Via1 to Via4, Dualgate, Resistor, Nwell, DNWELL, Pplus and Nplus is 0.0 um2 for every one. The digital tiles were not XORed; their cell and count totals agree with the release.
+- No GDS for the individual projects was compared beyond these `.oas` files.
+
+![Whole die, full style, 16 analog tiles and the large digital tiles labelled](images/overview.webp)
+
+*Whole die (3932 x 5122 um). 74 pads in the outer ring; inside, 13 `tt_mux` rows run between rows of tiles. The two big 4 x 4 FPGA tiles are at right (3.3 V version on top, y 3630 to 4367 um; 5 V version at y 1984 to 2720 um). The analog tiles are the small boxes in the left and middle-right columns between y 1160 and 3544 um; KianV is at lower left (x 466 to 1906, y 749 to 1486 um). Large dark areas (top left, bottom right) are unused tile slots carrying only the power grid.*
+
+### Tile placement
+
+Positions are lower-left corner in um in the die frame; a 1x1 tile is 346.64 x 160.72 um and a 1x2 tile 346.64 x 325.36 um (the six tiles with a `tt_pg_5v0_2` strip are 328.72 um wide).
+
+| Tile | Placement x, y | Size | `tt_asw_5v0` | Devices seen in the placed layout |
+|---|---|---|---|---|
+| `tt_um_analog_factory_test` | 483.84, 1983.52 | 328.72 x 325.36 | 6 | 5 V: Dualgate 4 polygons (6001 um2), `V5_XTOR` 12; `JI_mirror_load` x2 (18 x 221.6 um) |
+| `tt_um_74hct00` | 830.48, 1983.52 | 346.64 x 325.36 | 5 | 3.3 V only (no Dualgate); `FN_74hct00_top` 114.9 x 87.5 um |
+| `tt_um_tnt_gf_vco` | 465.92, 1571.92 | 346.64 x 325.36 | 3 | 3.3 V only; `BZ_vco` 35.7 x 18.6 um |
+| `tt_um_rahulbhagwat_gf180_bandgap_reference` | 848.40, 1571.92 | 328.72 x 325.36 | 1 | 3.3 V only; 9 BJT markers each in DNWELL, 3 poly resistors (377 um2 `Resistor`, 317 um2 `RES_MK`); core 152 x 44 um |
+| `tt_um_oscillating_bones` | 465.92, 3218.32 | 346.64 x 325.36 | 1 | ring `NY_ring` 261 x 261 um (3.3 V, 21 skull inverters plus buffer); `NY_freq_divider` 200 x 8.8 um of 5 V library flip-flops (the only Dualgate, 896 um2) |
+| `tt_um_htfab_momcap` | 465.92, 2806.72 | 346.64 x 325.36 | 4 | Metal1 to Metal4 only |
+| `tt_um_algofoogle_gf_analog` | 830.48, 2806.72 | 346.64 x 325.36 | 4 | 3.3 V analog (`C6_csringosc` 41 x 9.6 um, `C6_vco_combo` 44 x 50 um) plus a 5 V synthesised controller (`C6_controller` 190 x 170 um, `C6_fastblock` 117 x 170 um); 3 poly resistors (1148 um2); two childless cells `C6_m4screen` (60.9 x 44.4 um) and `C6_lily_pics` (100.5 x 39.2 um) have no identified function |
+| `tt_um_LPCAS_TTGF0P3_TP1` | 848.40, 3218.32 | 328.72 x 325.36 | 4 | 3.3 V only; single flattened cell, 2 Nwell polygons (350 um2) |
+| `tt_um_kiterai_current_dac` | 1195.04, 3218.32 | 346.64 x 325.36 | 1 | 3.3 V; no Nwell at all (NMOS only, confirmed); flattened |
+| `tt_um_gf_r2r_dac` | 1195.04, 2806.72 | 346.64 x 325.36 | 1 | `DL_r2r` 66.8 x 55.9 um, one `Resistor` polygon of 3392 um2 with SAB; 5 V synthesised control (`DL_r2r_dac_control` 150 x 150 um) |
+| `tt_um_tnt_gf_555` | 3118.64, 2806.72 | 328.72 x 325.36 | 6 | mixed: Dualgate 4 polygons (5011 um2), `V5_XTOR` 40 shapes; `EI_tnt555` x2 (43 x 69 um), `EI_nmoscap_3p3` 45 x 34 um, `EI_ppolyf_u_1k` x2 (7.6 x 23.2 um) |
+| `tt_um_cw_testbuffer` | 2754.08, 2806.72 | 328.72 x 325.36 | 3 | thick oxide: Dualgate 5 polygons (2541 um2), but no `V5_XTOR` marker at all; 1 resistor (90 um2) with SAB; `P3_testbuffer` 90 x 82 um |
+| `tt_um_odgrip_polywave` | 2754.08, 1160.32 | 328.72 x 325.36 | 4 | 4 x `RC_r2r_top` (71.4 x 113.7 um) at the top of the tile: 392 `RES_MK` shapes in total (98 per ladder if split evenly), the four ladder bodies (28 748 um2 of `Resistor`) lie entirely inside Dualgate, i.e. thick-oxide-region poly resistors; synthesised 5 V engine `RC_tt_um_example` 322 x 206 um below |
+| `tt_um_mcml_vco` | 3118.64, 1160.32 | 346.64 x 325.36 | 6 | no Nwell (NMOS only, confirmed), no Dualgate (3.3 V); 12 SAB-covered poly resistor shapes (689 um2); `B3_vco_core` 26.9 x 121 um |
+| `tt_um_gojimmypi_ttgfa_UART_FSM_TRNG_Lab_analog` | 3118.64, 3218.32 | 346.64 x 325.36 | 6 | synthesised 5 V cells; 1023 Metal4 shapes (the fringe structure on `ua[5]` is not separately identified) |
+| `tt_um_MichaelBell_tinyQV` (4x2) | 2024.96, 1571.92 | 1440.32 x 325.36 | 5 | synthesised 5 V cells plus `NQ_r2r` (same 66.8 x 55.9 um R-2R macro as `DL_r2r`) |
+
+Digital tiles (no analog switch): `tt_um_kianV_rv32ima_uLinux_SoC` (465.92, 748.72; 1440.32 x 736.96), `tt_um_fabulous_gf_0p3` (2024.96, 1983.52; 1440.32 x 736.96, `LB_tiny_fabric_6x4` 1159 x 666 um), `tt_um_fabulous_gf_0p3_3v3` (2024.96, 3629.92; same size, `NP_tiny_fabric_6x4` 1276 x 666 um), `tt_um_2048_vga_game` (2024.96, 3218.32; 1075.76 x 325.36), `tt_um_coldbrew` (2024.96, 2806.72; 711.2 x 325.36), `tt_um_gojimmypi_ttgfa_UART_FSM_TRNG_Lab` (465.92, 2395.12), `tt_um_mattvenn_signal_generator` (1559.60, 2806.72), `tt_um_combined` (1559.60, 3218.32), `tt_um_essen` (1559.60, 1571.92; SRAM at 301 x 225 um), `tt_um_a1k0n_nyancat` (1195.04, 1983.52), `tt_um_AbAdA_2048` (1195.04, 1571.92), `tt_um_urish_usb_cdc` (2389.52, 1160.32), `tt_um_waferspace_vga_screensaver` (2024.96, 1160.32), `tt_um_chip_rom` (1559.60, 2395.12; 346.64 x 160.72), `tt_um_factory_test` (1559.60, 2148.16; 160.72 high), `tt_um_urish_simon` (465.92, 501.76; 160.72 high). All have Dualgate and `V5_XTOR` over the whole tile (7-track 5 V library) except `tt_um_fabulous_gf_0p3_3v3`, which has neither.
+
+Sixteen tiles carry `tt_asw_5v0` switches (60 in total, per-tile counts in the table), which agrees with the 16 analog or mixed-signal tiles in the repo section: 15 declared `analog` projects plus `tt_um_MichaelBell_tinyQV`, which uses `ua[0]` functionally and has four extra switches added by the operator. The switch counts per tile equal the number of analog pins each project declares.
+
+### Infrastructure and analog pads
+
+![Tile edge with analog switches, pad contact macros and 5 V power gate](images/analog_interface.webp)
+
+*Left edge of the analog area (box 340,1890 to 830,2320 um). At the bottom, a row of six `tt_asw_5v0` cells (40.3 x 30.2 um each, x 554.7 to 813.4 um, y 1949 to 1980 um) sits below the `tt_um_analog_factory_test` tile, with three more in the row beneath; the tall strip at x 466 to 480 um is its `tt_pg_5v0_2` (14.6 x 325 um); the small box at the far left (x 376 to 381 um, y 1996 to 2071 um) is a `tt_ckt_ana` pad contact (75 x 5 um, rotated) that carries the metal from the `asig_5p0` pad to the analog bus.*
+
+- Analog pad contacts: 22 `tt_ckt_ana`, 10 on the left edge (x 376 um, y 1363 to 3684 um) and 12 on the right edge (x 3551 um, y 941 to 3684 um), each labelled `analog` on Metal3. The 29 `asig_5p0` cells therefore include 7 that are not connected through a `tt_ckt_ana` (not traced; likely supply or spare analog cells).
+- Power gates: the 3.3 V gates (`tt_pg_3v3_hp_*`) contain no Dualgate or `V5_XTOR` shapes (thin oxide, as the schematics say); `tt_pg_5v0_2` (23 Dualgate, 15 `V5_XTOR` shapes) and `tt_asw_5v0` (13 and 11) are thick oxide. 32 power gates for 32 tiles: 3 x `hp_1` on the 160.72 um tiles, 26 x `hp_2` on the 325 um-high tiles, 3 x `hp_4` on the three 737 um-high tiles.
+- The `tt_mux` rows are on 5 V cells (inside Dualgate).
+
+![Dualgate and DNWELL over the middle of the die](images/gate_oxide_map.webp)
+
+*Dualgate (green) and DNWELL (red) for box 440,1150 to 3500,3560 um. Thick oxide covers every synthesised-logic tile, the mux rows, the `tt_asw_5v0` rows and the thin `tt_pg_5v0_2` strips. The black tiles are 3.3 V or metal-only custom layouts (momcap, VCO, 74HCT00, OTA, current DAC, MCML VCO). The only DNWELL (red dots, x about 880 to 1010 um, y about 1888 um) is the bandgap's nine BJTs.*
+
+![Bandgap core, analog style](images/bandgap_bjt.webp)
+
+*Bandgap tile core (box 848,1800 to 1030,1897 um). Nine BJT marker cells are visible: a row of eight identical devices at the top and a ninth separate one at right, a 1:8 pattern; the long horizontal bars are poly resistors with silicide block. No Dualgate: thin-oxide MOS.*
+
+![PolyWave R-2R ladders](images/polywave_r2r.webp)
+
+*`tt_um_odgrip_polywave` (box 2754,1160 to 3083,1486 um). The four large tan rectangles at the top (71 x 114 um each) are the 16-bit R-2R ladders; the block below is the synthesised waveform engine. The ladder resistors are inside Dualgate.*
+
+### Danger-level entry
+
+The `tt_um_fabulous_gf_0p3_3v3` tile is identifiable: 4 x 4 tiles at (2024.96, 3629.92) to (3465.28, 4366.88) um in the top right of the die, with `NP_tiny_fabric_6x4` (1275.7 x 666.4 um) inside. It is the only tile with `gf180mcu_as_sc_mcu7t3v3` cells (25 184 logic placements, 31 777 fill placements in the die), no Dualgate and no `V5_XTOR`. It contains 26 placements of `gf180mcu_as_sc_mcu7t3v3__buff_8` (10.94 x 4.78 um; first ones at x 2137 to 2185 um, y 3688 um), the cell the repo says has a short. No short check on that cell was run. Its power gate is one of the three `tt_pg_3v3_hp_4` (x 3468.6 um, right of the tile).
+
 
 ## Authors and affiliations
 
@@ -156,7 +240,7 @@ Domains: "3.3 V" means thin-oxide `*_03v3` devices on VDPWR (through the project
 | Structure | Exercises | Access | Sim reference in this repo |
 |---|---|---|---|
 | Current-mirror loads with rail sense (`tt_um_analog_factory_test`) | Power-gate and grid IR drop on VDPWR and VAPWR, 05v0 mirror ratio, analog switch + pad resistance via loopback | addr 7; `ua[0]` iref, `ua[1..3]` sense, `ua[4..5]` loopback, `ui[0..1]` enables | None; "about 50x" only |
-| MoM capacitor (`tt_um_htfab_momcap`) | Metal4 lateral/fringe capacitance (mostly), extraction accuracy of magic | addr 39; `ua[0]`, `ua[1]`, dummies `ua[2]`, `ua[3]` | About 85 pF (magic extraction) |
+| MoM capacitor (`tt_um_htfab_momcap`) | Capacitance of a four-layer (Metal1 to Metal4) interdigitated MoM stack, extraction accuracy of magic | addr 39; `ua[0]`, `ua[1]`, dummies `ua[2]`, `ua[3]` | About 85 pF (magic extraction) |
 | Bandgap (`..._bandgap_reference`) | `npn_05p00x05p00` Vbe and temperature slope, `ppolyf_u_1k` ratio and TC, `pfet_03v3` matching | addr 260; `ua[0]` | 1.674 V to 1.697 V, -40 C to 125 C typical; plot `docs/vbgr-simulation-curve.png` |
 | Quadrature VCO (`tt_um_tnt_gf_vco`) | 03v3 delay-cell speed versus control voltage | addr 262; `ua[2]` control, `uo[0..1]`, `ua[0..1]` outputs | 240 MHz nominal, 120 MHz to 500 MHz range |
 | MCML VCO (`tt_um_mcml_vco`) | NMOS current-mode logic with `ppolyf_u_high_Rs` loads: high-Rs poly sheet resistance, nfet gm | addr 454; `ua[0..1]` bias, `ua[2..5]` differential outputs | None |
@@ -194,12 +278,12 @@ Domains: "3.3 V" means thin-oxide `*_03v3` devices on VDPWR (through the project
 
 ## Notes and caveats
 
-- The `sha256` in `project.json` (`da186a23...`, for `T0P3/tt_gf_wrapper.oas`) matches none of the three layout files in the release (`tt_gf_wrapper.oas` `592efeb6...`, precheck output `.oas` `2af579de...`, precheck output `.gds` `e7bfbe93...`). The submitted file may have been a different serialisation of the same layout; not resolved.
+- The `sha256` in `project.json` (`da186a23...`, for `T0P3/tt_gf_wrapper.oas`) matches none of the three layout files in the release (`tt_gf_wrapper.oas` `592efeb6...`, precheck output `.oas` `2af579de...`, precheck output `.gds` `e7bfbe93...`). The reticle layout nevertheless matches the release `tt_gf_wrapper.oas` in top-cell size and in all direct-child placement counts, with identical Dualgate in the area compared, so the file wafer.space placed on the reticle is the released design; the hash difference itself is not resolved.
 - `main` is one commit past the tag: the `danger_level.yaml` entry for the 3.3 V FPGA (authored 2026-07-15, committed 2026-09-14). The commit title says "3v3 SCL projects" in the plural; only one project is listed and only one uses that library.
 - That commit is the only statement of the `buff_8` short; no detail on the failure mechanism or which library revision is affected is in this repo.
 - The 56 other remote branches are per-project CI import branches; there is no alternative shuttle configuration on another branch.
-- Project layouts in git are compressed OASIS; device content was read from the per-project GDS files in `macros.zip` using cell names and layer presence. Flattened macros (`tt_um_LPCAS_TTGF0P3_TP1`, `tt_um_kiterai_current_dac`, the infrastructure macros) give layers only. No LVS or extraction was run.
-- The description of which projects share which pads comes from `shuttle_index.json`; the physical bus routing was not traced.
+- Project layouts in git are compressed OASIS; device content in the project list above was first read from the per-project GDS files in `macros.zip` using cell names and layer presence, and the layer-level statements were then re-checked on the taped-out layout (see "Taped-out layout"). Flattened macros (`tt_um_LPCAS_TTGF0P3_TP1`, `tt_um_kiterai_current_dac`, the infrastructure macros) give layers only. No LVS or extraction was run.
+- The description of which projects share which pads comes from `shuttle_index.json`; the physical bus routing from the switches to the 22 `tt_ckt_ana` pad contacts was not traced in the layout (only the contact positions and the per-tile switch counts were).
 - The analog rail voltage is not fixed by the repo: the gates and switches are named 5v0 and built from `*_05v0` devices, while individual projects document 3.3 V operation (bandgap, 74HCT00) or 3.0 V to 5.0 V (test buffer). 3.3 V-only analog projects sit behind 5 V-capable switches.
 - Power-gate and analog-switch enables are driven per project by `tt_mux` (`um_pg_ena`); that they follow project selection is inferred from the RTL port names, not simulated.
 - `tt_um_MichaelBell_tinyQV` lists `git@github.com:MichaelBell/ttgf0p3-tinyQV.git` as its source in the index (an SSH URL, unlike the others).
