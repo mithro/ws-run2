@@ -6,6 +6,7 @@
 | Slot | 0p5x1 |
 | Top cell | chip_top |
 | Licence in repo | CERN-OHL-W-2.0 (changed from Apache-2.0 in the last commit "license oversigh use CERN OHL2") |
+| Taped-out layout | DPK1_chip_top_12_4, 1936 x 5122 um, 1 placement(s) on the G802 reticle |
 | README | OK (630 words) |
 
 ## What the repo actually contains
@@ -16,6 +17,29 @@ A dual-core programmable I/O coprocessor ported from bunnie Huang's BIO (Betrust
 - Other files: `src/bio_lite.sv`, `bio_lite_top.sv`, `picorv32.v`, `pio_divider.v`, `regfifo.v`, `spi_bio_bridge.sv`, `spi_slave.v`, `rst_sync.v`; `ip/gf180mcu_dpk_ip__logo` (a custom art logo macro in addition to the wafer.space ID macros); `pinout.md`; `assests/` (chip render, art "ghost with flower and balloon").
 - Verification: `sim/cocotb/` has ~30 tests (RTL and gate-level: bootstrap corners, stall races, FIFO reset, GPIO invert, walking-1, UART TX, bunnie reference, SPI). No DRC/LVS/STA reports in the tree.
 - Releases: `B_1.0` (ws_run2_submission) contains `bio180.gds.gz`, two 241 MB tarballs of the run output (`bio180.tar.gz`, `bio180ws2.tar.gz`) and `key.log` (assets are listed in releases.json; downloaded under `releases/`, I did not unpack them).
+
+## Taped-out layout
+
+| | |
+|---|---|
+| Die | 1936 x 5122 um, reticle cell `DPK1_chip_top_12_4`, 1 placement |
+| Pads / IO cells | 72 pads plus 4 corner cells: 44 `gf180mcu_fd_io__bi_24t` (bidir_PAD[0..43]), 5 `in_c` + 1 `in_s` (clk, rst_n, input_PAD[0..3]), 6 `asig_5p0` (analog_PAD[0..5]), 8 `dvdd`, 8 `dvss` |
+| Standard cells | `gf180mcu_fd_sc_mcu7t5v0` only: 66,232 logic cells (nand2_1 20,040, oai21_1 5,522, clkinv_1 5,316, nand3_1 5,240, dffq_1 3,634, dffrnq_1 1,012, dlyc_1 3,251, dlyb_1 854) plus 120,983 fill/tap/endcap cells; about 4,650 flip-flops |
+| SRAM | 8 x `gf180mcu_fd_ip_sram__sram512x8m8wm1`, each 431.9 x 484.9 um, as two 2x2 blocks (x 536-1400): y 466-1437 and y 3685-4656 (one block per core, 4 x 512x8 = 2 KiB) |
+| Custom / analog | none. No DNWELL, no MIM, no BJT; RES_MK, DIODE_MK, ESD_MK, MOS_CAP_MK and ISOSUB shapes lie only inside the stock IO cells (RES_MK and diode markers) or the SRAM/std cells. Dualgate and V5_XTOR appear in the SRAM, the IO cells and all 5 V standard cells (by area, std cells 3.5 and 2.7 Mum2) |
+| Art / ID | `gf180mcu_dpk_ip__logo` (143 x 143 um, 1767-1910, 26-169) plus wafer.space logo, QR, project and shuttle ID, marker |
+
+### Does it match the repository?
+The commit in designs.csv (0fe3252) holds no chip GDS (only the logo and wafer.space ID macro GDS); the full GDS is the release asset `B_1.0/bio180.gds.gz` (top cell `chip_top`). I counted every `gf180mcu*` and `018SRAM*` cell instance recursively in both the reticle cell and that release GDS: 137 distinct library cell names in each, zero differences in count, same 1936 x 5122 um bounding box. The only extra cell in the reticle file is the seal ring. Block structure agrees with the repo: two PicoRV32 cores with 4 SRAM macros each, flat synthesised logic, 5 V mcu7t5v0 cells, a `gf180mcu_dpk_ip__logo` macro, 5 V `gf180mcu_fd_io` pads. The release tarballs were not unpacked,. The release GDS is a release asset, not in the git tree.
+
+![Whole die, style full: core A SRAM (bottom) and core B SRAM (top) with std-cell logic filling the rest of the core ring, IO ring, unused analog pad (top), art logo (bottom right).](images/overview.webp)
+
+![Close-up (x 900-1100, y 1380-1500 um) of the top edge of the core A SRAM macros under synthesised std-cell rows; thick oxide (Dualgate) is the purple tint.](images/logic_sram_detail.webp)
+
+![The art logo macro (1767-1910, 26-169 um), a drawing of a ghost holding a flower and balloon with the text bio180.](images/art_logo.webp)
+
+### Is there an analog front end or sensor?
+No. "BIO" is bunnie's Betrusted I/O, a programmable digital I/O coprocessor, not biosignal sensing. The six `analog_PAD` cells (`asig_5p0`, top edge x 485-1451) are template slot pads; the RTL states they are unused (`chip_core.sv`: "Analog pads (unused)"), and the layout contains no resistor, MIM, BJT, DNWELL or amplifier structure outside the stock IO cells. Whether those six pads are wired to anything inside the core was not traced; RTL says no.
 
 ## Authors and affiliations
 
@@ -39,12 +63,12 @@ Eight foundry SRAM macros in a working RISC-V system (instruction memory read/wr
 Simulation data: only RTL/GL functional testbenches, no timing or power measurements to compare.
 
 ### Candidate PDK additions
-Nothing found. Authors fixed an X propagation in the clock gate during multiplier generation; used a hand-written ICG instead of a library clock-gate cell (gf180mcu 7t5v0 has `icgtp` cells; I did not check why they were not used).
+Nothing found in the layout either (stock cells, macros and IO only; the six analog pads are unused). Authors fixed an X propagation in the clock gate during multiplier generation; used a hand-written ICG instead of a library clock-gate cell (gf180mcu 7t5v0 has `icgtp` cells; I did not check why they were not used).
 
 ### What would be needed to use it
 Packaged chip, RP2040 SPI host, 10 MHz clock source, firmware loader. A test plan for SRAM characterisation (margins, Vmin, access time) is not provided.
 
 ## Notes and caveats
 - README says "2 KiB SRAM" per core; project.json says "4Kb". The consistent figure is 2 x 2 KiB = 4 KiB.
-- Large release tarballs not inspected; final GDS in the release was not compared with the platform hash.
+- The release `bio180.gds.gz` was compared with the reticle layout (cell counts identical); the large tarballs were not unpacked and the platform hash was not checked.
 - Directory name `assests` is a typo in the repo.
