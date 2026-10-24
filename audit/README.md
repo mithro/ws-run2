@@ -3,7 +3,7 @@
 One directory per public project on this run. Each has an analysis (`summary.md`) of the
 project's repository, the manifest row (`project.json`), the commit that was analysed
 (`clone.json`) and measurements of the layout extracted from the reticle (`layout.json`).
-31 of the 40 summaries have also been checked against that taped-out layout and carry
+32 of the 40 summaries have also been checked against that taped-out layout and carry
 renders of it (`images/`); they are marked in the "Layout checked" column.
 
 `tools/` documents how all of this was made. The scripts run in the original workspace,
@@ -71,7 +71,7 @@ Verdict = value for GF180MCU characterisation and PDK development, as judged in 
 | GD04 | Racquet Wide 1x0.5 | 1x0p5 | Medium | Same layout as ws-run1/GD04 (6 SERV cores, 6 SRAMs, 9t5v0 cells, Difetto scan chain); only the chip-ID block differs | Greg Davill | Apache-2.0 | TEMPLATE | yes | [summary](GD04/summary.md) |
 | HZ80 | FOSSi open-source replacement for Z80 classic 8-bit CPU (0.5 x 1 slot) | 0p5x1 | Low | Run 2 resubmission of the half-width Z80; layout identical to ws-run1/HZ80 except the chip ID block | Renaldas Zioma (rejunity) | Apache-2.0 | TEMPLATE+NOTE | yes | [summary](HZ80/summary.md) |
 | ISHI | ISHI-KAI_Multiple_Projects_WaferSapce-GF180-2 | 0p5x1 | High | Half-width re-spin of the run 1 analog multi-project die: 8 circuit cells (4 op-amps, bandgap + current source, 6-bit SAR ADC, PLL, LDO) in a 72-pad ring with 126 probe pads; taped-out layout is geometrically identical to the repo GDS; vs run 1, 3 cells identical, 4 with changed routing metal, CS_BGR changed | ISHI-KAI community; integrator Noritsuna Imamura (SIProp.org); Akira Tsuchiya, Mizuki Mori, Miho Yamada and others | Apache-2.0 | OK | yes | [summary](ISHI/summary.md) |
-| KIAN | KianV: A 32-bit RISC-V Linux SoC taped out on GF180MCU Run 2 | 1x1 | Low | Same KianV SoC ported to the 3.3 V AS cells, ocd SRAM and ocd IO | Hirosh Dabui (splinedrive), Berlin | Apache-2.0 | THIN | no | [summary](KIAN/summary.md) |
+| KIAN | KianV: A 32-bit RISC-V Linux SoC taped out on GF180MCU Run 2 | 1x1 | Low | Same KianV SoC rebuilt on 3.3 V AS 7-track cells (76,850 logic cells) with 21 ocd 3.3 V SRAMs (301x322 um, 46% of run 1 area) and ocd IO; core has no thick oxide | Hirosh Dabui (splinedrive), Berlin; Leo Moser (template) | Apache-2.0 | THIN | yes | [summary](KIAN/summary.md) |
 | MEME | Artwork Meme Chip | 1x0p5 | Medium | Doge-meme artwork on Poly2 and Metal1-5 (taped out twice on the reticle) carrying 48 undocumented banks of 4 unsilicided p+ poly resistors (192) at the die edges, 50 asig_5p0 analog pads and a small 26-flop 5 V logic block | Andrew Wingate (anfroholic; Evezor, Chicago) | MIT | OK | yes | [summary](MEME/summary.md) |
 | MOLE | FABulous FPGA | 1x1 | Medium | FABulous eFPGA on 3.3 V AS cells (as_sc_mcu7t3v3, no Dualgate in fabric or SRAM): 624 LUT4 (78 LUT4x8_ha), 13 RegFile, no MAC, 48 DDR IOs (12 W_GF_IO4_DDR), 13 ocd 1024x8 3.3 V SRAMs, latch config (53.5k dlxtp_2), ocd IO with separate core supplies | Leo Moser (mole99), affiliation not stated | Apache-2.0 | TEMPLATE+NOTE | yes | [summary](MOLE/summary.md) |
 | NAX1 | Naxos CoB | 1x0p5 | High | 3.3 V Caravel SoC on gf180mcu_as_sc_mcu7t3v3 with OpenTitan USB (4 x 3.3 V SRAM), custom crystal-oscillator driver, four pulse-shrinking TDCs; taped-out layout matches repo naxos.gds top level | Zedulo (Sweden): Egor Lukyanchenko, snapaa257 | Apache-2.0 | TEMPLATE | yes | [summary](NAX1/summary.md) |
