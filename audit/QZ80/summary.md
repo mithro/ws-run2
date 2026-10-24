@@ -7,8 +7,9 @@
 | Top cell | chip_top |
 | Licence in repo | Apache-2.0 (`LICENSE`); TV80 files carry Guy Hutchison's MIT-style header; `src/ws_z80.v` has an Apache-2.0 SPDX header |
 | README | TEMPLATE+NOTE (90% the wafer.space template README plus 57 words of the author's own text) |
+| Taped-out layout | QZ80_chip_top_14_6, 1936 x 2531 um, 1 placement on the G802 reticle |
 
-**This variant (QZ80, ws-run2).** Quarter slot (0p5x0p5; 4 DVDD, 4 DVSS, 14 inputs, 32 bidirs), new on run 2. Branch `origin/quarter_slot_mcu9t5v0` (a3c37fb) differs from `main` only in `DEFAULT_SLOT` and a comment fix, so the quarter slot also builds from `main` with `SLOT=0p5x0p5`. The branch assignment is inferred.
+**This variant (QZ80, ws-run2).** Quarter slot (0p5x0p5; 4 DVDD, 4 DVSS, 14 inputs, 32 bidirs), new on run 2. Branch `origin/quarter_slot_mcu9t5v0` (a3c37fb) differs from `main` only in `DEFAULT_SLOT` and a comment fix, so the quarter slot also builds from `main` with `SLOT=0p5x0p5`. The branch assignment is inferred; the layout (quarter-size die, 4 DVDD, 4 DVSS, 15 `in_c` + 1 `in_s`, 32 bidirs) agrees with that slot.
 
 ## What the repo actually contains
 A pin-compatible Z80 clone for the wafer.space template, aimed at a DIP40 chip-on-board package. The README (a template README with a header added) links the base repo https://github.com/rejunity/z80-open-silicon. The CPU is Guy Hutchison's TV80 (`src/tv80_*.v`, 2004, OpenCores) wrapped by `src/ws_z80.v` (Renaldas Zioma) and `src/chip_core.sv`. There is no RAM, ROM or SRAM macro; the template's SRAM example is commented out in `chip_core.sv`.
@@ -57,9 +58,32 @@ Address and data pads float during RESET and BUSAK, and MREQ/RD/WR/IORQ float du
 
 The platform does not record the branch. The slot-to-branch assignment above is inferred from each branch's `DEFAULT_SLOT` and pad map.
 
-**Not in the repo:** no GDS or OASIS and no releases (so the submitted layouts cannot be checked). No LibreLane logs or reports and no silicon results for GF180. Testbench: `cocotb/chip_top_tb.py` with 15 tests (reset, NMI, INT and BUSREQ sequences, fetch/read/write sub-cycle timing, NOP, LD, IN and OUT). A ZEXDOC fix for DAA is mentioned in the history. A gate-level NMI workaround is in the last commit.
+**Not in the repo:** no GDS or OASIS and no releases (so the submitted layout cannot be compared cell by cell; see the layout section below). No LibreLane logs or reports and no silicon results for GF180. Testbench: `cocotb/chip_top_tb.py` with 15 tests (reset, NMI, INT and BUSREQ sequences, fetch/read/write sub-cycle timing, NOP, LD, IN and OUT). A ZEXDOC fix for DAA is mentioned in the history. A gate-level NMI workaround is in the last commit.
 
 **"Silicon proven":** this refers to the author's earlier Sky130 (Tiny Tapeout 7, eFabless CI2406) and IHP SG13G2 tape-outs, per the upstream README. The GF180 line there says WIP, chip-on-board DIP40. Nothing in this repo shows GF180 silicon.
+
+## Taped-out layout
+| Measured | Value |
+|---|---|
+| Die | 1936 x 2531 um, one placement at (28.004, 15.606) mm on the reticle |
+| Pad ring | 56 pad cells: 32 `gf180mcu_fd_io__bi_24t`, 15 `in_c`, 1 `in_s`, 4 `gf180mcu_ws_io__dvdd`, 4 `dvss`, plus 4 corner cells and about 360 filler cells. Labels: `bidir_PAD[0..31]`, `input_PAD[0..13]`, `clk_PAD`, `rst_n_PAD`, `VDD`, `VSS` |
+| Standard cells | `gf180mcu_fd_sc_mcu9t5v0` (9-track, 5 V): 5096 logic cells and 36102 fill/tap/decap cells. 376 flip-flops (170 dffq, 149 dffrnq, 57 dffsnq), 609 delay cells (293 dlyd, 265 dlyc, 51 dlya, hold fixing), 703 nand2_1, 348 nor2_1, 309 mux2_1 |
+| Logic placement | One blob, about 720-1150 x 710-1910 um (5th-95th percentile of cell centres; extreme cells span 446-1488 x 446-2084 um) in a core of about 1050 x 1650 um (1.73 mm2); the blob fills a much larger fraction of this core than in the larger slots |
+| SRAM | none |
+| Oxide | Dualgate (55/0) is one merged polygon over the core (1.73 mm2). In the core box (400-1500, 400-2100 um) 283016 of 283498 merged poly polygons (0.645 of 0.658 mm2) lie inside Dualgate and 482 (13300 um2) outside, not logic gates. V5_XTOR (112/1) present, 41198 shapes. The logic is 5 V (thick-oxide) cells |
+| MIM, DNWELL, high-res poly | none (no MIM or DNWELL layer on the die; RES_MK/DIODE_MK/ESD_MK markers only in the I/O cells) |
+| Custom content | none beyond wafer.space chip ID (`gf180mcu_ws_ip__id`, 142.8 um at (26,26)) and logo (143 um, upper right); no custom analog cells |
+
+### Does it match the repository?
+Partly checked. No branch, tag or release holds a full-chip GDS or OASIS (only the `ip/` ID and logo macros), so the layout cannot be compared cell by cell. Compared with the config of `origin/quarter_slot_mcu9t5v0` (DEFAULT_SLOT 0p5x0p5): library mcu9t5v0, no SRAM, and the 0p5x0p5 pad map (4 DVDD, 4 DVSS, 32 bidirs, 4+10 inputs plus clk and rst_n = 16 inputs, built as 15 `in_c` + 1 `in_s`) all agree with the layout and the quarter-slot die size. This settles the slot (and that it is not the 1x1 or 0p5x1 build) from the layout, not the exact commit; since that branch differs from `main` only in DEFAULT_SLOT and a comment, `main` with `SLOT=0p5x0p5` gives the same inputs. The 5096 logic cells are the same TV80 core size as HZ80 (5143, within 1%) and RZ80 (5209), but the cell, flop (376 vs 367 and 357) and delay-cell counts differ, so each slot is a separate synthesis and placement run.
+
+![QZ80 whole die with the logic blob and chip ID marked](images/overview.webp)
+Whole die, 1936 x 2531 um: pad ring around the edge (4 DVDD, 4 DVSS, 32 bidirs, 16 inputs), the core with the logic blob marked at about (650-1250, 650-1950) um, chip ID at the lower left (26,26) and logo at the upper right.
+
+![Logic area of the core at transistor scale](images/core_cells.webp)
+Close-up of 60 x 40 um at (930,1370), inside the logic blob: 9-track cell rows with Dualgate (purple) over all the transistors; the larger structures at right are flip-flops and muxes.
+
+**What the 0p5x0p5 slot changes versus HZ80 (0p5x1):** the die is half the area (2531 vs 5122 um tall, same 1936 um width), supply pads halve to 4 DVDD + 4 DVSS, and inputs drop from 24 to 16 (4+10 instead of 4+18, so 8 fewer spare unused-input pads); the 32 bidirs are kept. The CPU is the same size, so the core is much less empty than in HZ80 and RZ80, and the whole die is a much smaller target for comparison between slot sizes.
 
 ## Authors and affiliations
 | Person | Role | Affiliation | Source |
@@ -72,7 +96,7 @@ The platform does not record the branch. The slot-to-branch assignment above is 
 
 ## Value for GF180MCU characterisation and PDK development
 ### Verdict: Low
-Ordinary synthesised digital (about 8-bit CPU, 25 MHz) on stock 9t5v0 cells with no macros. There are no analog or probe structures. It is useful as a functional and fmax data point and for the pad-timing knobs.
+Ordinary synthesised digital (about 8-bit CPU, 25 MHz) on stock 9t5v0 5 V cells (5096 logic cells, 376 flops) with no macros, MIM or DNWELL. There are no analog or probe structures. It is useful as a functional and fmax data point and for the pad-timing knobs.
 
 ### Test structures and measurable circuits
 | Structure | What it exercises | Access | Where |
@@ -91,6 +115,6 @@ Packaged or bonded die in a DIP40 board (the repo has pad and ceramic layout ima
 
 ## Notes and caveats
 - The cloned tree is `main` for all four projects, so the HZ80 and QZ80 sources are only on branches. The mapping is inferred.
-- No layout or logs are available to confirm which commit went to silicon.
+- The taped-out layout agrees with the 0p5x0p5 slot config (pad counts, die size, library) but no repo GDS exists, so the exact commit is not confirmed.
 - The run-2 projects have the same HEAD (2025-12-19), which predates run 2; nothing identifies a change.
-- The operating voltage is not stated.
+- The operating voltage is not stated; the core is 5 V (thick-oxide) cells per the layout.
