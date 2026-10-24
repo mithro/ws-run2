@@ -7,6 +7,7 @@
 | Top cell | tt_gf_wrapper |
 | Licence in repo | Apache-2.0 (`LICENSE`; each `projects/*/LICENSE` is the submitter's own) |
 | README | Thin (74 words, points at tinytapeout.com and the multiplexer docs) |
+| Taped-out layout | T26A_tt_gf_wrapper_0_4, 3932 x 5122 um, 1 placement on the G802 reticle |
 
 ## What the repo actually contains
 
@@ -56,7 +57,7 @@ wafer.space precheck log, output GDS/OAS and `runs.tar`.
 | IO cells | `gf180mcu_ocd_io` (not `gf180mcu_fd_io`): 16x `bi_24t`, 10x `in_c`, 3x `in_s`, 29x `asig_5p0`, 4x `dvdd`, 6x `dvss`, 2x `vdd`, 4x `vss`, 4x `cor`, fillers | instance count in `foundry_submission.zip:verilog/gl/tt_gf_wrapper.nl.v`; `rtl/tt_gf_gpio.v` |
 | Pads | 74 pads: 3 control (`ctrl_ena`, `ctrl_sel_inc`, `ctrl_sel_rst_n`, Schmitt inputs with pull), `clk`, `rst_n`, `ui[7:0]` (CMOS inputs), `uo[7:0]` (24 mA outputs), `uio[7:0]` (24 mA bidir), 22 `analog[]` pads, 5 reserved NC, power/ground | `ol2/tt_top/tt_gf_wrapper.v` |
 | Mux | `tt_ctrl` x1 + `tt_mux` x15, address = `mux_id*32 + blk_id`; tri-state spine built from `bufz_1/bufz_12`, `mux2_2/mux4_2`, `dffrnq_2` | `tt_gf_wrapper.nl.v`, `rtl/tt_mux.v`, `rtl/tt_ctrl.v` |
-| Power gating | Every user macro (including chip_rom and factory_test) has its own header switch `tt_pg_3v3_hp_{1,2,4}` (72/21/2 instances) between `vdpwr` and the tile's `VPWR`, enabled by `pg_ena` from the mux. The switch GDS has no Dualgate (55/0) layer, so it is built from 3.3 V thin-oxide devices (inferred from layers; no schematic in repo). No analog-supply gate (`pg_vaa: false` everywhere; `tt_pg_5v0` is named in the config but not instantiated). | `macros.zip:cfg/modules_placed.yaml`, `ol2/tt_top/gds/tt_pg_3v3_hp_*.gds` |
+| Power gating | Every user macro (including chip_rom and factory_test) has its own header switch `tt_pg_3v3_hp_{1,2,4}` (72/21/2 instances) between `vdpwr` and the tile's `VPWR`, enabled by `pg_ena` from the mux. The switch macros have no Dualgate (55/0) or V5_XTOR shapes in the taped-out layout, so they are 3.3 V thin-oxide PMOS (measured; no schematic in this repo). No analog-supply gate (`pg_vaa: false` everywhere; `tt_pg_5v0` is named in the config but not instantiated). | `macros.zip:cfg/modules_placed.yaml`, `ol2/tt_top/gds/tt_pg_3v3_hp_*.gds` |
 | Analog pin routing | **None.** `cfg/gf180mcuD.yaml` has `analog: []`; the 22 `asig_5p0` analog pads are bonded out (`ASIG5V` to `pad_raw[n]`) but have no connection into the core, and the two "VDD Analog" pads are unconnected `asig_5p0` cells. No user project declares `analog_pins > 0`. | `tt_gf_wrapper.nl.v`, all `info.yaml` |
 | ID/logo | `gf180mcu_ws_ip__id`, `gf180mcu_ws_ip__logo` (wafer.space template 1.3.1), four `tt_logo_*` art macros | `BUILDING.md`, `build.py` |
 
@@ -186,6 +187,80 @@ Seven macros also appear on T26B (same source commit unless noted):
 - `gl_test_vcd.zip`: gate-level mux cocotb test results.
 - No silicon bring-up data in the repo or release.
 
+## Taped-out layout
+
+| Measured fact | Value |
+|---|---|
+| Die | 3932 x 5122 um, reticle cell `T26A_tt_gf_wrapper_0_4`, one placement at (0.060, 10.424) mm on G802 |
+| Top-cell children | 95 `tt_um_*` tiles (93 user designs + `tt_um_chip_rom` + `tt_um_factory_test`), 15 `tt_mux`, 1 `tt_ctrl`, 95 power gates (72 `tt_pg_3v3_hp_1`, 21 `_2`, 2 `_4`), 4 IO corner cells, 4 `tt_logo_*` cells, `gf180mcu_ws_ip__id` and `__logo` |
+| Pads | 74 (`gf180mcu_ocd_io`): 29 `asig_5p0`, 16 `bi_24t`, 10 `in_c`, 3 `in_s`, 4 `dvdd`, 6 `dvss`, 2 `vdd`, 4 `vss`; plus about 1060 IO filler cells |
+| Standard cells | `gf180mcu_fd_sc_mcu7t5v0`: 144 371 logic + 317 937 fill placements; `gf180mcu_fd_sc_mcu9t5v0`: 48 logic + 347 fill (all in the VCO tile) |
+| SRAM macros | 2 x `gf180mcu_fd_ip_sram__sram128x8m8wm1`, both in tile `tt_um_kluterirv_rv32e_core` (2025-3465 x 2807-3132 um) |
+| Custom analog | one tile, `tt_um_algofoogle_ttgf26a_vco` at (2024.96, 4453.12), 346.64 x 160.72 um |
+| MIM / high-res poly / DNWELL / BJT | None. No MIM or DNWELL layer shapes exist on the die. The only resistors are the unsalicided-poly (`ppolyf_u_1k`, SAB + Resistor marker) cells in the VCO tile |
+
+### Does it match the repository?
+
+Yes. I loaded `releases/tapeout-ws2607/tt_gf_wrapper.oas` (the submitted file;
+repo HEAD 35e7026 is the commit tagged `tapeout-ws2607`) and compared its
+top-cell children with the reticle slot: same die box, identical instance
+count for every distinct child cell (after stripping `$n` suffixes) and
+identical placement origins (no difference in either direction). The counts
+agree with the infrastructure table above (74 pads with the stated IO cell
+mix, 15 mux, 72/21/2 power gates, 95 tiles = the 95 macros). The custom VCO
+tile was XORed layer by layer (24 layers present) against
+`projects/tt_um_algofoogle_ttgf26a_vco/tt_um_algofoogle_ttgf26a_vco.oas`:
+0.000 um2 difference on every layer. wafer.space's fill, seal ring and ID
+marks are the only additions. The other tiles were checked at instance level
+only (name, count, origin), not XORed.
+
+![Whole die with the VCO tile, the two SRAM macros and one 4x4 tile marked](images/overview.webp)
+
+*Whole die. Yellow boxes: the analog VCO tile (2025-2372, 4453-4614 um), the tile holding the two stock SRAM macros (2025-3465, 2807-3132 um) and the 4x4 tile `tt_um_prem_pipeline_test` (466-1906, 2807-3544 um). The central column is the mux spine; the pad ring is outside.*
+
+### The analog tile
+
+![VCO tile](images/vco_tile.webp)
+
+*`tt_um_algofoogle_ttgf26a_vco` (2025-2372, 4453-4614 um). The custom block `vco_combo` (yellow box, 85.3 x 18.1 um, at 2080.9-2166.2, 4527.5-4545.6 um) sits above a 305 x 60 um strip of 9-track digital cells (the divider); the dinosaur artwork `lily_dino` (Metal4) is top left.*
+
+![VCO analog close-up](images/vco_analog.webp)
+
+*Close-up of `vco_combo` (2078-2169, 4525-4548 um): the R-2R ladder resistor (orange block, left) with nine `bufinv_2` switch inverters below it, then a small poly resistor and the `nfet_03v3` bias device, and the five `csrostage` cells (right).*
+
+| Cell | Measured contents | Oxide |
+|---|---|---|
+| `r2r_dac` (44.0 x 18.05 um) | `ppolyf_u_1k_NL4DCC`: one Resistor marker 42.2 x 6.0 um over 30 poly stripes of 1.0 x 6.0 um each (180 um2 poly, SAB blocks silicide); 9 `bufinv_2` (n gate rectangle 0.28 x 2.0 um, p 0.28 x 4.0 um) | 3.3 V thin oxide (no Dualgate, no V5_XTOR) |
+| `csringosc` (41.25 x 9.55 um) | 5 `csrostage` (n gate rectangles 0.3 x 0.6 and 0.4 x 0.8 um, p 0.3 x 3.0 and 0.4 x 1.6 um); `nfet_03v3_KT5AJW`: 6 gate fingers of 0.7 x 5.0 um (30 um total W); `ppolyf_u_1k_ACAPAA`: 2 poly stripes of 1.0 x 5.0 um; 2 `bufinv` (0.28 x 1.0 n, 0.28 x 2.0 p) | 3.3 V thin oxide |
+| `W1_digital` (305 x 60 um) | 9-track `mcu9t5v0` cells (dffq, clkbuf, clkinv, nand, aoi, fillcap) | 5 V library cells (carry Dualgate/V5_XTOR), run at 3.3 V |
+
+Gate sizes are bounding boxes of merged Poly2-over-COMP rectangles with the
+resistor marker area removed; W and L are read from the rectangle sides, so
+treat them as geometry, not as extracted device parameters. All custom analog
+devices are 3.3 V thin oxide; only the 9T digital strip is thick-oxide
+library cells. No 5 V/6 V custom devices, MIM, DNWELL or BJT are present.
+
+### Infrastructure compared with T0P3 and TTPG
+
+- Power gates: `tt_pg_3v3_hp_1/2/4` are the same macro family and outline as
+  in TTPG and T0P3 (11.2 um wide; 160.72 / 325.40 / 736.96 um tall). Measured
+  here: no Dualgate or V5_XTOR in any of them (thin oxide, settling the earlier
+  "inferred" statement); p-type gate rectangles 191 / 397 / 906 for
+  `hp_1/2/4` (T0P3's `hp_2` schematic has 395 fingers) plus 9 to 20 small
+  n-type gates for the driver and discharge chain. T26A has 95 gates, one per
+  tile (TTPG 52, T0P3 32).
+- No `tt_pg_5v0_2`, `tt_asw_5v0` or `tt_ckt_ana` cells on T26A (T0P3 has 6, 60
+  and 22): there are no analog switches between pads and tiles. The 29
+  `asig_5p0` pad cells are the same count as T0P3's.
+- Analog pads: the core-side `ASIG5V` pin of each `asig_5p0` cell (Metal2 at
+  the inner edge) is overlapped only by dummy fill instances, never by a tile,
+  switch or macro, and the top cell has at most one direct metal shape
+  touching each pad cell. I tried a full connectivity trace and abandoned it
+  (too slow), so "no route into the core" rests on geometry, not an extracted
+  netlist; it agrees with the repo (`analog: []`, no project declares analog
+  pins). Consequently the VCO tile is reachable only through the digital
+  `ui/uo/uio` pads.
+
 ## Authors and affiliations
 
 | Person / organisation | Role | Affiliation | Source |
@@ -215,7 +290,7 @@ for them beyond what appears in the author column.
 ### Verdict: High
 
 One custom analog tile (R-2R poly-resistor DAC driving a current-starved ring
-oscillator, using `ppolyf_u_1k`, `nfet_03v3` and 9-track cells) and four
+oscillator, using `ppolyf_u_1k`, `nfet_03v3` and 9-track cells; layout-checked: all custom devices are 3.3 V thin oxide, the ladder is 30 poly stripes of 1.0 x 6.0 um, and the tile is identical to the repo OAS) and four
 digital tiles with real, netlist-verified standard-cell ring oscillators and
 on-chip counters, all reachable through the shuttle's digital pads. Everything
 else is ordinary synthesised 7T logic, useful as about 90 functional/yield data
@@ -309,8 +384,7 @@ measures GF180 devices.
   `tt_um_utoss_riscv`, `tt_um_maqsudbek_dyadic_pwm`,
   `tt_um_jpigdon_gps_accelerator_top`); only the loops listed in the table
   above are inverter rings.
-- Power-gate device type and the attribution of Magic DRC errors are inferred
-  from GDS layers and report text, not from schematics.
+- Power-gate device type is now measured from the layout (thin oxide). The attribution of Magic DRC errors is still from report text only; it would need the coordinates in `drc.magic.rpt` matched to tiles.
 - `project.json` on the platform has an empty description; `docs/funding.typ`
   refers to "Tiny Tapeout GF 0p2" rather than this shuttle.
 - User-project analysis is from the hardened netlists, GDS cell names and
