@@ -3,7 +3,7 @@
 One directory per public project on this run. Each has an analysis (`summary.md`) of the
 project's repository, the manifest row (`project.json`), the commit that was analysed
 (`clone.json`) and measurements of the layout extracted from the reticle (`layout.json`).
-26 of the 40 summaries have also been checked against that taped-out layout and carry
+27 of the 40 summaries have also been checked against that taped-out layout and carry
 renders of it (`images/`); they are marked in the "Layout checked" column.
 
 `tools/` documents how all of this was made. The scripts run in the original workspace,
@@ -88,7 +88,7 @@ Verdict = value for GF180MCU characterisation and PDK development, as judged in 
 | T26A | Tiny Tapeout GF 26a | 1x1 | High | Tiny Tapeout GF 26a shuttle: 93 user designs plus chip ROM and factory test (95 tiles) behind the TT mux, 3.3 V core on 7T 5 V library, ocd IO pad ring; layout matches release tapeout-ws2607 (35e7026) | Tiny Tapeout (Uri Shaked, Sylvain Munaut, htfab) and about 90 project authors | Apache-2.0 | THIN | yes | [summary](T26A/summary.md) |
 | T26B | Tiny Tapeout GF 26b | 1x1 | High | Tiny Tapeout GF 26b shuttle: 88 user designs plus chip ROM and factory test (90 tiles) on the same infrastructure as 26a; layout matches release tapeout-ws2607 (b7b04a0) | Tiny Tapeout and about 85 project authors, including Staf Verhaegen | Apache-2.0 | THIN | yes | [summary](T26B/summary.md) |
 | TQVA | TinyQV - Crowdsourced Risc-V SoC | 0p5x0p5 | Low | Same-design respin of ws-run1/TQVA (TinyQV RV32EC SoC, quarter slot): XOR is zero outside the wafer.space chip-ID block; 35.7k 7t5v0 logic cells, one 512x8 SRAM, thick-oxide devices at 3.3 V; matches repo GDS at 3a0985e | Mike Bell (MichaelBell) and ten peripheral authors | Apache-2.0 | OK | yes | [summary](TQVA/summary.md) |
-| TQVC | TinyQV - Crowdsourced Risc-V SoC (1x0.5) | 1x0p5 | Low | Run 2 resubmission of the half-height TinyQV | Mike Bell | Apache-2.0 | OK | no | [summary](TQVC/summary.md) |
+| TQVC | TinyQV - Crowdsourced Risc-V SoC (1x0.5) | 1x0p5 | Low | Run 2 resubmission of the half-height TinyQV; identical layout to ws-run1/TQVC except the chip-ID block | Mike Bell | Apache-2.0 | OK | yes | [summary](TQVC/summary.md) |
 | TQVD | TinyQV - RISC-V SoC with HDMI output | 0p5x0p5 | Medium | Second-generation TinyQV on the full 3.3 V stack (as_sc mcu7t3v3, 23.7k logic cells, five ocd SRAMs, ocd split-voltage pads) with HDMI/VGA text output and an 8-bit R-2R DAC | Mike Bell; Luke Wren (DVI serialiser); peripheral authors | Apache-2.0 | OK | yes | [summary](TQVD/summary.md) |
 | TQVE | TinyQV - RISC-V SoC with experimental pad setup | 0p5x0p5 | Low | TinyQV variant (RISC-V SoC, USB CDC per platform text) on 3.3 V mcu7t3v3 cells: 24.2 k logic cells (~3.6 k flops), 10 ocd SRAM macros (9x1024x8 + 512x8 = 9.5 kB), 17 stock fd_io pads in a single column on the left edge (13 bidir, clk, rst_n, 1 VDD, 1 VSS); no repository | not stated (probably Michael Bell, inferred from TQVD sibling; nothing on the die) | n/a | n/a | yes | [summary](TQVE/summary.md) |
 | WSLG | Wafer.Space Logo | 1x1 | Medium | Same repo and commit as run 1 WSLG | Tholin (89Mods), Avalon Semiconductors | Apache-2.0 | TEMPLATE | no | [summary](WSLG/summary.md) |
