@@ -3,7 +3,7 @@
 One directory per public project on this run. Each has an analysis (`summary.md`) of the
 project's repository, the manifest row (`project.json`), the commit that was analysed
 (`clone.json`) and measurements of the layout extracted from the reticle (`layout.json`).
-36 of the 40 summaries have also been checked against that taped-out layout and carry
+38 of the 40 summaries have also been checked against that taped-out layout and carry
 renders of it (`images/`); they are marked in the "Layout checked" column.
 
 `tools/` documents how all of this was made. The scripts run in the original workspace,
@@ -53,9 +53,9 @@ Verdict = value for GF180MCU characterisation and PDK development, as judged in 
 | Code | Project | Slot | Verdict | What it contains | Authors | LICENSE | README | Layout checked | Summary |
 |---|---|---|---|---|---|---|---|---|---|
 | 0000 | ICELab Test Chip | 1x0p5 | High | Georgia Tech ICE Lab analog test chip (taped-out layout identical to repo TrueFinalGds/chip_top.gds on every non-fill layer, commit 8c360e2): floating-gate pFET cells in stock thick-oxide layers, three Schottky/MIM charge pumps with clock generators, FG-programmed OTA pair, winner-take-all cell and 0.5/5/50 um 3.3 V NFET/PFET triplets on 54 ESD analog pads + 2 bare pads | Luke Hanks (LH220), Georgia Tech Integrated Computational Electronics Lab | none | MISSING | yes | [summary](0000/summary.md) |
-| AMM1 | raybox-zero wafer.space run 2 half height | 1x0p5 | Low | raybox-zero ray caster with SPI control and VGA output on stock 5 V cells | Anton Maurovic (algofoogle), Adelaide | Apache-2.0 | OK | no | [summary](AMM1/summary.md) |
+| AMM1 | raybox-zero wafer.space run 2 half height | 1x0p5 | Low | raybox-zero ray caster with SPI control and VGA output; flat synthesised logic (31.6k cells, ~1.76k flops, no macros) on stock 5 V cells in a 3932x2531 um die, matches repo GDS cell for cell | Anton Maurovic (algofoogle), Adelaide | Apache-2.0 | OK | yes | [summary](AMM1/summary.md) |
 | AS04 | AS04 Multi-Project die using 3.3V SCL | 1x1 | High | Multi-project die on the Avalon 3.3 V cell library: 10 LibreLane macros, flat multiplexer, 4 DACs, a dynamic-DFF tester CPU and two FeatherLane-generated layouts | Tholin, Avalon Semiconductors, Germany | Apache-2.0 | THIN | yes | [summary](AS04/summary.md) |
-| AS16 | AS16 CPU | 1x0p5 | Low | 102-line 16-bit RISC CPU with external bus on stock 5 V cells | Adnan Saad (SUD0NET); Year 10 student per platform description | Apache-2.0 | OK | no | [summary](AS16/summary.md) |
+| AS16 | AS16 CPU | 1x0p5 | Low | 16-bit RISC CPU (5.5k logic cells, 329 flops) on stock 5 V cells plus two idle sram512x8m8wm1 macros | Adnan Saad (SUD0NET); Year 10 student per platform description | Apache-2.0 | OK | yes | [summary](AS16/summary.md) |
 | BTX1 | BTX | 1x1 | Low | "Path-tracing accelerator" (platform text): 252.6 k logic cells on 3.3 V mcu7t3v3 (arithmetic-heavy, ~9.4 k flops), 19 ocd SRAMs (16x512x8 + 3x256x8), 74 stock fd_io pads (40 bidir, 12 input, 2 "analog" that are really in_c); no repository | not stated ("BT" logo artwork only) | n/a | n/a | yes | [summary](BTX1/summary.md) |
 | CAB1 | Cabrera CoB | 1x0p5 | High | 5 V Caravel (VexRiscv) SoC with LiteEth MAC, 10BASE-T PHY with custom 5 V analog TX driver, free-running ring-oscillator timer, and a 16-pad isolated probe block; taped-out layout matches repo (chip_top/cabrera_260714 GDS top-level identical) | Zedulo (Sweden): Egor Lukyanchenko, snapaa257 | Apache-2.0 | TEMPLATE | yes | [summary](CAB1/summary.md) |
 | CAFE | Expresso Ethernet Chip: 100Mbps Ethernet switch + Heat death of the Universe Beacon - 0.5x0.5 version - Preferred version | 0p5x0p5 | Low | Expresso: 4-port 100 Mbps cut-through Ethernet switch plus beacon, digital RMII only (5 ports), flop-based flat 5 V core, no SRAM | Julia Desmazes (Essenceia), hobbyist | CERN-OHL-S-2.0 | OK | yes | [summary](CAFE/summary.md) |
