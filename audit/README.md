@@ -3,7 +3,7 @@
 One directory per public project on this run. Each has an analysis (`summary.md`) of the
 project's repository, the manifest row (`project.json`), the commit that was analysed
 (`clone.json`) and measurements of the layout extracted from the reticle (`layout.json`).
-16 of the 40 summaries have also been checked against that taped-out layout and carry
+18 of the 40 summaries have also been checked against that taped-out layout and carry
 renders of it (`images/`); they are marked in the "Layout checked" column.
 
 `tools/` documents how all of this was made. The scripts run in the original workspace,
@@ -19,8 +19,7 @@ Verdict = value for GF180MCU characterisation and PDK development, as judged in 
 |---|---|
 | High | 14 |
 | Medium | 8 |
-| Low | 16 |
-| Unknown | 2 |
+| Low | 18 |
 
 ## Projects worth measuring (High and Medium)
 
@@ -57,7 +56,7 @@ Verdict = value for GF180MCU characterisation and PDK development, as judged in 
 | AMM1 | raybox-zero wafer.space run 2 half height | 1x0p5 | Low | raybox-zero ray caster with SPI control and VGA output on stock 5 V cells | Anton Maurovic (algofoogle), Adelaide | Apache-2.0 | OK | no | [summary](AMM1/summary.md) |
 | AS04 | AS04 Multi-Project die using 3.3V SCL | 1x1 | High | Multi-project die on the Avalon 3.3 V cell library: 10 LibreLane macros, flat multiplexer, 4 DACs, a dynamic-DFF tester CPU and two FeatherLane-generated layouts | Tholin, Avalon Semiconductors, Germany | Apache-2.0 | THIN | yes | [summary](AS04/summary.md) |
 | AS16 | AS16 CPU | 1x0p5 | Low | 102-line 16-bit RISC CPU with external bus on stock 5 V cells | Adnan Saad (SUD0NET); Year 10 student per platform description | Apache-2.0 | OK | no | [summary](AS16/summary.md) |
-| BTX1 | BTX | 1x1 | Unknown | No repository listed | not stated | n/a | n/a | no | [summary](BTX1/summary.md) |
+| BTX1 | BTX | 1x1 | Low | "Path-tracing accelerator" (platform text): 252.6 k logic cells on 3.3 V mcu7t3v3 (arithmetic-heavy, ~9.4 k flops), 19 ocd SRAMs (16x512x8 + 3x256x8), 74 stock fd_io pads (40 bidir, 12 input, 2 "analog" that are really in_c); no repository | not stated ("BT" logo artwork only) | n/a | n/a | yes | [summary](BTX1/summary.md) |
 | CAB1 | Cabrera CoB | 1x0p5 | High | 5 V Caravel (VexRiscv) SoC with LiteEth MAC, 10BASE-T PHY with custom 5 V analog TX driver, free-running ring-oscillator timer, and a 16-pad isolated probe block; taped-out layout matches repo (chip_top/cabrera_260714 GDS top-level identical) | Zedulo (Sweden): Egor Lukyanchenko, snapaa257 | Apache-2.0 | TEMPLATE | yes | [summary](CAB1/summary.md) |
 | CAFE | Expresso Ethernet Chip: 100Mbps Ethernet switch + Heat death of the Universe Beacon - 0.5x0.5 version - Preferred version | 0p5x0p5 | Low | 4-port 100 Mbps cut-through Ethernet switch plus Ethernet beacon, RMII, flop-based | Julia Desmazes (Essenceia), hobbyist | CERN-OHL-S-2.0 | OK | no | [summary](CAFE/summary.md) |
 | CLON | Cloneless2 | 1x1 | Medium | Second Cloneless chip: adds a butterfly PUF, retuned ROs/TRNGs; same floorplan as Cloneless1, layout matches the repo config | Thorben Moos (funded by PBS Foundation) | GPL-3.0 | OK | yes | [summary](CLON/summary.md) |
@@ -91,5 +90,5 @@ Verdict = value for GF180MCU characterisation and PDK development, as judged in 
 | TQVA | TinyQV - Crowdsourced Risc-V SoC | 0p5x0p5 | Low | Run 2 resubmission of the quarter-slot TinyQV | Mike Bell | Apache-2.0 | OK | no | [summary](TQVA/summary.md) |
 | TQVC | TinyQV - Crowdsourced Risc-V SoC (1x0.5) | 1x0p5 | Low | Run 2 resubmission of the half-height TinyQV | Mike Bell | Apache-2.0 | OK | no | [summary](TQVC/summary.md) |
 | TQVD | TinyQV - RISC-V SoC with HDMI output | 0p5x0p5 | Medium | Second-generation TinyQV on the full 3.3 V stack (as_sc mcu7t3v3, 23.7k logic cells, five ocd SRAMs, ocd split-voltage pads) with HDMI/VGA text output and an 8-bit R-2R DAC | Mike Bell; Luke Wren (DVI serialiser); peripheral authors | Apache-2.0 | OK | yes | [summary](TQVD/summary.md) |
-| TQVE | TinyQV - RISC-V SoC with experimental pad setup | 0p5x0p5 | Unknown | No repository listed | not stated | n/a | n/a | no | [summary](TQVE/summary.md) |
+| TQVE | TinyQV - RISC-V SoC with experimental pad setup | 0p5x0p5 | Low | TinyQV variant (RISC-V SoC, USB CDC per platform text) on 3.3 V mcu7t3v3 cells: 24.2 k logic cells (~3.6 k flops), 10 ocd SRAM macros (9x1024x8 + 512x8 = 9.5 kB), 17 stock fd_io pads in a single column on the left edge (13 bidir, clk, rst_n, 1 VDD, 1 VSS); no repository | not stated (probably Michael Bell, inferred from TQVD sibling; nothing on the die) | n/a | n/a | yes | [summary](TQVE/summary.md) |
 | WSLG | Wafer.Space Logo | 1x1 | Medium | Same repo and commit as run 1 WSLG | Tholin (89Mods), Avalon Semiconductors | Apache-2.0 | TEMPLATE | no | [summary](WSLG/summary.md) |
