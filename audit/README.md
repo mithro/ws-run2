@@ -3,7 +3,7 @@
 One directory per public project on this run. Each has an analysis (`summary.md`) of the
 project's repository, the manifest row (`project.json`), the commit that was analysed
 (`clone.json`) and measurements of the layout extracted from the reticle (`layout.json`).
-27 of the 40 summaries have also been checked against that taped-out layout and carry
+28 of the 40 summaries have also been checked against that taped-out layout and carry
 renders of it (`images/`); they are marked in the "Layout checked" column.
 
 `tools/` documents how all of this was made. The scripts run in the original workspace,
@@ -76,7 +76,7 @@ Verdict = value for GF180MCU characterisation and PDK development, as judged in 
 | MOLE | FABulous FPGA | 1x1 | Medium | FABulous eFPGA on 3.3 V AS cells (as_sc_mcu7t3v3, no Dualgate in fabric or SRAM): 624 LUT4 (78 LUT4x8_ha), 13 RegFile, no MAC, 48 DDR IOs (12 W_GF_IO4_DDR), 13 ocd 1024x8 3.3 V SRAMs, latch config (53.5k dlxtp_2), ocd IO with separate core supplies | Leo Moser (mole99), affiliation not stated | Apache-2.0 | TEMPLATE+NOTE | yes | [summary](MOLE/summary.md) |
 | NAX1 | Naxos CoB | 1x0p5 | High | 3.3 V Caravel SoC on gf180mcu_as_sc_mcu7t3v3 with OpenTitan USB (4 x 3.3 V SRAM), custom crystal-oscillator driver, four pulse-shrinking TDCs; taped-out layout matches repo naxos.gds top level | Zedulo (Sweden): Egor Lukyanchenko, snapaa257 | Apache-2.0 | TEMPLATE | yes | [summary](NAX1/summary.md) |
 | OCD3 | 3.3V SRAM test 2 | 1x0p5 | High | Run 2 variant of the SRAM break-out chip: 1024/512/256 and new 64x8 SRAM macros on pads and a new all-3.3 V self-biased POR (only the pad ring uses 5/6 V devices); layout equals the repo HEAD GDS | R. Timothy Edwards, Open Circuit Design LLC | none | MISSING | yes | [summary](OCD3/summary.md) |
-| PSOC | Simplest possible PicoSoC implementation using wafer.space flow | 1x0p5 | Low | PicoRV32 SoC with QSPI flash, UART and 8 foundry 5 V SRAM macros; complete run checked in | d-burnett / burnettlab (affiliation not stated) | Apache-2.0 | THIN | no | [summary](PSOC/summary.md) |
+| PSOC | Simplest possible PicoSoC implementation using wafer.space flow | 1x0p5 | Low | PicoRV32 SoC with QSPI flash controller, UART and 8 foundry 5 V SRAM macros (4x2 array); layout matches repo chip_top.gds.zip (264 child types, identical counts; XOR zero except dummy fill) | d-burnett / burnettlab (affiliation not stated) | Apache-2.0 | THIN | yes | [summary](PSOC/summary.md) |
 | QZ80 | FOSSi open-source replacement for Z80 classic 8-bit CPU (0.5 x 0.5 slot) | 0p5x0p5 | Low | Same Z80, quarter slot | Renaldas Zioma (rejunity) | Apache-2.0 | TEMPLATE+NOTE | no | [summary](QZ80/summary.md) |
 | RLCM | RLCM: Test Passives For GF180MCUD | 0p5x1 | High | Probe-pad RF passive test die (1936x5122 um, 72 bare Bondpad_5LM pads, no IO cells, no standard cells, no active devices): two 2-port spiral inductors, a centre-tapped inductor, two transformers, 100x100 and 54x25 um MIM-B capacitors, four de-embedding pad sets and two DUT-less probe sites; layout identical to repo GDS (commit d1bc20b) | Ghaith Al Sabagh (EngGhaith); on-die Metal5 text "Ghaith AL SABAGH, NTHFS JKU, MWTH CD LAB" (JKU Linz inferred), thanks to Volker Muehlhaus and Leo Moser | none | MISSING | yes | [summary](RLCM/summary.md) |
 | SALU | Simple ALU | 0p5x0p5 | Low | 8-bit Chisel ALU on stock 5 V cells | StackDoubleFlow (affiliation not stated) | MIT | TEMPLATE | no | [summary](SALU/summary.md) |
