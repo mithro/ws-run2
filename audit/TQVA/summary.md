@@ -6,6 +6,7 @@
 | Slot | 0.5 x 0.5 (quarter), `0p5x0p5` |
 | Top cell | `chip_top` |
 | Licence in repo | `LICENSE` = Apache-2.0 (GitHub detection and file present; no per-file claim recorded by the audit) |
+| Taped-out layout | `TQVA_chip_top_13_8`, 1936 x 2531 um, 1 placement on the G802 reticle |
 | README | OK: 1633 words, about 916 of them project-specific on top of the wafer.space template README |
 
 ## What the repo actually contains
@@ -29,6 +30,41 @@ What is **not** in the repo: no LibreLane run logs, STA/DRC/LVS/antenna reports,
 
 Known limitations stated by the author: README (added 2026-08-14, after tape-out): "Due to an implementation bug, multi-word loads and stores can't be used against Scratch RAM." Timing is met at the nominal corner only.
 
+## Taped-out layout
+
+| Measured in `layout/TQVA.oas` (run 2) | |
+|---|---|
+| Die | 1936 x 2531 um (4.90 mm2), reticle cell `TQVA_chip_top_13_8`, one placement on the G802 reticle |
+| Pads / IO cells | 38 `gf180mcu_fd_io__bi_24t` bidir, 5 `in_c` + 1 `in_s` inputs (`clk_PAD` is the `in_s`; `rst_n_PAD` and 4 `input_PAD` are `in_c`), 4 `asig_5p0` analog, 4 `gf180mcu_ws_io__dvdd` + 4 `dvss`, 4 `fd_io__cor` corners, 364 IO fill cells. Clock and reset are on the south edge (x 448 and 552 um), `bidir_PAD[0..6]` follow along the south edge, `bidir_PAD[7..21]` run up the east edge, `analog_PAD[0..3]` and `bidir_PAD[22..26]` are on the north edge, `input_PAD`, `bidir_PAD[27..37]` on the west edge (Metal5 pad labels) |
+| Standard cells | all `gf180mcu_fd_sc_mcu7t5v0` (7-track, 5 V library): 98,296 placements, of which 35,711 are logic cells and 62,585 are fill, tap, end-cap and decap cells (25,031 `fillcap_*`, 9,657 `filltie`, 1,098 `endcap`) |
+| Sequential cells | 3,464 flip-flops (2,987 `dffq_1`, 430 `dffrnq_1`, 47 other sizes/types), 955 `latq_1` latches, 937 `dly*` delay cells (756 `dlyb_1`) |
+| SRAM | 1 x `gf180mcu_fd_ip_sram__sram512x8m8wm1`, 431.86 x 484.88 um at (490, 1400) to (921.86, 1884.88) |
+| Transistor flavours | 5 V/6 V thick oxide only. In a 400 x 400 um sample of the core (1000..1400, 500..900), all 28,114 merged Poly2 shapes lie inside Dualgate (55/0) and inside V5_XTOR (112/1); both layers are one polygon over that box. Whole die: Dualgate 2.83 mm2, V5_XTOR 1.70 mm2. These are 5 V-library devices run at the 3.3 V supply (as `config.yaml` implies) |
+| Not present | no DNWELL, no MIM (no layers in the file), no high-resistance poly, no BJT, no custom (non-library) cells. `RES_MK` (808 shapes) and `DIODE_MK` (823) markers come from the IO cells (ESD), not from user circuits (inferred from the 44 pads; not traced shape by shape) |
+| Wafer.space blocks | `gf180mcu_ws_ip__logo` at (1766.75, 2361.75)-(1910, 2505) and `gf180mcu_ws_ip__id` (QR-style ID) at (26, 26)-(168.8, 168.8), seal ring and fill |
+
+The core is one flat sea of placed cells (hierarchy is flattened by the flow; no `tt_um_*` or peripheral hierarchy survives in cell or net names, and only pad names are labelled), so the individual peripherals (UART, SPI, VGA, AY8913 and so on) cannot be located separately from the layout. The only identifiable block in the core is the SRAM.
+
+### Does it match the repository?
+
+Yes, and it is the same layout as ws-run1/TQVA. The slot matches `gds/tinyqv_quarter.gds.gz` at commit 3a0985e (2025-12-15, the last commit touching `gds/`, in HEAD 2c8630b, so the designs.csv commit is right and no other tag or commit is needed; the repo's only tag is `ws-run1`). Top-cell child counts (264 distinct children, 98,296 standard-cell placements, SRAM, 38 `bi_24t`, 4 `asig_5p0`, logo, ID) are identical to that GDS after stripping `$n` suffixes, and the XOR against it is zero on Contact, Via1-Via4, Pad, Dualgate, V5_XTOR, Nwell, Pplus, Nplus and SAB, non-zero only on COMP, Poly2 and Metal1-Metal5 (wafer.space dummy fill). The platform's sha256 differs from the repo GDS because the platform file is an OASIS with regenerated fill.
+
+### Is this a respin of ws-run1/TQVA?
+
+It is a respin of the same GDS, not a different build:
+
+| Check | Result |
+|---|---|
+| Top-cell size | both 1936 x 2531 um |
+| Top-cell child counts per cell type (suffix stripped) | identical for all 264 child types (incl. 98,296 mcu7t5v0 placements, 1 SRAM, 56 pad cells) |
+| XOR run 1 against run 2, merged | 0.000 um2 on COMP, Poly2, Contact, Via1-Via4, Nwell, Nplus, Pplus, SAB, Pad, Dualgate, V5_XTOR |
+| XOR on Metal1-Metal5 | 4,764.57 um2 on each, all inside the box (26..168.8 um)^2, which is exactly the placement of the `gf180mcu_ws_ip__id` chip-ID block; Via3 XOR is zero, so nothing outside the ID block differs |
+| Cell names | same except for the flow's `$n` suffixes (e.g. `id$37` vs `id$8`) |
+
+So the chip core, SRAM, pad ring and logo are unchanged; only the per-die ID artwork differs, as expected for a new slot. Run 1 and run 2 TQVA dies are therefore a same-design repeat, which supports using them as a wafer-to-wafer or run-to-run repeatability pair for the functional and fmax tests below (an inference from identical layout, not a measured fact).
+
+![Whole die, ws-run2/TQVA (identical to ws-run1/TQVA outside the ID block). The 1936 x 2531 um chip has a ring of 56 pad cells around a flat standard-cell core, with the 512x8 SRAM macro boxed in yellow at (490, 1400). Close-ups of the pad ring and standard cells are in the run 1 summary and apply unchanged.](images/overview.webp)
+
 ## Authors and affiliations
 
 | Person | Role / contribution | Affiliation | Source |
@@ -51,7 +87,7 @@ Ordinary synthesised digital on stock `gf180mcu_fd_sc_mcu7t5v0` cells with one f
 | Whole-chip fmax at 3.3 V | 7t5v0 standard-cell delay at VDD = 3.3 V; compare with nom/ss/ff STA (README: met at nominal corner only, target 24 MHz) | CLK pad (`clk_PAD`, Schmitt `in_s`), run code from QSPI flash, UART on `bidir[25]`/`input[0]`, debug UART on `bidir[27]` | `librelane/config.yaml`, `librelane/chip_top.sdc`, `src/chip_core.sv` |
 | Scratch RAM `sram512x8m8wm1` at 3.3 V | foundry 5 V SRAM macro functionality, access time and retention at 3.3 V (liberty `3v30`/`ss`/`ff` views supplied in config) | CPU load/store to 0xFFFFC00-0xFFFFDFF via UART monitor; byte accesses only because of the documented multi-word bug | `src/tinyQV/cpu/internal_ram.v`, config `MACROS` |
 | `bi_24t` pads driving QSPI at up to 24 MHz | IO cell drive/timing at 3.3 V (SCK on `bidir[11]` has a relaxed 18 % output delay in the SDC) | QSPI flash/PSRAM pins `bidir[8..15]` | `librelane/chip_top.sdc` |
-| Latch-based and flop logic mix (about 950 latches, about 3400 flops) | basic functional yield | normal operation | GDS cell names |
+| Latch-based and flop logic mix (955 latches, 3464 flops) | basic functional yield | normal operation | GDS cell names |
 
 Simulation results that silicon could be compared against: none stored in the repo (no STA or SDF output, no logs). The design inputs (SDC, 24 liberty corners) are there, so a run could reproduce them.
 
@@ -65,12 +101,12 @@ Packaged or bonded die on the wafer.space breakout board, 3.3 V supply, a 24 MHz
 
 ## Notes and caveats
 
-- Which GDS file belongs to which project is inferred from pad-cell counts; the platform hashes do not match the repo GDS hashes.
-- Run-1 vs run-2 differences are not documented anywhere in the repo.
-- The repo has no run logs, so DRC/LVS/timing status of the submitted layouts is unverified (the README's "only at nominal corner" statement is the only timing evidence).
+- Which GDS file belongs to which project: checked. The layout has the same child-cell counts as `gds/tinyqv_quarter.gds.gz`; the hash differs because the platform file is OASIS with regenerated fill.
+- Run-1 vs run-2: the layouts are identical except for the chip-ID block (checked by XOR); no documented reason for the resubmission.
+- The repo has no run logs, so DRC/LVS/timing status of the submitted layout is unverified (this layout pass did not run DRC or LVS) (the README's "only at nominal corner" statement is the only timing evidence).
 - Unused inputs 2 and later on the core side have neither pull-up nor pull-down set in `chip_core.sv` (`input_pu`/`input_pd` are 0), so they float unless driven externally.
 - `AUTHORS.md` is stated by the repo to be non-exhaustive.
 
 ## Variant: this submission
 
-**This submission (ws-run2/TQVA, quarter slot, resubmitted from run 1).** The platform lists the same repository and HEAD as the run-1 TQVA entry, but the layout file is now `chip_top.oas` (sha256 `7b296cbd...df70cee`) instead of `chip_top.gds`. In the repo the only GDS files are the three from December 2025 (last changed 2025-12-15, commit 3a0985e); commits after that are documentation only (2026-07-12 "Update authors", 2026-08-14 "Note error with scratch address generation"). The README still says "TinyQV for Wafer Space run 1" and the only release is tagged `ws-run1`. So nothing in the repo identifies a run-2 change: the most likely reading (inferred) is that the same quarter-slot design (`gds/tinyqv_quarter.gds.gz`, `SLOT=0p5x0p5`, die 1936 x 2531 um, 38 bidir + 4 input + 4 analog pads) was submitted again, converted to OASIS. I could not compare the run-1 and run-2 layouts here. If the two runs really contain the same design, a run-1 vs run-2 pair of identical dies on different wafers is a useful process-repeatability data point for the functional/fmax tests below. The README addition on 2026-08-14 (multi-word loads/stores to scratch RAM are broken) postdates both submissions and describes the silicon, not a layout change.
+**This submission (ws-run2/TQVA, quarter slot, resubmitted from run 1).** The platform lists the same repository and HEAD as the run-1 TQVA entry, but the layout file is now `chip_top.oas` (sha256 `7b296cbd...df70cee`) instead of `chip_top.gds`. In the repo the only GDS files are the three from December 2025 (last changed 2025-12-15, commit 3a0985e); commits after that are documentation only (2026-07-12 "Update authors", 2026-08-14 "Note error with scratch address generation"). The README still says "TinyQV for Wafer Space run 1" and the only release is tagged `ws-run1`. So nothing in the repo identifies a run-2 change, and the layout confirms there is none: the run-2 layout is the same design as ws-run1/TQVA (the quarter-slot `gds/tinyqv_quarter.gds.gz`, `SLOT=0p5x0p5`, die 1936 x 2531 um, 38 bidir + 4 input + 4 analog pads), differing only in the wafer.space chip-ID block (see the XOR table above). The run-1 vs run-2 pair is a same-design repeat on different wafers and so a useful repeatability data point for the functional/fmax tests below. The README addition on 2026-08-14 (multi-word loads/stores to scratch RAM are broken) postdates both submissions and describes the silicon, not a layout change.
