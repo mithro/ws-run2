@@ -7,6 +7,7 @@
 | Top cell | tt_gf_wrapper |
 | Licence in repo | Apache-2.0 (`LICENSE`; each `projects/*/LICENSE` is the submitter's own) |
 | README | Thin (74 words, points at tinytapeout.com and the multiplexer docs) |
+| Taped-out layout | T26B_tt_gf_wrapper_2_4, 3932 x 5122 um, 1 placement on the G802 reticle |
 
 ## What the repo actually contains
 
@@ -48,7 +49,7 @@ no difference):
 | IO cells | `gf180mcu_ocd_io`: 16x `bi_24t`, 10x `in_c`, 3x `in_s`, 29x `asig_5p0`, 4x `dvdd`, 6x `dvss`, 2x `vdd`, 4x `vss`, 4x `cor` (counted in `tt_gf_wrapper.nl.v`) |
 | Pads | 74: 3 mux control, `clk`, `rst_n`, `ui[7:0]`, `uo[7:0]`, `uio[7:0]`, 22 analog, 5 reserved, supplies (`ol2/tt_top/tt_gf_wrapper.v`) |
 | Mux | `tt_ctrl` x1 + `tt_mux` x15; address = `mux_id*32 + blk_id` |
-| Power gating | One `tt_pg_3v3_hp_{1,2,4}` header switch per user macro (65/23/2 instances); no analog-supply gate. The switch GDS has no Dualgate layer, so 3.3 V devices (inferred) |
+| Power gating | One `tt_pg_3v3_hp_{1,2,4}` header switch per user macro (65/23/2 instances); no analog-supply gate. The placed switch macros have no Dualgate or V5_XTOR shapes: 3.3 V thin-oxide devices (measured) |
 | Analog pin routing | None: `analog: []`; the 22 `asig_5p0` pads are bonded but not connected into the core; the four custom tiles all declare `analog_pins: 0` |
 | ID/logo | `gf180mcu_ws_ip__id`, `gf180mcu_ws_ip__logo`, `tt_logo_*` |
 
@@ -181,6 +182,87 @@ including fill, tap and endcap cells.
 - `gl_test_vcd.zip`: gate-level mux test results.
 - No silicon bring-up data.
 
+## Taped-out layout
+
+| Measured fact | Value |
+|---|---|
+| Die | 3932 x 5122 um, reticle cell `T26B_tt_gf_wrapper_2_4`, one placement at (4.052, 10.424) mm on G802 |
+| Top-cell children | 90 `tt_um_*` tiles (88 user designs + `tt_um_chip_rom` + `tt_um_factory_test`), 15 `tt_mux`, 1 `tt_ctrl`, 90 power gates (65 `tt_pg_3v3_hp_1`, 23 `_2`, 2 `_4`), 4 IO corner cells, 4 `tt_logo_*` cells, `gf180mcu_ws_ip__id` and `__logo` |
+| Pads | 74 (`gf180mcu_ocd_io`): 29 `asig_5p0`, 16 `bi_24t`, 10 `in_c`, 3 `in_s`, 4 `dvdd`, 6 `dvss`, 2 `vdd`, 4 `vss`; same as T26A |
+| Standard cells | `gf180mcu_fd_sc_mcu7t5v0`: 153 556 logic + 325 037 fill placements; `gf180mcu_as_sc_mcu7t3v3` (third-party 3.3 V library): 2405 logic + 4031 fill placements, in two tiles |
+| SRAM macros | no `gf180mcu_fd_ip_sram` macros; three custom 128x8 6T SRAMs (below) |
+| Other custom | none besides the SRAM tiles; no analog tile, no `tt_asw_5v0`, no 5 V power gate |
+| MIM / high-res poly / DNWELL | None: no MIM, DNWELL or Resistor (62/0) shapes on the die |
+
+### Does it match the repository?
+
+Yes. `releases/tapeout-ws2607/tt_gf_wrapper.oas` (built from tag
+`tapeout-ws2607` = b7b04a0; repo HEAD 8c92b24 differs only by
+`projects/danger_level.yaml`) has the same die box, identical instance counts
+for every distinct top-cell child (after stripping `$n` suffixes) and
+identical placement origins as the reticle slot, no difference in either
+direction. The numbers agree with the infrastructure table (74 pads, 15 mux,
+65/23/2 power gates, 90 tiles = the 90 macros). Each of the three Arrakeen
+SRAM tiles was XORed layer by layer (23 layers each) against its
+`projects/<tile>/<tile>.oas`: 0.000 um2 difference on every layer. Other
+tiles were checked at instance level only.
+
+![Whole die with the SRAM tiles, 3v3-library tiles and RO PUF marked](images/overview.webp)
+
+*Whole die. Yellow boxes: the three SRAM tiles (3.3 V regular rules at 3118.6, 501.8 um; SRAM-rules at 1195.0, 2148.2 um; 5 V at 2025.0, 2148.2 um), the two tiles on the 3.3 V AS cell library (2754.1, 4206.2 um and 830.5, 4453.1 um) and the ring-oscillator PUF (1195.0, 4453.1 um). Each box is one 346.64 x 160.72 um tile.*
+
+### The custom SRAM tiles
+
+![3.3 V regular-rule SRAM macro](images/sram_regular.webp)
+
+*`tt_um_arrakeen_spsram_direct`: the SRAM macro `SP6TSRAM128x8` (182.4 x 83.5 um at 3223.5-3405.9, 504.8-588.2 um). The bit-cell array is the lower right block; row decoder and word-line drivers are left, column muxes and sense/precharge above the array, clock generator top left. The black area has no Dualgate: thin oxide throughout.*
+
+![Bit cells](images/sram_bitcells.webp)
+
+*Bit-cell array of the regular-rule macro (about 3330-3355, 525-537 um): `VI_VN_SP6TCell`, 4.54 x 2.82 um, two cells per column visible mirrored. Poly red, diffusion green, Metal1 blue, Metal2 magenta.*
+
+![5 V SRAM macro](images/sram_5v.webp)
+
+*`tt_um_arrakeen_spsram_direct_5v` (2025-2260, 2148-2275 um): the larger 5 V macro `SP6TSRAM128x8` (226.1 x 123.9 um at 2086.3-2312.4, 2150.6-2274.5 um); purple tint is Dualgate, which covers the whole macro. The filler cells left of the macro are the standard-cell fill around it.*
+
+| Tile (addr) | Macro and bit cell | Array | Devices (measured) |
+|---|---|---|---|
+| `tt_um_arrakeen_spsram_direct` (583), tile at (3118.64, 501.76) | `VI_SP6TSRAM128x8` 182.36 x 83.47 um; `VI_VN_SP6TCell` 4.54 x 2.82 um (12.8 um2) | 1024 cells (128 words x 8 bits) in one `ColumnBlock`, plus row periphery, clock generator and WL driver column | 7382 gate rectangles in the macro, none in Dualgate or V5_XTOR: 3.3 V thin oxide. Bit cell: 4 n + 2 p gate rectangles of 0.28 x 0.36 um |
+| `tt_um_arrakeen_spsram_direct_sramrules` (3), tile at (1195.04, 2148.16) | `W0_SP6TSRAM128x8` 170.84 x 83.44 um; `W0_F3_SP6TCell` 4.18 x 2.68 um (11.2 um2) | 1024 cells, same architecture | 3.3 V thin oxide, same 7382 gate rectangles; bit-cell gates 0.28 x 0.28 um; the only tile with SramCore (108/5) markers: 6744 um2 over the array, 11.2 um2 per cell |
+| `tt_um_arrakeen_spsram_direct_5v` (65), tile at (2024.96, 2148.16) | `YC_SP6TSRAM128x8` 226.10 x 123.92 um; `YC_L2_SP6TCell` 5.7 x 3.8 um (21.7 um2) | 1024 cells | 100 % of gate area inside Dualgate and V5_XTOR (5 V/6 V devices). Bit-cell gates 0.36 x 0.5 to 0.6 um; periphery gates 0.5 to 0.6 um minimum side |
+
+The 3.3 V macros contain no Dualgate or V5_XTOR; the few such shapes in those
+tiles come from the `mcu7t5v0` fill and buffer cells around the macro, as the
+caveats below said. The 5 V bit cell has gate rectangles with a shorter side
+of 0.36 um, below the 0.5 to 0.6 um of its periphery, and the 5 V tile has no
+SramCore marker (only the SRAM-rules tile does). That asymmetry is measured; I
+did not run a DRC deck, so whether those cells violate 5 V rules is not
+established. Gate dimensions are bounding boxes of merged Poly2-over-COMP
+rectangles, not extracted W/L.
+
+### Tiles on the 3.3 V AS library and the PUF
+
+- `tt_um_detronyx_arith_lab` at (2754.08, 4206.16) and
+  `tt_um_detronyx_uart_trace_exerciser` at (830.48, 4453.12): cells from
+  `gf180mcu_as_sc_mcu7t3v3` (together 2405 logic placements; 10 and 16
+  `buff_8` instances respectively). The cell gates are thin oxide (checked on
+  `buff_8`: 22 gate rectangles, 0.28 x 1.0 um n and 0.28 x 1.38 um p, no
+  Dualgate). The documented `buff_8` short is **not** a Metal1/Metal2 short:
+  in the placed `buff_8` the VDD, VSS, A and Y labels are on four separate
+  Metal1/Via1/Metal2 nets. Where the short is (poly, diffusion or well
+  connection) is not settled; extraction of the cell netlist would settle it.
+- `tt_um_ro_puf` at (1195.04, 4453.12): ordinary `mcu7t5v0` cells; no custom
+  geometry.
+
+### Infrastructure compared with T0P3 and TTPG
+
+`tt_pg_3v3_hp_1/2/4` are the same macros as in T26A, TTPG and T0P3 (same
+outlines, no Dualgate or V5_XTOR in the placed `hp_1`; gate counts identical
+to T26A's: 191 p-type gate rectangles in `hp_1`), one per tile (90 here, T26A
+95, TTPG 52, T0P3 32). T26B has no `tt_pg_5v0_2`, `tt_asw_5v0` or
+`tt_ckt_ana` (T0P3 has them); its 29 `asig_5p0` pad cells are not connected to
+any tile, as in T26A (geometry check as in T26A; no extraction).
+
 ## Authors and affiliations
 
 | Person / organisation | Role | Affiliation | Source |
@@ -219,9 +301,9 @@ the mux and the shared `ui/uo/uio` pads only.
 
 | Structure | What it exercises | Access | Where |
 |---|---|---|---|
-| `tt_um_arrakeen_spsram_direct` (addr 583): `SP6TSRAM128x8`, cell prefix `VN_`, 181.32 x 83.46 um, column mux 4, cell names such as `SP6TPrecharge_56L100W`, `WLDriver_N56L120WP56L240W` (if the numbers are 5 nm grid units, L = 0.28 um; inferred) | 6T bit cell built from 3.3 V devices under regular logic design rules: function, read/write margin vs VDD, access time (clock 66 MHz declared) | `a[6:0]`=`ui[6:0]`, `we`=`ui[7]`, `d`=`uio[7:0]`, `q`=`uo[7:0]`, `clk` | `projects/tt_um_arrakeen_spsram_direct/` (OAS, LEF, stub `.v`, docs); GDS hierarchy read from `macros.zip` |
+| `tt_um_arrakeen_spsram_direct` (addr 583): `SP6TSRAM128x8`, cell prefix `VN_`, 181.32 x 83.46 um, column mux 4, cell names such as `SP6TPrecharge_56L100W`, `WLDriver_N56L120WP56L240W` (layout: gate rectangles 0.28 um on the short side) | 6T bit cell built from 3.3 V devices under regular logic design rules: function, read/write margin vs VDD, access time (clock 66 MHz declared) | `a[6:0]`=`ui[6:0]`, `we`=`ui[7]`, `d`=`uio[7:0]`, `q`=`uo[7:0]`, `clk` | `projects/tt_um_arrakeen_spsram_direct/` (OAS, LEF, stub `.v`, docs); GDS hierarchy read from `macros.zip` |
 | `tt_um_arrakeen_spsram_direct_sramrules` (addr 3): same architecture, prefix `F3_`, 169.80 x 83.42 um, uses the SRAM core marker layer (108/5) | Same bit cell drawn with the foundry SRAM design rules: yield and margin comparison against the regular-rule version | same pinout | `projects/tt_um_arrakeen_spsram_direct_sramrules/` |
-| `tt_um_arrakeen_spsram_direct_5v` (addr 65): prefix `L2_`, 224.72 x 122.72 um, 5 V devices (`*_5v0` cells, `Precharge_100L100W`, `WLDriver_N120L200WP120L400W`, i.e. L = 0.60 um on the same reading; Dualgate 55/0 and V5_XTOR 112/1 layers present) | 5 V-device 6T SRAM run at the shuttle's 3.3 V core (docs: "5V version ... also compatible with 3.3V") | same pinout | `projects/tt_um_arrakeen_spsram_direct_5v/` |
+| `tt_um_arrakeen_spsram_direct_5v` (addr 65): prefix `L2_`, 224.72 x 122.72 um, 5 V devices (`*_5v0` cells, `Precharge_100L100W`, `WLDriver_N120L200WP120L400W`, measured: periphery gates 0.5-0.6 um, bit cell 0.36 um short side; all gates inside Dualgate and V5_XTOR) | 5 V-device 6T SRAM run at the shuttle's 3.3 V core (docs: "5V version ... also compatible with 3.3V") | same pinout | `projects/tt_um_arrakeen_spsram_direct_5v/` |
 | `tt_um_detronyx_arith_lab` (addr 612) and `tt_um_detronyx_uart_trace_exerciser` (addr 549): about 1600 and 1200 non-filler cells respectively from `gf180mcu_as_sc_mcu7t3v3` (`dfsrtp_2`, `dfxtp_2`, `maj3_2`, `ao*`, `clkbuff_*`, and 10 / 16 instances of the shorted `buff_8`) | First use in anger of the 3.3 V thin-oxide 7T library; supply-short behaviour of the broken `buff_8`; if the tile survives, 3v3-library timing | Register interface on `ui/uio`, result on `uo` (arith lab); UART (trace exerciser). Marked danger "high": powering the tile is expected to short the gated rail | `projects/tt_um_detronyx_*/` (netlist, `stats/metrics.csv`), `projects/danger_level.yaml` |
 | `tt_um_ro_puf` (addr 547): four ring-oscillator banks, netlist loops of 126, 126, 117 and 61 nets, almost entirely `clkinv_1`/`clkinv_2` with NAND/AOI selection muxes | `clkinv_1` delay, die-to-die and within-die frequency variation | Challenge on `ui[6:0]`, enable `ui[7]`, counts streamed on `uo` | `projects/tt_um_ro_puf/` |
 | `tt_um_urish_simon` (addr 613): 13-stage `clkinv_1` RO divided by 2048 | `clkinv_1` stage delay | `clk_sel=1`, divided clock on `uo[7]` | `projects/tt_um_urish_simon/` |
@@ -279,8 +361,8 @@ it was optimised away), `tt_um_likitha_trng` (combinational XOR of the inputs),
   the only change is `projects/danger_level.yaml`.
 - The three SRAM `.v` files are empty blackbox stubs ("Auto-generated by
   LibreLane"); the descriptions above come from GDS cell names, layers and
-  `docs/info.md`. Device channel lengths are read from cell names, not
-  measured.
+  `docs/info.md`. Gate sizes in the Taped-out layout section are measured from
+  the placed layout (rectangle sides), not extracted W/L.
 - The "3.3 V" SRAM tiles still contain a few Dualgate/V5_XTOR shapes; these
   come from the `gf180mcu_fd_sc_mcu7t5v0` filler/buffer cells around the macro.
 - `tt_um_wokwi_466666882406199297` is titled "Simple Sprinkler" but described
@@ -290,6 +372,6 @@ it was optimised away), `tt_um_likitha_trng` (combinational XOR of the inputs),
 - `tt_um_BastiBudde_i2c_slave_sensor` source repo is named `TTSky26b_...`.
 - My netlist loop check does not recognise AS-library flip-flops, so loop
   results for the two Detronyx tiles were discarded.
-- Power-gate device type and Magic DRC attribution are inferred.
+- Power-gate device type is measured (thin oxide). Magic DRC attribution to tiles is still unsettled (report text only; matching error coordinates to tiles would settle it). The `buff_8` short is not a Metal1/Metal2 short in the placed cell; its location is unsettled.
 - User-project analysis is from hardened netlists, GDS cell names and
   `docs/info.md`; the 88 upstream source repos were not cloned.
