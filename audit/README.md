@@ -3,7 +3,7 @@
 One directory per public project on this run. Each has an analysis (`summary.md`) of the
 project's repository, the manifest row (`project.json`), the commit that was analysed
 (`clone.json`) and measurements of the layout extracted from the reticle (`layout.json`).
-29 of the 40 summaries have also been checked against that taped-out layout and carry
+30 of the 40 summaries have also been checked against that taped-out layout and carry
 renders of it (`images/`); they are marked in the "Layout checked" column.
 
 `tools/` documents how all of this was made. The scripts run in the original workspace,
@@ -77,7 +77,7 @@ Verdict = value for GF180MCU characterisation and PDK development, as judged in 
 | NAX1 | Naxos CoB | 1x0p5 | High | 3.3 V Caravel SoC on gf180mcu_as_sc_mcu7t3v3 with OpenTitan USB (4 x 3.3 V SRAM), custom crystal-oscillator driver, four pulse-shrinking TDCs; taped-out layout matches repo naxos.gds top level | Zedulo (Sweden): Egor Lukyanchenko, snapaa257 | Apache-2.0 | TEMPLATE | yes | [summary](NAX1/summary.md) |
 | OCD3 | 3.3V SRAM test 2 | 1x0p5 | High | Run 2 variant of the SRAM break-out chip: 1024/512/256 and new 64x8 SRAM macros on pads and a new all-3.3 V self-biased POR (only the pad ring uses 5/6 V devices); layout equals the repo HEAD GDS | R. Timothy Edwards, Open Circuit Design LLC | none | MISSING | yes | [summary](OCD3/summary.md) |
 | PSOC | Simplest possible PicoSoC implementation using wafer.space flow | 1x0p5 | Low | PicoRV32 SoC with QSPI flash controller, UART and 8 foundry 5 V SRAM macros (4x2 array); layout matches repo chip_top.gds.zip (264 child types, identical counts; XOR zero except dummy fill) | d-burnett / burnettlab (affiliation not stated) | Apache-2.0 | THIN | yes | [summary](PSOC/summary.md) |
-| QZ80 | FOSSi open-source replacement for Z80 classic 8-bit CPU (0.5 x 0.5 slot) | 0p5x0p5 | Low | Same Z80, quarter slot | Renaldas Zioma (rejunity) | Apache-2.0 | TEMPLATE+NOTE | no | [summary](QZ80/summary.md) |
+| QZ80 | FOSSi open-source replacement for Z80 classic 8-bit CPU (0.5 x 0.5 slot) | 0p5x0p5 | Low | FOSSi Z80 replacement (TV80 core, rejunity) in the 0p5x0p5 quarter slot; 5096 mcu9t5v0 5 V cells, 376 flops, no macros, same CPU size as HZ80 in a smaller core | Renaldas Zioma (rejunity); TV80 by Guy Hutchison | Apache-2.0 | TEMPLATE+NOTE | yes | [summary](QZ80/summary.md) |
 | RLCM | RLCM: Test Passives For GF180MCUD | 0p5x1 | High | Probe-pad RF passive test die (1936x5122 um, 72 bare Bondpad_5LM pads, no IO cells, no standard cells, no active devices): two 2-port spiral inductors, a centre-tapped inductor, two transformers, 100x100 and 54x25 um MIM-B capacitors, four de-embedding pad sets and two DUT-less probe sites; layout identical to repo GDS (commit d1bc20b) | Ghaith Al Sabagh (EngGhaith); on-die Metal5 text "Ghaith AL SABAGH, NTHFS JKU, MWTH CD LAB" (JKU Linz inferred), thanks to Volker Muehlhaus and Leo Moser | none | MISSING | yes | [summary](RLCM/summary.md) |
 | SALU | Simple ALU | 0p5x0p5 | Low | 8-bit Chisel ALU on stock 5 V cells | StackDoubleFlow (affiliation not stated) | MIT | TEMPLATE | no | [summary](SALU/summary.md) |
 | SCML | ML-Audio SC | 1x1 | Low | Always-on keyword-spotting pipeline on 3.3 V cells with 38 ocd SRAM macros (23x1024x8, 13x256x8, 2x512x8), gf180mcu_fd_io pads | UC Santa Cruz students (Kye Conway and four others) | Apache-2.0 | OK | yes | [summary](SCML/summary.md) |
