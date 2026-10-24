@@ -3,7 +3,7 @@
 One directory per public project on this run. Each has an analysis (`summary.md`) of the
 project's repository, the manifest row (`project.json`), the commit that was analysed
 (`clone.json`) and measurements of the layout extracted from the reticle (`layout.json`).
-28 of the 40 summaries have also been checked against that taped-out layout and carry
+29 of the 40 summaries have also been checked against that taped-out layout and carry
 renders of it (`images/`); they are marked in the "Layout checked" column.
 
 `tools/` documents how all of this was made. The scripts run in the original workspace,
@@ -69,7 +69,7 @@ Verdict = value for GF180MCU characterisation and PDK development, as judged in 
 | FS02 | Test chip with 3.3V SRAM blocks using SRAM design rules | 0p5x1 | High | Same six generated SRAM macros as FS01 drawn to the foundry SRAM design rules (layer 108/5 SramCore on every bit cell, 0.28x0.28 um gates, thin-oxide 3.3 V): array 8.5% (6T) / 10.5% (8T) smaller than FS01, 512x32 macros 8-9% smaller; same ring, glue and pinout | Staf Verhaegen (Chips4Makers / FibraServi) | none | OK | yes | [summary](FS02/summary.md) |
 | FS03 | Test chip with 5V SRAM blocks | 0p5x1 | High | Same six generated SRAM macros as FS01 in 5 V thick-oxide devices (V5_XTOR inside Dualgate on every SRAM transistor, 0.60 um n / 0.50 um p gates, 5 V decoder and clock cells), regular rules, no SramCore; macros 1.8-2.0x FS01 area (SP 512x32 0.26 mm2, DP 512x32 0.48 mm2); whole die native 5 V | Staf Verhaegen (Chips4Makers / FibraServi) | none | OK | yes | [summary](FS03/summary.md) |
 | GD04 | Racquet Wide 1x0.5 | 1x0p5 | Medium | Same repo and commit as run 1 GD04, resubmitted as OASIS | Greg Davill | Apache-2.0 | TEMPLATE | no | [summary](GD04/summary.md) |
-| HZ80 | FOSSi open-source replacement for Z80 classic 8-bit CPU (0.5 x 1 slot) | 0p5x1 | Low | Run 2 resubmission of the half-width Z80 | Renaldas Zioma (rejunity) | Apache-2.0 | TEMPLATE+NOTE | no | [summary](HZ80/summary.md) |
+| HZ80 | FOSSi open-source replacement for Z80 classic 8-bit CPU (0.5 x 1 slot) | 0p5x1 | Low | Run 2 resubmission of the half-width Z80; layout identical to ws-run1/HZ80 except the chip ID block | Renaldas Zioma (rejunity) | Apache-2.0 | TEMPLATE+NOTE | yes | [summary](HZ80/summary.md) |
 | ISHI | ISHI-KAI_Multiple_Projects_WaferSapce-GF180-2 | 0p5x1 | High | Half-width re-spin of the run 1 analog multi-project die: 8 circuit cells (4 op-amps, bandgap + current source, 6-bit SAR ADC, PLL, LDO) in a 72-pad ring with 126 probe pads; taped-out layout is geometrically identical to the repo GDS; vs run 1, 3 cells identical, 4 with changed routing metal, CS_BGR changed | ISHI-KAI community; integrator Noritsuna Imamura (SIProp.org); Akira Tsuchiya, Mizuki Mori, Miho Yamada and others | Apache-2.0 | OK | yes | [summary](ISHI/summary.md) |
 | KIAN | KianV: A 32-bit RISC-V Linux SoC taped out on GF180MCU Run 2 | 1x1 | Low | Same KianV SoC ported to the 3.3 V AS cells, ocd SRAM and ocd IO | Hirosh Dabui (splinedrive), Berlin | Apache-2.0 | THIN | no | [summary](KIAN/summary.md) |
 | MEME | Artwork Meme Chip | 1x0p5 | Medium | Doge-meme artwork on Poly2 and Metal1-5 (taped out twice on the reticle) carrying 48 undocumented banks of 4 unsilicided p+ poly resistors (192) at the die edges, 50 asig_5p0 analog pads and a small 26-flop 5 V logic block | Andrew Wingate (anfroholic; Evezor, Chicago) | MIT | OK | yes | [summary](MEME/summary.md) |
